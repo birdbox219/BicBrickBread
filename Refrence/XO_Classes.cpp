@@ -1,5 +1,10 @@
 //--------------------------------------- IMPLEMENTATION
+/*
 
+for refrence for now
+
+
+*/
 #include <iostream>
 #include <iomanip>
 #include <cctype> // for toupper()
@@ -93,11 +98,11 @@ Player<char> *XO_UI::create_player(string &name, char symbol, PlayerType type)
 }
 
 Move<char> *XO_UI::get_move(Player<char> *player)
-{ // stack history for player one
+{ // que history for player one
     //
     //
     //
-    // stack for player two
+    // que for player two
 
     int x, y;
 
@@ -106,7 +111,7 @@ Move<char> *XO_UI::get_move(Player<char> *player)
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
 
-        // implment here
+        // implement here
     }
     else if (player->get_type() == PlayerType::COMPUTER)
     {
