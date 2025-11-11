@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+			"args": [
+				"-Wall",
+				"-Wextra",
+				"-g3",
+				"d:/FCAI_SecondLevel/OOP/A-3/XO_Demo.cpp",
+				"d:/FCAI_SecondLevel/OOP/A-3/XO_Classes.cpp",
+				"-o",
+				"d:/FCAI_SecondLevel/OOP/A-3/output/XO_Demo.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\msys64\\ucrt64\\bin\\g++.exe"
+		}
+	]
+}
