@@ -29,10 +29,9 @@ using namespace std;
  *
  * @return int Returns 0 on successful execution.
  */
-int main()
-{
+int main() {
 
-    srand(static_cast<unsigned int>(time(0))); // Seed the random number generator
+    srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
 
    
     // Temporary menu to test and run different games --Aalaa
