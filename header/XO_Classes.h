@@ -69,13 +69,60 @@ public:
     bool game_is_over(Player<char>* player);
 };
 
+// Implementation of X_O_Board
+X_O_Board::X_O_Board() : Board<char>(3, 3) {
+    rows = 3;
+    columns = 3;
+    board = vector<vector<char>>(rows, vector<char>(columns));
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            board[i][j] = blank_symbol;
+        }
+    }
+}
+
+bool X_O_Board::update_board(Move<char>* move) {
+    int x = move->get_x();
+    int y = move->get_y();
+    if (x < 0 || x >= rows || y < 0 || y >= columns || board[x][y] != blank_symbol) {
+        return false;
+    }
+    board[x][y] = move->get_symbol();
+    n_moves++;
+    return true;
+}
+
+bool X_O_Board::is_win(Player<char>* player) {
+    char s = player->get_symbol();
+    // Check rows and columns
+    for (int i = 0; i < 3; i++) {
+        if ((board[i][0] == s && board[i][1] == s && board[i][2] == s) ||
+            (board[0][i] == s && board[1][i] == s && board[2][i] == s)) {
+            return true;
+        }
+    }
+    // Check diagonals
+    if ((board[0][0] == s && board[1][1] == s && board[2][2] == s) ||
+        (board[0][2] == s && board[1][1] == s && board[2][0] == s)) {
+        return true;
+    }
+    return false;
+}
+
+bool X_O_Board::is_draw(Player<char>* player) {
+    return (n_moves == 9 && !is_win(player));
+}
+
+bool X_O_Board::game_is_over(Player<char>* player) {
+    return is_win(player) || is_draw(player);
+}
 
 /**
  * @class XO_UI
  * @brief User Interface class for the X-O (Tic-Tac-Toe) game.
  *
  * Inherits from the generic `UI<char>` base class and provides
- * X-O–specific functionality for player setup and move input.
+ * X-O-specific functionality for player setup and move input.
  *
  * @see UI
  */
@@ -86,7 +133,7 @@ public:
      *
      * Initializes the base `UI<char>` class with the welcome message "FCAI X-O".
      */
-    XO_UI();
+    XO_UI() : UI<char>("Welcome to FCAI X-O Game", 5) {}
 
     /**
      * @brief Destructor for XO_UI.
@@ -100,14 +147,21 @@ public:
      * @param type The type of the player (Human or Computer).
      * @return Pointer to the newly created Player<char> instance.
      */
-    Player<char>* create_player(string& name, char symbol, PlayerType type);
+    Player<char>* create_player(string& name, char symbol, PlayerType type) {
+        return new Player<char>(name, symbol, type); // Simplified
+    }
 
     /**
      * @brief Retrieves the next move from a player.
      * @param player Pointer to the player whose move is being requested.
      * @return A pointer to a new `Move<char>` object representing the player's action.
      */
-    virtual Move<char>* get_move(Player<char>* player);
+    virtual Move<char>* get_move(Player<char>* player) {
+        int x, y;
+        cout << "Enter move for " << player->get_name() << " (x y): ";
+        cin >> x >> y;
+        return new Move<char>(x, y, player->get_symbol());
+    }
 };
 
 #endif // XO_CLASSES_H

@@ -12,7 +12,8 @@
 #include <vector>   // Required for vector
 #include <memory>   // Required for unique_ptr
 
-#include "BoardGame_Classes.h"
+#include "TUI/TUI.h"
+#include "header/TUI_UI.h"
 #include "header\BoardGame_Classes.h"
 #include "header\XO_Classes.h"
 #include "Games\XO_inf\XO_inf.h"
@@ -31,70 +32,100 @@ using namespace std;
  * @return int Returns 0 on successful execution.
  */
 int main() {
+    // Enable UTF-8 support
+    SetConsoleOutputCP(CP_UTF8);
+    srand(static_cast<unsigned int>(time(0)));
 
-    srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
+    TUI::Desktop desktop;
+    desktop.init();
 
-    // Create an instance of the specific UI for X-O using a pointer 
-   /* UI<char>* game_ui = new XO_UI();*/
+    // Main Menu
+    TUI::Label* title = new TUI::Label(10, 2, "Board Game Main Menu", "cyan");
+    TUI::Button* btnXO = new TUI::Button(10, 6, 20, 3, "Play XO", "blue", "white");
+    TUI::Button* btnXOInf = new TUI::Button(10, 10, 20, 3, "Play XO Infinite", "blue", "white");
+    TUI::Button* btnExit = new TUI::Button(10, 14, 20, 3, "Exit", "red", "white");
 
-    // Create the game board. For X-O, this is an X_O_Board.
-   /* Board<char>* xo_board = new X_O_Board();*/
+    desktop.addComponent(title);
+    desktop.addComponent(btnXO);
+    desktop.addComponent(btnXOInf);
+    desktop.addComponent(btnExit);
 
-    // Use the UI to set up the players for the game.
-    // The UI returns a dynamically allocated array of Player pointers.
-   /* Player<char>** players = game_ui->setup_players();*/
+    // Menu Listener
+    class MenuListener : public TUI::Button::Listener {
+        TUI::Desktop* desktop;
+    public:
+        int choice = 0;
+        MenuListener(TUI::Desktop* d) : desktop(d) {}
+        void buttonClicked(TUI::Button* btn) override {
+            if (btn->getButtonText() == "Play XO") choice = 1;
+            else if (btn->getButtonText() == "Play XO Infinite") choice = 2;
+            else if (btn->getButtonText() == "Exit") choice = 3;
+        }
+    };
 
-    // Create the game manager with the board and the array of players.
-   /* GameManager<char> x_o_game(xo_board, players, game_ui);*/
+    MenuListener menuListener(&desktop);
+    btnXO->addListener(&menuListener);
+    btnXOInf->addListener(&menuListener);
+    btnExit->addListener(&menuListener);
 
-    // Run the game loop.
-   /* x_o_game.run();*/
+    while (true) {
+        // Reset choice
+        menuListener.choice = 0;
+        
+        // Show Menu
+        title->setVisible(true);
+        btnXO->setVisible(true);
+        btnXOInf->setVisible(true);
+        btnExit->setVisible(true);
 
-    // --- Cleanup ---
-    // Delete the dynamically allocated board object.
-   /* delete xo_board;*/
-
-    // Delete the individual player objects.
-    /*for (int i = 0; i < 2; ++i) {
-        delete players[i];
-    }*/
-    // Delete the dynamically allocated array of player pointers itself.
-    //delete[] players;
-    bool finish = 0;
-    while (!finish) {
-        int choice;
-        cout << "Choose a game:\n";
-        cout << "1)XO\n2)XO_inf\n3)Exit\n";
-        cin >> choice;
-        if (choice == 1) {
-            UI<char>* game_ui = new XO_UI();
-            Board<char>* xo_board = new X_O_Board();
-            Player<char>** players = game_ui->setup_players();
-            GameManager<char> x_o_game(xo_board, players, game_ui);
-            x_o_game.run();
-            delete xo_board;
-            for (int i = 0; i < 2; ++i) {
-                delete players[i];
-            }
-            delete[] players;
+        // Wait for menu selection
+        while (menuListener.choice == 0) {
+            desktop.update();
+            std::this_thread::sleep_for(std::chrono::milliseconds(16));
         }
 
-        else if (choice == 2) {
-            UI<char>* game_ui = new XO_inf_UI();
-            Board<char>* inf_board = new XO_inf_Board();
-            Player<char>** players = game_ui->setup_players();
-            GameManager<char> XO_inf_game(inf_board, players, game_ui);
-            XO_inf_game.run();
-            delete inf_board;
-            for (int i = 0; i < 2; ++i) {
-                delete players[i];
-            }
-            delete[] players;
-        }
-        else if (choice == 3) { finish = 1; }
+        // Hide Menu
+        title->setVisible(false);
+        btnXO->setVisible(false);
+        btnXOInf->setVisible(false);
+        btnExit->setVisible(false);
 
+        if (menuListener.choice == 3) break; // Exit
+
+        // Setup Game
+        UI<char>* game_ui = nullptr;
+        Board<char>* board = nullptr;
+        
+        if (menuListener.choice == 1) {
+            // XO
+            game_ui = new TUI_UI(&desktop, 3, 3);
+            board = new X_O_Board();
+        } else if (menuListener.choice == 2) {
+            // XO Infinite
+            game_ui = new TUI_UI(&desktop, 3, 3); // Assuming 3x3 for infinite too? Or is it larger? 
+            // XO_inf usually is 3x3 but with shifting rules.
+            board = new XO_inf_Board();
+        }
+
+        if (game_ui && board) {
+            Player<char>** players = game_ui->setup_players();
+            GameManager<char> game(board, players, game_ui);
+            
+            // Run Game
+            game.run();
+
+            // Cleanup
+            delete board;
+            for (int i = 0; i < 2; ++i) delete players[i];
+            delete[] players;
+            delete game_ui;
+            
+            // Small pause before returning to menu
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        }
     }
-    return 0; // Exit successfully
+
+    return 0;
 }
 
 // =====================================================================

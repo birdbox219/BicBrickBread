@@ -39,6 +39,12 @@ namespace TUI {
         }
 
         /**
+         * @brief Initialize the desktop (setup console modes, hide cursor).
+         * Should be called once before the main loop.
+         */
+        void init();
+
+        /**
          * @brief Start the main event loop of the desktop
          * 
          * This function:
@@ -46,7 +52,14 @@ namespace TUI {
          * - Detects hover, press, and release events for components
          * - Forces all components to repaint every cycle (good for animations)
          */
-        void run(); // Declaration only; implemented in Desktop.cpp
+        void run(); 
+
+        /**
+         * @brief Process a single frame of the desktop event loop.
+         * 
+         * This is useful if you want to integrate the TUI into an external loop.
+         */
+        void update();
     };
 
 } // namespace TUI
