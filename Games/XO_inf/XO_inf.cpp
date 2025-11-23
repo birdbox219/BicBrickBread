@@ -3,7 +3,7 @@
 #include <iomanip>
 #include <cctype>  // for toupper()
 #include <queue>
-#include "Games\XO_inf\XO_inf.h"
+#include "XO_inf.h"
 
 using namespace std;
 

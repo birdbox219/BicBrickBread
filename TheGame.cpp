@@ -12,10 +12,12 @@
 #include <vector>   // Required for vector
 #include <memory>   // Required for unique_ptr
 
+#include "Games/anti_XO/Anti_XO.h"
+#include "Games/XO_inf/XO_inf.h"
+#include "XO_Classes.h"
 #include "BoardGame_Classes.h"
-#include "header\BoardGame_Classes.h"
-#include "header\XO_Classes.h"
-#include "Games\XO_inf\XO_inf.h"
+
+
 using namespace std;
 
 /**
@@ -64,7 +66,7 @@ int main() {
     while (!finish) {
         int choice;
         cout << "Choose a game:\n";
-        cout << "1)XO\n2)XO_inf\n3)Exit\n";
+        cout << "1)XO\n2)XO_inf\n3)Anti_XO\n4)Exit\n";
         cin >> choice;
         if (choice == 1) {
             UI<char>* game_ui = new XO_UI();
@@ -91,7 +93,19 @@ int main() {
             }
             delete[] players;
         }
-        else if (choice == 3) { finish = 1; }
+        else if(choice == 3){
+            UI<char>* game_ui = new Anti_XO_UI();
+            Board<char>* inf_board = new Anti_XO_Board();
+            Player<char>** players = game_ui->setup_players();
+            GameManager<char> antiXO_game(inf_board, players, game_ui);
+            antiXO_game.run();
+            delete inf_board;
+            for (int i = 0; i < 2; ++i) {
+                delete players[i];
+            }
+            delete[] players;
+        }
+        else if (choice == 4) { finish = 1; }
 
     }
     return 0; // Exit successfully
