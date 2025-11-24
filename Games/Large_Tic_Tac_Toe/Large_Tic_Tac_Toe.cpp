@@ -14,6 +14,12 @@ bool Large_XO_Board::update_board(Move<char>* move)
     int c = move->get_y();
     char s = move->get_symbol();
 
+    if (s == 0 || s == emptyCell) {
+        board[r][c] = emptyCell;
+        --nMoves;
+        return true;
+    }
+
     // Safety Check
     if (r < 0 || r >= board.size() || c < 0 || c >= board[0].size())
         return false;
@@ -22,134 +28,75 @@ bool Large_XO_Board::update_board(Move<char>* move)
         return false;
 
     board[r][c] = s;
-    cout << "( " << s << " ) Has played.\n";
+    ++nMoves;
     return true;
 }
 
 bool Large_XO_Board::is_win(Player<char>* player)
 {
-    char sym = player->get_symbol();
-    int rows = board.size();
-    int cols = board[0].size();
-
-    // Horizontal
-    for (int r = 0; r < rows; ++r) {
-        for (int c = 0; c <= cols - 3; ++c) {
-            if (board[r][c] == sym && board[r][c+1] == sym && board[r][c+2] == sym)
-                return true;
-        }
-    }
-
-    // Vertical
-    for (int c = 0; c < cols; ++c) {
-        for (int r = 0; r <= rows - 3; ++r) {
-            if (board[r][c] == sym && board[r+1][c] == sym && board[r+2][c] == sym)
-                return true;
-        }
-    }
-
-    // Diagonal: top-left to bottom-right
-    for (int r = 0; r <= rows - 3; ++r) {
-        for (int c = 0; c <= cols - 3; ++c) {
-            if (board[r][c] == sym && board[r+1][c+1] == sym && board[r+2][c+2] == sym)
-                return true;
-        }
-    }
-
-    // Diagonal: top-right to bottom-left
-    for (int r = 0; r <= rows - 3; ++r) {
-        for (int c = 2; c < cols; ++c) {
-            if (board[r][c] == sym && board[r+1][c-1] == sym && board[r+2][c-2] == sym)
-                return true;
-        }
-    }
-
-    return false;
+    return 2*countWin(player->get_symbol()) > countTotal() && nMoves == 24;
 }
 
 bool Large_XO_Board::is_lose(Player<char>* player) 
 {
-    char sym = (player->get_symbol() == 'X'? 'O' : 'X');
-    int rows = board.size();
-    int cols = board[0].size();
-
-    // Horizontal
-    for (int r = 0; r < rows; ++r) {
-        for (int c = 0; c <= cols - 3; ++c) {
-            if (board[r][c] == sym && board[r][c+1] == sym && board[r][c+2] == sym)
-                return true;
-        }
-    }
-
-    // Vertical
-    for (int c = 0; c < cols; ++c) {
-        for (int r = 0; r <= rows - 3; ++r) {
-            if (board[r][c] == sym && board[r+1][c] == sym && board[r+2][c] == sym)
-                return true;
-        }
-    }
-
-    // Diagonal: top-left to bottom-right
-    for (int r = 0; r <= rows - 3; ++r) {
-        for (int c = 0; c <= cols - 3; ++c) {
-            if (board[r][c] == sym && board[r+1][c+1] == sym && board[r+2][c+2] == sym)
-                return true;
-        }
-    }
-
-    // Diagonal: top-right to bottom-left
-    for (int r = 0; r <= rows - 3; ++r) {
-        for (int c = 2; c < cols; ++c) {
-            if (board[r][c] == sym && board[r+1][c-1] == sym && board[r+2][c-2] == sym)
-                return true;
-        }
-    }
-
-    return false;
+    return 2*countWin(player->get_symbol()) < countTotal() && nMoves == 24;
 }
 
 bool Large_XO_Board::is_draw(Player<char>* player)
 {
-    if (is_win(player)) 
-        return false;
-
-    for (int r = 0; r < board.size(); r++)
-        for (int c = 0; c < board[0].size(); c++)
-            if (board[r][c] == emptyCell)
-                return false;
-
-    return true;
+    return 2*countWin(player->get_symbol()) == countTotal() && nMoves == 24;
 }
 
 bool Large_XO_Board::game_is_over(Player<char>* player)
 {
-    return is_win(player) || is_draw(player);
+    return nMoves == 24;
 }
 
+int Large_XO_Board::countWin(char sym){
+    int score = 0;
+
+    // Horizontal
+    for (int r = 0; r < 5; ++r) {
+        for (int c = 0; c <= 2; ++c) {
+            if (board[r][c] == sym && board[r][c+1] == sym && board[r][c+2] == sym)
+                ++score;
+        }
+    }
+
+    // Vertical
+    for (int c = 0; c < 5; ++c) {
+        for (int r = 0; r <= 2; ++r) {
+            if (board[r][c] == sym && board[r+1][c] == sym && board[r+2][c] == sym)
+                ++score;
+        }
+    }
+
+    // Diagonal: top-left to bottom-right
+    for (int r = 0; r <= 2; ++r) {
+        for (int c = 0; c <= 2; ++c) {
+            if (board[r][c] == sym && board[r+1][c+1] == sym && board[r+2][c+2] == sym)
+                ++score;
+        }
+    }
+
+    // Diagonal: top-right to bottom-left
+    for (int r = 0; r <= 2; ++r) {
+        for (int c = 2; c < 5; ++c) {
+            if (board[r][c] == sym && board[r+1][c-1] == sym && board[r+2][c-2] == sym)
+                ++score;
+        }
+    }
+
+    return score;
+}
+
+int Large_XO_Board::countTotal()
+{
+    return countWin('X') + countWin('O');
+}
 
 Large_XO_UI::Large_XO_UI() 
-    : UI<char>("5x5_XO",3) {}
-
-Player<char> **Large_XO_UI::setup_players()
-{
-    Player<char>** players = new Player<char>*[2];
-    vector<string> type_options = { "Human", "Computer", "AI", "Random"};
-
-    string nameX = get_player_name("Player X");
-    PlayerType typeX = get_player_type_choice("Player X", type_options);
-    players[0] = create_player(nameX, static_cast<char>('X'), typeX);
-
-    string nameO = get_player_name("Player O");
-    PlayerType typeO = get_player_type_choice("Player O", type_options);
-    players[1] = create_player(nameO, static_cast<char>('O'), typeO);
-
-    return players;
-}
-
-Player<char>* Large_XO_UI::create_player(string& name, char symbol, PlayerType type)
-{
-    return new Player<char>(name, symbol, type);
-}
+    : Custom_UI<char>("5x5 XO"s, 5) {}
 
 Move<char> *Large_XO_UI::get_move(Player<char> *player)
 {
@@ -162,9 +109,113 @@ Move<char> *Large_XO_UI::get_move(Player<char> *player)
     } else if (player->get_type() == PlayerType::COMPUTER) {
         r = std::rand()%5, c = std::rand()%5;
     } else if (player->get_type() == PlayerType::AI) {
-        std::pair move = AI::bestMove(player, true);
+        std::pair move = bestMove(player, 6);
         r = move.first, c = move.second;
     }
     
     return new Move<char>(r, c, player->get_symbol());
+}
+
+int Large_XO_UI::evaluate(Large_XO_Board *board, Player<char>* player)
+{
+    char ai = player->get_symbol();
+    char opp = (ai == 'X' ? 'O' : 'X');
+
+    int aiScore  = board->countWin(ai);
+    int oppScore = board->countWin(opp);;
+
+    return aiScore - oppScore;
+}
+
+int Large_XO_UI::minimax(Player<char> *player, bool maximizing, int alpha, int beta, int depth)
+{
+    auto* board = dynamic_cast<Large_XO_Board*>(player->get_board_ptr());
+    char ai = player->get_symbol();
+    char opp = (ai == 'X'? 'O' : 'X');
+
+    if(depth == 0 || board->game_is_over(player)) {
+        return evaluate(board, player);
+    }
+
+    if (maximizing) {
+        int best = -INF;
+
+        for (int r = 0; r < 5; r++) {
+            for (int c = 0; c < 5; c++) {
+                if (board->get_cell(r,c) == '.') {
+
+                    Move<char> move(r, c, ai);
+                    board->update_board(&move);
+
+                    int val = minimax(player, false, alpha, beta, depth - 1);
+
+                    Move<char> undo(r, c, '.');
+                    board->update_board(&undo);
+
+                    best = std::max(best, val);
+                    alpha = std::max(alpha, val);
+
+                    if (beta <= alpha)
+                        return best;
+                }
+            }
+        }
+        return best;
+    }
+    else { // minimizing (opponent)
+        int best = INF;
+
+        for (int r = 0; r < board->get_rows(); r++) {
+            for (int c = 0; c < board->get_columns(); c++) {
+                if (board->get_cell(r,c) == '.') {
+
+                    Move<char> move(r, c, opp);
+                    board->update_board(&move);
+
+                    int val = minimax(player, true, alpha, beta, depth - 1);
+
+                    Move<char> undo(r, c, '.');
+                    board->update_board(&undo);
+
+                    best = std::min(best, val);
+                    beta = std::min(beta, val);
+
+                    if (beta <= alpha)
+                        return best;
+                }
+            }
+        }
+        return best;
+    }
+
+}
+
+std::pair<int, int> Large_XO_UI::bestMove(Player<char> *player, int depth)
+{
+    auto* board = player->get_board_ptr();
+    char ai = player->get_symbol();
+
+    int bestScore = -INF;
+    std::pair<int,int> move;
+    
+    for (int r = 0; r < 5; ++r) {
+        for (int c =0 ; c < 5; ++c) {
+            if(board->get_cell(r, c) == '.') {
+                Move<char> putIn(r, c, ai);
+                board->update_board(&putIn);
+
+                int score = minimax(player, false, INT_MIN, INT_MAX, depth - 1);
+
+                Move<char> undo(r,c,'.');
+                board->update_board(&undo);
+
+                if (score > bestScore) {
+                    bestScore = score;
+                    move = {r,c};
+                }
+            }
+        }
+    }
+
+    return move;
 }

@@ -1,6 +1,7 @@
 #ifndef Large_Tic_Tac_Toe
 
 #include "../../header/BoardGame_Classes.h"
+#include "../../header/Custom_UI.h"
 #include "../../header/AI.h"
 
 
@@ -50,12 +51,17 @@ public:
      */
     bool game_is_over(Player<char>* player) override;
 
+    int countWin(char sym);
+    int countTotal();
+    
 private:
     char emptyCell; ///> Empty Cell value
+    int nMoves = 0;
+
 };
 
 
-class Large_XO_UI : public UI<char>
+class Large_XO_UI : public Custom_UI<char>
 {
 public:
     /**
@@ -65,25 +71,17 @@ public:
     ~Large_XO_UI() {}
 
     /**
-     * @brief Setup Players
-     */
-    Player<char>** setup_players() override;
-
-    /**
-     * @brief Create new player
-     * @param name The name of the player
-     * @param symbol The Symbol the player has on the board
-     * @param type Type of the player whether AI, Player, Computer
-     * @return Pointer to the created Player
-     */
-    Player<char>* create_player(std::string& name, char symbol, PlayerType type) override;
-
-    /**
      * @brief Play the move
      * @param player The player which we want to check
      * @return The move object to be checked
      */
     Move<char>* get_move(Player<char>* player) override;
+
+    int evaluate(Large_XO_Board* board, Player<char>* player);
+
+    int minimax(Player<char>* player, bool maximizing, int alpha, int beta, int depth);
+
+    std::pair<int,int> bestMove(Player<char>* player, int depth);
 };
 
 #endif // Large_Tic_Tac_Toe
