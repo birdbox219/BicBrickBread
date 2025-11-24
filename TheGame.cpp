@@ -11,12 +11,10 @@
 #include <memory>   // Required for unique_ptr
 #include "Games/XO_inf/XO_inf.h" 
 #include "Games/Four_in_a_row/four.h" 
-<<<<<<< HEAD
+
 #include "Games/XO_num/xo_num.h" 
-=======
 #include "Games/anti_XO/Anti_XO.h" 
 #include "Games/Large_Tic_Tac_Toe/Large_Tic_Tac_Toe.h" ///> Required for the game Board and UI
->>>>>>> cdc97c6cb09fd712815a72016e669609cfd29e81
 #include "header\BoardGame_Classes.h"
 #include "header\XO_Classes.h"
 
