@@ -1,18 +1,9 @@
-//--------------------------------------- IMPLEMENTATION
-/*
 
-for refrence for now
-
-
-*/
 #include <iostream>
 #include <iomanip>
-#include <cctype> // for toupper()
+#include <cctype>
 #include "xo_num.h"
 
-using namespace std;
-
-//--------------------------------------- X_O_Board Implementation
 
 XO_NUM_Board::XO_NUM_Board() : Board(3, 3)
 {
@@ -51,24 +42,18 @@ bool XO_NUM_Board::update_board(Move<char> *move)
 bool XO_NUM_Board::is_win(Player<char> *player)
 {
 
-    const char sym = player->get_symbol();
-
-    auto all_equal = [&](char a, char b, char c)
-    {
-        return a == b && b == c && a != blank_symbol;
-    };
+ 
 
     // Check rows and columns
     for (int i = 0; i < rows; ++i)
     {
-        if ((all_equal(board[i][0], board[i][1], board[i][2]) && board[i][0] == sym) ||
-            (all_equal(board[0][i], board[1][i], board[2][i]) && board[0][i] == sym))
+        if ((board[i][0]-'0'+board[i][1]-'0'+ board[i][2]-'0'==15) ||
+            (board[0][i]-'0'+ board[1][i]-'0'+ board[2][i]-'0'==15 ))
             return true;
     }
 
     // Check diagonals
-    if ((all_equal(board[0][0], board[1][1], board[2][2]) && board[1][1] == sym) ||
-        (all_equal(board[0][2], board[1][1], board[2][0]) && board[1][1] == sym))
+    if (((board[0][0]-'0'+ board[1][1]-'0'+board[2][2]-'0')== 15) ||((board[0][2]-'0'+ board[1][1]-'0'+ board[2][0]-'0')==15))
         return true;
 
     return false;
@@ -84,10 +69,22 @@ bool XO_NUM_Board::game_is_over(Player<char> *player)
     return is_win(player) || is_draw(player);
 }
 
-//--------------------------------------- XO_UI Implementation
 
- XO_NUM_UI::XO_NUM_UI() : UI<char>("Weclome to FCAI X-O Game by Dr El-Ramly", 3) {}
 
+ XO_NUM_UI::XO_NUM_UI() : UI<char>("Numerical Tic-Tac-Toe", 3) {}
+Player<char>**XO_NUM_UI::setup_players() {
+    // changed player names from X,O to 1,2
+    Player<char>** players = new Player<char>*[2];
+    vector<string> type_options = { "Human", "Computer" };
+    string nameX = get_player_name("Player 1");
+    PlayerType typeX = get_player_type_choice("Player 1", type_options);
+    players[0] = create_player(nameX, '1', typeX);
+    string nameO = get_player_name("Player 2");
+    PlayerType typeO = get_player_type_choice("Player 2", type_options);
+    players[1] = create_player(nameO, '2', typeO);
+
+    return players;
+}
 Player<char> *XO_NUM_UI::create_player(string &name, char symbol, PlayerType type)
 {
     // Create player based on type
@@ -99,19 +96,68 @@ Player<char> *XO_NUM_UI::create_player(string &name, char symbol, PlayerType typ
 
 Move<char> *XO_NUM_UI::get_move(Player<char> *player)
 { 
-    int x, y;
+    int x, y,index;
 
     if (player->get_type() == PlayerType::HUMAN)
     {
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
+        // ask user to enter his choice
+        cout<<"\n Please enter your num";
+        cin>>num;
+        // this func checks user choice and removes it from vector if valid
+      auto exist = [](vector<char>& v, char n) -> bool {
+        for (auto it = v.begin(); it != v.end(); ) {
+            if (*it == n){
+                v.erase(it);
+              return true;
+            }
+            ++it;
+             
+        }
+        return false;
+    };
+    // if player 1->odd numbers  player2 ->even
 
-        // implement here
+      if (player->get_symbol()=='2'){
+        while ( !exist(even,num)){
+            cout<<"Please choose from your numbers";
+              for (char x : even){
+               cout <<"\n"<< x << " ";
+              }
+             cin>>num;
+        }
+      }
+       else if (player->get_symbol()=='1'){
+       while (!exist(odd,num) ){
+            cout<<"Please chose from your numbers";
+              for (char x : odd){
+               cout <<"\n"<< x << " ";
+              }
+             cin>>num;
+        }
+      }
+        
     }
     else if (player->get_type() == PlayerType::COMPUTER)
     {
         x = rand() % player->get_board_ptr()->get_rows();
         y = rand() % player->get_board_ptr()->get_columns();
+        if (player->get_symbol()=='2'){
+            // random choice by index
+              index =rand() % even.size();
+              num=even[index];
+              even.erase(even.begin() + index);
+            
+        }
+       else if (player->get_symbol()=='1'){
+              index =rand() % odd.size();
+              num=odd[index];
+              odd.erase(odd.begin() + index);
+        }
+       
+           
+   
     }
-    return new Move<char>(x, y, player->get_symbol());
+    return new Move<char>(x, y, num);
 }
