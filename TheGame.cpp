@@ -12,6 +12,13 @@
 #include <limits>      // Required for input clearing
 #include <stdexcept>   // Required for exceptions
 
+#include <iostream>    // Required for input/output operations (cout, cin)
+#include <string>      // Required for string
+#include <vector>      // Required for vector
+#include <memory>      // Required for unique_ptr
+#include <limits>      // Required for input clearing
+#include <stdexcept>   // Required for exceptions
+
 #include "Games/XO_inf/XO_inf.h" 
 #include "Games/Four_in_a_row/four.h" 
 #include "Games/XO_num/xo_num.h" 
@@ -20,11 +27,15 @@
 #include "header/BoardGame_Classes.h"
 #include "header/XO_Classes.h"
 
+#include "header/BoardGame_Classes.h"
+#include "header/XO_Classes.h"
+
 using namespace std;
 
 /**
  * @brief Main function to run the X-O game.
  *
+ * This function manage the game by:
  * This function manage the game by:
  * - Initializing the random number generator
  * - Creating the X-O specific UI and board
@@ -37,6 +48,9 @@ using namespace std;
 int main() {
 
     srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
+
+    // Temporary menu to test and run different games Aalaa, ALi Wael
+    bool finish = false;
 
     // Temporary menu to test and run different games Aalaa, ALi Wael
     bool finish = false;
@@ -118,7 +132,25 @@ int main() {
             // ================= CLEANUP =================
             delete game_board;
             for (int i = 0; i < 2; ++i) delete players[i];
+
+            // ================= START GAME =================
+            cout << "\n--- Starting the game ---\n";
+            GameManager<char> game(game_board, players, game_ui);
+            game.run();
+            cout << "\n--- Game finished ---\n";
+
+            // ================= CLEANUP =================
+            delete game_board;
+            for (int i = 0; i < 2; ++i) delete players[i];
             delete[] players;
+            delete game_ui;
+
+        } catch (const exception& e) {
+            cerr << "\n[Error] " << e.what() << "\nPlease try again.\n\n";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            system("pause");
+            cout << "\n";
             delete game_ui;
 
         } catch (const exception& e) {
@@ -129,6 +161,7 @@ int main() {
             cout << "\n";
         }
     }
+
 
     return 0; // Exit successfully
 }
