@@ -103,7 +103,16 @@ Move<char> *XO_NUM_UI::get_move(Player<char> *player)
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
         // ask user to enter his choice
-        cout<<"\n Please enter your num";
+        cout<<"\n Please enter your num\n";
+        if (player->get_symbol()=='2'){
+              for (char x : even){
+               cout <<x << " ";
+            }
+        }
+        else if (player->get_symbol()=='1'){
+              for (char x : odd)
+               cout << x << " "; 
+            }
         cin>>num;
         // this func checks user choice and removes it from vector if valid
       auto exist = [](vector<char>& v, char n) -> bool {
@@ -112,8 +121,7 @@ Move<char> *XO_NUM_UI::get_move(Player<char> *player)
                 v.erase(it);
               return true;
             }
-            ++it;
-             
+            ++it; 
         }
         return false;
     };
@@ -121,18 +129,18 @@ Move<char> *XO_NUM_UI::get_move(Player<char> *player)
 
       if (player->get_symbol()=='2'){
         while ( !exist(even,num)){
-            cout<<"Please choose from your numbers";
+            cout<<"Please choose from your numbers\n";
               for (char x : even){
-               cout <<"\n"<< x << " ";
+               cout <<x << " ";
               }
              cin>>num;
         }
       }
        else if (player->get_symbol()=='1'){
        while (!exist(odd,num) ){
-            cout<<"Please chose from your numbers";
+            cout<<"Please chose from your numbers\n";
               for (char x : odd){
-               cout <<"\n"<< x << " ";
+               cout << x << " ";
               }
              cin>>num;
         }

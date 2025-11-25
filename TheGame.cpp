@@ -52,9 +52,6 @@ int main() {
     // Temporary menu to test and run different games Aalaa, ALi Wael
     bool finish = false;
 
-    // Temporary menu to test and run different games Aalaa, ALi Wael
-    bool finish = false;
-
     while (!finish) {
         int choice = 0;
 
@@ -129,30 +126,13 @@ int main() {
             game.run();
             cout << "\n--- Game finished ---\n";
 
-            // ================= CLEANUP =================
-            delete game_board;
-            for (int i = 0; i < 2; ++i) delete players[i];
-
-            // ================= START GAME =================
-            cout << "\n--- Starting the game ---\n";
-            GameManager<char> game(game_board, players, game_ui);
-            game.run();
-            cout << "\n--- Game finished ---\n";
-
+           
             // ================= CLEANUP =================
             delete game_board;
             for (int i = 0; i < 2; ++i) delete players[i];
             delete[] players;
             delete game_ui;
-
-        } catch (const exception& e) {
-            cerr << "\n[Error] " << e.what() << "\nPlease try again.\n\n";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            system("pause");
-            cout << "\n";
-            delete game_ui;
-
+            
         } catch (const exception& e) {
             cerr << "\n[Error] " << e.what() << "\nPlease try again.\n\n";
             cin.clear();
@@ -161,7 +141,6 @@ int main() {
             cout << "\n";
         }
     }
-
 
     return 0; // Exit successfully
 }
