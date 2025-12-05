@@ -15,7 +15,7 @@
 #ifndef MEMORY_TIC_TAC_TOE_H
 #define MEMORY_TIC_TAC_TOE_H
 
-#include "BoardGame_Classes.h"
+#include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"
 
