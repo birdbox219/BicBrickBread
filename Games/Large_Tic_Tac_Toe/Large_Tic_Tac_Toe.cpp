@@ -202,9 +202,9 @@ float Large_XO_Board::countWin(char sym)
     return score;
 }
 
-void Large_XO_Board::encode(char ai, Matrix& input)
+void Large_XO_Board::encode(char ai, Matrix<double>& input)
 {
-    // Resize input matrix to match neural network input size (25 cells)
+    // Resize input Matrix to match neural network input size (25 cells)
     input.resize(25, 1);
     
     // Helper lambda to translate bit position to character
@@ -329,7 +329,7 @@ Move<char>* Large_XO_UI::get_move(Player<char>* player)
     return new Move<char>(r, c, player->get_symbol());
 }
 
-void Large_XO_UI::display_board_matrix(const vector<vector<char>> &matrix) const
+void Large_XO_UI::display_board_matrix(const vector<vector<char>>& matrix) const
 {
     // Clear the screen first
     system("cls");
@@ -356,7 +356,7 @@ void Large_XO_UI::display_board_matrix(const vector<vector<char>> &matrix) const
         
         // Print each cell in the row (fetched from bitboard representation)
         for (int j = 0; j < cols; ++j)
-            cout << setw(cell_width) << (board == nullptr? board->getEmptyCell() : board->getCell(i, j)) << " |";
+            cout << setw(cell_width) << (board == nullptr? '.' : board->getCell(i, j)) << " |";
         
         // Print horizontal separator line after each row
         cout << "\n   " << string((cell_width + 2) * cols, '-') << "\n";
@@ -393,9 +393,9 @@ std::pair<int, int> Large_XO_UI::bestMove(Player<char>* player,
     char opp = (ai == 'X') ? 'O' : 'X';
 
     // PHASE 1: Get neural network predictions for all positions
-    Matrix input;
+    Matrix<double> input;
     board->encode(ai, input);          // Convert board to NN input format
-    Matrix out = NN->predict(input);   // Get Q-values for all 25 positions
+    Matrix<double> out = NN->predict(input);   // Get Q-values for all 25 positions
 
     // PHASE 2: Build candidate list with Q-values
     std::vector<std::pair<double, int>> candidates;
@@ -476,9 +476,9 @@ float Large_XO_UI::minimax(Large_XO_Board* board, std::shared_ptr<NeuralNetwork>
     // This dramatically improves alpha-beta pruning effectiveness
     if (depth >= 2) {
         // Get NN predictions for move ordering
-        Matrix input;
+        Matrix<double> input;
         board->encode(maximize ? ai : opp, input);  // Encode for current player
-        Matrix out = NN->predict(input);
+        Matrix<double> out = NN->predict(input);
         
         // Build ordered list of available moves with their Q-values
         std::vector<std::pair<double, int>> moves;
@@ -636,9 +636,9 @@ float Large_XO_UI::evaluate(Large_XO_Board* board, std::shared_ptr<NeuralNetwork
     }
     
     // NON-TERMINAL STATE: Use Neural Network heuristic
-    Matrix input;
+    Matrix<double> input;
     board->encode(ai, input);          // Encode board state
-    Matrix out = NN->predict(input);   // Get Q-values for all positions
+    Matrix<double> out = NN->predict(input);   // Get Q-values for all positions
     
     double bestQ = -1e9;
 

@@ -1,15 +1,15 @@
 /**
  * @file Memory_TicTacToe.h
- * @brief Defines the Memory Tic-Tac-Toe classes which extend the generic board game framework.
+ * @brief Defines the specialized Tic-Tac-Toe variant using Memory class names.
  *
- * Memory Tic-Tac-Toe is a variation of classic Tic-Tac-Toe where:
- *  - Players flip memory cards instead of directly placing X/O.
- *  - A move may reveal a hidden symbol.
- *  - Matching pairs or revealed patterns influence the game state.
+ * This variant implements:
+ *  - Custom board logic with player moves (X/O placement)
+ *  - Win, draw, and game-over detection
+ *  - Custom board display through `display_board_matrix`
  *
- * This file provides:
- *  - `Memory_Board`: A specialized board with hidden/revealed cell logic.
- *  - `Memory_UI`: User interface class for displaying the memory grid and receiving moves.
+ * Classes:
+ *  - `Memory_Board` : Manages board state and move application
+ *  - `Memory_UI`    : Handles board rendering and player input
  */
 
 #ifndef MEMORY_TIC_TAC_TOE_H
@@ -23,144 +23,95 @@ using namespace std;
 
 /**
  * @class Memory_Board
- * @brief Represents the board for the Memory Tic-Tac-Toe game.
+ * @brief Specialized board class for the Memory Tic-Tac-Toe variant.
  *
- * The Memory version of Tic-Tac-Toe behaves differently from classic X-O:
- *  - Each cell initially contains a **hidden symbol**.
- *  - A move consists of selecting a cell to **reveal**.
- *  - Game logic checks for matches, memory flips, and revealed sequences.
+ * Responsibilities:
+ *  - Maintain board state
+ *  - Apply player moves
+ *  - Detect winning, draw, and game-over conditions
  *
- * Inherits from `Board<char>` and overrides all core board behaviors
- * (update, win condition, draw condition, and game termination).
- *
- * @see Board
+ * Inherits from `Board<char>` and overrides core board behaviors.
  */
 class Memory_Board : public Board<char> {
-
 private:
-    char hidden_symbol = '?';   ///< Symbol representing an unrevealed memory cell.
-    char blank_symbol  = '.';   ///< Symbol for an empty revealed space (optional).
-    int revealed_count = 0;     ///< Number of cells currently revealed.
-    vector<vector<bool>> revealedMatrix; ///< Tracks which cells are revealed.
+    char blank_symbol = '.'; ///< Symbol representing empty cells
 
 public:
     /**
-     * @brief Constructs a standard Memory Tic-Tac-Toe board (3×3).
-     *
-     * Initializes:
-     *  - Internal board matrix
-     *  - Hidden cell states
-     *  - Reveal tracking grid
+     * @brief Initializes a 3×3 specialized board.
      */
     Memory_Board();
 
     /**
-     * @brief Reveals/matches a cell as a part of a player's move.
-     *
-     * Memory Tic-Tac-Toe uses flip-based logic:
-     *  - If a cell is hidden → reveal it.
-     *  - Matching patterns may cause special scoring or additional turns.
-     *
-     * @param move Pointer to a Move<char> object describing the player action.
-     * @return true if the move is applied successfully, false otherwise.
+     * @brief Applies a player's move to the board.
+     * @param move Pointer to the player's move
+     * @return true if the move is valid and successfully applied
      */
     bool update_board(Move<char>* move) override;
 
     /**
-     * @brief Checks whether the given player has achieved a win condition.
-     *
-     * In Memory Tic-Tac-Toe, win conditions may include:
-     *  - Revealing a specific pattern of symbols.
-     *  - Forming a line of matching revealed symbols.
-     *
-     * @param player The player being evaluated.
-     * @return true if the player has met a winning pattern.
+     * @brief Checks if the specified player has met the win condition.
+     * @param player Player to evaluate
+     * @return true if the player satisfies the winning pattern
      */
     bool is_win(Player<char>* player) override;
 
     /**
-     * @brief Checks if the given player has lost the game.
-     *
-     * Typically unused in Memory Tic-Tac-Toe unless variant rules apply.
-     * This implementation returns false unless custom loss rules are added.
-     *
-     * @param player Player being evaluated.
-     * @return false (unless extended rules override this).
+     * @brief Checks if the player has lost.
+     * @param player Player to evaluate
+     * @return false (loss detection not used in this variant)
      */
     bool is_lose(Player<char>* player) override;
 
     /**
-     * @brief Checks if the game has ended in a draw.
-     *
-     * A draw occurs when:
-     *  - All cells are revealed, AND
-     *  - No winning pattern has formed.
-     *
-     * @param player Player being evaluated.
-     * @return true if the board is filled without a winner.
+     * @brief Checks if the game ended in a draw.
+     * @param player Player to evaluate
+     * @return true if the board is full and no winning pattern exists
      */
     bool is_draw(Player<char>* player) override;
 
     /**
-     * @brief Checks whether the game is over (win or draw).
-     *
-     * @param player Player whose status is being evaluated.
-     * @return true if the game is in a terminal state.
+     * @brief Determines if the game is over (win or draw).
+     * @param player Player to evaluate
+     * @return true if the game has reached a terminal state
      */
     bool game_is_over(Player<char>* player) override;
 };
 
-
 /**
  * @class Memory_UI
- * @brief User Interface for the Memory Tic-Tac-Toe game.
+ * @brief User interface for the specialized Memory Tic-Tac-Toe variant.
  *
- * Provides:
- *  - Display of the memory grid (hidden + revealed states)
- *  - Move input handling for both humans and AI
+ * Responsibilities:
+ *  - Display the board with custom formatting
+ *  - Obtain player moves (human or AI)
  *
- * Inherits from:
- *  - `Custom_UI<char>` for UI functions.
- *  - `AI` for optional AI-based memory matching logic.
- *
- * @see Custom_UI
- * @see AI
+ * Inherits:
+ *  - `Custom_UI<char>` : Provides display and input utilities
+ *  - `AI`             : Optional AI-based move generation
  */
 class Memory_UI : public Custom_UI<char>, public AI {
-
 public:
-
     /**
-     * @brief Constructs the Memory Tic-Tac-Toe user interface.
-     *
-     * Initializes:
-     *  - Welcome message
-     *  - UI configuration for memory-style grids
+     * @brief Initializes the specialized UI.
      */
     Memory_UI();
 
     /**
-     * @brief Destructor for Memory_UI.
+     * @brief Destructor
      */
     ~Memory_UI() {}
 
     /**
-     * @brief Obtains the player's move (reveal action).
-     *
-     * In Memory Tic-Tac-Toe, the player selects a hidden cell to flip.
-     *
-     * @param player The player whose move is requested.
-     * @return Pointer to a newly allocated Move<char> object.
+     * @brief Obtains the next move from a player.
+     * @param player Player whose move is requested
+     * @return Pointer to a newly allocated Move<char> object
      */
     Move<char>* get_move(Player<char>* player) override;
 
     /**
-     * @brief Displays the memory board, showing hidden and revealed cells.
-     *
-     * Hidden cells display `hidden_symbol` (default: '?')
-     * Revealed cells display their actual character.
-     *
-     * @param matrix 2D grid of board characters.
+     * @brief Renders the board with custom display logic.
+     * @param matrix Two-dimensional grid of board characters
      */
     void display_board_matrix(const vector<vector<char>>& matrix) const override;
 };

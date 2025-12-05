@@ -3,6 +3,8 @@
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
+#include <cstdint>
+#include <algorithm>
 
 /**
  * @class Obstachles_Board

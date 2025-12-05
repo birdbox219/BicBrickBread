@@ -1,75 +1,87 @@
 #ifndef LAYER_H
 #define LAYER_H
 
-#include "Matrix.h"
 #include <functional>
-#include <fstream>
+#include "Matrix.h"
 
 /**
- * @class Layer
- * @brief Fully connected neural network layer with flattened weights.
+ * @brief Fully-connected neural network layer (refactored for SOLID & encapsulation).
  *
- * Supports forward/backward propagation and saving/loading weights and biases.
- * Designed for high-performance use with the Matrix class.
+ * RESPONSIBILITIES (SRP):
+ *  - Own only the data & math needed for a single dense layer.
+ *  - Perform forward/backward propagation using injected activation functions.
+ *
+ * NOT responsible for:
+ *  - Training loop logic
+ *  - Loss computation
+ *  - Network-wide serialization
+ *  - Optimizer logic
+ *
+ * This design preserves encapsulation, removes unnecessary dependencies,
+ * and follows DIP by accepting activation behavior as function objects.
  */
 class Layer {
+private:
+    int inputSize_;        ///< Number of inputs to the layer
+    int neuronCount_;      ///< Number of output neurons
+
+    Matrix<double> W_;     ///< Weight matrix (neurons × inputs)
+    Matrix<double> B_;     ///< Bias vector (neurons × 1)
+    Matrix<double> Z_;     ///< Weighted sums (W·X + B)
+    Matrix<double> A_;     ///< Activations
+    Matrix<double> lastInput_; ///< Cached input for backprop
+
+    /**
+     * @brief Activation function: f(x)
+     * Stored as std::function to avoid interface inheritance.
+     */
+    std::function<double(double)> activationFunc_;
+
+    /**
+     * @brief Activation derivative: f'(x)
+     * Applied to Z during backprop.
+     */
+    std::function<double(double)> activationDeriv_;
+
 public:
-    int inputSize;          ///< Number of inputs
-    int neuronCount;        ///< Number of neurons
-
-    Matrix W;               ///< Weights (neuronCount x inputSize)
-    Matrix B;               ///< Biases (neuronCount x 1)
-    Matrix Z;               ///< Weighted input (W*X + B)
-    Matrix A;               ///< Activations
-    Matrix lastInput;       ///< Stores input for backprop
-
-    std::function<double(double)> activate;          ///< Activation function
-    std::function<double(double)> activateDerivative; ///< Activation derivative
+    /**
+     * @brief Construct a dense layer.
+     * @param inputSize  Number of inputs
+     * @param neurons    Number of neurons
+     * @param act        Activation function
+     * @param actDeriv   Activation derivative function
+     */
+    Layer(int inputSize,
+          int neurons,
+          std::function<double(double)> act,
+          std::function<double(double)> actDeriv);
 
     /**
-     * @brief Construct a fully connected layer.
-     * @param inputSize Number of inputs
-     * @param neuronCount Number of neurons
-     * @param activation Activation function
-     * @param activationDerivative Derivative of activation
+     * @brief Forward propagation.
+     * @param input  Input matrix (inputSize × batchSize)
+     * @return Activation matrix reference
      */
-    Layer(int inputSize, int neuronCount,
-          std::function<double(double)> activation,
-          std::function<double(double)> activationDerivative);
+    const Matrix<double>& forward(const Matrix<double>& input);
 
     /**
-     * @brief Forward pass through the layer.
-     * @param input Input vector (inputSize x 1)
-     * @return Output activations (neuronCount x 1)
+     * @brief Backward propagation.
+     * @param dC_dA  Gradient from next layer
+     * @param lr     Learning rate
+     * @return dC/dX (gradient to send to previous layer)
      */
-    Matrix forward(const Matrix& input);
+    Matrix<double> backward(const Matrix<double>& dC_dA, double lr);
 
-    /**
-     * @brief Backward pass for backpropagation.
-     * Updates weights and biases.
-     * @param dC_dA Gradient of cost w.r.t output activations
-     * @param learningRate Learning rate
-     * @return Gradient w.r.t input to propagate backward
-     */
-    Matrix backward(const Matrix& dC_dA, double learningRate);
+    /** @return Layer output after forward() */
+    const Matrix<double>& output() const { return A_; }
 
-    /**
-     * @brief Get last output of this layer
-     * @return Activations matrix
-     */
-    const Matrix& getOutput() const;
-
-    /**
-     * @brief Save weights and biases to binary file
-     * @param out Output file stream
-     */
+    /** @brief Save layer parameters */
     void save(std::ofstream& out) const;
 
-    /**
-     * @brief Load weights and biases from binary file
-     * @param in Input file stream
-     */
+    /** @brief Load layer parameters */
     void load(std::ifstream& in);
+
+    int inputs() const { return inputSize_; }
+    int neurons() const { return neuronCount_; }
 };
 
-#endif
+#endif // LAYER_H
