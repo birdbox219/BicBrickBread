@@ -110,7 +110,7 @@ public:
      * @param ai The AI's symbol.
      * @param input The Matrix reference to be updated with the encoded board state.
      */
-    void encode(char ai, Matrix &input);
+    void encode(char ai, Matrix<double> &input);
 
 private:
     uint32_t boardX = 0;                                ///< Bit board mask for X's pieces.

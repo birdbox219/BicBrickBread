@@ -1,136 +1,71 @@
 #include "NeuralNetwork.h"
-#include <fstream>
 #include <stdexcept>
+#include <fstream>
 
-/**
- * @brief Construct a feedforward neural network
- * @param layerSizes Vector of layer sizes (input to output)
- * @param activation Activation function for all layers
- * @param activationDerivative Derivative of activation
- */
-NeuralNetwork::NeuralNetwork(const std::vector<int>& layerSizes,
-                            const std::vector<std::function<double(double)>>& activations,
-                            const std::vector<std::function<double(double)>>& activationDerivatives)
+// Constructor: initialize network layers with provided sizes and activations
+NeuralNetwork::NeuralNetwork(
+    const std::vector<int>& layerSizes,
+    const std::vector<std::function<double(double)>>& activations,
+    const std::vector<std::function<double(double)>>& activationDerivatives)
 {
-    if (layerSizes.size() < 2)
-        throw std::runtime_error("NeuralNetwork: need at least input and output layers");
+    if (layerSizes.size() < 2 || activations.size() != layerSizes.size() - 1 || activationDerivatives.size() != layerSizes.size() - 1)
+        throw std::runtime_error("NeuralNetwork constructor: size mismatch");
 
-    if (activations.size() != layerSizes.size() - 1 || activationDerivatives.size() != layerSizes.size() - 1)
-        throw std::runtime_error("Activations size mismatch with layerSizes");
-
-    for (size_t i = 1; i < layerSizes.size(); i++) {
-        layers.emplace_back(layerSizes[i-1], layerSizes[i], activations[i-1], activationDerivatives[i-1]);
+    layers_.clear();
+    for (size_t i = 1; i < layerSizes.size(); ++i) {
+        layers_.emplace_back(layerSizes[i-1], layerSizes[i], activations[i-1], activationDerivatives[i-1]);
     }
 }
 
-/**
- * @brief Forward pass through all layers
- * @param input Input matrix (inputSize x 1)
- * @return Output of last layer
- */
-Matrix NeuralNetwork::forward(const Matrix& input){
-    Matrix current = input;
-    for(auto& layer : layers){
-        current = layer.forward(current);
+// Forward pass: propagate input through all layers
+Matrix<double> NeuralNetwork::forward(const Matrix<double>& input) {
+    Matrix<double> output = input;
+    for (auto& layer : layers_) {
+        output = layer.forward(output);
     }
-    return current;
+    return output;
 }
 
-/**
- * @brief Backpropagation using Mean Squared Error
- * @param expected Target output (same shape as last layer)
- * @param learningRate Learning rate
- */
-void NeuralNetwork::backward(const Matrix& expected, double learningRate){
-    if(layers.empty()) return;
+// Backward pass: propagate gradients and update weights
+void NeuralNetwork::backward(const Matrix<double>& expected, double learningRate) {
+    if (layers_.empty()) return;
 
-    // Compute gradient at output: dC/dA = A - expected
-    Matrix dC_dA = layers.back().A - expected;
+    // Compute gradient for the last layer
+    Matrix<double> dC_dA = layers_.back().output() - expected;
 
-    // Backpropagate through layers in reverse
-    for(int i=int(layers.size())-1; i>=0; i--){
-        dC_dA = layers[i].backward(dC_dA, learningRate);
+    // Backpropagate through layers in reverse order
+    for (auto it = layers_.rbegin(); it != layers_.rend(); ++it) {
+        dC_dA = it->backward(dC_dA, learningRate);
     }
 }
 
-/**
- * @brief Train on a single example
- * @param input Input matrix
- * @param expected Target output
- * @param learningRate Learning rate
- */
-void NeuralNetwork::train(const Matrix& input, const Matrix& expected, double learningRate){
+// Train network on a single input-output pair
+void NeuralNetwork::train(const Matrix<double>& input, const Matrix<double>& expected, double learningRate) {
     forward(input);
     backward(expected, learningRate);
 }
 
-/**
- * @brief Predict output for given input
- * @param input Input matrix
- * @return Output of network
- */
-Matrix NeuralNetwork::predict(const Matrix& input){
+// Predict output without modifying weights
+Matrix<double> NeuralNetwork::predict(const Matrix<double>& input) {
     return forward(input);
 }
 
-/**
- * @brief Save network to binary file
- * @param filename File path
- */
+// Save network layers to a binary file
 void NeuralNetwork::save(const std::string& filename) const {
     std::ofstream out(filename, std::ios::binary);
-    if(!out) throw std::runtime_error("Failed to open file for saving NN");
-    for(const auto& layer : layers) layer.save(out);
+    if (!out) throw std::runtime_error("Failed to open file for saving NeuralNetwork");
+
+    for (const auto& layer : layers_) {
+        layer.save(out);
+    }
 }
 
-/**
- * @brief Load network from binary file
- * @param filename File path
- */
+// Load network layers from a binary file
 void NeuralNetwork::load(const std::string& filename) {
     std::ifstream in(filename, std::ios::binary);
-    if (!in.is_open())
-        throw std::runtime_error("Error: Cannot open file '" + filename + "'");
+    if (!in) throw std::runtime_error("Failed to open file for loading NeuralNetwork");
 
-    // ----------------------------------------------------
-    // Compute EXACT expected byte size
-    // ----------------------------------------------------
-    size_t expectedBytes = 0;
-    for (auto& layer : layers) {
-        expectedBytes += layer.W.rows * layer.W.cols * sizeof(double);
-        expectedBytes += layer.B.rows * sizeof(double);
-    }
-
-    // ----------------------------------------------------
-    // Get actual file size
-    // ----------------------------------------------------
-    in.seekg(0, std::ios::end);
-    size_t fileSize = static_cast<size_t>(in.tellg());
-    in.seekg(0, std::ios::beg);
-
-    // ----------------------------------------------------
-    // Strict size validation
-    // ----------------------------------------------------
-    if (fileSize < expectedBytes) {
-        throw std::runtime_error(
-            "Error: file '" + filename + "' is TOO SMALL.\nExpected " +
-            std::to_string(expectedBytes) + " bytes, got " +
-            std::to_string(fileSize) + " bytes.");
-    }
-
-    if (fileSize > expectedBytes) {
-        throw std::runtime_error(
-            "Error: file '" + filename + "' is TOO LARGE.\nExpected " +
-            std::to_string(expectedBytes) + " bytes, got " +
-            std::to_string(fileSize) + " bytes.");
-    }
-
-    // ----------------------------------------------------
-    // Load weights & biases
-    // ----------------------------------------------------
-    for (auto& layer : layers) {
+    for (auto& layer : layers_) {
         layer.load(in);
-        if (!in.good())
-            throw std::runtime_error("Error: corrupted or truncated file while loading '" + filename + "'");
     }
 }
