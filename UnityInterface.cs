@@ -19,7 +19,7 @@ public class BoardGamePlugin : MonoBehaviour
     public static extern void GetBoardDimensions(out int rows, out int cols);
 
     [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-    public static extern int PerformMove(int x, int y, int playerVal, int extraChar);
+    public static extern int PerformMove(int x, int y, int extraChar);
 
     [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
     public static extern IntPtr GetBoardState();
@@ -34,7 +34,7 @@ public class BoardGamePlugin : MonoBehaviour
     public static extern bool IsGameOver();
 
     [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-    public static extern int GetAIMove(int playerVal, out int x, out int y, out int outChar);
+    public static extern int GetAiMove(int playerVal);
 
     public int CurrentGameId = 1; // Set in Inspector
 
@@ -65,7 +65,7 @@ public class BoardGamePlugin : MonoBehaviour
 
     public void PlayerMove(int x, int y, int extraChar = 0)
     {
-        int result = PerformMove(x, y, 1, extraChar); // Player 1
+        int result = PerformMove(x, y, extraChar); // Player 1
         if (result == 0)
         {
             Debug.Log("Move successful");
@@ -76,10 +76,8 @@ public class BoardGamePlugin : MonoBehaviour
             else
             {
                 // AI Turn
-                int aiX, aiY, aiChar;
-                if (GetAIMove(2, out aiX, out aiY, out aiChar) == 1)
+                if (GetAiMove(2) == 0)
                 {
-                    PerformMove(aiX, aiY, 2, aiChar);
                     UpdateBoard();
                     if (CheckWin(2)) Debug.Log("AI Wins!");
                 }
