@@ -52,8 +52,7 @@ extern "C"
             delete[] boardBuffer;
             boardBuffer = nullptr;
         }
-        if (ui)
-        {
+        if (ui) {
             delete ui;
             ui = nullptr;
         }
@@ -177,46 +176,59 @@ extern "C"
         }
     }
 
-    DLLEXPORT int PerformMove(int x, int y, int extraChar)
+    DLLEXPORT int PerformMove(int x, int y, int playerVal, int extraChar)
     {
-        if (ui == nullptr || board == nullptr || playerX == nullptr || playerO == nullptr)
+        if (!ui || !board || !playerX || !playerO)
             return 2;
 
-        Move<char> move = Move<char>(x, y, char(extraChar));
+        Player<char>* p = (playerVal == 1 ? playerX : playerO);
 
-        if (board->update_board(&move))
+        Move<char>* move = new Move<char>(x, y, char(extraChar));
+
+        bool ok = board->update_board(move);
+
+        delete move;
+
+        // Word Tic Tac Toe special handling
+        if (ok && currentGameId == 5)
         {
-            return 0;
+            auto* w = dynamic_cast<Word_XO_Board*>(board);
+            if (w)
+                w->setLastPlayer(p);
         }
-        return 1;
+
+        return ok ? 0 : 1;
     }
 
     DLLEXPORT int GetAiMove(int playerVal)
     {
-        if (ui == nullptr || board == nullptr || playerX == nullptr || playerO == nullptr)
+        if (!ui || !board || !playerX || !playerO)
             return 2;
 
-        Player<char> *p;
-        if (playerVal == 1)
-        {
-            p = new Player<char>("PlayerX", 'X', PlayerType::AI);
-        }
-        else
-        {
-            p = new Player<char>("PlayerX", 'O', PlayerType::AI);
-        }
+        char symbol = (playerVal == 1 ? 'X' : 'O');
 
-        auto *move = ui->get_move(p);
+        Player<char>* temp = new Player<char>("AI", symbol, PlayerType::AI);
+        temp->set_board_ptr(board);
 
-        if (board->update_board(move))
-        {
-            delete move;
-            delete p;
-            return 0;
-        }
+        Move<char>* move = ui->get_move(temp);
+
+        delete temp;
+
+        if (!move)
+            return 2;
+
+        bool ok = board->update_board(move);
+
         delete move;
-        delete p;
-        return 1;
+
+        if (ok && currentGameId == 5)
+        {
+            auto* w = dynamic_cast<Word_XO_Board*>(board);
+            if (w)
+                w->setLastPlayer(playerVal == 1 ? playerX : playerO);
+        }
+
+        return ok ? 0 : 1;
     }
 
     DLLEXPORT int *GetBoardState()
@@ -237,10 +249,8 @@ extern "C"
                         char cell = largeBoard->getCell(r, c);
                         if (cell == 'X')
                             boardBuffer[r * 5 + c] = 1;
-                        else if (cell == 'O')
-                            boardBuffer[r * 5 + c] = 2;
                         else
-                            boardBuffer[r * 5 + c] = 0;
+                            boardBuffer[r * 5 + c] = cell;
                     }
                 }
                 return boardBuffer;

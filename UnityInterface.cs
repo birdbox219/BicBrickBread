@@ -19,7 +19,7 @@ public class BoardGamePlugin : MonoBehaviour
     public static extern void GetBoardDimensions(out int rows, out int cols);
 
     [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
-    public static extern int PerformMove(int x, int y, int extraChar);
+    public static extern int PerformMove(int x, int y, int playerVal, int extraChar);
 
     [DllImport(DLL_NAME, CallingConvention = CallingConvention.Cdecl)]
     public static extern IntPtr GetBoardState();
@@ -65,7 +65,7 @@ public class BoardGamePlugin : MonoBehaviour
 
     public void PlayerMove(int x, int y, int extraChar = 0)
     {
-        int result = PerformMove(x, y, extraChar); // Player 1
+        int result = PerformMove(x, y, 1, extraChar); // Player 1
         if (result == 0)
         {
             Debug.Log("Move successful");
