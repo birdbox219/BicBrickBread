@@ -19,7 +19,8 @@
 #include <limits>      // Required for input clearing
 #include <stdexcept>   // Required for exceptions
 
-#include "Games/XO_inf/XO_inf.h" 
+#include "Games/XO_inf/XO_inf.h"
+#include "Games/diamond_XO/dia_XO.h" 
 #include "Games/Four_in_a_row/four.h" 
 #include "Games/XO_num/xo_num.h" 
 #include "Games/Ultimate_Tic_Tac_Toe/Ultimate.h" 
@@ -90,20 +91,21 @@ int main() {
         cout << "9) Word XO\n";
         cout << "10) Obstacles Tic-Tac-Toe XO\n";
         cout << "11) Memory Tic-Tac-Toe XO\n";
-        cout << "12) Exit\n";
+        cout << "12) Diamond Tic-Tac_toe XO\n";
+        cout << "13) Exit\n";
         cout << "=======================================================\n";
-        cout << "Enter your choice [1-12]: ";
+        cout << "Enter your choice [1-13]: ";
 
         try {
             if (!(cin >> choice)) {
                 throw runtime_error("Invalid input: must be an integer.");
             }
 
-            if (choice < 1 || choice > 12) {
+            if (choice < 1 || choice > 13) {
                 throw out_of_range("Choice must be an integer between 1 and 6.");
             }
 
-            if (choice == 12) {
+            if (choice == 13) {
                 cout << "Exiting the game. Goodbye!\n";
                 finish = true;
                 continue;
@@ -160,6 +162,10 @@ int main() {
                 case 11:
                     game_ui = new  Memory_UI();
                     game_board = new Memory_Board();
+                    break;
+                case 12:
+                    game_ui = new dia_XO_UI();
+                    game_board = new dia_XO_Board();
                     break;
                 default:
                     throw out_of_range("Unexpected choice value.");

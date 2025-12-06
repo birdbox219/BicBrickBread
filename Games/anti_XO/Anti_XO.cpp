@@ -1,6 +1,4 @@
 #include "Anti_XO.h"
-
-#include <iostream>
 using namespace std;
 
 
@@ -11,7 +9,6 @@ Anti_XO_Board::Anti_XO_Board():Board(3,3)
 
 bool Anti_XO_Board::update_board(Move<char>* move)
 {
-    
     int r = move->get_x();
     int c = move->get_y();
     char s = move->get_symbol();
@@ -83,8 +80,63 @@ Move<char>* Anti_XO_UI::get_move(Player<char>* player)
              << ") enter your move (row col): ";
         cin >> r >> c;
     } else if (player->get_type() == PlayerType::COMPUTER) {
-        r = std::rand()%5, c = std::rand()%5;
+        Anti_XO_Board* b = dynamic_cast<Anti_XO_Board*>(player->get_board_ptr());
+        auto best = b->neighbors_are_lava(player->get_symbol());
+        r  = best.first;
+        c =  best.second;
     }
 
     return new Move<char>(r, c, player->get_symbol());
+}
+
+std::pair<int, int> Anti_XO_Board::neighbors_are_lava(char s)
+{
+    vector<pair<int, pair<int,int>>> scores;
+
+    int dx[8] = { -1,-1, 0, 1, 1, 1, 0,-1 };
+    int dy[8] = {  0, 1, 1, 1, 0,-1,-1,-1 };
+
+    for (int x = 0; x < 3; x++) {
+        for (int y = 0; y < 3; y++) {
+            if (board[x][y] != '.') continue;
+
+            int danger = 0;
+
+            for (int d = 0; d < 8; d++) {
+                int nx = x + dx[d];
+                int ny = y + dy[d];
+
+                if (!bounded(nx, ny)) continue;
+
+                if (board[nx][ny] == s)
+                    danger++;
+            }
+
+            scores.push_back({ danger, {x, y} });
+        }
+    }
+
+    if (scores.empty())
+        return { -1, -1 };
+
+    sort(scores.begin(), scores.end(),
+         [](auto &a, auto &b){ return a.first < b.first; });
+
+ 
+    //to have random behaviar kinda  ya3ny :) .    
+    const int K = 2;  
+    int maxChoices = min(K, (int)scores.size());
+
+    
+    int idx = rand() % maxChoices;
+
+    auto &choice = scores[idx];
+    return { choice.second.first, choice.second.second };
+}
+
+
+
+bool Anti_XO_Board::bounded(int x, int y)
+{
+    return (x>0 && x<3 && y>0 && y<3);
 }

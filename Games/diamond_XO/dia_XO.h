@@ -1,40 +1,43 @@
 #pragma once
- #include <utility>
+
  #include <vector>
- #include <iostream>
- #include <algorithm>
+ #include <utility>
+ #include <unordered_set>
  #include "../../header/BoardGame_Classes.h"
 
-class Anti_XO_Board : public Board<char>
+
+typedef std::unordered_set<std::vector<std::pair<int,int>>> zengy;
+class dia_XO_Board: public Board<char>
 {
+
 private:
+    int dx[8] = { -1, -1,  0, 1, 1,  1,  0, -1 };
+    int dy[8] = {  0,  1,  1, 1, 0, -1, -1, -1 };
+    char  invalid = 'z';
+    char  free = '.';
     bool bounded(int x,int y);
 public:
-    Anti_XO_Board();
+    dia_XO_Board();
 
     bool update_board(Move<char>* move) override;
 
     bool is_lose(Player<char>* player) override;
 
-    bool is_win(Player<char>* player) override { return false; }
+    bool is_win(Player<char>* player) override;
 
     bool is_draw(Player<char>* player) override;
 
     bool game_is_over(Player<char>* player) override;
-
-    std::pair<int,int> neighbors_are_lava(char s);
 };
 
 
-class Anti_XO_UI : public UI<char>
+class dia_XO_UI : public UI<char>
 {
 public:
-    Anti_XO_UI();
-    ~Anti_XO_UI() {}
+    dia_XO_UI();
+    ~dia_XO_UI() {}
 
     Player<char>* create_player(std::string& name, char symbol, PlayerType type) override;
 
     Move<char>* get_move(Player<char>* player) override;
 };
-
-
