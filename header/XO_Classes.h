@@ -11,8 +11,8 @@
 #define XO_CLASSES_H
 
 #include "BoardGame_Classes.h"
-#include "../../header/AI.h"
-#include "../../header/Custom_UI.h"
+#include "AI.h"
+#include "Custom_UI.h"
 using namespace std;
 
 /**
@@ -69,7 +69,10 @@ public:
      * @return true if the game has ended, false otherwise.
      */
     bool game_is_over(Player<char>* player);
+   
 };
+
+
 
 
 /**
@@ -83,6 +86,7 @@ public:
  */
 class XO_UI : public Custom_UI<char>, public AI {
 public:
+
     /**
      * @brief Constructs an XO_UI object.
      *
