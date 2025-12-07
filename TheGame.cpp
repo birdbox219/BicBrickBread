@@ -4,6 +4,7 @@
  * It then launches the game loop via the GameManager class.
  * All dynamically allocated objects are properly deleted at the end.
  */
+ //
 
 #include <iostream>    // Required for input/output operations (cout, cin)
 #include <string>      // Required for string
