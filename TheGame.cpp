@@ -12,7 +12,8 @@
 #include <limits>      // Required for input clearing
 #include <stdexcept>   // Required for exceptions
 
-#include "Games/XO_inf/XO_inf.h" 
+#include "Games/XO_inf/XO_inf.h"
+#include "Games/diamond_XO/dia_XO.h" 
 #include "Games/Four_in_a_row/four.h" 
 #include "Games/SUS/SUS.h"
 #include "Games/XO_num/xo_num.h" 
