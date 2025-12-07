@@ -12,13 +12,6 @@
 #include <limits>      // Required for input clearing
 #include <stdexcept>   // Required for exceptions
 
-#include <iostream>    // Required for input/output operations (cout, cin)
-#include <string>      // Required for string
-#include <vector>      // Required for vector
-#include <memory>      // Required for unique_ptr
-#include <limits>      // Required for input clearing
-#include <stdexcept>   // Required for exceptions
-
 #include "Games/XO_inf/XO_inf.h" 
 #include "Games/Four_in_a_row/four.h" 
 #include "Games/XO_num/xo_num.h" 
@@ -31,16 +24,13 @@
 #include "Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.h"
 #include "Games/Obstacles_Tic_Tac_Toe/Obstacles_Tic_Tac_Toe.h"
 #include "Games/Memory_Tic_Tac_Toe/Memory_Tic_Tac_Toe.h"
-
-#include "header/BoardGame_Classes.h"
-#include "header/XO_Classes.h"
+#include "Games/4x4_Tic_Tac_Toe/4by4_XO.h"
 
 using namespace std;
 
 /**
  * @brief Main function to run the X-O game.
  *
- * This function manage the game by:
  * This function manage the game by:
  * - Initializing the random number generator
  * - Creating the X-O specific UI and board
@@ -58,14 +48,14 @@ using namespace std;
 ⠄⠄⠄⠄⢠⣿⣿⣿⣿⣿⢻⣿⣿⣿⣿⣿⣿⣿⣿⣯⢻⣿⣿⣿⣿⣆⠄⠄⠄
 ⠄⠄⣼⢀⣿⣿⣿⣿⣏⡏⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢻⣿⣿⣿⣿⡆⠄⠄
 ⠄⠄⡟⣼⣿⣿⣿⣿⣿⠄⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⣿⣇⢻⣿⣿⣿⣿⠄⠄
-⠄⢰⠃⣿⣿⠿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠙⠿⣿⣿⣿⣿⣿⠄⢿⣿⣿⣿⡄⠄
-⠄⢸⢠⣿⣿⣧⡙⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠈⠛⢿⣿⣿⡇⠸⣿⡿⣸⡇⠄
-⠄⠈⡆⣿⣿⣿⣿⣦⡙⠳⠄⠄⠄⠄⠄⠄⢀⣠⣤⣀⣈⠙⠃⠄⠿⢇⣿⡇⠄
-⠄⠄⡇⢿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⣠⣶⣿⣿⣿⣿⣿⣿⣷⣆⡀⣼⣿⡇⠄
-⠄⠄⢹⡘⣿⣿⣿⢿⣷⡀⠄⢀⣴⣾⣟⠉⠉⠉⠉⣽⣿⣿⣿⣿⠇⢹⣿⠃⠄
-⠄⠄⠄⢷⡘⢿⣿⣎⢻⣷⠰⣿⣿⣿⣿⣦⣀⣀⣴⣿⣿⣿⠟⢫⡾⢸⡟⠄.
+⠄⠄⢰⠃⣿⣿⠿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠙⠿⣿⣿⣿⣿⣿⠄⢿⣿⣿⣿⡄⠄
+⠄⠄⢸⢠⣿⣿⣧⡙⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠈⠛⢿⣿⣿⡇⠸⣿⡿⣸⡇⠄
+⠄⠄⠈⡆⣿⣿⣿⣿⣦⡙⠳⠄⠄⠄⠄⠄⠄⢀⣠⣤⣀⣈⠙⠃⠄⠿⢇⣿⡇⠄
+⠄⠄⠄⡇⢿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⣠⣶⣿⣿⣿⣿⣿⣿⣷⣆⡀⣼⣿⡇⠄
+⠄⠄⠄⢹⡘⣿⣿⣿⢿⣷⡀⠄⢀⣴⣾⣟⠉⠉⠉⠉⣽⣿⣿⣿⣿⠇⢹⣿⠃⠄
+⠄⠄⠄⠄⢷⡘⢿⣿⣎⢻⣷⠰⣿⣿⣿⣿⣦⣀⣀⣴⣿⣿⣿⠟⢫⡾⢸⡟⠄.
 ⠄⠄⠄⠄⠻⣦⡙⠿⣧⠙⢷⠙⠻⠿⢿⡿⠿⠿⠛⠋⠉⠄⠂⠘⠁⠞⠄⠄⠄
-⠄⠄⠄⠄⠄⠈⠙⠑⣠⣤⣴⡖⠄⠿⣋⣉⣉⡁⠄⢾⣦⠄⠄⠄⠄⠄⠄⠄⠄
+68: ⠄⠄⠄⠄⠄⠈⠙⠑⣠⣤⣴⡖⠄⠿⣋⣉⣉⡁⠄⢾⣦⠄⠄⠄⠄⠄⠄⠄⠄
 */
 int main() {
 
@@ -90,20 +80,21 @@ int main() {
         cout << "9) Word XO\n";
         cout << "10) Obstacles Tic-Tac-Toe XO\n";
         cout << "11) Memory Tic-Tac-Toe XO\n";
-        cout << "12) Exit\n";
+        cout << "12) 4x4 Tic-Tac-Toe\n";
+        cout << "13) Exit\n";
         cout << "=======================================================\n";
-        cout << "Enter your choice [1-12]: ";
+        cout << "Enter your choice [1-13]: ";
 
         try {
             if (!(cin >> choice)) {
                 throw runtime_error("Invalid input: must be an integer.");
             }
 
-            if (choice < 1 || choice > 12) {
-                throw out_of_range("Choice must be an integer between 1 and 6.");
+            if (choice < 1 || choice > 13) {
+                throw out_of_range("Choice must be an integer between 1 and 13.");
             }
 
-            if (choice == 12) {
+            if (choice == 13) {
                 cout << "Exiting the game. Goodbye!\n";
                 finish = true;
                 continue;
@@ -160,6 +151,10 @@ int main() {
                 case 11:
                     game_ui = new  Memory_UI();
                     game_board = new Memory_Board();
+                    break;
+                case 12:
+                    game_ui = new _4by4XO_UI();
+                    game_board = new _4by4XO_Board();
                     break;
                 default:
                     throw out_of_range("Unexpected choice value.");
