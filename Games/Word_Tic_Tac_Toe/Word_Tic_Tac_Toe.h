@@ -216,7 +216,7 @@ public:
      * @param player Player to evaluate for.
      * @return Heuristic score.
      */
-    float evaluate(Board<char>* board, Player<char>* player) override {}
+    float evaluate(Board<char>* board, Player<char>* player) override { return 0.0f; }
 
     /**
      * @brief Performs minimax search with alpha-beta pruning.
@@ -230,7 +230,7 @@ public:
      * @return Evaluation score.
      */
     float minimax(bool aiTurn, Player<char>* player,
-                  float alpha, float beta, char blankCell, int depth) override {}
+                  float alpha, float beta, char blankCell, int depth) override { return 0.0f; }
 
     /**
      * @brief Computes and returns the optimal move.

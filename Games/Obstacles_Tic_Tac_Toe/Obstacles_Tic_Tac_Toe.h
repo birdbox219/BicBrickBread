@@ -3,6 +3,7 @@
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
+#include "../../header/AI.h"
 #include <cstdint>
 #include <algorithm>
 
@@ -147,9 +148,9 @@ class Obstacles_AI : public AI {
 public:
     Obstacles_AI() = default;
 
-    float evaluate(Board<char>* board, Player<char>* player) override {}
+    float evaluate(Board<char>* board, Player<char>* player) override { return 0.0f; }
 
-    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.0f; }
 
     Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
 };

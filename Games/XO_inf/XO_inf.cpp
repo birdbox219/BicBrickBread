@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <limits>
 #include <cctype>  // for toupper()
 #include <queue>
 #include "XO_inf.h"
