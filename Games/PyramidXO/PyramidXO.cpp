@@ -85,8 +85,14 @@ Player<char>* PyramidXO_UI::create_player(string& name, char symbol, PlayerType 
 
 Move<char>* PyramidXO_UI::get_move(Player<char>* player) {
     int x, y;
-    cout << player->get_name() << " (" << player->get_symbol() << "), enter your move (row col): ";
-    cin >> x >> y;
+    if (player->get_type() == PlayerType::HUMAN) {
+        cout << player->get_name() << " (" << player->get_symbol() << "), enter your move (row col): ";
+        cin >> x >> y;
+    } else {
+        PyramidXO_AI ai;
+        return ai.bestMove(player, 0);
+    }
+    
     return new Move<char>(x, y, player->get_symbol());
 }
 

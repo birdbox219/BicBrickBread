@@ -93,6 +93,7 @@ extern "C"
                 break;
             case 2:
                 board = new _4by4XO_Board();
+                ai = new _4by4XO_AI();
                 break;
             case 3:
                 board = new Anti_XO_Board();
@@ -100,6 +101,7 @@ extern "C"
                 break;
             case 4:
                 board = new dia_XO_Board();
+                ai = new dia_XO_AI();
                 break;
             case 5:
                 board = new FOUR_Board();
@@ -115,9 +117,11 @@ extern "C"
                 break;
             case 8:
                 board = new Obstacles_Board();
+                ai = new Obstacles_AI();
                 break;
             case 9:
                 board = new PyramidXO_Board();
+                ai = new PyramidXO_AI();
                 break;
             case 10:
                 board = new SUS_Board();
@@ -125,6 +129,7 @@ extern "C"
                 break;
             case 11:
                 board = new Ultimate_Board();
+                ai = new Ultimate_AI();
                 break;
             case 12:
             {
@@ -145,6 +150,7 @@ extern "C"
                 break;
             case 14:
                 board = new XO_NUM_Board();
+                ai = new XO_NUM_AI();
                 break;
             default:
                 std::cerr << "Invalid game ID: " << gameId << std::endl;
@@ -415,7 +421,7 @@ extern "C"
                         for (int c = 0; c < 5; ++c)
                         {
                             char cell = largeBoard->getCell(r, c);
-                            boardBuffer[r * 5 + c] = (cell == 'X') ? 1 : cell;
+                            boardBuffer[r * 5 + c] = (cell == '.' ? 0 : cell);
                         }
                     }
                     return boardBuffer;
@@ -435,6 +441,13 @@ extern "C"
                         }
                     }
                     return boardBuffer;
+                }
+            }
+            else if (currentGameId == 7) {
+                for (int r = 0; r < 3; ++r) {
+                    for (int c = 0; c < 3; ++c) {
+                        boardBuffer[r * 3 + c] = (board->get_cell(r,c) != '.'? '?' : 0);
+                    }
                 }
             }
 

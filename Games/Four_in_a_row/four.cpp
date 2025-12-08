@@ -17,32 +17,33 @@ FOUR_Board::FOUR_Board() : Board(6, 7)
             cell = blank_symbol;
 }
 
-bool FOUR_Board::update_board(Move<char> *move)
+bool FOUR_Board::update_board(Move<char>* move)
 {
     int y = move->get_y();
-    int x = 5-last_row[y]++;
-    //5 - last_row[y] gives the index of the lowest available row in this column
- 
     char mark = move->get_symbol();
 
-    // Validate move and apply if valid
-    if (!(x < 0 || x >= rows || y < 0 || y >= columns) &&
-        (board[x][y] == blank_symbol || mark == 0))
-    {
+    int x = 5 - last_row[y];
 
-        if (mark == 0)
-        { // Undo move
-            n_moves--;
-            board[x][y] = blank_symbol;
-        }
-        else
-        { // Apply move
-            n_moves++;
-            board[x][y] = toupper(mark);
-        }
+    if (x < 0 || x >= rows || y < 0 || y >= columns)
+        return false;
+
+    if (mark == 0)
+    {
+        last_row[y]--;
+        x = 5 - last_row[y];
+        board[x][y] = blank_symbol;
+        n_moves--;
         return true;
     }
-    
+
+    if (board[x][y] == blank_symbol)
+    {
+        board[x][y] = toupper(mark);
+        last_row[y]++;
+        n_moves++;
+        return true;
+    }
+
     return false;
 }
 

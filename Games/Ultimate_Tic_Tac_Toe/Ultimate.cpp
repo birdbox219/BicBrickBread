@@ -137,7 +137,7 @@ bool Ultimate_Board::game_is_over(Player<char> *player)
 }
 
 //=====================UI===========
-Ultimate_UI::Ultimate_UI() : UI<char>("Ultimate Tic_Tac_TOe", 3) {}
+Ultimate_UI::Ultimate_UI() : UI<char>("Ultimate Tic_Tac_TOe", 6) {}
 
 Player<char> *Ultimate_UI::create_player(string &name, char symbol, PlayerType type)
 {
