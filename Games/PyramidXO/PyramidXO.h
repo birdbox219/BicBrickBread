@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../header/BoardGame_Classes.h"
+#include <random>
 
 class PyramidXO_Board : public Board<char>
 {
@@ -22,9 +23,9 @@ class PyramidXO_AI : public AI {
 public:
     PyramidXO_AI() = default;
 
-    float evaluate(Board<char>* board, Player<char>* player) override {}
+    float evaluate(Board<char>* board, Player<char>* player) override { return 0.f; }
 
-    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.f; }
 
     Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
 };

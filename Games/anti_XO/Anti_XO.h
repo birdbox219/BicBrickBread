@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <random>
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"
@@ -27,9 +28,9 @@ class Anti_AI : public AI {
 public:
     Anti_AI() = default;
 
-    float evaluate(Board<char>* board, Player<char>* player) override {}
+    float evaluate(Board<char>* board, Player<char>* player) override { return 0.f; }
 
-    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.f; }
 
     bool bounded(int x,int y);
 

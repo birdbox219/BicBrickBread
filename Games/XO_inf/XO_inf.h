@@ -2,13 +2,14 @@
 #define X_inf_H
 #include <deque>
 #include <stack>
+#include <limits>
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"
 
 using namespace std;
 
-struct Vertex { int x; int y;};
+struct Vertex { int x; int y; };
 
 class XO_inf_Board : public Board<char> {
 private:

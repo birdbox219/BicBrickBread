@@ -15,6 +15,7 @@
 #include <cstdint>
 #include <cstdlib>
 #include <ctime>
+#include <random>
 
 /**
  * @brief 5x5 Tic-Tac-Toe board implementation using a bitboard for fast evaluation.
