@@ -93,7 +93,7 @@ public:
      * @param depth Maximum search depth
      * @return Pointer to the chosen Move<char>
      */
-    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 9) override;
 };
 
 /**

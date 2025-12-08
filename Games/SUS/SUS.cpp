@@ -84,7 +84,7 @@ bool SUS_Board::game_is_over(Player<char> *player)
 }
 
 //===============================UI========================================
-SUS_UI::SUS_UI() : UI<char>("SUS", 3) {}
+SUS_UI::SUS_UI() : Custom_UI<char>("SUS", 3) {}
 
 Player<char> **SUS_UI::setup_players()
 {
@@ -117,138 +117,120 @@ Move<char> *SUS_UI::get_move(Player<char> *player)
          << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
         
+    }
+    else if(player->get_type() == PlayerType::COMPUTER) {
+        x = rand()%3;
+        y = rand()%3;
+    }
+    else if (player->get_type() == PlayerType::AI) {
+        SUS_AI ai;
+        return ai.bestMove(player, '.', 9);
     } 
-    else if (player->get_type() == PlayerType::COMPUTER) {
-       AI=player->get_symbol();
-        if (AI=='X'){
-             OOP='O';
-        }
-        else if (AI=='O'){
-             OOP='X';
-        }
-       auto* b = dynamic_cast<SUS_Board*>(player->get_board_ptr());
-        SUS_UI::moove mov = SUS_UI::findBestMove(player,b->get_board_matrix());
-        x = mov.row, y = mov.col;
-     } 
     return new Move<char>(x, y, player->get_symbol());
 }
-//=========================AI==========================
 
-int SUS_UI::evaluate(vector<vector<char>>& board, int lastRow, int lastCol, char lastPlayer)
+float SUS_AI::evaluate(Board<char>* board, Player<char>* player)
 {
-  
+    char AI = player->get_symbol();
     int score = 0;
-    if (board[lastRow][0] == 'S' &&  board[lastRow][1] == 'U' &&  board[lastRow][2] == 'S'){
-            score += (lastPlayer == AI) ? 10 : -10;
-    }
     
-    if (board[0][lastCol] == 'S' &&  board[1][lastCol] == 'U' && board[2][lastCol] == 'S'){
-            score += (lastPlayer == AI) ? 10 : -10;
-    }
-    
-    if(board[0][0]=='S'&&board[1][1]=='U'&&board[2][2]=='S'  &&(lastCol==lastRow)){
-        score += (lastPlayer == AI) ? 10 : -10;
-    }
-    
-    
-    if(board[0][2]=='S'&& board[1][1]=='U' &&board[2][0]=='S' &&(lastCol+lastRow==2))
-        {
-            score += (lastPlayer == AI) ? 10 : -10;
+    // Check all rows for SUS
+    for (int i = 0; i < 3; i++) {
+        if (board->get_cell(i, 0) == 'S' && board->get_cell(i, 1) == 'U' && board->get_cell(i, 2) == 'S') {
+            char owner = board->get_cell(i, 1);
+            score += (owner == AI) ? 10 : -10;
         }
+    }
     
+    // Check all columns for SUS
+    for (int j = 0; j < 3; j++) {
+        if (board->get_cell(0, j) == 'S' && board->get_cell(1, j) == 'U' && board->get_cell(2, j) == 'S') {
+            char owner = board->get_cell(1, j);
+            score += (owner == AI) ? 10 : -10;
+        }
+    }
+    
+    // Check main diagonal
+    if (board->get_cell(0, 0) == 'S' && board->get_cell(1, 1) == 'U' && board->get_cell(2, 2) == 'S') {
+        char owner = board->get_cell(1, 1);
+        score += (owner == AI) ? 10 : -10;
+    }
+    
+    // Check anti-diagonal
+    if (board->get_cell(0, 2) == 'S' && board->get_cell(1, 1) == 'U' && board->get_cell(2, 0) == 'S') {
+        char owner = board->get_cell(1, 1);
+        score += (owner == AI) ? 10 : -10;
+    }
     
     return score;
 }
 
-bool SUS_UI::isMovesLeft(vector<vector<char>>& board)
+bool SUS_AI::isMovesLeft(Board<char>* board)
 {
     for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
-            if (board[i][j] == '.')
-                return true;
+            if (board->get_cell(i, j) == '.') return true;
     return false;
 }
 
-int SUS_UI::minimax(vector<vector<char>>& board, int depth, int alpha, int beta, bool isMax, int lastRow, int lastCol, char lastPlayer)
+float SUS_AI::minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth)
 {
-    int score = evaluate(board, lastRow, lastCol, lastPlayer);
+    auto* board = player->get_board_ptr();
+    float score = evaluate(board, player);
     
-    if (score >= 10) {return score - depth;} 
-    if (score <= -10) {return score + depth;}
+    if (score >= 10) return score - depth;
+    if (score <= -10) return score + depth;
     if (!isMovesLeft(board)) return 0;
-    if (isMax)
-    {
-        int best = INT_MIN;
-        for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 3; j++)
-            {
-                if (board[i][j] == '.')
-                {
-                    board[i][j] = AI;
-                    best = max(best, minimax(board, depth+1, alpha, beta, false, i, j, AI));
-                    board[i][j] = '.';
-                    alpha = max(alpha, best);
-                    if (beta <= alpha) break;
-                }
-            }
-            if (beta <= alpha) break;
-        }
-        return best;
-    }
-    else
-    {
-        int best = INT_MAX;
-        for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 3; j++)
-            {
-                if (board[i][j] == '.')
-                {
-                    board[i][j] = OOP;
-                    best = min(best, minimax(board, depth+1, alpha, beta, true, i, j, OOP));
-                    board[i][j] = '.';
 
-                    beta = min(beta, best);
-                    if (beta <= alpha) break;
-                }
+    float best = aiTurn ? INT_MIN : INT_MAX;
+    char symbol = aiTurn ? player->get_symbol() : (player->get_symbol() == 'X' ? 'O' : 'X');
+    
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (board->get_cell(i, j) == '.') {
+                Move<char> move(i, j, symbol);
+                board->update_board(&move);
+                float val = minimax(!aiTurn, player, alpha, beta, blankCell, depth + 1);
+                best = aiTurn ? max(best, val) : min(best, val);
+                Move<char> undo(i, j, 0);
+                board->update_board(&undo);
+                
+                if (aiTurn) alpha = max(alpha, best);
+                else beta = min(beta, best);
+                if (beta <= alpha) break;
             }
-            if (beta <= alpha) break;
         }
-        return best;
+        if (beta <= alpha) break;
     }
+    return best;
 }
 
-SUS_UI::moove SUS_UI::findBestMove(Player<char>* player, vector<vector<char>> board)
+Move<char>* SUS_AI::bestMove(Player<char>* player, char blankCell, int depth)
 {
-    int bestVal = INT_MIN;
-    moove bestMove;
-    bestMove.row = -1;
-    bestMove.col = -1;
+    auto* board = player->get_board_ptr();
+    char AI = player->get_symbol();
+    float bestVal = INT_MIN;
+    int bestRow = -1, bestCol = -1;
+    float alpha = INT_MIN, beta = INT_MAX;
 
-    int alpha = INT_MIN, beta = INT_MAX;
-
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            if (board[i][j] == '.')
-            {
-                board[i][j] = AI;
-                int moveVal = minimax(board, 0, alpha, beta, false, i, j, AI);
-                board[i][j] = '.';
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (board->get_cell(i, j) == '.') {
+                Move<char> move(i, j, AI);
+                board->update_board(&move);
+                float moveVal = minimax(false, player, alpha, beta, blankCell, 1);
+                Move<char> undo(i, j, 0);
+                board->update_board(&undo);
                 
-                if (moveVal > bestVal)
-                {
+                if (moveVal > bestVal) {
                     bestVal = moveVal;
-                    bestMove.row = i;
-                    bestMove.col = j;
+                    bestRow = i;
+                    bestCol = j;
                 }
-                
                 alpha = max(alpha, bestVal);
             }
         }
     }
 
-    return bestMove;
+    return new Move<char>(bestRow, bestCol, AI);
 }
