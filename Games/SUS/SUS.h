@@ -3,6 +3,7 @@
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"
+#include <random>
 using namespace std;
 
 class SUS_Board: public Board<char>{

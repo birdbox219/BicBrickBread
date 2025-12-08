@@ -11,6 +11,17 @@ public:
     int get_from_y() const { return from_y; }
 };
 
+class _4by4XO_AI : public AI {
+public:
+    _4by4XO_AI() = default;
+
+    float evaluate(Board<char>* board, Player<char>* player) override { return 0.0f; }
+
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.0f; }
+
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
+};
+
 class _4by4XO_Board : public Board<char>
 {
 public:

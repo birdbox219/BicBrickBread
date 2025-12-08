@@ -5,6 +5,7 @@
 #include <unordered_set>
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
+#include <random>
 
 
 typedef std::unordered_set<std::vector<std::pair<int,int>>> zengy;

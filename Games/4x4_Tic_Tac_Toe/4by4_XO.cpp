@@ -4,6 +4,7 @@
 #include <string>
 #include <iomanip>
 #include <cmath>
+#include <random>
 
 using namespace std;
 
@@ -91,10 +92,63 @@ Player<char>* _4by4XO_UI::create_player(string& name, char symbol, PlayerType ty
 
 Move<char>* _4by4XO_UI::get_move(Player<char>* player) {
     int fx, fy, tx, ty;
-    cout << player->get_name() << " (" << player->get_symbol() << ")\n";
-    cout << "Select token to move (row col): ";
-    cin >> fx >> fy;
-    cout << "Select destination (row col): ";
-    cin >> tx >> ty;
-    return new _4by4XO_Move(fx, fy, tx, ty, player->get_symbol());
+    if (player->get_type() == PlayerType::HUMAN) {
+        cout << player->get_name() << " (" << player->get_symbol() << ")\n";
+        cout << "Select token to move (row col): ";
+        cin >> fx >> fy;
+        cout << "Select destination (row col): ";
+        cin >> tx >> ty;
+        return new _4by4XO_Move(fx, fy, tx, ty, player->get_symbol());
+    } else {
+        _4by4XO_AI ai;
+        return ai.bestMove(player, '.');
+    }
+}
+
+Move<char>* _4by4XO_AI::bestMove(Player<char>* player, char blankCell, int depth)
+{
+    Board<char>* b = player->get_board_ptr();
+    char s = player->get_symbol();
+
+    vector<_4by4XO_Move*> possibleMoves;
+
+    int dx[4] = { -1, 1, 0, 0 };
+    int dy[4] = { 0, 0, -1, 1 };
+
+    for (int x = 0; x < 4; x++) {
+        for (int y = 0; y < 4; y++) {
+
+            if (b->get_cell(x, y) == s) {
+
+                for (int k = 0; k < 4; k++) {
+                    int nx = x + dx[k];
+                    int ny = y + dy[k];
+
+                    // Out of bounds → skip
+                    if (nx < 0 || nx >= 4 || ny < 0 || ny >= 4)
+                        continue;
+
+                    // Must be empty
+                    if (b->get_cell(nx, ny) == blankCell || b->get_cell(nx, ny) == 0) {
+                        possibleMoves.push_back(new _4by4XO_Move(x, y, nx, ny, s));
+                    }
+                }
+            }
+        }
+    }
+
+    if (possibleMoves.empty()) {
+        return nullptr;
+    }
+
+    int idx = rand() % possibleMoves.size();
+    _4by4XO_Move* chosen = possibleMoves[idx];
+
+    for (int i = 0; i < (int)possibleMoves.size(); i++) {
+        if (i != idx) {
+            delete possibleMoves[i];
+        }
+    }
+
+    return chosen;
 }

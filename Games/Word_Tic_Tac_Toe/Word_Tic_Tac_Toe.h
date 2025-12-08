@@ -9,6 +9,7 @@
 #include <fstream>
 #include <tuple>
 #include <algorithm>
+#include <random>
 
 /**
  * @file Word_Tic_Tac_Toe.h
