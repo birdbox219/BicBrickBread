@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <limits>
 #include <cctype>  // for toupper()
 #include <queue>
 #include "XO_inf.h"
@@ -46,12 +47,15 @@ bool XO_inf_Board::update_board(Move<char>* move) {
     if (x < 0 || x >= rows || y < 0 || y >= columns || (board[x][y] != blank_symbol && mark != 0))
         return false;
 
+   
+
     if (mark == 0) { // Undo move
         --n_moves;
         board[x][y] = blank_symbol;
         history.pop_back();
-        if(cnt == 0 && !undoHistory.empty()) {
+        if(cnt == 0 && !undoHistory.empty() ) {
             history.push_front(undoHistory.top());
+            board[undoHistory.top().x][undoHistory.top().y] = undoHistory.top().symbol;
             undoHistory.pop();
         }
         cnt = (cnt - 1 + 3) % 3;
@@ -61,11 +65,13 @@ bool XO_inf_Board::update_board(Move<char>* move) {
     // Apply normal move
     board[x][y] = mark;
     ++n_moves;
-    history.push_back({x, y});
+    history.push_back({x, y, mark});
     ++cnt;
     cnt %= 3;
+
     if (cnt == 0 && !history.empty()) {
         undoHistory.push(history.front());
+        board[history.front().x][history.front().y] = blank_symbol;
         history.pop_front();
     }
 

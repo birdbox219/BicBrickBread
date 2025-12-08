@@ -2,7 +2,7 @@
 #ifndef Ultimate_H
 #define Ultmate_H
 #include "../../header/BoardGame_Classes.h"
-#include <random>
+#include "../../header/AI.h"
 using namespace std;
 
 
@@ -31,9 +31,9 @@ class Ultimate_AI : public AI {
 public:
     Ultimate_AI() = default;
 
-    float evaluate(Board<char>* board, Player<char>* player) override { return 0.f; }
+    float evaluate(Board<char>* board, Player<char>* player) override { return 0.0f; }
 
-    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.f; }
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.0f; }
 
     Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
 };
