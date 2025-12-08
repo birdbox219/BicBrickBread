@@ -8,7 +8,7 @@
 
 using namespace std;
 
-struct Vertex { int x; int y;};
+struct Vertex { int x; int y; char symbol;};
 
 class XO_inf_Board : public Board<char> {
 private:
