@@ -64,7 +64,7 @@ bool Anti_XO_Board::game_is_over(Player<char>* player)
 
 
 Anti_XO_UI::Anti_XO_UI() 
-    : UI<char>("anti_XO",3) {}
+    : Custom_UI<char>("anti_XO",3) {}
 
 Player<char>* Anti_XO_UI::create_player(string& name, char symbol, PlayerType type)
 {
@@ -80,17 +80,26 @@ Move<char>* Anti_XO_UI::get_move(Player<char>* player)
              << ") enter your move (row col): ";
         cin >> r >> c;
     } else if (player->get_type() == PlayerType::COMPUTER) {
-        Anti_XO_Board* b = dynamic_cast<Anti_XO_Board*>(player->get_board_ptr());
-        auto best = b->neighbors_are_lava(player->get_symbol());
-        r  = best.first;
-        c =  best.second;
+        r = rand()%3;
+        c = rand()%3;
+    } else if (player->get_type() == PlayerType::AI) {
+        Anti_AI ai;
+        return ai.bestMove(player, '.');
     }
 
     return new Move<char>(r, c, player->get_symbol());
 }
 
-std::pair<int, int> Anti_XO_Board::neighbors_are_lava(char s)
+bool Anti_AI::bounded(int x, int y)
 {
+    return (x>0 && x<3 && y>0 && y<3);
+}
+
+Move<char> *Anti_AI::bestMove(Player<char> *player, char blankCell, int depth)
+{
+    auto* board = player->get_board_ptr();
+    char s = player->get_symbol();
+
     vector<pair<int, pair<int,int>>> scores;
 
     int dx[8] = { -1,-1, 0, 1, 1, 1, 0,-1 };
@@ -98,7 +107,7 @@ std::pair<int, int> Anti_XO_Board::neighbors_are_lava(char s)
 
     for (int x = 0; x < 3; x++) {
         for (int y = 0; y < 3; y++) {
-            if (board[x][y] != '.') continue;
+            if (board->get_cell(x, y) != '.') continue;
 
             int danger = 0;
 
@@ -108,7 +117,7 @@ std::pair<int, int> Anti_XO_Board::neighbors_are_lava(char s)
 
                 if (!bounded(nx, ny)) continue;
 
-                if (board[nx][ny] == s)
+                if (board->get_cell(nx, ny) == s)
                     danger++;
             }
 
@@ -117,7 +126,7 @@ std::pair<int, int> Anti_XO_Board::neighbors_are_lava(char s)
     }
 
     if (scores.empty())
-        return { -1, -1 };
+        throw std::runtime_error("Empty Move");
 
     sort(scores.begin(), scores.end(),
          [](auto &a, auto &b){ return a.first < b.first; });
@@ -131,12 +140,5 @@ std::pair<int, int> Anti_XO_Board::neighbors_are_lava(char s)
     int idx = rand() % maxChoices;
 
     auto &choice = scores[idx];
-    return { choice.second.first, choice.second.second };
-}
-
-
-
-bool Anti_XO_Board::bounded(int x, int y)
-{
-    return (x>0 && x<3 && y>0 && y<3);
+    return new Move(choice.second.first, choice.second.second, s);
 }

@@ -133,9 +133,26 @@ Move<char>* dia_XO_UI::get_move(Player<char>* player)
         cin >> r >> c;
     } 
     else if (player->get_type() == PlayerType::COMPUTER) {
-        r = std::rand() % 7;
-        c = std::rand() % 7;
+        dia_XO_AI ai;
+        return ai.bestMove(player, '.');
     }
 
     return new Move<char>(r, c, player->get_symbol());
+}
+
+Move<char> *dia_XO_AI::bestMove(Player<char> *player, char blankCell, int depth)
+{
+    vector<pair<int,int>> emptyCells;
+
+    auto* board = player->get_board_ptr();
+
+    for (int r = 0; r < 6; ++r) {
+        for (int c = 0; c < 6; ++c) {
+            if(board->get_cell(r,c) == blankCell) emptyCells.push_back({r,c});
+        }
+    }
+
+    int idx = rand() % emptyCells.size();
+
+    return new Move<char>(emptyCells[idx].first, emptyCells[idx].second, player->get_symbol());
 }

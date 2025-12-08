@@ -23,10 +23,18 @@ public:
     bool is_lose(Player<char>* player) { return false; }
     bool game_is_over(Player<char>* player) override;
     void small_board_check(int x,int y, char sym);
-    bool all_small_boards_done();
-   
+    bool all_small_boards_done(); 
+};
 
-    
+class Ultimate_AI : public AI {
+public:
+    Ultimate_AI() = default;
+
+    float evaluate(Board<char>* board, Player<char>* player) override {}
+
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
 };
 
 

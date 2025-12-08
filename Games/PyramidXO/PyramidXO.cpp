@@ -164,3 +164,25 @@ cout << endl;
     
 
 }
+
+Move<char> *PyramidXO_AI::bestMove(Player<char> *player, char blankCell, int depth)
+{
+    vector<pair<int,int>> available;
+    auto* board = player->get_board_ptr();
+    
+    for (int r = 0; r < 5; ++r) {
+        for (int c = 0; c < 5; ++c) {
+            bool valid_shape = false;
+            if (r == 0 && c == 2) valid_shape = true;
+            else if (r == 1 && (c >= 1 && c <= 3)) valid_shape = true;
+            else if (r == 2 && (c >= 0 && c <= 4)) valid_shape = true;
+
+            if(!valid_shape) continue;
+
+            if (board->get_cell(r,c) == 0) available.push_back({r,c});
+        }
+    }
+
+    int idx = rand() % available.size();
+    return new Move<char>(available[idx].first, available[idx].second, player->get_symbol());
+}

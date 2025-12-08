@@ -296,7 +296,7 @@ bool Obstacles_Board::is_draw(Player<char>* player)
  * @brief Initializes UI component with title and cell width.
  */
 Obstacles_UI::Obstacles_UI()
-    : Custom_UI<char>("Obstacles Tic Tac Toe"s, 3)
+    : UI<char>("Obstacles Tic Tac Toe"s, 3)
 {}
 
 
@@ -327,10 +327,8 @@ Move<char>* Obstacles_UI::get_move(Player<char>* player)
     }
     else if(player->get_type() == PlayerType::COMPUTER)
     {
-        auto avail = board->getAvailableMove();
-        size_t idx = avail[rand() % avail.size()];
-        r = idx / 6;
-        c = idx % 6;
+        Obstacles_AI ai;
+        return ai.bestMove(player, '.');
     }
 
     return new Move<char>(r, c, player->get_symbol());
@@ -378,4 +376,12 @@ void Obstacles_UI::display_board_matrix(const vector<vector<char>> &matrix) cons
     
     // Print final newline for spacing
     cout << endl;
+}
+
+Move<char> *Obstacles_AI::bestMove(Player<char> *player, char blankCell, int depth)
+{
+    auto* board = dynamic_cast<Obstacles_Board*>(player->get_board_ptr());
+    auto avail = board->getAvailableMove();
+    size_t idx = avail[rand() % avail.size()];
+    return new Move<char>(idx/6, idx%6, player->get_symbol());
 }

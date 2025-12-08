@@ -181,8 +181,26 @@ Move<char> *Ultimate_UI::get_move(Player<char> *player)
     }
     else if (player->get_type() == PlayerType::COMPUTER)
     {
-        x = rand() % player->get_board_ptr()->get_rows();
-        y = rand() % player->get_board_ptr()->get_columns();
+        Ultimate_AI ai;
+        return ai.bestMove(player, '.');
     }
     return new Move<char>(x, y, player->get_symbol());
+}
+
+Move<char> *Ultimate_AI::bestMove(Player<char> *player, char blankCell, int depth)
+{
+    vector<pair<int,int>> available;
+    auto* board = player->get_board_ptr();
+
+    for (int r = 0; r < 9; ++r) {
+        for (int c = 0; c < 9; ++c) {
+            if (board->get_cell(r, c) == blankCell) {
+                available.push_back({r,c});
+            }
+        }
+    }
+
+    int idx = rand() % available.size();
+
+    return new Move<char>(available[idx].first, available[idx].second, player->get_symbol());
 }

@@ -1,210 +1,206 @@
-#ifndef Large_Tic_Tac_Toe_H
-#define Large_Tic_Tac_Toe_H
+#ifndef LARGE_TIC_TAC_TOE_H
+#define LARGE_TIC_TAC_TOE_H
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
 #include "../../header/AI.h"
 #include "../../Neural_Network/Include/NeuralNetwork.h"
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <limits>
+#include <stdexcept>
+#include <algorithm>
 #include <memory>
 #include <cstdint>
+#include <cstdlib>
+#include <ctime>
 
 /**
- * @brief Represents the 5x5 Tic-Tac-Toe Board, optimized using a Bit Board approach.
- * * This board tracks player moves using three 32-bit integers (bitmasks)
- * for 'X', 'O', and occupied cells, significantly speeding up win checks.
- * Inherits from the generic Board class.
+ * @brief 5x5 Tic-Tac-Toe board implementation using a bitboard for fast evaluation.
+ *
+ * The board tracks positions using three 32-bit integers:
+ *  - boardX  : bitmask for X
+ *  - boardO  : bitmask for O
+ *  - boardXO : bitmask for all occupied cells (X | O)
+ *
+ * This representation dramatically accelerates win detection and evaluation.
+ * The class also stores all possible 3-in-a-row masks for scoring.
  */
 class Large_XO_Board : public Board<char>
 {
 public:
-    // --- 1. Constructors ---
-    /**
-     * @brief Construct a 5x5 board, initializing the vector board and bitboards.
-     */
+    // ---------------------------------------------------------------------
+    // Constructors
+    // ---------------------------------------------------------------------
+
+    /** @brief Construct an empty 5x5 board and initialize bitboards. */
     Large_XO_Board();
 
-    // --- 2. Accessors (Read Operations) ---
-    
+    // ---------------------------------------------------------------------
+    // Accessors
+    // ---------------------------------------------------------------------
+
     /**
-     * @brief Access the state of a cell using the bitboard representation.
-     * @param r The cell's row (0-4).
-     * @param c The cell's column (0-4).
-     * @return The char symbol of the cell ('X', 'O', or '.').
+     * @brief Read the board state at a given cell.
+     * @param r Row index [0–4]
+     * @param c Column index [0–4]
+     * @return 'X', 'O', or empty symbol
      */
     char getCell(size_t r, size_t c);
 
-    /**
-     * @brief Return the value representing an empty cell.
-     * @return The char of the empty cell (e.g., '.').
-     */
+    /** @brief @return Character representing an empty cell (e.g., '.') */
     char getEmptyCell();
 
-    /**
-     * @brief Return the number of played moves
-     * @return the int [0,24]
-     */
+    /** @brief @return Number of played moves in [0, 24]. */
     int getMoveCount();
 
-    // --- 3. Mutators (Write/Update Operations) ---
+    // ---------------------------------------------------------------------
+    // Mutators
+    // ---------------------------------------------------------------------
 
     /**
-     * @brief Update a cell using Bit-Board optimization. This is the core modification function.
-     * * @param r The cell's row (0-4) to update.
-     * @param c The cell's column (0-4) to update.
-     * @param s The new value of the cell ('X', 'O', or emptyCell to clear).
-     * @return Bool true if the update was successful (move was valid), otherwise false.
+     * @brief Update a cell using the bitboard representation.
+     * @param r Row index [0–4]
+     * @param c Column index [0–4]
+     * @param s New symbol: 'X', 'O', or emptyCell to clear
+     * @return True if the update was valid
      */
     bool updateCell(size_t r, size_t c, char s);
 
     /**
-     * @brief Update board when the player plays a move. Overrides the base class method.
-     * * This method validates the move and calls updateCell internally.
-     * @param move The Move object containing the row, column, and symbol of the player.
-     * @return Bool to identify if it is a valid move or not.
+     * @brief Update board using a Move object (overrides base class).
+     * @param move Move containing row, column, and symbol
+     * @return True if the move is valid and applied
      */
     bool update_board(Move<char>* move) override;
 
-    // --- 4. Game Logic Checks ---
+    // ---------------------------------------------------------------------
+    // Game Logic
+    // ---------------------------------------------------------------------
 
     /**
-     * @brief Check if the game has ended (board is full in this variant). Overrides base method.
-     * @param player The player which we want to check (can be ignored if state is terminal).
-     * @return True if there is a draw, win, or lose condition, otherwise false.
+     * @brief Check if the game is over (board full in this variant).
+     * @return True if the board is full
      */
-    bool game_is_over(Player<char>* player) override;
+    bool game_is_over(Player<char>* /*player*/) override;
 
     /**
-     * @brief Check if the player wins or not (based on final score). Overrides base method.
-     * @param player The player which we want to check.
-     * @return True if the player has more 3-in-a-row combos than the opponent at game end.
+     * @brief Determine if a player wins (based on 3-in-a-row counts).
      */
     bool is_win(Player<char>* player) override;
 
     /**
-     * @brief Check if the player loses or not (based on final score). Overrides base method.
-     * @param player The player which we want to check.
-     * @return True if the player has fewer 3-in-a-row combos than the opponent at game end.
+     * @brief Determine if a player loses.
      */
     bool is_lose(Player<char>* player) override;
 
     /**
-     * @brief Check if it is a draw or not (based on final score). Overrides base method.
-     * @param player The player which we want to check.
-     * @return True if both players have the same number of 3-in-a-row combos at game end.
+     * @brief Determine if the game is a draw.
      */
     bool is_draw(Player<char>* player) override;
 
-    // --- 5. Helper Functions ---
+    // ---------------------------------------------------------------------
+    // Helpers
+    // ---------------------------------------------------------------------
 
     /**
-     * @brief Count how many consequetive 3-in-a-row winning patterns the given symbol has.
-     * * This uses the stored bitmasks for fast counting.
-     * @param sym The symbol of the player ('X' or 'O').
-     * @return Number of wins (float to be compatible with Neural Network value scales).
+     * @brief Count all 3-in-a-row patterns for a given symbol.
+     * @param sym 'X' or 'O'
+     * @return Number of 3-in-a-row patterns
      */
     float countWin(char sym);
-    
+
     /**
-     * @brief Encode the current board state into a Matrix format suitable for the Neural Network.
-     * * AI's pieces map to 1.0, Opponent's to -1.0, and empty cells to 0.0.
-     * @param ai The AI's symbol.
-     * @param input The Matrix reference to be updated with the encoded board state.
+     * @brief Encode board state into a matrix for the neural network.
+     * AI = +1, Opponent = -1, Empty = 0.
+     * @param ai Symbol of AI player
+     * @param input Matrix to be filled
      */
-    void encode(char ai, Matrix<double> &input);
+    void encode(char ai, Matrix<double>& input);
 
 private:
-    uint32_t boardX = 0;                                ///< Bit board mask for X's pieces.
-    uint32_t boardO = 0;                                ///< Bit board mask for O's pieces.
-    uint32_t boardXO = 0;                               ///< Bit board mask for all occupied cells (X | O).
-    static uint32_t win3Masks[48];                ///< Store all the cobinations of 3 consequetive cells (winning lines).
-    char emptyCell;                                     ///< Empty Cell value, typically '.'.
-    int nMoves = 0;                                     ///< Number of Moves that has been made.
+    uint32_t boardX   = 0;        ///< Bitmask for X positions
+    uint32_t boardO   = 0;        ///< Bitmask for O positions
+    uint32_t boardXO  = 0;        ///< Bitmask for all occupied positions
+    static uint32_t win3Masks[48]; ///< All 3-in-a-row combinations
+
+    char emptyCell = '.';         ///< Character representing empty cell
+    int  nMoves    = 0;           ///< Number of moves played
 };
 
+// ============================================================================
+// AI Class
+// ============================================================================
 
 /**
- * @brief User Interface and AI logic for the 5x5 Large Tic-Tac-Toe Game.
- * * This class handles player input, displays the board, and implements the
- * hybrid AI using Minimax search combined with a Neural Network heuristic.
+ * @brief AI for 5x5 Tic-Tac-Toe using Minimax + Neural Network heuristic.
+ */
+class Large_XO_AI : public AI
+{
+public:
+    Large_XO_AI();
+
+    /** @brief Evaluate a board using NN + terminal heuristics. */
+    float evaluate(Board<char>* board, Player<char>* player) override;
+
+    /** @brief Minimax with alpha-beta pruning and NN-based move ordering. */
+    float minimax(bool aiTurn,
+                  Player<char>* player,
+                  float alpha,
+                  float beta,
+                  char blankCell,
+                  int depth) override;
+
+    /** @brief Compute the best move for the player. */
+    Move<char>* bestMove(Player<char>* player,
+                         char blankCell,
+                         int depth = 6) override;
+
+private:
+    std::shared_ptr<NeuralNetwork> NN;   ///< Shared NN heuristic
+    std::shared_ptr<NeuralNetwork> NNX;  ///< NN specialized for X
+    std::shared_ptr<NeuralNetwork> NNO;  ///< NN specialized for O
+    char aiSymbol  = 'X';
+    char oppSymbol = 'O';
+};
+
+// ============================================================================
+// UI Class
+// ============================================================================
+
+/**
+ * @brief UI for 5x5 Tic-Tac-Toe (human and AI interaction).
+ *
+ * This class handles:
+ *  - board rendering
+ *  - player input
+ *  - invoking the AI move
  */
 class Large_XO_UI : public Custom_UI<char>
 {
 public:
-    // --- 1. Constructors ---
-    /**
-     * @brief Construct the 5x5 XO_UI and load the trained Neural Networks.
-     */
+    /** @brief Construct UI and load AI networks. */
     Large_XO_UI();
-    
-    /**
-     * @brief Destructor for the UI class.
-     */
-    ~Large_XO_UI() {}
 
-    // --- 2. Player Interaction and Visualization ---
+    ~Large_XO_UI() override = default;
+
     /**
-     * @brief Get the move from either a Human, Computer (random), or AI player.
-     * * If the player type is AI, it calls the bestMove function.
-     * @param player The player whose turn it is.
-     * @return The move object to be checked by the game manager.
+     * @brief Request a move from Human, Random, or AI player.
+     * @return Move object
      */
     Move<char>* get_move(Player<char>* player) override;
 
     /**
-     * @brief Display the 5x5 board in a formatted grid layout.
-     * 
-     * Renders the board with:
-     * - Column numbers across the top (0-4)
-     * - Row numbers down the left side (0-4)
-     * - Grid lines separating cells
-     * - Cell contents ('X', 'O', or empty '.')
-     * 
-     * @param matrix The board matrix (parameter exists for interface compatibility but is unused;
-     *               actual board data is fetched from board->getCell())
+     * @brief Render the board in 5x5 grid format.
+     *
+     * @note `matrix` parameter is unused (kept for interface compatibility).
      */
-    void display_board_matrix(const vector<vector<char>>& matrix) const override;
-
-    // --- 3. AI Core Functions ---
-    /**
-     * @brief Determines the best move using a hybrid approach of Neural Network pruning and Minimax search.
-     * * @param player The AI player making the move.
-     * @param NN The specific Neural Network (X or O) to use for heuristic evaluation.
-     * @param depth The maximum depth to search in the minimax tree.
-     * @return A pair of integers {row, col} representing the optimal move.
-     */
-    std::pair<int,int> bestMove(Player<char>* player, std::shared_ptr<NeuralNetwork>& NN, int depth);
-
-    /**
-     * @brief Implements the Minimax search algorithm with Alpha-Beta pruning.
-     * * @param board The current state of the board.
-     * @param NN The Neural Network to be used for evaluating non-terminal nodes (heuristic).
-     * @param maximize True if it's the maximizing player's (AI's) turn, false otherwise.
-     * @param depth The current remaining depth of the search.
-     * @param alpha The alpha value for pruning.
-     * @param beta The beta value for pruning.
-     * @param ai The symbol of the AI player.
-     * @param opp The symbol of the opponent player.
-     * @return The calculated minimax value of the current board state.
-     */
-    float minimax(Large_XO_Board* board, std::shared_ptr<NeuralNetwork>& NN, bool maximize, int depth, float alpha, float beta,
-                  char ai, char opp);
-
-    /**
-     * @brief Evaluates the current board state for the AI.
-     * * Returns a large value for a win/loss state, or the Neural Network's Q-value for non-terminal states.
-     * @param board The current state of the board.
-     * @param NN The Neural Network used for prediction.
-     * @param ai The symbol of the AI player.
-     * @param opp The symbol of the opponent player.
-     * @return The heuristic evaluation score (float).
-     */
-    float evaluate (Large_XO_Board* board, std::shared_ptr<NeuralNetwork>& NN, char ai, char opp);
-
+    void display_board_matrix(const std::vector<std::vector<char>>& /*matrix*/) const override;
 
 private:
-    std::shared_ptr<NeuralNetwork> NNX;                              ///< Neural Network trained for Player X.
-    std::shared_ptr<NeuralNetwork> NNO;                              ///< Neural Network trained for Player O.
-    Large_XO_Board * board = nullptr;                                ///< Saved Board for display.
+    Large_XO_AI AI;
+    Large_XO_Board* board = nullptr; ///< Board reference for rendering
 };
 
-#endif // Large_Tic_Tac_Toe_H
+#endif // LARGE_TIC_TAC_TOE_H

@@ -143,6 +143,18 @@ private:
     int nMoves = 0;                       ///> Counter of how many moves have been played.
 };
 
+class Obstacles_AI : public AI {
+public:
+    Obstacles_AI() = default;
+
+    float evaluate(Board<char>* board, Player<char>* player) override {}
+
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
+};
+
+
 /**
  * @class Obstachles_UI
  * @brief User interface handler for Obstacles Tic-Tac-Toe.
@@ -152,7 +164,7 @@ private:
  * - Asking user for a move.
  * - Connecting UI logic with Obstachles_Board.
  */
-class Obstacles_UI : public Custom_UI<char>
+class Obstacles_UI : public UI<char>
 {
 public:
     /**

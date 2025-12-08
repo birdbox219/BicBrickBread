@@ -1,14 +1,14 @@
 #pragma once
- #include <utility>
- #include <vector>
- #include <iostream>
- #include <algorithm>
- #include "../../header/BoardGame_Classes.h"
+#include <utility>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include "../../header/BoardGame_Classes.h"
+#include "../../header/AI.h"
+#include "../../header/Custom_UI.h"
 
 class Anti_XO_Board : public Board<char>
 {
-private:
-    bool bounded(int x,int y);
 public:
     Anti_XO_Board();
 
@@ -21,12 +21,22 @@ public:
     bool is_draw(Player<char>* player) override;
 
     bool game_is_over(Player<char>* player) override;
-
-    std::pair<int,int> neighbors_are_lava(char s);
 };
 
+class Anti_AI : public AI {
+public:
+    Anti_AI() = default;
 
-class Anti_XO_UI : public UI<char>
+    float evaluate(Board<char>* board, Player<char>* player) override {}
+
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+
+    bool bounded(int x,int y);
+
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
+};
+
+class Anti_XO_UI : public Custom_UI<char>
 {
 public:
     Anti_XO_UI();

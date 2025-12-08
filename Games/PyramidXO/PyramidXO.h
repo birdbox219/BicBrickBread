@@ -18,6 +18,16 @@ public:
     bool game_is_over(Player<char>* player) override;
 };
 
+class PyramidXO_AI : public AI {
+public:
+    PyramidXO_AI() = default;
+
+    float evaluate(Board<char>* board, Player<char>* player) override {}
+
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
+};
 
 class PyramidXO_UI : public UI<char>
 {
