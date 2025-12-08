@@ -6,7 +6,7 @@
 2.  You can use the following command to compile the project. Replace `<path-to-g++>` with the actual path to your g++ executable and `<project-directory>` with the absolute path to the project directory.
 
     ```bash
-    <path-to-g++>/g++.exe -Wall -Wextra -g3 <project-directory>/XO_Demo.cpp <project-directory>/XO_Classes.cpp -o <project-directory>/output/XO_Demo.exe
+    g++ -o TheGame.exe TheGame.cpp Refrence/XO_Classes.cpp Games/4x4_Tic_Tac_Toe/4by4_XO.cpp Games/Four_in_a_row/four.cpp Games/Large_Tic_Tac_Toe/Large_Tic_Tac_Toe.cpp Games/Memory_Tic_Tac_Toe/Memory_Tic_Tac_Toe.cpp Games/Obstacles_Tic_Tac_Toe/Obstacles_Tic_Tac_Toe.cpp Games/PyramidXO/PyramidXO.cpp Games/SUS/SUS.cpp Games/Ultimate_Tic_Tac_Toe/Ultimate.cpp Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.cpp Games/XO_inf/XO_inf.cpp Games/XO_num/xo_num.cpp Games/anti_XO/Anti_XO.cpp Games/diamond_XO/dia_XO.cpp Neural_Network/Source/Layer.cpp Neural_Network/Source/Matrix.cpp Neural_Network/Source/NeuralNetwork.cpp -I.
     ```
 
 ### Using VS Code Tasks
