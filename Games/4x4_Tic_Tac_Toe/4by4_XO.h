@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../../header/BoardGame_Classes.h"
-#include "../../header/AI.h"
 
 class _4by4XO_Move : public Move<char> {
     int from_x, from_y;

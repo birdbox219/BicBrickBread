@@ -12,6 +12,7 @@
 #include "Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.h"
 #include "Games/XO_inf/XO_inf.h"
 #include "Games/XO_num/xo_num.h"
+#include "Neural_Network/Include/NeuralNetwork.h"
 
 #include <vector>
 #include <iostream>

@@ -1,9 +1,10 @@
 #pragma once
 
- #include <vector>
- #include <utility>
- #include <unordered_set>
- #include "../../header/BoardGame_Classes.h"
+#include <vector>
+#include <utility>
+#include <unordered_set>
+#include "../../header/BoardGame_Classes.h"
+#include "../../header/AI.h"
 
 
 typedef std::unordered_set<std::vector<std::pair<int,int>>> zengy;
@@ -30,6 +31,16 @@ public:
     bool game_is_over(Player<char>* player) override;
 };
 
+class dia_XO_AI : public AI {
+public:
+    dia_XO_AI() = default;
+
+    float evaluate(Board<char>* board, Player<char>* player) override {}
+
+    float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override {}
+
+    Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
+};
 
 class dia_XO_UI : public UI<char>
 {
