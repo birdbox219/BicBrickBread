@@ -263,6 +263,7 @@ Move<char> *Word_XO_UI::get_move(Player<char> *player)
     } 
     else if (player->get_type() == PlayerType::AI) {
         Word_AI AI;
+        dynamic_cast<Word_XO_Board*>(player->get_board_ptr())->setLastPlayer(player);
         return AI.bestMove(player, '.');
     }
 

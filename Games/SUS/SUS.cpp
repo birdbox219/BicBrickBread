@@ -46,8 +46,6 @@ bool SUS_Board::update_board(Move<char> *move)
             n_moves++;
             board[x][y] = toupper(mark);
         }
-       score(x,y,mark);
-       cout<<"S score: "<<s_score<<endl <<"U score: "<< u_score;
 
         return true;
     }
@@ -113,7 +111,7 @@ Move<char> *SUS_UI::get_move(Player<char> *player)
     
     if (player->get_type() == PlayerType::HUMAN) {
        
-        cout << player->get_name() << " (" << player->get_symbol()
+        cout << player->get_name() << " (" << player->get_symbol() << ") "
          << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
         
