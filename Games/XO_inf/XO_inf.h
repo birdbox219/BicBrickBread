@@ -1,8 +1,5 @@
 #ifndef XO_inf_H
 #define X_inf_H
-#include <deque>
-#include <stack>
-#include <limits>
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"

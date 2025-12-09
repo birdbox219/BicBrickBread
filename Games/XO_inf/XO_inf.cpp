@@ -3,6 +3,8 @@
 #include <limits>
 #include <cctype>  // for toupper()
 #include <queue>
+#include <deque>
+#include <stack>
 #include "XO_inf.h"
 
 using namespace std;

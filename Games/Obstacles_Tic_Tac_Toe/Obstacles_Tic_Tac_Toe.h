@@ -4,9 +4,6 @@
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
 #include "../../header/AI.h"
-#include <cstdint>
-#include <algorithm>
-#include <random>
 
 /**
  * @class Obstachles_Board
