@@ -1,0 +1,9 @@
+<map id="XO_NUM_Board" name="XO_NUM_Board">
+<area shape="rect" id="Node000001" title="Numerical Tic&#45;Tac&#45;Toe board." alt="" coords="118,581,248,757"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="5,163,137,488"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,501,157,581,152,582,126,503"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="11,5,132,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,90,74,145,69,145,69,90"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,291,283,360"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,360,198,565,192,564,216,359"/>
+</map>

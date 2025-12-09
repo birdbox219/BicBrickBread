@@ -1,0 +1,5 @@
+<map id="Anti_XO_Board::Anti_XO_Board" name="Anti_XO_Board::Anti_XO_Board">
+<area shape="rect" id="Node000001" title="Constructs a 3×3 Anti&#45;XO board initialized with &#39;.&#39;." alt="" coords="5,5,148,48"/>
+<area shape="rect" id="Node000002" href="$class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" title=" " alt="" coords="196,13,342,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,24,180,24,180,29,148,29"/>
+</map>

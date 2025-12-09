@@ -1,0 +1,7 @@
+<map id="NeuralNetwork::train" name="NeuralNetwork::train">
+<area shape="rect" id="Node000001" title="Train the network on a single input&#45;output pair." alt="" coords="5,31,147,57"/>
+<area shape="rect" id="Node000002" href="$class_neural_network.html#a0bed8373877d2f1711e75560a353507c" title="Perform backward propagation through all layers and update weights." alt="" coords="195,5,367,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,33,179,29,179,34,147,38"/>
+<area shape="rect" id="Node000003" href="$class_neural_network.html#a00324c4e6ef12c3ca7904b38bd85330f" title="Perform a forward pass through all layers." alt="" coords="201,56,360,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,50,186,55,185,60,147,55"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="dia_XO_AI::bestMove" name="dia_XO_AI::bestMove">
+<area shape="rect" id="Node000001" title="Determines the optimal move using minimax." alt="" coords="204,5,353,32"/>
+<area shape="rect" id="Node000002" href="$classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" title="Ask the user (or AI) to make a move." alt="" coords="5,5,156,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,21,156,21,156,16,188,16"/>
+</map>

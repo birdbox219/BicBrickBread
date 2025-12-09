@@ -1,0 +1,14 @@
+<map id="Obstacles_Board::game_is_over" name="Obstacles_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Determines whether the game is over for the given player." alt="" coords="5,23,167,65"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___board.html#a727f0d88ad486a7fb74142f590f7eda0" title="Checks for draw condition (board full and no winner)." alt="" coords="215,31,389,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,41,199,41,199,47,167,47"/>
+<area shape="rect" id="Node000003" href="$class_obstacles___board.html#a8cfc2aeca16df3eed8c6fa739a7c1a4d" title="Checks if the given player has lost (opponent has 4&#45;in&#45;a&#45;row)." alt="" coords="437,5,607,32"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="167,23,214,16,321,10,422,11,422,16,321,16,215,21,168,28"/>
+<area shape="rect" id="Node000005" href="$class_obstacles___board.html#aac85c909cd7d0e59c4ba2dea35789c26" title="Checks if the given player has a winning configuration." alt="" coords="439,56,605,83"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="168,60,215,67,323,72,423,72,423,77,322,78,214,72,167,65"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,31,421,28,422,33,390,37"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="390,51,424,55,423,61,389,57"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="655,31,789,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="608,27,641,31,640,36,607,32"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="606,56,639,52,640,57,606,61"/>
+</map>

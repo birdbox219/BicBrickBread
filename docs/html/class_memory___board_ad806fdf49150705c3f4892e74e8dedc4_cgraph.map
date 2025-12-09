@@ -1,0 +1,14 @@
+<map id="Memory_Board::game_is_over" name="Memory_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Check if the game is over." alt="" coords="5,23,155,65"/>
+<area shape="rect" id="Node000002" href="$class_memory___board.html#ad80149de055f8902191f1124d23619df" title="Check if the game ended in a draw." alt="" coords="203,31,365,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,41,187,41,187,47,155,47"/>
+<area shape="rect" id="Node000003" href="$class_memory___board.html#a0c40062fe9f07b532ad893747d5d47e5" title="Check if a player has lost." alt="" coords="413,5,571,32"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="154,24,202,16,303,10,397,11,397,16,303,16,203,21,155,29"/>
+<area shape="rect" id="Node000005" href="$class_memory___board.html#a8ebd3f4825d7a3ac78cc77ef85738de9" title="Check if a player has won." alt="" coords="415,56,569,83"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="155,59,203,67,305,72,400,71,400,77,304,78,202,72,154,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,31,397,28,398,33,366,37"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="366,51,400,55,399,61,365,57"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="619,31,753,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="572,26,604,31,604,36,571,32"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="569,57,603,52,604,57,570,62"/>
+</map>

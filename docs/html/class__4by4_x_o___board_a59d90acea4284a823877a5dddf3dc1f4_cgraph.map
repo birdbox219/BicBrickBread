@@ -1,0 +1,5 @@
+<map id="_4by4XO_Board::is_win" name="_4by4XO_Board::is_win">
+<area shape="rect" id="Node000001" title="Checks if the given player has 3 consecutive symbols." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000002" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="215,5,348,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+</map>

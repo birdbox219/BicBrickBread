@@ -1,0 +1,5 @@
+<map id="FOUR_Board::is_win" name="FOUR_Board::is_win">
+<area shape="rect" id="Node000001" title="Checks if the given player has won." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="199,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,184,16,184,21,151,21"/>
+</map>

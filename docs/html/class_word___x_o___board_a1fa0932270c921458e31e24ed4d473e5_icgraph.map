@@ -1,0 +1,5 @@
+<map id="Word_XO_Board::getEmptyCell" name="Word_XO_Board::getEmptyCell">
+<area shape="rect" id="Node000001" title="Returns the symbol representing an unoccupied cell." alt="" coords="190,5,395,32"/>
+<area shape="rect" id="Node000002" href="$class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" title="Computes and returns the optimal move." alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,21,142,21,142,16,174,16"/>
+</map>

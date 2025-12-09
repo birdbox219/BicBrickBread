@@ -1,0 +1,5 @@
+<map id="_4by4XO_Board::is_draw" name="_4by4XO_Board::is_draw">
+<area shape="rect" id="Node000001" title="Considers the game a draw if too many moves occur without a win." alt="" coords="210,13,379,40"/>
+<area shape="rect" id="Node000002" href="$class__4by4_x_o___board.html#ad186c1005ee1c30e0955403aee023a88" title="Checks if game is over (win or draw)." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,29,162,29,162,24,194,24"/>
+</map>

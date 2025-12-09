@@ -1,10 +1,20 @@
-#ifndef SUS
-#define SUS
+#ifndef SUS_H
+#define SUS_H
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"
 #include <random>
+
+/**
+ * @file SUS.h
+ * @brief SUS game classes
+ *
+ * @defgroup SUS_XO SUS XO
+ * @brief Classes and interfaces for the 3x3 SUS game.
+ * @{
+ */
+
 using namespace std;
 
 /**
@@ -88,4 +98,6 @@ public:
     Move<char>* get_move(Player<char>* player) override;
 };
 
-#endif //SUS
+/** @} */ // end of SUS_XO
+
+#endif //SUS_H

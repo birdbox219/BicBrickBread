@@ -1,0 +1,5 @@
+<map id="Memory_AI" name="Memory_AI">
+<area shape="rect" id="Node000001" title="AI controller for Memory Tic&#45;Tac&#45;Toe implementing the AI interface." alt="" coords="5,187,104,320"/>
+<area shape="rect" id="Node000002" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="10,5,99,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,153,58,187,52,187,52,153"/>
+</map>

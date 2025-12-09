@@ -1,0 +1,11 @@
+<map id="Large_XO_AI::minimax" name="Large_XO_AI::minimax">
+<area shape="rect" id="Node000001" title="Minimax with alpha&#45;beta pruning and NN&#45;based move ordering." alt="" coords="5,56,162,83"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="49,57,43,47,47,38,61,31,84,29,108,32,121,38,118,43,106,37,83,35,62,37,51,41,48,47,53,54"/>
+<area shape="rect" id="Node000002" href="$class_large___x_o___a_i.html#a7369a7db6ac018c0480009ed8cec6d1b" title="Evaluate a board using NN + terminal heuristics." alt="" coords="210,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,53,216,34,217,39,141,58"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="414,31,547,57"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="162,62,398,47,399,52,162,67"/>
+<area shape="rect" id="Node000004" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="215,107,360,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,81,217,100,216,105,140,86"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,26,399,31,398,36,366,32"/>
+</map>

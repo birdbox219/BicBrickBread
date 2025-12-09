@@ -3,6 +3,16 @@
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
+
+/**
+ * @file xo_num.h
+ * @brief Numerical Tic-Tac-Toe (Magic Square XO) game classes
+ *
+ * @defgroup XO_num Numerical XO
+ * @brief Classes and interfaces for the numerical Tic-Tac-Toe game.
+ * @{
+ */
+
 using namespace std;
 
 /**
@@ -61,7 +71,7 @@ public:
 class XO_NUM_UI : public UI<char> {
 public:
     XO_NUM_UI();
-    ~XO_NUM_UI() {};
+    ~XO_NUM_UI() {} 
 
     char num; ///< Last number chosen
 
@@ -74,5 +84,7 @@ public:
     /// @brief Gets next move from human or AI
     Move<char>* get_move(Player<char>* player) override;
 };
+
+/** @} */ // end of XO_num
 
 #endif

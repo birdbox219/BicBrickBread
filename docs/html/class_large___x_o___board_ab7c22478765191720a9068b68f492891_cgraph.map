@@ -1,0 +1,11 @@
+<map id="Large_XO_Board::update_board" name="Large_XO_Board::update_board">
+<area shape="rect" id="Node000001" title="Update board using a Move object (overrides base class)." alt="" coords="5,73,173,116"/>
+<area shape="rect" id="Node000002" href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" title="Get the move symbol." alt="" coords="252,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,70,220,41,244,34,245,39,222,47,143,75"/>
+<area shape="rect" id="Node000003" href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" title="Get row index." alt="" coords="269,56,362,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,83,254,74,254,79,173,88"/>
+<area shape="rect" id="Node000004" href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" title="Get column index." alt="" coords="269,107,362,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,101,254,110,254,116,173,107"/>
+<area shape="rect" id="Node000005" href="$class_large___x_o___board.html#a54d37f155f8bd97a86a548171de3217d" title="Update a cell using the bitboard representation." alt="" coords="221,157,411,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="143,114,222,143,245,150,244,155,220,148,142,119"/>
+</map>

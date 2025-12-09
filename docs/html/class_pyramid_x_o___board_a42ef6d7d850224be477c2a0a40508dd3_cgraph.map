@@ -1,0 +1,9 @@
+<map id="PyramidXO_Board::update_board" name="PyramidXO_Board::update_board">
+<area shape="rect" id="Node000001" title="Attempts to place a symbol on the board." alt="" coords="5,48,182,91"/>
+<area shape="rect" id="Node000002" href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" title="Get the move symbol." alt="" coords="230,5,358,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,45,223,34,224,39,181,50"/>
+<area shape="rect" id="Node000003" href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" title="Get row index." alt="" coords="247,56,340,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,67,232,67,232,72,182,72"/>
+<area shape="rect" id="Node000004" href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" title="Get column index." alt="" coords="247,107,340,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,89,233,102,231,107,180,94"/>
+</map>

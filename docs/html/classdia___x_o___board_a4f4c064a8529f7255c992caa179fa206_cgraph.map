@@ -1,0 +1,9 @@
+<map id="dia_XO_Board::game_is_over" name="dia_XO_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Check if the game is over." alt="" coords="5,23,151,65"/>
+<area shape="rect" id="Node000002" href="$classdia___x_o___board.html#a6cfc262a76859ef721a866e5c81dcb5b" title="Check if the game ended in a draw." alt="" coords="199,5,357,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,32,183,28,183,33,151,37"/>
+<area shape="rect" id="Node000003" href="$classdia___x_o___board.html#ace5ad1f96f61c119b02476049d9be35d" title="Check if a player has won." alt="" coords="203,56,353,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,51,188,55,187,61,151,56"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="405,56,538,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,67,389,67,389,72,354,72"/>
+</map>

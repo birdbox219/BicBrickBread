@@ -1,0 +1,17 @@
+<map id="Large_XO_AI" name="Large_XO_AI">
+<area shape="rect" id="Node000001" title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic." alt="" coords="16,1643,126,1797"/>
+<area shape="rect" id="Node000002" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="5,1395,94,1528"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,1543,68,1643,62,1643,54,1543"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,1427,328,1496"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,1497,127,1630,123,1627,201,1494"/>
+<area shape="rect" id="Node000004" href="$class_neural_network.html" title="Fully connected feedforward neural network using updated Layer class." alt="" coords="164,1125,283,1323"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,1322,226,1410,220,1410,220,1322"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="159,984,288,1053"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="226,1053,226,1109,220,1109,220,1053"/>
+<area shape="rect" id="Node000006" href="$class_layer.html" title="Fully&#45;connected neural network layer (refactored for SOLID &amp; encapsulation)." alt="" coords="164,629,282,912"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="226,912,226,967,220,967,220,912"/>
+<area shape="rect" id="Node000007" href="$class_matrix.html" title=" " alt="" coords="169,147,278,472"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="226,472,226,612,220,612,220,472"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="156,5,290,75"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="226,75,226,130,220,130,220,75"/>
+</map>

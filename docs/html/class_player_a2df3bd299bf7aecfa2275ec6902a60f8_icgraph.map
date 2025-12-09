@@ -1,0 +1,29 @@
+<map id="Player::get_type" name="Player::get_type">
+<area shape="rect" id="Node000001" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="228,309,344,336"/>
+<area shape="rect" id="Node000002" href="$class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" title="Gets move input from human or AI." alt="" coords="12,5,173,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,294,271,241,253,174,223,105,203,74,178,46,162,35,165,30,181,42,207,70,228,103,258,172,276,240,285,293"/>
+<area shape="rect" id="Node000003" href="$class_anti___x_o___u_i.html#a33e3fac8bd7d6e9e26eaa1a5df1ddd6f" title="Retrieves the player&#39;s move (human, computer random, or AI)." alt="" coords="14,56,171,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,295,266,251,246,197,218,143,199,118,178,97,160,86,163,81,181,93,203,115,222,140,251,195,271,249,282,294"/>
+<area shape="rect" id="Node000004" href="$classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" title="Ask the user (or AI) to make a move." alt="" coords="17,107,168,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="273,295,259,261,239,221,212,181,178,147,159,136,161,132,181,143,216,178,243,219,264,259,278,293"/>
+<area shape="rect" id="Node000005" href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" title="Gets the move from a human, computer, or AI player." alt="" coords="20,157,165,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="267,297,230,247,206,220,178,198,156,187,158,182,181,194,210,217,234,243,271,294"/>
+<area shape="rect" id="Node000006" href="$class_large___x_o___u_i.html#ad2c0d9d3cec8c1e35d42b2342a08bc7f" title="Request a move from Human, Random, or AI player." alt="" coords="10,208,175,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="256,301,220,274,178,249,150,238,152,233,181,244,223,270,259,297"/>
+<area shape="rect" id="Node000007" href="$class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" title="Obtains the next move from a player." alt="" coords="15,259,170,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="217,307,146,289,147,283,218,302"/>
+<area shape="rect" id="Node000008" href="$class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" title="Obtains a move from a human or AI player." alt="" coords="9,309,176,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="212,325,176,325,176,320,212,320"/>
+<area shape="rect" id="Node000009" href="$class_pyramid_x_o___u_i.html#a936b1fdabe80776e212110be108f811f" title="Reads human move or requests AI move." alt="" coords="5,360,180,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="218,343,147,362,146,357,217,338"/>
+<area shape="rect" id="Node000010" href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" title="Gets the next move from a human or AI." alt="" coords="25,411,160,437"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="259,348,223,376,181,401,152,413,150,408,178,396,220,371,256,344"/>
+<area shape="rect" id="Node000011" href="$class_ultimate___u_i.html#a4c3e6b4f77e281d67a946df1620ef822" title="Reads next move from human or AI." alt="" coords="14,461,171,488"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="271,351,234,402,210,429,181,452,158,463,156,458,178,447,206,425,230,399,267,348"/>
+<area shape="rect" id="Node000012" href="$class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" title="Retrieves the move from the current player." alt="" coords="11,512,174,539"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="278,352,264,386,243,427,216,467,181,502,161,514,159,509,178,498,212,464,239,424,259,384,273,350"/>
+<area shape="rect" id="Node000013" href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" title="Get the next move from a player." alt="" coords="19,563,166,589"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="282,352,271,396,251,450,222,505,203,530,181,553,163,564,160,560,178,549,199,527,218,502,246,448,266,394,277,350"/>
+<area shape="rect" id="Node000014" href="$class_x_o___n_u_m___u_i.html#a6937463483d95c20fce215d4b9c6afa4" title="Gets next move from human or AI." alt="" coords="10,613,175,640"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="285,352,276,406,258,473,228,543,207,575,181,603,165,615,162,610,178,599,203,572,223,540,253,471,271,404,279,351"/>
+</map>

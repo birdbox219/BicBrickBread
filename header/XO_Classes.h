@@ -8,6 +8,15 @@
 using namespace std;
 
 /**
+ * @file XO_Classes.h
+ * @brief Classic Tic-Tac-Toe game classes
+ *
+ * @defgroup XO Classic XO
+ * @brief Classes and interfaces for the classic Tic-Tac-Toe game.
+ * @{
+ */
+
+/**
  * @brief Represents a Tic-Tac-Toe (X-O) board.
  *
  * This class inherits from the generic Board<char> and implements
@@ -127,3 +136,4 @@ public:
 };
 
 #endif // XO_CLASSES_H
+/** @} */ // end of XO

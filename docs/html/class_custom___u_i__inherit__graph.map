@@ -1,0 +1,5 @@
+<map id="Custom_UI&lt; T &gt;" name="Custom_UI&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Provides a customizable UI supporting multiple player types." alt="" coords="5,315,174,512"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title="Base class for handling user interface and input/output." alt="" coords="5,5,174,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,282,92,315,87,315,87,282"/>
+</map>

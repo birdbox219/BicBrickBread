@@ -1,0 +1,7 @@
+<map id="dia_XO_AI::bestMove" name="dia_XO_AI::bestMove">
+<area shape="rect" id="Node000001" title="Determines the optimal move using minimax." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="203,5,348,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,32,187,27,188,33,156,37"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="209,56,342,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,51,193,56,193,61,155,56"/>
+</map>

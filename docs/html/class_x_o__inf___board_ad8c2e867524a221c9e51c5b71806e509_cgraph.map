@@ -1,0 +1,9 @@
+<map id="XO_inf_Board::update_board" name="XO_inf_Board::update_board">
+<area shape="rect" id="Node000001" title="Apply or undo a move on the board." alt="" coords="5,48,155,91"/>
+<area shape="rect" id="Node000002" href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" title="Get the move symbol." alt="" coords="203,5,331,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,46,199,34,201,39,156,52"/>
+<area shape="rect" id="Node000003" href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" title="Get row index." alt="" coords="220,56,314,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,67,204,67,204,72,155,72"/>
+<area shape="rect" id="Node000004" href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" title="Get column index." alt="" coords="220,107,314,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,87,206,101,204,106,154,92"/>
+</map>

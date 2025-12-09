@@ -1,0 +1,8 @@
+<map id="Ultimate_Board::is_win" name="Ultimate_Board::is_win">
+<area shape="rect" id="Node000001" title="Checks if the player has won the game." alt="" coords="417,13,573,40"/>
+<area shape="rect" id="Node000002" href="$class_ultimate___board.html#adb5f3ecf194dae9f85a680f384422151" title="Returns true if the game is over." alt="" coords="5,5,157,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,29,157,29,157,24,401,24"/>
+<area shape="rect" id="Node000003" href="$class_ultimate___board.html#a5737c7a2126711b10d5996eb07644fb1" title="Checks if the game is a draw." alt="" coords="205,39,369,65"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="402,41,370,45,369,39,401,35"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="189,43,157,39,158,33,189,37"/>
+</map>

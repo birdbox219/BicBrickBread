@@ -1,0 +1,16 @@
+<map id="Anti_XO_UI::get_move" name="Anti_XO_UI::get_move">
+<area shape="rect" id="Node000001" title="Retrieves the player&#39;s move (human, computer random, or AI)." alt="" coords="5,132,162,159"/>
+<area shape="rect" id="Node000002" href="$class_anti___a_i.html#acec0e9ad7768c964434b67ae2e9d354a" title="Computes the best move by selecting the least dangerous adjacent cell." alt="" coords="210,56,339,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,129,224,86,226,91,120,134"/>
+<area shape="rect" id="Node000005" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="393,107,526,133"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="162,137,377,123,378,128,162,143"/>
+<area shape="rect" id="Node000006" href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="213,157,336,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="162,153,198,158,197,163,162,158"/>
+<area shape="rect" id="Node000007" href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="216,208,332,235"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="120,157,211,194,225,199,223,204,209,198,118,162"/>
+<area shape="rect" id="Node000003" href="$class_anti___a_i.html#a7ab3874b1067c35ec41b8b34d1184f87" title="Checks that coordinates are within the board bounds." alt="" coords="399,5,520,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,53,393,34,395,39,327,58"/>
+<area shape="rect" id="Node000004" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="387,56,532,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="340,67,372,67,372,72,340,72"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="327,81,395,100,393,105,325,86"/>
+</map>

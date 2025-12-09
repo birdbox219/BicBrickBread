@@ -3,6 +3,16 @@
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
+
+/**
+ * @file Ultimate.h
+ * @brief Ultimate Tic-Tac-Toe game classes
+ *
+ * @defgroup Ultimate_XO Ultimate XO
+ * @brief Classes and interfaces for the Ultimate Tic-Tac-Toe game.
+ * @{
+ */
+
 using namespace std;
 
 /**
@@ -73,7 +83,7 @@ public:
 class Ultimate_UI : public UI<char> {
 public:
     Ultimate_UI();
-    ~Ultimate_UI() {};
+    ~Ultimate_UI() {} 
 
     /// @brief Creates a player instance
     Player<char>* create_player(string& name, char symbol, PlayerType type) override;
@@ -84,5 +94,7 @@ public:
     /// @brief Displays the 9x9 board with separators for small boards
     void display_board_matrix(const vector<vector<char>>& matrix) const override;
 };
+
+/** @} */ // end of Ultimate_XO
 
 #endif  //Ultimate_H

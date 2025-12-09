@@ -1,0 +1,9 @@
+<map id="_4by4XO_Board::game_is_over" name="_4by4XO_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Checks if game is over (win or draw)." alt="" coords="5,23,162,65"/>
+<area shape="rect" id="Node000002" href="$class__4by4_x_o___board.html#a6bfc8e59c0a02d0b7fec895adc8e3145" title="Considers the game a draw if too many moves occur without a win." alt="" coords="210,5,379,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,32,194,28,194,33,162,37"/>
+<area shape="rect" id="Node000003" href="$class__4by4_x_o___board.html#a59d90acea4284a823877a5dddf3dc1f4" title="Checks if the given player has 3 consecutive symbols." alt="" coords="214,56,375,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,51,199,55,198,60,161,56"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="427,56,560,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="376,67,412,67,412,72,376,72"/>
+</map>

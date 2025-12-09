@@ -1,0 +1,5 @@
+<map id="XO_inf_AI::bestMove" name="XO_inf_AI::bestMove">
+<area shape="rect" id="Node000001" title="Determine the best move for AI." alt="" coords="201,5,347,32"/>
+<area shape="rect" id="Node000002" href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" title="Get the next move from a player." alt="" coords="5,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>

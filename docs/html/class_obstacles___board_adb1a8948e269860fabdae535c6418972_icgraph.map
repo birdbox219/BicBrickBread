@@ -1,0 +1,11 @@
+<map id="Obstacles_Board::getAvailableMove" name="Obstacles_Board::getAvailableMove">
+<area shape="rect" id="Node000001" title="Returns a list of all legal moves." alt="" coords="461,35,693,61"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d" title="Determines the optimal move using minimax." alt="" coords="235,8,400,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,37,400,32,401,27,446,32"/>
+<area shape="rect" id="Node000004" href="$class_obstacles___board.html#a6ffa3be3e7a967293e98834c04e93955" title="Attempts to place symbol s at (r, c)." alt="" coords="222,60,413,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="445,64,414,67,413,61,445,58"/>
+<area shape="rect" id="Node000003" href="$class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" title="Obtains a move from a human or AI player." alt="" coords="6,5,173,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,23,173,22,173,17,219,18"/>
+<area shape="rect" id="Node000005" href="$class_obstacles___board.html#a51f3c83c61219c03b6c66231448b93b8" title="Applies a Move&lt;char&gt; object to the board." alt="" coords="5,56,174,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="206,78,174,79,174,73,206,73"/>
+</map>

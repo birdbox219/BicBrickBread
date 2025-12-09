@@ -1,0 +1,78 @@
+<map id="Player::get_board_ptr" name="Player::get_board_ptr">
+<area shape="rect" id="Node000001" title="Get a pointer to the game board." alt="" coords="651,611,797,637"/>
+<area shape="rect" id="Node000002" href="$class__4by4_x_o___a_i.html#aa13e6d3e4cdedc6ea7e813a16d4c0d68" title="Generates the best move for the AI." alt="" coords="436,5,597,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="718,596,707,477,685,312,669,228,650,151,627,88,615,64,601,46,587,35,590,31,605,42,619,61,632,86,655,149,674,227,690,311,712,476,723,595"/>
+<area shape="rect" id="Node000004" href="$class_anti___a_i.html#acec0e9ad7768c964434b67ae2e9d354a" title="Computes the best move by selecting the least dangerous adjacent cell." alt="" coords="452,56,581,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="717,596,705,486,681,336,666,260,647,191,626,135,601,97,580,82,583,78,605,93,630,132,652,190,671,259,687,335,710,485,723,595"/>
+<area shape="rect" id="Node000006" href="$classdia___x_o___a_i.html#aac374ebe974ed55e608952762ad6d3ff" title="Determines the optimal move using minimax." alt="" coords="442,107,591,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="716,596,702,498,677,366,643,238,623,188,601,154,576,136,579,132,605,150,627,185,648,236,682,364,707,497,722,595"/>
+<area shape="rect" id="Node000008" href="$class_four___a_i.html#a12661d165899365f9a5031ec04814e44" title="Computes the best possible move for the AI." alt="" coords="229,409,361,436"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="703,600,661,547,633,521,602,498,542,470,478,450,416,437,361,430,362,425,416,432,479,445,544,465,605,494,637,517,665,544,708,596"/>
+<area shape="rect" id="Node000010" href="$class_large___x_o___a_i.html#a73ab0db41718aa760a8caa11dbfcf0c8" title="Compute the best move for the player." alt="" coords="213,523,377,549"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="700,601,658,560,632,541,602,526,570,517,536,511,468,509,404,515,350,525,349,519,403,510,468,504,537,506,571,512,604,522,634,536,662,556,704,597"/>
+<area shape="rect" id="Node000011" href="$class_memory___a_i.html#a6bb44a40960586c692f1224bc15dc098" title="Determines the optimal move for AI using minimax." alt="" coords="218,711,372,737"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="704,651,662,692,634,712,604,727,545,742,483,747,424,746,371,741,372,735,424,741,483,742,544,736,602,721,632,707,658,688,700,647"/>
+<area shape="rect" id="Node000013" href="$class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d" title="Determines the optimal move using minimax." alt="" coords="434,208,599,235"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="720,595,714,525,697,432,682,382,661,334,635,288,602,249,586,237,589,233,605,245,639,285,666,331,687,381,702,431,719,524,725,595"/>
+<area shape="rect" id="Node000014" href="$class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" title="Obtains a move from a human or AI player." alt="" coords="212,183,378,209"/>
+<area shape="poly" id="edge26_Node000001_Node000014" title=" " alt="" coords="716,596,703,503,679,382,663,322,645,268,624,225,602,198,571,180,537,169,501,163,464,162,394,170,337,185,336,179,393,165,464,157,501,158,538,163,573,175,605,194,629,222,650,266,668,320,684,381,708,502,722,595"/>
+<area shape="rect" id="Node000015" href="$class_pyramid_x_o___a_i.html#a503de221d36f762812330be2aa1c0e5f" title="Generates a random valid move within the pyramid." alt="" coords="430,259,603,285"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="718,595,709,534,690,454,675,412,655,371,631,333,602,299,585,288,588,284,605,295,635,330,660,368,680,410,695,453,715,533,723,595"/>
+<area shape="rect" id="Node000017" href="$class_s_u_s___a_i.html#ae27d5dea2808c253c2fe19574bb41038" title="Computes the best move for the player." alt="" coords="228,1215,362,1241"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="724,653,717,779,697,954,682,1043,662,1123,637,1188,622,1212,605,1230,574,1250,539,1262,502,1268,464,1269,392,1260,334,1245,335,1239,393,1255,464,1264,501,1263,537,1257,571,1245,602,1226,617,1209,632,1185,657,1122,677,1042,692,954,711,779,719,653"/>
+<area shape="rect" id="Node000019" href="$class_ultimate___a_i.html#aab4c93eccf27f6e37c89dc41f70c9742" title="Returns a random available move." alt="" coords="439,309,594,336"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="716,596,704,543,683,477,650,408,628,377,602,350,584,339,587,334,605,346,632,374,654,406,688,475,709,542,721,594"/>
+<area shape="rect" id="Node000021" href="$class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" title="Computes and returns the optimal move." alt="" coords="448,611,585,637"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="636,627,585,627,585,621,636,621"/>
+<area shape="rect" id="Node000022" href="$class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" title="Determine the best move for AI." alt="" coords="222,861,368,888"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="706,651,663,702,635,729,605,753,489,803,334,863,332,858,487,798,602,748,632,725,659,698,702,648"/>
+<area shape="rect" id="Node000023" href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" title="Get the next move from a player." alt="" coords="9,988,156,1015"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="723,653,710,754,687,888,672,956,653,1016,631,1065,605,1097,578,1104,529,1106,397,1099,207,1080,175,1067,145,1050,99,1017,102,1013,148,1046,178,1062,208,1075,397,1094,529,1100,577,1099,602,1092,626,1062,648,1014,666,954,682,887,705,753,717,652"/>
+<area shape="rect" id="Node000024" href="$class_x_o___n_u_m___a_i.html#a199156c4313be371ad60e780e7f88834" title="Chooses a random available cell and number." alt="" coords="435,1013,598,1040"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="725,653,719,724,702,817,687,867,666,917,639,963,605,1003,589,1015,586,1011,602,999,635,960,661,914,682,866,697,816,714,723,720,653"/>
+<area shape="rect" id="Node000025" href="$class_x_o___n_u_m___u_i.html#a6937463483d95c20fce215d4b9c6afa4" title="Gets next move from human or AI." alt="" coords="213,1039,377,1065"/>
+<area shape="poly" id="edge29_Node000001_Node000025" title=" " alt="" coords="722,653,708,746,684,867,668,928,650,982,629,1026,605,1054,573,1073,538,1085,501,1090,464,1091,393,1083,336,1069,337,1063,394,1078,464,1086,501,1085,537,1079,571,1068,602,1050,624,1023,645,980,663,926,679,866,703,745,716,652"/>
+<area shape="rect" id="Node000026" href="$class_large___x_o___u_i.html#ad2c0d9d3cec8c1e35d42b2342a08bc7f" title="Request a move from Human, Random, or AI player." alt="" coords="434,912,599,939"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="721,654,709,706,688,773,654,842,632,874,605,902,587,914,584,909,602,898,628,871,650,840,683,771,704,705,716,652"/>
+<area shape="rect" id="Node000027" href="$class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" title="Retrieves the move from the current player." alt="" coords="435,963,598,989"/>
+<area shape="poly" id="edge27_Node000001_Node000027" title=" " alt="" coords="723,653,715,715,695,795,680,838,660,880,635,918,605,953,588,964,585,960,602,949,631,915,655,877,675,836,690,794,709,714,718,653"/>
+<area shape="rect" id="Node000028" href="$class_four___a_i.html#a2be9e32c580e8aa22c530ab4c9920317" title="Minimax with alpha&#45;beta pruning." alt="" coords="454,384,579,411"/>
+<area shape="poly" id="edge30_Node000001_Node000028" title=" " alt="" coords="710,597,694,560,670,516,639,471,602,431,570,414,573,409,605,427,644,467,675,513,699,558,715,595"/>
+<area shape="rect" id="Node000029" href="$class_large___x_o___a_i.html#afdd4990cd58293668dc8ba9660beb31b" title="Minimax with alpha&#45;beta pruning and NN&#45;based move ordering." alt="" coords="438,560,595,587"/>
+<area shape="poly" id="edge33_Node000001_Node000029" title=" " alt="" coords="651,609,574,590,575,585,652,604"/>
+<area shape="rect" id="Node000030" href="$class_memory___a_i.html#a011257fcbc9862c365fc6ffa25624aa9" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="444,685,589,712"/>
+<area shape="poly" id="edge36_Node000001_Node000030" title=" " alt="" coords="672,646,557,687,555,682,670,640"/>
+<area shape="rect" id="Node000031" href="$class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="454,1189,580,1216"/>
+<area shape="poly" id="edge39_Node000001_Node000031" title=" " alt="" coords="726,653,723,743,708,872,693,943,672,1015,643,1084,605,1148,581,1173,552,1191,549,1187,577,1169,601,1145,638,1082,667,1013,688,941,703,871,718,743,721,653"/>
+<area shape="rect" id="Node000032" href="$class_x_o__inf___a_i.html#aa88a72848990b6506c7f4d544937837b" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="448,861,586,888"/>
+<area shape="poly" id="edge42_Node000001_Node000032" title=" " alt="" coords="713,652,671,732,641,778,605,821,576,845,547,863,544,858,573,840,601,817,636,775,667,729,708,650"/>
+<area shape="rect" id="Node000003" href="$class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" title="Gets move input from human or AI." alt="" coords="214,5,376,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,21,376,21,376,16,421,16"/>
+<area shape="rect" id="Node000005" href="$class_anti___x_o___u_i.html#a33e3fac8bd7d6e9e26eaa1a5df1ddd6f" title="Retrieves the player&#39;s move (human, computer random, or AI)." alt="" coords="217,56,373,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="436,72,373,72,373,67,436,67"/>
+<area shape="rect" id="Node000007" href="$classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" title="Ask the user (or AI) to make a move." alt="" coords="220,107,370,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="427,123,370,123,370,117,427,117"/>
+<area shape="rect" id="Node000009" href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" title="Gets the move from a human, computer, or AI player." alt="" coords="10,409,155,436"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="213,425,156,425,156,420,213,420"/>
+<area shape="rect" id="Node000012" href="$class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" title="Obtains the next move from a player." alt="" coords="5,711,160,737"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="203,727,160,727,160,721,203,721"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="418,213,378,208,379,203,419,208"/>
+<area shape="rect" id="Node000016" href="$class_pyramid_x_o___u_i.html#a936b1fdabe80776e212110be108f811f" title="Reads human move or requests AI move." alt="" coords="208,259,382,285"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="414,275,383,275,383,269,414,269"/>
+<area shape="rect" id="Node000018" href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" title="Gets the next move from a human or AI." alt="" coords="15,1215,150,1241"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="212,1231,151,1231,151,1225,212,1225"/>
+<area shape="rect" id="Node000020" href="$class_ultimate___u_i.html#a4c3e6b4f77e281d67a946df1620ef822" title="Reads next move from human or AI." alt="" coords="217,309,373,336"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="424,325,374,325,374,320,424,320"/>
+<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="259,899,108,990,105,985,256,894"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="420,1040,378,1045,377,1040,419,1035"/>
+<area shape="poly" id="edge31_Node000028_Node000008" title=" " alt="" coords="440,409,362,418,361,412,439,403"/>
+<area shape="poly" id="edge32_Node000028_Node000028" title=" " alt="" coords="552,371,540,365,517,363,495,365,483,369,481,375,486,382,482,385,475,375,480,366,494,359,517,357,541,360,554,366"/>
+<area shape="poly" id="edge34_Node000029_Node000010" title=" " alt="" coords="423,560,377,552,378,547,424,555"/>
+<area shape="poly" id="edge35_Node000029_Node000029" title=" " alt="" coords="552,547,540,541,517,539,495,541,483,545,481,551,486,558,482,561,475,551,480,542,494,535,517,533,541,536,554,542"/>
+<area shape="poly" id="edge37_Node000030_Node000011" title=" " alt="" coords="429,711,372,718,372,713,428,706"/>
+<area shape="poly" id="edge38_Node000030_Node000030" title=" " alt="" coords="552,672,540,666,517,664,495,666,483,671,481,676,486,683,482,686,475,677,480,667,494,661,517,659,541,661,554,668"/>
+<area shape="poly" id="edge40_Node000031_Node000017" title=" " alt="" coords="438,1214,363,1223,362,1218,438,1209"/>
+<area shape="poly" id="edge41_Node000031_Node000031" title=" " alt="" coords="552,1176,540,1170,517,1168,495,1170,483,1175,481,1180,486,1187,482,1190,475,1181,480,1171,494,1165,517,1163,541,1165,554,1172"/>
+<area shape="poly" id="edge43_Node000032_Node000022" title=" " alt="" coords="432,877,368,877,368,872,432,872"/>
+<area shape="poly" id="edge44_Node000032_Node000032" title=" " alt="" coords="552,848,540,842,517,840,495,842,483,847,481,852,486,859,482,862,475,853,480,843,494,837,517,835,541,837,554,844"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Matrix::multiply" name="Matrix::multiply">
+<area shape="rect" id="Node000001" title="Optimized matrix multiplication into a preallocated matrix." alt="" coords="5,31,116,57"/>
+<area shape="rect" id="Node000002" href="$class_matrix.html#a500ba010dab4b9ee8e0d1b6f73fcd926" title="Construct a matrix of size (rows x cols)." alt="" coords="164,5,265,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,32,148,27,149,32,116,38"/>
+<area shape="rect" id="Node000003" href="$class_matrix.html#afc76f95218a395ba7d12e2831d282acf" title="Resize matrix to (r x c) and reset all elements to zero." alt="" coords="164,56,264,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,50,149,56,148,61,116,56"/>
+</map>

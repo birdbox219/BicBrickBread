@@ -1,0 +1,20 @@
+<map id="XO_inf_UI::get_move" name="XO_inf_UI::get_move">
+<area shape="rect" id="Node000001" title="Get the next move from a player." alt="" coords="5,145,153,172"/>
+<area shape="rect" id="Node000002" href="$class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" title="Determine the best move for AI." alt="" coords="201,106,347,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,142,188,134,189,139,150,147"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="581,132,727,158"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="153,154,566,144,566,150,153,159"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="587,6,721,33"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="100,142,150,112,221,74,305,38,394,12,440,5,486,3,572,7,572,12,486,8,440,11,396,17,307,43,223,79,152,117,103,147"/>
+<area shape="rect" id="Node000007" href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="216,233,332,260"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="111,170,202,212,229,224,226,229,200,217,109,175"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,122,566,137,566,142,347,127"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="290,104,335,72,364,55,394,42,439,30,485,22,572,16,572,21,486,27,440,35,396,48,366,60,338,76,293,108"/>
+<area shape="rect" id="Node000005" href="$class_x_o__inf___a_i.html#aa88a72848990b6506c7f4d544937837b" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="395,81,533,108"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="347,107,379,103,380,108,348,113"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="518,106,587,125,586,130,516,111"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="499,78,603,37,605,42,501,83"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="432,82,426,72,430,63,443,56,464,54,487,57,499,63,496,68,485,62,464,60,444,62,434,66,431,72,436,79"/>
+<area shape="rect" id="Node000006" href="$class_x_o__inf___a_i.html#aa7814af19ba079b0bf71770ffa438b4b" title="Evaluate the board from the AI perspective." alt="" coords="585,81,723,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="534,92,569,92,569,97,534,97"/>
+</map>

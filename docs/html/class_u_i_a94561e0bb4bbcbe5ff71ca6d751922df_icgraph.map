@@ -1,0 +1,7 @@
+<map id="UI::create_player" name="UI::create_player">
+<area shape="rect" id="Node000001" title="Create a player object based on input name, symbol, and type." alt="" coords="275,5,396,32"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html#a6966a040c995b2292e5edddaa94f889a" title="Set up players for the game." alt="" coords="103,5,227,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,21,227,21,227,16,260,16"/>
+<area shape="rect" id="Node000003" href="$_the_game_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to run the X&#45;O game." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

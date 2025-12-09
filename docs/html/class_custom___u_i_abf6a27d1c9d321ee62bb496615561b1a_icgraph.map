@@ -1,0 +1,5 @@
+<map id="Custom_UI::create_player" name="Custom_UI::create_player">
+<area shape="rect" id="Node000001" title="Create a player based on name, symbol, and type." alt="" coords="231,5,405,32"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html#ab2ade5587921f466e8839a1d9055bbb6" title="Setup X and O players." alt="" coords="5,5,183,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,21,183,21,183,16,215,16"/>
+</map>

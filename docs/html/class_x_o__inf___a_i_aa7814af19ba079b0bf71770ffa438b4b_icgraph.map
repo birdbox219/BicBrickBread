@@ -1,0 +1,10 @@
+<map id="XO_inf_AI::evaluate" name="XO_inf_AI::evaluate">
+<area shape="rect" id="Node000001" title="Evaluate the board from the AI perspective." alt="" coords="581,29,720,56"/>
+<area shape="rect" id="Node000002" href="$class_x_o__inf___a_i.html#aa88a72848990b6506c7f4d544937837b" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="395,29,533,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="565,45,534,45,534,40,565,40"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="496,16,485,10,464,8,445,10,434,15,432,20,437,27,432,30,427,21,431,11,443,5,464,3,486,5,498,12"/>
+<area shape="rect" id="Node000003" href="$class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" title="Determine the best move for AI." alt="" coords="201,29,347,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,45,348,45,348,40,379,40"/>
+<area shape="rect" id="Node000004" href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" title="Get the next move from a player." alt="" coords="5,29,153,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,45,153,45,153,40,185,40"/>
+</map>

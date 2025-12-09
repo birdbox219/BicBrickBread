@@ -1,0 +1,106 @@
+#--------------------------------------------------------------------------- 
+# Doxyfile 1.9.3
+#--------------------------------------------------------------------------- 
+
+# Project Info
+PROJECT_NAME           = "X-O Game Collection & Neural Network"
+PROJECT_BRIEF          = "All variants of Tic-Tac-Toe games and Neural Network source"
+PROJECT_NUMBER         = "1.0"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+#--------------------------------------------------------------------------- 
+# Build options
+#--------------------------------------------------------------------------- 
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = YES
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+
+#--------------------------------------------------------------------------- 
+# Input
+#--------------------------------------------------------------------------- 
+INPUT                  = \
+  ./TheGame.cpp \
+  ./Games/XO_inf \
+  ./Games/diamond_XO \
+  ./Games/Four_in_a_row \
+  ./Games/SUS \
+  ./Games/XO_num \
+  ./Games/Ultimate_Tic_Tac_Toe \
+  ./Games/anti_XO \
+  ./Games/Large_Tic_Tac_Toe \
+  ./Games/PyramidXO \
+  ./Games/Word_Tic_Tac_Toe \
+  ./Games/Obstacles_Tic_Tac_Toe \
+  ./Games/Memory_Tic_Tac_Toe \
+  ./Games/4x4_Tic_Tac_Toe \
+  ./header \
+  ./Neural_Network/Include \
+  ./Neural_Network/Source
+
+FILE_PATTERNS          = *.h *.hpp *.cpp *.cxx
+RECURSIVE              = YES
+EXCLUDE                =
+
+#--------------------------------------------------------------------------- 
+# Output formats
+#--------------------------------------------------------------------------- 
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_DOCSET        = NO
+
+#--------------------------------------------------------------------------- 
+# Source browsing
+#--------------------------------------------------------------------------- 
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+#--------------------------------------------------------------------------- 
+# Diagrams and Graphs
+#--------------------------------------------------------------------------- 
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+DOT_TRANSPARENT        = YES
+DOT_MULTI_TARGETS      = NO
+DOT_PATH               = /usr/bin   # adjust if dot is elsewhere
+
+#--------------------------------------------------------------------------- 
+# PlantUML
+#--------------------------------------------------------------------------- 
+UML_LOOK               = YES
+PLANTUML_JAR_PATH = C:/Users/Ali/Downloads/plantuml-jar-gplv2-1.2023.7/plantuml.jar
+PLANTUML_OUTPUT_FORMAT = svg
+GENERATE_UML           = YES
+
+#--------------------------------------------------------------------------- 
+# Misc
+#--------------------------------------------------------------------------- 
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+QUIET                  = NO
+MULTILINE_CPP_IS_BRIEF = YES
+TAB_SIZE               = 4
+OPTIMIZE_OUTPUT_FOR_C  = NO
+BUILTIN_STL_SUPPORT    = YES

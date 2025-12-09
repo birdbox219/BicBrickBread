@@ -1,0 +1,5 @@
+<map id="Word_XO_Board::Word_XO_Board" name="Word_XO_Board::Word_XO_Board">
+<area shape="rect" id="Node000001" title="Constructs and initializes the Word Tic&#45;Tac&#45;Toe board." alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" title=" " alt="" coords="210,13,356,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,24,194,24,194,29,162,29"/>
+</map>

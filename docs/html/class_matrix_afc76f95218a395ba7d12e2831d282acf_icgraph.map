@@ -1,0 +1,13 @@
+<map id="Matrix::resize" name="Matrix::resize">
+<area shape="rect" id="Node000001" title="Resize matrix to (r x c) and reset all elements to zero." alt="" coords="389,31,489,57"/>
+<area shape="rect" id="Node000002" href="$class_large___x_o___board.html#a7d0f28af0a33808c512269ee6cad1970" title="Encode board state into a matrix for the neural network. AI = +1, Opponent = &#45;1, Empty = 0." alt="" coords="171,5,341,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,38,341,33,342,28,374,32"/>
+<area shape="rect" id="Node000003" href="$class_matrix.html#a79fa5a3893939d8b399f86c6c1ff15a7" title="Optimized matrix multiplication into a preallocated matrix." alt="" coords="201,56,311,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="374,56,312,64,311,59,373,50"/>
+<area shape="rect" id="Node000004" href="$class_layer.html#a54679a1ee804225a3d09a0685242070a" title="Backward propagation." alt="" coords="5,5,123,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,54,117,35,118,30,188,49"/>
+<area shape="rect" id="Node000005" href="$class_layer.html#aa1c9e50a099e7fad54c5681f83988d2a" title="Forward propagation." alt="" coords="12,56,116,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="185,72,116,72,116,67,185,67"/>
+<area shape="rect" id="Node000006" href="$class_matrix.html#a0d724ccde0d084d10f73366896c32c32" title="Right&#45;hand matrix multiplication: C = A * B." alt="" coords="5,107,123,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="188,90,118,109,117,103,187,85"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Word_XO_Board::is_win" name="Word_XO_Board::is_win">
+<area shape="rect" id="Node000001" title="Checks if the specified player has won." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="Node000002" href="$class_word___x_o___board.html#a9c29ef4e7ba4a134a7137ad88414ed49" title="Checks if any valid word is currently formed on the board." alt="" coords="217,5,401,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,201,16,201,21,169,21"/>
+</map>

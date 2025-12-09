@@ -1,0 +1,7 @@
+<map id="SUS_UI" name="SUS_UI">
+<area shape="rect" id="Node000001" title="Handles user interaction for SUS game." alt="" coords="33,517,146,672"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html" title=" " alt="" coords="5,293,174,469"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,484,92,518,87,518,87,484"/>
+<area shape="rect" id="Node000003" href="$class_u_i.html" title=" " alt="" coords="5,5,174,245"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,260,92,294,87,294,87,260"/>
+</map>

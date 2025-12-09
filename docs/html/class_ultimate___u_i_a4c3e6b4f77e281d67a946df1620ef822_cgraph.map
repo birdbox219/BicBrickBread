@@ -1,0 +1,12 @@
+<map id="Ultimate_UI::get_move" name="Ultimate_UI::get_move">
+<area shape="rect" id="Node000001" title="Reads next move from human or AI." alt="" coords="5,56,162,83"/>
+<area shape="rect" id="Node000002" href="$class_ultimate___a_i.html#aab4c93eccf27f6e37c89dc41f70c9742" title="Returns a random available move." alt="" coords="210,5,365,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,53,215,34,217,39,141,58"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="419,56,552,83"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="162,67,404,67,404,72,162,72"/>
+<area shape="rect" id="Node000005" href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="229,107,346,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="141,81,217,100,215,105,140,86"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="413,5,558,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,16,398,16,398,21,365,21"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="343,30,417,49,415,54,342,35"/>
+</map>

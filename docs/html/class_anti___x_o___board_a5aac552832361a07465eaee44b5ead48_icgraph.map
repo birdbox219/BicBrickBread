@@ -1,0 +1,8 @@
+<map id="Anti_XO_Board::is_lose" name="Anti_XO_Board::is_lose">
+<area shape="rect" id="Node000001" title="Checks if the player loses by forming a 3&#45;in&#45;a&#45;row line." alt="" coords="417,13,577,40"/>
+<area shape="rect" id="Node000002" href="$class_anti___x_o___board.html#adcaa9a00867940eefbbb22447e014437" title="Checks if the game is over (lose or draw)." alt="" coords="5,5,157,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="402,29,157,29,157,24,402,24"/>
+<area shape="rect" id="Node000003" href="$class_anti___x_o___board.html#ab8080f9ad2f80291242e192ba90ec7f6" title="Checks if the game is a draw (board full and no losing line)." alt="" coords="205,39,369,65"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="402,41,370,45,369,39,401,36"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="189,43,157,39,158,33,189,37"/>
+</map>
