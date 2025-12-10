@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" xlink:title="Gets the move from a human, computer, or AI player.">
+<g id="a_Node000002"><a xlink:href="class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" target="_top" xlink:title="Obtains the next move from a human, computer, or AI player.">
 <polygon fill="white" stroke="#666666" points="109,-20 0,-20 0,0 109,0 109,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="54.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_UI::get_move</text>
 </a>

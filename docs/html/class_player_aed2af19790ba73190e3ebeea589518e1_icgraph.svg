@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" target="_top" xlink:title="Gets move input from human or AI.">
+<g id="a_Node000002"><a xlink:href="class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" target="_top" xlink:title="Gets a move from human or AI.">
 <polygon fill="white" stroke="#666666" points="198.88,-362 77.88,-362 77.88,-342 198.88,-342 198.88,-362"/>
 <text xml:space="preserve" text-anchor="middle" x="138.38" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_UI::get_move</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_anti___x_o___u_i.html#a33e3fac8bd7d6e9e26eaa1a5df1ddd6f" target="_top" xlink:title="Retrieves the player&#39;s move (human, computer random, or AI).">
+<g id="a_Node000003"><a xlink:href="class_anti___x_o___u_i.html#a33e3fac8bd7d6e9e26eaa1a5df1ddd6f" target="_top" xlink:title="Retrieves the next move from human or AI.">
 <polygon fill="white" stroke="#666666" points="197,-324 79.75,-324 79.75,-304 197,-304 197,-324"/>
 <text xml:space="preserve" text-anchor="middle" x="138.38" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_XO_UI::get_move</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" target="_top" xlink:title="Ask the user (or AI) to make a move.">
+<g id="a_Node000004"><a xlink:href="classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" target="_top" xlink:title="Obtains the next move from human or AI.">
 <polygon fill="white" stroke="#666666" points="194.75,-286 82,-286 82,-266 194.75,-266 194.75,-286"/>
 <text xml:space="preserve" text-anchor="middle" x="138.38" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_UI::get_move</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="class_large___x_o___u_i.html#ad2c0d9d3cec8c1e35d42b2342a08bc7f" target="_top" xlink:title="Request a move from Human, Random, or AI player.">
+<g id="a_Node000005"><a xlink:href="class_large___x_o___u_i.html#ad2c0d9d3cec8c1e35d42b2342a08bc7f" target="_top" xlink:title="Request a move from human or AI player.">
 <polygon fill="white" stroke="#666666" points="200.38,-248 76.38,-248 76.38,-228 200.38,-228 200.38,-248"/>
 <text xml:space="preserve" text-anchor="middle" x="138.38" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_UI::get_move</text>
 </a>
@@ -146,7 +146,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" target="_top" xlink:title="Gets the next move from a human or AI.">
+<g id="a_Node000009"><a xlink:href="class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" target="_top" xlink:title="Retrieves the next move.">
 <polygon fill="white" stroke="#666666" points="189.12,-96 87.62,-96 87.62,-76 189.12,-76 189.12,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="138.38" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_UI::get_move</text>
 </a>
@@ -164,7 +164,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" target="_top" xlink:title="Retrieves the move from the current player.">
+<g id="a_Node000010"><a xlink:href="class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" target="_top" xlink:title="Get the next move from a player.">
 <polygon fill="white" stroke="#666666" points="199.62,-58 77.12,-58 77.12,-38 199.62,-38 199.62,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="138.38" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_UI::get_move</text>
 </a>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Evaluates current board state.">
+<g id="a_Node000001"><a xlink:title="Evaluates the current board state from AI perspective.">
 <polygon fill="#999999" stroke="#666666" points="502.75,-20 409.5,-20 409.5,0 502.75,0 502.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="456.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::evaluate</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_four___a_i.html#a2be9e32c580e8aa22c530ab4c9920317" xlink:title="Minimax with alpha&#45;beta pruning.">
+<g id="a_Node000002"><a xlink:href="class_four___a_i.html#a2be9e32c580e8aa22c530ab4c9920317" target="_top" xlink:title="Minimax algorithm with alpha&#45;beta pruning.">
 <polygon fill="white" stroke="#666666" points="373.5,-20 280.25,-20 280.25,0 373.5,0 373.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="326.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::minimax</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_four___a_i.html#a12661d165899365f9a5031ec04814e44" xlink:title="Computes the best possible move for the AI.">
+<g id="a_Node000003"><a xlink:href="class_four___a_i.html#a12661d165899365f9a5031ec04814e44" target="_top" xlink:title="Computes the best possible move for the AI.">
 <polygon fill="white" stroke="#666666" points="244.25,-20 145,-20 145,0 244.25,0 244.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="194.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::bestMove</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" xlink:title="Gets the move from a human, computer, or AI player.">
+<g id="a_Node000004"><a xlink:href="class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" target="_top" xlink:title="Obtains the next move from a human, computer, or AI player.">
 <polygon fill="white" stroke="#666666" points="109,-20 0,-20 0,0 109,0 109,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="54.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_UI::get_move</text>
 </a>

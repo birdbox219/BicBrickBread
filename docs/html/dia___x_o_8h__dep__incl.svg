@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Diamond&#45;shaped 7x7 Tic&#45;Tac&#45;Toe variant with AI and UI support.">
 <polygon fill="#999999" stroke="#666666" points="195.38,-88 45.12,-88 45.12,-68 195.38,-68 195.38,-88"/>
 <text xml:space="preserve" text-anchor="middle" x="120.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/diamond_XO/dia_XO.h</text>
 </a>

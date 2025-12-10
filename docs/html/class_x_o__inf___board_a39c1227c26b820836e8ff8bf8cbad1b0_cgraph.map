@@ -1,6 +1,6 @@
 <map id="XO_inf_Board::is_draw" name="XO_inf_Board::is_draw">
-<area shape="rect" id="Node000001" title="Checks if the game is a draw." alt="" coords="5,5,161,32"/>
-<area shape="rect" id="Node000002" href="$class_x_o__inf___board.html#ac8fe1843e8cae7c832218a80421eaa13" title="Checks if the given player has won." alt="" coords="209,5,356,32"/>
+<area shape="rect" id="Node000001" title="Check if the game is a draw." alt="" coords="5,5,161,32"/>
+<area shape="rect" id="Node000002" href="$class_x_o__inf___board.html#ac8fe1843e8cae7c832218a80421eaa13" title="Check if a player has achieved a win condition." alt="" coords="209,5,356,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,16,193,16,193,21,161,21"/>
 <area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="404,5,537,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,16,388,16,388,21,357,21"/>

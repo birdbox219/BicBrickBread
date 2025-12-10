@@ -1,5 +1,5 @@
 <map id="Word_XO_UI::evaluate" name="Word_XO_UI::evaluate">
-<area shape="rect" id="Node000001" title="Evaluates potential characters at position (r, c)." alt="" coords="237,5,392,32"/>
-<area shape="rect" id="Node000002" href="$class_word___x_o___u_i.html#a11a449d84298f6d6889388250031fd16" title="Constructs a new UI object and precomputes AI scores." alt="" coords="5,5,189,32"/>
+<area shape="rect" id="Node000001" title="Evaluate potential characters for a board position." alt="" coords="237,5,392,32"/>
+<area shape="rect" id="Node000002" href="$class_word___x_o___u_i.html#a11a449d84298f6d6889388250031fd16" title="Construct the UI." alt="" coords="5,5,189,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,21,189,21,189,16,221,16"/>
 </map>

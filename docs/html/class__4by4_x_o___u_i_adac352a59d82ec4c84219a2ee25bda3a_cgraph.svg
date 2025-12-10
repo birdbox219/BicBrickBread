@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Gets move input from human or AI.">
+<g id="a_Node000001"><a xlink:title="Gets a move from human or AI.">
 <polygon fill="#999999" stroke="#666666" points="121,-77 0,-77 0,-57 121,-57 121,-77"/>
 <text xml:space="preserve" text-anchor="middle" x="60.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_UI::get_move</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class__4by4_x_o___a_i.html#aa13e6d3e4cdedc6ea7e813a16d4c0d68" xlink:title="Generates the best move for the AI.">
+<g id="a_Node000002"><a xlink:href="class__4by4_x_o___a_i.html#aa13e6d3e4cdedc6ea7e813a16d4c0d68" target="_top" xlink:title="Computes the best move for AI.">
 <polygon fill="white" stroke="#666666" points="277.25,-134 157,-134 157,-114 277.25,-114 277.25,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="217.12" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_AI::bestMove</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000005"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="417.75,-96 317.75,-96 317.75,-76 417.75,-76 417.75,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="367.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" xlink:title="Get the player&#39;s name.">
+<g id="a_Node000006"><a xlink:href="class_player.html#aed2af19790ba73190e3ebeea589518e1" target="_top" xlink:title="Get the player&#39;s name.">
 <polygon fill="white" stroke="#666666" points="263.38,-58 170.88,-58 170.88,-38 263.38,-38 263.38,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="217.12" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_name</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" xlink:title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;).">
+<g id="a_Node000007"><a xlink:href="class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" target="_top" xlink:title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;).">
 <polygon fill="white" stroke="#666666" points="260.75,-20 173.5,-20 173.5,0 260.75,0 260.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="217.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_type</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000003"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="422.25,-172 313.25,-172 313.25,-152 422.25,-152 422.25,-172"/>
 <text xml:space="preserve" text-anchor="middle" x="367.75" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_board.html#a93558c58e60ca4291c6044828afd260b" xlink:title="Return content of cell x, y in current board.">
+<g id="a_Node000004"><a xlink:href="class_board.html#a93558c58e60ca4291c6044828afd260b" target="_top" xlink:title="Return content of cell x, y in current board.">
 <polygon fill="white" stroke="#666666" points="408.38,-134 327.12,-134 327.12,-114 408.38,-114 408.38,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="367.75" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board::get_cell</text>
 </a>

@@ -1,5 +1,5 @@
 <map id="dia_XO_Board::is_draw" name="dia_XO_Board::is_draw">
-<area shape="rect" id="Node000001" title="Check if the game ended in a draw." alt="" coords="199,13,357,40"/>
-<area shape="rect" id="Node000002" href="$classdia___x_o___board.html#a4f4c064a8529f7255c992caa179fa206" title="Check if the game is over." alt="" coords="5,5,151,48"/>
+<area shape="rect" id="Node000001" title="Checks if the board is full and no more moves are possible." alt="" coords="199,13,357,40"/>
+<area shape="rect" id="Node000002" href="$classdia___x_o___board.html#a4f4c064a8529f7255c992caa179fa206" title="Checks if the game is over (win or draw)." alt="" coords="5,5,151,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,29,151,29,151,24,183,24"/>
 </map>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Checks if the given player has a winning configuration.">
+<g id="a_Node000001"><a xlink:title="Checks if a player has won.">
 <polygon fill="#999999" stroke="#666666" points="448.5,-39 323.75,-39 323.75,-19 448.5,-19 448.5,-39"/>
 <text xml:space="preserve" text-anchor="middle" x="386.12" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::is_win</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_obstacles___board.html#aa1db0075134ef87705583442ca91ca4a" xlink:title="Determines whether the game is over for the given player.">
+<g id="a_Node000002"><a xlink:href="class_obstacles___board.html#aa1db0075134ef87705583442ca91ca4a" target="_top" xlink:title="Checks if the game is over for a player.">
 <polygon fill="white" stroke="#666666" points="121,-45 0,-45 0,-13 121,-13 121,-45"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="60.5" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_obstacles___board.html#a727f0d88ad486a7fb74142f590f7eda0" xlink:title="Checks for draw condition (board full and no winner).">
+<g id="a_Node000003"><a xlink:href="class_obstacles___board.html#a727f0d88ad486a7fb74142f590f7eda0" target="_top" xlink:title="Checks for a draw condition.">
 <polygon fill="white" stroke="#666666" points="287.75,-20 157,-20 157,0 287.75,0 287.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="222.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::is_draw</text>
 </a>

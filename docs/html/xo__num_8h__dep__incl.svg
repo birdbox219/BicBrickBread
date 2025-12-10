@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Numerical Tic&#45;Tac&#45;Toe (Magic Square XO) game classes.">
 <polygon fill="#999999" stroke="#666666" points="203.75,-76 69.25,-76 69.25,-56 203.75,-56 203.75,-76"/>
 <text xml:space="preserve" text-anchor="middle" x="136.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/XO_num/xo_num.h</text>
 </a>

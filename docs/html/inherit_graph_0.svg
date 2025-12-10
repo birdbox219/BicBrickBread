@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="$class_a_i.html" xlink:title="AI Interface for all implementations in games.">
+<g id="a_Node000000"><a xlink:href="class_a_i.html" target="_top" xlink:title="AI Interface for all implementations in games.">
 <polygon fill="white" stroke="#666666" points="28.8,-267 0,-267 0,-247 28.8,-247 28.8,-267"/>
 <text xml:space="preserve" text-anchor="middle" x="14.4" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">AI</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:href="$class_anti___a_i.html" xlink:title="Simple AI for Anti&#45;XO that tries to avoid dangerous positions.">
+<g id="a_Node000001"><a xlink:href="class_anti___a_i.html" target="_top" xlink:title="Simple AI for Anti&#45;XO that avoids dangerous positions.">
 <polygon fill="white" stroke="#666666" points="129.55,-514 81.3,-514 81.3,-494 129.55,-494 129.55,-514"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_AI</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_four___a_i.html" xlink:title="Implements a minimax&#45;based AI for Connect&#45;Four.">
+<g id="a_Node000002"><a xlink:href="class_four___a_i.html" target="_top" xlink:title="Implements a minimax&#45;based AI for Connect&#45;Four.">
 <polygon fill="white" stroke="#666666" points="130.68,-476 80.18,-476 80.18,-456 130.68,-456 130.68,-476"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_large___x_o___a_i.html" xlink:title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic.">
+<g id="a_Node000003"><a xlink:href="class_large___x_o___a_i.html" target="_top" xlink:title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic.">
 <polygon fill="white" stroke="#666666" points="142.68,-438 68.18,-438 68.18,-418 142.68,-418 142.68,-438"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_AI</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_memory___a_i.html" xlink:title="AI controller for Memory Tic&#45;Tac&#45;Toe implementing the AI interface.">
+<g id="a_Node000004"><a xlink:href="class_memory___a_i.html" target="_top" xlink:title="AI controller for Memory Tic&#45;Tac&#45;Toe implementing the AI interface.">
 <polygon fill="white" stroke="#666666" points="138.55,-400 72.3,-400 72.3,-380 138.55,-380 138.55,-400"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">Memory_AI</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_obstacles___a_i.html" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="class_obstacles___a_i.html" target="_top" xlink:title="AI implementation for Obstacles Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="143.05,-362 67.8,-362 67.8,-342 143.05,-342 143.05,-362"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_AI</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_pyramid_x_o___a_i.html" xlink:title="Simple AI choosing a random valid empty pyramid cell.">
+<g id="a_Node000006"><a xlink:href="class_pyramid_x_o___a_i.html" target="_top" xlink:title="Simple AI choosing a random valid empty pyramid cell.">
 <polygon fill="white" stroke="#666666" points="146.05,-324 64.8,-324 64.8,-304 146.05,-304 146.05,-324"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_AI</text>
 </a>
@@ -128,7 +128,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_s_u_s___a_i.html" xlink:title="Implements AI for the SUS game using Minimax with alpha&#45;beta pruning.">
+<g id="a_Node000007"><a xlink:href="class_s_u_s___a_i.html" target="_top" xlink:title="Artificial intelligence for the SUS game using Minimax with alpha&#45;beta pruning.">
 <polygon fill="white" stroke="#666666" points="131.43,-286 79.43,-286 79.43,-266 131.43,-266 131.43,-286"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI</text>
 </a>
@@ -146,7 +146,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$class_ultimate___a_i.html" xlink:title="AI for Ultimate Tic&#45;Tac&#45;Toe. Currently chooses random empty cell.">
+<g id="a_Node000008"><a xlink:href="class_ultimate___a_i.html" target="_top" xlink:title="AI controller for Ultimate Tic&#45;Tac&#45;Toe (random move selection).">
 <polygon fill="white" stroke="#666666" points="139.3,-248 71.55,-248 71.55,-228 139.3,-228 139.3,-248"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_AI</text>
 </a>
@@ -164,7 +164,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$class_word___a_i.html" xlink:title="AI engine for the Word Tic&#45;Tac&#45;Toe game.">
+<g id="a_Node000009"><a xlink:href="class_word___a_i.html" target="_top" xlink:title="AI engine for Word Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="132.18,-210 78.68,-210 78.68,-190 132.18,-190 132.18,-210"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_AI</text>
 </a>
@@ -182,7 +182,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="$class_x_o___n_u_m___a_i.html" xlink:title="Random&#45;move AI for Numerical Tic&#45;Tac&#45;Toe.">
+<g id="a_Node000010"><a xlink:href="class_x_o___n_u_m___a_i.html" target="_top" xlink:title="Random&#45;move AI for Numerical Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="142.3,-172 68.55,-172 68.55,-152 142.3,-152 142.3,-172"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_AI</text>
 </a>
@@ -200,7 +200,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="$class_x_o__inf___a_i.html" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="class_x_o__inf___a_i.html" target="_top" xlink:title="AI engine for infinite Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="135.93,-134 74.93,-134 74.93,-114 135.93,-114 135.93,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI</text>
 </a>
@@ -218,7 +218,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="$class_x___o___a_i.html" xlink:title="AI controller for Tic&#45;Tac&#45;Toe.">
+<g id="a_Node000012"><a xlink:href="class_x___o___a_i.html" target="_top" xlink:title="AI controller for Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="130.68,-96 80.18,-96 80.18,-76 130.68,-76 130.68,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">X_O_AI</text>
 </a>
@@ -236,7 +236,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="$class__4by4_x_o___a_i.html" xlink:title="Basic AI for 4x4 sliding Tic&#45;Tac&#45;Toe.">
+<g id="a_Node000013"><a xlink:href="class__4by4_x_o___a_i.html" target="_top" xlink:title="Simple AI for sliding 4x4 Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="141.18,-58 69.68,-58 69.68,-38 141.18,-38 141.18,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_AI</text>
 </a>
@@ -254,7 +254,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="$classdia___x_o___a_i.html" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="classdia___x_o___a_i.html" target="_top" xlink:title="Very simple AI for diamond Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="#666666" points="137.05,-20 73.8,-20 73.8,0 137.05,0 137.05,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="105.43" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_AI</text>
 </a>

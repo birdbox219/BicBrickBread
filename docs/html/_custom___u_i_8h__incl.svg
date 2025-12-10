@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$_board_game___classes_8h.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_board_game___classes_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="181.12,-76 63.88,-76 63.88,-56 181.12,-56 181.12,-76"/>
 <text xml:space="preserve" text-anchor="middle" x="122.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">BoardGame_Classes.h</text>
 </a>

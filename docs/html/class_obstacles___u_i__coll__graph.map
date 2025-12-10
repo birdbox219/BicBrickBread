@@ -1,8 +1,8 @@
 <map id="Obstacles_UI" name="Obstacles_UI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="67,999,222,1132"/>
+<area shape="rect" id="Node000001" title="User interface handler for Obstacles Tic&#45;Tac&#45;Toe." alt="" coords="67,999,222,1132"/>
 <area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="5,612,174,852"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,866,136,998,131,999,109,867"/>
-<area shape="rect" id="Node000003" href="$class_obstacles___board.html" title=" " alt="" coords="198,537,333,927"/>
+<area shape="rect" id="Node000003" href="$class_obstacles___board.html" title="Modified Tic&#45;Tac&#45;Toe board supporting traps and 64&#45;bit bitboard logic." alt="" coords="198,537,333,927"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,918,177,984,172,982,196,916"/>
 <area shape="rect" id="Node000004" href="$class_board.html" title=" " alt="" coords="200,163,332,488"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="268,503,268,537,263,537,263,503"/>

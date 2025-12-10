@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "X-O Game Collection & Neural Network", "index.html", [
+  [ "BicBrickBread", "index.html", [
     [ "Topics", "topics.html", "topics" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -54,8 +54,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "4by4___x_o_8cpp.html",
-"class_matrix.html#ad2a786f018631a09111b0ce0b3a97dbf",
-"classdia___x_o___a_i.html#abfe5fba7493b3262e42b7bca8edeae91"
+"class_matrix.html#afc3a5dd743ad3d5ee72d339c7c04efba",
+"classdia___x_o___board.html#a23863f216ee48a3341322bf21256a756"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

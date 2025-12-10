@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Lightweight 2D matrix class for numerical computations.">
 <polygon fill="#999999" stroke="#666666" points="357.25,-304 236.25,-304 236.25,-272 357.25,-272 357.25,-304"/>
 <text xml:space="preserve" text-anchor="start" x="244.25" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">Neural_Network/Include</text>
 <text xml:space="preserve" text-anchor="middle" x="296.75" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Matrix.h</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="_layer_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_layer_8h.html" target="_top" xlink:title="Defines a fully&#45;connected (dense) neural network layer.">
 <polygon fill="white" stroke="#666666" points="357.25,-236 236.25,-236 236.25,-204 357.25,-204 357.25,-236"/>
 <text xml:space="preserve" text-anchor="start" x="244.25" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">Neural_Network/Include</text>
 <text xml:space="preserve" text-anchor="middle" x="296.75" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Layer.h</text>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="_neural_network_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="_neural_network_8h.html" target="_top" xlink:title="Fully&#45;connected feedforward neural network class.">
 <polygon fill="white" stroke="#666666" points="268.25,-168 147.25,-168 147.25,-136 268.25,-136 268.25,-168"/>
 <text xml:space="preserve" text-anchor="start" x="155.25" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">Neural_Network/Include</text>
 <text xml:space="preserve" text-anchor="middle" x="207.75" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">/NeuralNetwork.h</text>

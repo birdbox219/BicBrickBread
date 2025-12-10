@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Check if the game ended in a draw.">
+<g id="a_Node000001"><a xlink:title="Checks if the board is full and no more moves are possible.">
 <polygon fill="#999999" stroke="#666666" points="263.75,-26 145,-26 145,-6 263.75,-6 263.75,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::is_draw</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$classdia___x_o___board.html#a4f4c064a8529f7255c992caa179fa206" xlink:title="Check if the game is over.">
+<g id="a_Node000002"><a xlink:href="classdia___x_o___board.html#a4f4c064a8529f7255c992caa179fa206" target="_top" xlink:title="Checks if the game is over (win or draw).">
 <polygon fill="white" stroke="#666666" points="109,-32 0,-32 0,0 109,0 109,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="54.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>

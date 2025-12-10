@@ -1,5 +1,5 @@
 <map id="Obstacles_Board::Obstacles_Board" name="Obstacles_Board::Obstacles_Board">
-<area shape="rect" id="Node000001" title="Constructs an empty board with no moves made." alt="" coords="5,5,194,48"/>
+<area shape="rect" id="Node000001" title="Constructs an empty Obstacles Tic&#45;Tac&#45;Toe board." alt="" coords="5,5,194,48"/>
 <area shape="rect" id="Node000002" href="$class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" title=" " alt="" coords="242,13,388,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,24,226,24,226,29,194,29"/>
 </map>

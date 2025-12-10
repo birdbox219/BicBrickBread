@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Word_AI Class Reference</title>
+<title>BicBrickBread: Word_AI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,11 +89,11 @@ $(function(){initNavTree('class_word___a_i.html','','class_word___a_i-members');
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Word_AI Class Reference<div class="ingroups"><a class="el" href="group___word___tic_tac_toe___a_i.html">Word Tic-Tac-Toe AI</a></div></div></div>
+  <div class="headertitle"><div class="title">Word_AI Class Reference<div class="ingroups"><a class="el" href="group___a_i.html">Artificial Intelligence Components</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> engine for the Word Tic-Tac-Toe game.  
+<p><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> engine for Word Tic-Tac-Toe.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>&gt;</code></p>
@@ -112,23 +112,19 @@ Collaboration diagram for Word_AI:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a39c827b95c9b73564c439c1b5bff4336" id="r_a39c827b95c9b73564c439c1b5bff4336"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39c827b95c9b73564c439c1b5bff4336">Word_AI</a> ()=default</td></tr>
 <tr class="memitem:a3f4ba384abd31b14f65d6126287e1522" id="r_a3f4ba384abd31b14f65d6126287e1522"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f4ba384abd31b14f65d6126287e1522">evaluate</a> (<a class="el" href="class_board.html">Board</a>&lt; char &gt; *board, <a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a3f4ba384abd31b14f65d6126287e1522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the board from the player's perspective.  <br /></td></tr>
+<tr class="memdesc:a3f4ba384abd31b14f65d6126287e1522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the board for a player.  <br /></td></tr>
 <tr class="memitem:a38d39f0a8799dca2de272aee9bcbc000" id="r_a38d39f0a8799dca2de272aee9bcbc000"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d39f0a8799dca2de272aee9bcbc000">minimax</a> (bool aiTurn, <a class="el" href="class_player.html">Player</a>&lt; char &gt; *player, float alpha, float beta, char blankCell, int depth) override</td></tr>
-<tr class="memdesc:a38d39f0a8799dca2de272aee9bcbc000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs minimax search with alpha-beta pruning.  <br /></td></tr>
+<tr class="memdesc:a38d39f0a8799dca2de272aee9bcbc000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimax search with alpha-beta pruning.  <br /></td></tr>
 <tr class="memitem:abadf0c9ca0a9e14ba6e21f463c11a11f" id="r_abadf0c9ca0a9e14ba6e21f463c11a11f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_move.html">Move</a>&lt; char &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abadf0c9ca0a9e14ba6e21f463c11a11f">bestMove</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player, char blankCell, int depth=6) override</td></tr>
-<tr class="memdesc:abadf0c9ca0a9e14ba6e21f463c11a11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes and returns the optimal move.  <br /></td></tr>
+<tr class="memdesc:abadf0c9ca0a9e14ba6e21f463c11a11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the best move for a player.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_a_i"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_a_i')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_a_i.html">AI</a></td></tr>
 <tr class="memitem:a5a33ad8c7e8298e2b135f4f680aeed58 inherit pub_methods_class_a_i" id="r_a5a33ad8c7e8298e2b135f4f680aeed58"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_i.html#a5a33ad8c7e8298e2b135f4f680aeed58">~AI</a> ()=default</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> engine for the Word Tic-Tac-Toe game. </p>
-<p>Provides:</p><ul>
-<li>Heuristic scoring based on potential word creation</li>
-<li>Minimax search tree evaluation</li>
-<li>Best move selection given a board state </li>
-</ul>
+<div class="textblock"><p><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> engine for Word Tic-Tac-Toe. </p>
+<p>Provides evaluation, minimax search with alpha-beta pruning, and best-move computation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00203">203</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00120">120</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a39c827b95c9b73564c439c1b5bff4336" name="a39c827b95c9b73564c439c1b5bff4336"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39c827b95c9b73564c439c1b5bff4336">&#9670;&#160;</a></span>Word_AI()</h2>
@@ -188,17 +184,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes and returns the optimal move. </p>
+<p>Compute the best move for a player. </p>
 <p>Determines the best <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> move for a given player using heuristics.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">player</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> requesting the move. </td></tr>
+    <tr><td class="paramname">player</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> requesting move. </td></tr>
     <tr><td class="paramname">blankCell</td><td>Symbol representing empty cells. </td></tr>
-    <tr><td class="paramname">depth</td><td>Search depth (default = 6). </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of search (default 6). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the best move.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the optimal <a class="el" href="class_move.html">Move&lt;char&gt;</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>Pointer to player. </td></tr>
@@ -311,12 +307,12 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  415</span>}</div>
 <div class="ttc" id="aclass_board_html_a93558c58e60ca4291c6044828afd260b"><div class="ttname"><a href="class_board.html#a93558c58e60ca4291c6044828afd260b">Board::get_cell</a></div><div class="ttdeci">T get_cell(int x, int y)</div><div class="ttdoc">Return content of cell x, y in current board.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00099">BoardGame_Classes.h:99</a></div></div>
 <div class="ttc" id="aclass_player_html_a508617eddfae8915d098102d480fc888"><div class="ttname"><a href="class_player.html#a508617eddfae8915d098102d480fc888">Player::get_board_ptr</a></div><div class="ttdeci">Board&lt; T &gt; * get_board_ptr() const</div><div class="ttdoc">Get a pointer to the game board.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00163">BoardGame_Classes.h:163</a></div></div>
-<div class="ttc" id="aclass_word___x_o___board_html_a051c9109d0ed6eb113b08c0bef7480e0"><div class="ttname"><a href="class_word___x_o___board.html#a051c9109d0ed6eb113b08c0bef7480e0">Word_XO_Board::dict</a></div><div class="ttdeci">static std::set&lt; std::string &gt; dict</div><div class="ttdoc">Dictionary of valid forward words.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00157">Word_Tic_Tac_Toe.h:157</a></div></div>
-<div class="ttc" id="aclass_word___x_o___board_html_a1fa0932270c921458e31e24ed4d473e5"><div class="ttname"><a href="class_word___x_o___board.html#a1fa0932270c921458e31e24ed4d473e5">Word_XO_Board::getEmptyCell</a></div><div class="ttdeci">char getEmptyCell()</div><div class="ttdoc">Returns the symbol representing an unoccupied cell.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00063">Word_Tic_Tac_Toe.cpp:63</a></div></div>
-<div class="ttc" id="aclass_word___x_o___board_html_a3b3a3b0b1ba54cf55ddef61683d7427c"><div class="ttname"><a href="class_word___x_o___board.html#a3b3a3b0b1ba54cf55ddef61683d7427c">Word_XO_Board::revDict</a></div><div class="ttdeci">static std::set&lt; std::string &gt; revDict</div><div class="ttdoc">Dictionary of reversed valid words.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00162">Word_Tic_Tac_Toe.h:162</a></div></div>
-<div class="ttc" id="aclass_word___x_o___board_html_a3bd8d50441fb2bb14988faa4baa7b98b"><div class="ttname"><a href="class_word___x_o___board.html#a3bd8d50441fb2bb14988faa4baa7b98b">Word_XO_Board::getMoveCount</a></div><div class="ttdeci">int getMoveCount()</div><div class="ttdoc">Retrieves the number of moves made so far.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00072">Word_Tic_Tac_Toe.cpp:72</a></div></div>
-<div class="ttc" id="aclass_word___x_o___board_html_a6eba0fb4c22b625af2000afd4fb4400d"><div class="ttname"><a href="class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d">Word_XO_Board::update_board</a></div><div class="ttdeci">bool update_board(Move&lt; char &gt; *move) override</div><div class="ttdoc">Validates and applies a move to the board.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00131">Word_Tic_Tac_Toe.cpp:131</a></div></div>
-<div class="ttc" id="aclass_word___x_o___u_i_html_a82b1a4f4e345d57ba1f9f743bcf28762"><div class="ttname"><a href="class_word___x_o___u_i.html#a82b1a4f4e345d57ba1f9f743bcf28762">Word_XO_UI::score</a></div><div class="ttdeci">static std::vector&lt; std::pair&lt; int, char &gt; &gt; score[3][3]</div><div class="ttdoc">Precomputed scoring tables for AI heuristics.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00314">Word_Tic_Tac_Toe.h:314</a></div></div>
+<div class="ttc" id="aclass_word___x_o___board_html_a051c9109d0ed6eb113b08c0bef7480e0"><div class="ttname"><a href="class_word___x_o___board.html#a051c9109d0ed6eb113b08c0bef7480e0">Word_XO_Board::dict</a></div><div class="ttdeci">static std::set&lt; std::string &gt; dict</div><div class="ttdoc">Forward dictionary of valid words.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00097">Word_Tic_Tac_Toe.h:97</a></div></div>
+<div class="ttc" id="aclass_word___x_o___board_html_a1fa0932270c921458e31e24ed4d473e5"><div class="ttname"><a href="class_word___x_o___board.html#a1fa0932270c921458e31e24ed4d473e5">Word_XO_Board::getEmptyCell</a></div><div class="ttdeci">char getEmptyCell()</div><div class="ttdoc">Get the empty cell symbol.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00063">Word_Tic_Tac_Toe.cpp:63</a></div></div>
+<div class="ttc" id="aclass_word___x_o___board_html_a3b3a3b0b1ba54cf55ddef61683d7427c"><div class="ttname"><a href="class_word___x_o___board.html#a3b3a3b0b1ba54cf55ddef61683d7427c">Word_XO_Board::revDict</a></div><div class="ttdeci">static std::set&lt; std::string &gt; revDict</div><div class="ttdoc">Reversed dictionary of valid words.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00100">Word_Tic_Tac_Toe.h:100</a></div></div>
+<div class="ttc" id="aclass_word___x_o___board_html_a3bd8d50441fb2bb14988faa4baa7b98b"><div class="ttname"><a href="class_word___x_o___board.html#a3bd8d50441fb2bb14988faa4baa7b98b">Word_XO_Board::getMoveCount</a></div><div class="ttdeci">int getMoveCount()</div><div class="ttdoc">Get the number of moves played.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00072">Word_Tic_Tac_Toe.cpp:72</a></div></div>
+<div class="ttc" id="aclass_word___x_o___board_html_a6eba0fb4c22b625af2000afd4fb4400d"><div class="ttname"><a href="class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d">Word_XO_Board::update_board</a></div><div class="ttdeci">bool update_board(Move&lt; char &gt; *move) override</div><div class="ttdoc">Apply a move to the board.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00131">Word_Tic_Tac_Toe.cpp:131</a></div></div>
+<div class="ttc" id="aclass_word___x_o___u_i_html_a82b1a4f4e345d57ba1f9f743bcf28762"><div class="ttname"><a href="class_word___x_o___u_i.html#a82b1a4f4e345d57ba1f9f743bcf28762">Word_XO_UI::score</a></div><div class="ttdeci">static std::vector&lt; std::pair&lt; int, char &gt; &gt; score[3][3]</div><div class="ttdoc">Precomputed scoring tables for AI heuristics.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00190">Word_Tic_Tac_Toe.h:190</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -352,11 +348,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Evaluates the board from the player's perspective. </p>
+<p>Evaluate the board for a player. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">board</td><td>Pointer to the board. </td></tr>
-    <tr><td class="paramname">player</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> to evaluate for. </td></tr>
+    <tr><td class="paramname">board</td><td>Pointer to the game board. </td></tr>
+    <tr><td class="paramname">player</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> being evaluated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -364,8 +360,8 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_a_i.html#a98d69ccc82c7fd33b4b430a99945c5f9">AI</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00214">214</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  214</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
+<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00130">130</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -416,15 +412,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Performs minimax search with alpha-beta pruning. </p>
+<p>Minimax search with alpha-beta pruning. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aiTurn</td><td>True if it's the <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>'s turn. </td></tr>
+    <tr><td class="paramname">aiTurn</td><td>True if <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>'s turn. </td></tr>
     <tr><td class="paramname">player</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> being evaluated. </td></tr>
-    <tr><td class="paramname">alpha</td><td>Alpha bound. </td></tr>
-    <tr><td class="paramname">beta</td><td>Beta bound. </td></tr>
-    <tr><td class="paramname">blankCell</td><td>Character representing an empty cell. </td></tr>
-    <tr><td class="paramname">depth</td><td>Remaining search depth. </td></tr>
+    <tr><td class="paramname">alpha</td><td>Alpha value for pruning. </td></tr>
+    <tr><td class="paramname">beta</td><td>Beta value for pruning. </td></tr>
+    <tr><td class="paramname">blankCell</td><td>Symbol representing empty cell. </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of search. </td></tr>
   </table>
   </dd>
 </dl>
@@ -432,8 +428,8 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_a_i.html#aec1f088cfbc66d0b133c08e4495d1473">AI</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00227">227</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  228</span>                                                                               { <span class="keywordflow">return</span> 0.0f; }</div>
+<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00142">142</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  143</span>                                                                               { <span class="keywordflow">return</span> 0.0f; }</div>
 </div><!-- fragment -->
 </div>
 </div>

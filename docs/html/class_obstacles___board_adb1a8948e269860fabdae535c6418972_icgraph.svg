@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Returns a list of all legal moves.">
+<g id="a_Node000001"><a xlink:title="Get all available moves.">
 <polygon fill="#999999" stroke="#666666" points="516,-48 341.75,-48 341.75,-28 516,-28 516,-48"/>
 <text xml:space="preserve" text-anchor="middle" x="428.88" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::getAvailableMove</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d" xlink:title="Determines the optimal move using minimax.">
+<g id="a_Node000002"><a xlink:href="class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d" target="_top" xlink:title="Computes the best move for the player.">
 <polygon fill="white" stroke="#666666" points="296,-68 172,-68 172,-48 296,-48 296,-68"/>
 <text xml:space="preserve" text-anchor="middle" x="234" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_AI::bestMove</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_obstacles___board.html#a6ffa3be3e7a967293e98834c04e93955" xlink:title="Attempts to place symbol s at (r, c).">
+<g id="a_Node000004"><a xlink:href="class_obstacles___board.html#a6ffa3be3e7a967293e98834c04e93955" target="_top" xlink:title="Attempt to place a symbol at the given position.">
 <polygon fill="white" stroke="#666666" points="305.75,-29 162.25,-29 162.25,-9 305.75,-9 305.75,-29"/>
 <text xml:space="preserve" text-anchor="middle" x="234" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::updateCell</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" xlink:title="Obtains a move from a human or AI player.">
+<g id="a_Node000003"><a xlink:href="class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" target="_top" xlink:title="Obtains a move from a human or AI player.">
 <polygon fill="white" stroke="#666666" points="125.5,-70 0.75,-70 0.75,-50 125.5,-50 125.5,-70"/>
 <text xml:space="preserve" text-anchor="middle" x="63.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_UI::get_move</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_obstacles___board.html#a51f3c83c61219c03b6c66231448b93b8" xlink:title="Applies a Move&lt;char&gt; object to the board.">
+<g id="a_Node000005"><a xlink:href="class_obstacles___board.html#a51f3c83c61219c03b6c66231448b93b8" target="_top" xlink:title="Applies a Move&lt;char&gt; to the board.">
 <polygon fill="white" stroke="#666666" points="126.25,-32 0,-32 0,0 126.25,0 126.25,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="63.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>

@@ -1,5 +1,5 @@
 <map id="Matrix::operator&#45;" name="Matrix::operator&#45;">
-<area shape="rect" id="Node000001" title="Matrix subtraction. Dimensions must match." alt="" coords="5,5,122,32"/>
+<area shape="rect" id="Node000001" title="Matrix subtraction." alt="" coords="5,5,122,32"/>
 <area shape="rect" id="Node000002" href="$class_matrix.html#a500ba010dab4b9ee8e0d1b6f73fcd926" title="Construct a matrix of size (rows x cols)." alt="" coords="170,5,271,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
 </map>

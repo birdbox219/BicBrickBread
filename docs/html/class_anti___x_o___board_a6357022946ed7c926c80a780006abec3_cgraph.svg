@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" xlink:title="Get the move symbol.">
+<g id="a_Node000002"><a xlink:href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff" target="_top" xlink:title="Get the move symbol.">
 <polygon fill="white" stroke="#666666" points="251,-96 154.75,-96 154.75,-76 251,-76 251,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="202.88" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_symbol</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" xlink:title="Get row index.">
+<g id="a_Node000003"><a xlink:href="class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" target="_top" xlink:title="Get row index.">
 <polygon fill="white" stroke="#666666" points="237.88,-58 167.88,-58 167.88,-38 237.88,-38 237.88,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="202.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_x</text>
 </a>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" xlink:title="Get column index.">
+<g id="a_Node000004"><a xlink:href="class_move.html#a96469802a55c9083a1e93c7edec8a00c" target="_top" xlink:title="Get column index.">
 <polygon fill="white" stroke="#666666" points="237.88,-20 167.88,-20 167.88,0 237.88,0 237.88,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="202.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_y</text>
 </a>

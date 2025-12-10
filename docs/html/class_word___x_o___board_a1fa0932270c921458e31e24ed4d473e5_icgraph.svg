@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Returns the symbol representing an unoccupied cell.">
+<g id="a_Node000001"><a xlink:title="Get the empty cell symbol.">
 <polygon fill="#999999" stroke="#666666" points="292.25,-20 138.25,-20 138.25,0 292.25,0 292.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="215.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_Board::getEmptyCell</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" xlink:title="Computes and returns the optimal move.">
+<g id="a_Node000002"><a xlink:href="class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" target="_top" xlink:title="Compute the best move for a player.">
 <polygon fill="white" stroke="#666666" points="102.25,-20 0,-20 0,0 102.25,0 102.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="51.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_AI::bestMove</text>
 </a>

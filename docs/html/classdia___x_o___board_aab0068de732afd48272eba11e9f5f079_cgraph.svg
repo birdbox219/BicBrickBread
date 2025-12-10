@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Constructs the 7x7 diamond&#45;shaped board.">
 <polygon fill="#999999" stroke="#666666" points="117.25,-32 0,-32 0,0 117.25,0 117.25,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::dia_XO</text>
 <text xml:space="preserve" text-anchor="middle" x="58.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Board</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="263,-26 153.25,-26 153.25,-6 263,-6 263,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="208.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board&lt; char &gt;::Board</text>
 </a>

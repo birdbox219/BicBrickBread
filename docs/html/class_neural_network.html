@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: NeuralNetwork Class Reference</title>
+<title>BicBrickBread: NeuralNetwork Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,11 +89,11 @@ $(function(){initNavTree('class_neural_network.html','','class_neural_network-me
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">NeuralNetwork Class Reference</div></div>
+  <div class="headertitle"><div class="title">NeuralNetwork Class Reference<div class="ingroups"><a class="el" href="group___a_i.html">Artificial Intelligence Components</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Fully connected feedforward neural network using updated <a class="el" href="class_layer.html" title="Fully-connected neural network layer (refactored for SOLID &amp; encapsulation).">Layer</a> class.  
+<p>Fully-connected feedforward neural network using <a class="el" href="class_layer.html" title="Fully-connected (dense) neural network layer.">Layer</a> objects.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>&gt;</code></p>
@@ -106,7 +106,7 @@ Collaboration diagram for NeuralNetwork:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a57aade56f4cfa2de89b5881aab53cbbe" id="r_a57aade56f4cfa2de89b5881aab53cbbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57aade56f4cfa2de89b5881aab53cbbe">NeuralNetwork</a> (const std::vector&lt; int &gt; &amp;layerSizes, const std::vector&lt; std::function&lt; double(double)&gt; &gt; &amp;activations, const std::vector&lt; std::function&lt; double(double)&gt; &gt; &amp;activationDerivatives)</td></tr>
-<tr class="memdesc:a57aade56f4cfa2de89b5881aab53cbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a neural network with specified layer sizes and activations.  <br /></td></tr>
+<tr class="memdesc:a57aade56f4cfa2de89b5881aab53cbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a feedforward neural network.  <br /></td></tr>
 <tr class="memitem:a00324c4e6ef12c3ca7904b38bd85330f" id="r_a00324c4e6ef12c3ca7904b38bd85330f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00324c4e6ef12c3ca7904b38bd85330f">forward</a> (const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;input)</td></tr>
 <tr class="memdesc:a00324c4e6ef12c3ca7904b38bd85330f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a forward pass through all layers.  <br /></td></tr>
 <tr class="memitem:a0bed8373877d2f1711e75560a353507c" id="r_a0bed8373877d2f1711e75560a353507c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bed8373877d2f1711e75560a353507c">backward</a> (const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;expected, double learningRate)</td></tr>
@@ -114,29 +114,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a407ef851e7e66d12054d1940c815a2bf" id="r_a407ef851e7e66d12054d1940c815a2bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a407ef851e7e66d12054d1940c815a2bf">train</a> (const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;input, const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;expected, double learningRate)</td></tr>
 <tr class="memdesc:a407ef851e7e66d12054d1940c815a2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train the network on a single input-output pair.  <br /></td></tr>
 <tr class="memitem:a408fd2b9cb8c83c4e50b54b2fd7c0b06" id="r_a408fd2b9cb8c83c4e50b54b2fd7c0b06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a408fd2b9cb8c83c4e50b54b2fd7c0b06">predict</a> (const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;input)</td></tr>
-<tr class="memdesc:a408fd2b9cb8c83c4e50b54b2fd7c0b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict output from a given input without performing weight updates.  <br /></td></tr>
+<tr class="memdesc:a408fd2b9cb8c83c4e50b54b2fd7c0b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predict output from a given input without weight updates.  <br /></td></tr>
 <tr class="memitem:a3d915d1d98532cacac3164de9ae0be93" id="r_a3d915d1d98532cacac3164de9ae0be93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d915d1d98532cacac3164de9ae0be93">save</a> (const std::string &amp;filename) const</td></tr>
-<tr class="memdesc:a3d915d1d98532cacac3164de9ae0be93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save all layer weights and biases to a binary file.  <br /></td></tr>
+<tr class="memdesc:a3d915d1d98532cacac3164de9ae0be93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save all layer parameters (weights and biases) to a binary file.  <br /></td></tr>
 <tr class="memitem:a2d7cf4ef937c396ff5b0077bc3d57cb0" id="r_a2d7cf4ef937c396ff5b0077bc3d57cb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d7cf4ef937c396ff5b0077bc3d57cb0">load</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a2d7cf4ef937c396ff5b0077bc3d57cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load all layer weights and biases from a binary file.  <br /></td></tr>
+<tr class="memdesc:a2d7cf4ef937c396ff5b0077bc3d57cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load all layer parameters from a binary file.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a694d0573409c601046f97ef5692de8c5" id="r_a694d0573409c601046f97ef5692de8c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a694d0573409c601046f97ef5692de8c5">layers_</a></td></tr>
-<tr class="memdesc:a694d0573409c601046f97ef5692de8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private container for layers (encapsulation).  <br /></td></tr>
+<tr class="memdesc:a694d0573409c601046f97ef5692de8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for layers (encapsulation).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fully connected feedforward neural network using updated <a class="el" href="class_layer.html" title="Fully-connected neural network layer (refactored for SOLID &amp; encapsulation).">Layer</a> class. </p>
-<p>This class manages a sequence of Layers, each containing its own weights, biases, and activation functions. It provides a simple interface for forward propagation, backpropagation, training on individual samples, and persisting/loading network weights to/from files.</p>
-<p>Responsibilities (SRP):</p><ul>
-<li>Maintain the ordered list of layers and their internal states</li>
-<li>Perform forward pass through all layers</li>
-<li>Perform backward pass and weight updates (gradient descent)</li>
-<li>Provide convenience functions for training and prediction</li>
-<li>Save/load layer parameters (weights and biases) to/from binary files </li>
-</ul>
+<div class="textblock"><p>Fully-connected feedforward neural network using <a class="el" href="class_layer.html" title="Fully-connected (dense) neural network layer.">Layer</a> objects. </p>
+<p>Manages multiple <a class="el" href="class_layer.html" title="Fully-connected (dense) neural network layer.">Layer</a> objects, each with its own weights, biases, and activation functions. Supports forward pass, backward propagation, training on single samples, and saving/loading weights. </p>
 
-<p class="definition">Definition at line <a class="el" href="_neural_network_8h_source.html#l00027">27</a> of file <a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_neural_network_8h_source.html#l00035">35</a> of file <a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a57aade56f4cfa2de89b5881aab53cbbe" name="a57aade56f4cfa2de89b5881aab53cbbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57aade56f4cfa2de89b5881aab53cbbe">&#9670;&#160;</a></span>NeuralNetwork()</h2>
@@ -162,12 +155,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a neural network with specified layer sizes and activations. </p>
+<p>Construct a feedforward neural network. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">layerSizes</td><td>Vector specifying the number of neurons in each layer (including input and output). </td></tr>
-    <tr><td class="paramname">activations</td><td>Vector of activation functions for each layer (excluding input layer). </td></tr>
-    <tr><td class="paramname">activationDerivatives</td><td>Vector of derivatives of the activation functions for backpropagation. </td></tr>
+    <tr><td class="paramname">layerSizes</td><td>Number of neurons in each layer (including input and output) </td></tr>
+    <tr><td class="paramname">activations</td><td>Activation functions for each layer (excluding input layer) </td></tr>
+    <tr><td class="paramname">activationDerivatives</td><td>Derivatives of activation functions for backpropagation </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,7 +175,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   16</span>        <a class="code hl_variable" href="#a694d0573409c601046f97ef5692de8c5">layers_</a>.emplace_back(layerSizes[i-1], layerSizes[i], activations[i-1], activationDerivatives[i-1]);</div>
 <div class="line"><span class="lineno">   17</span>    }</div>
 <div class="line"><span class="lineno">   18</span>}</div>
-<div class="ttc" id="aclass_neural_network_html_a694d0573409c601046f97ef5692de8c5"><div class="ttname"><a href="#a694d0573409c601046f97ef5692de8c5">NeuralNetwork::layers_</a></div><div class="ttdeci">std::vector&lt; Layer &gt; layers_</div><div class="ttdoc">Private container for layers (encapsulation).</div><div class="ttdef"><b>Definition</b> <a href="_neural_network_8h_source.html#l00082">NeuralNetwork.h:82</a></div></div>
+<div class="ttc" id="aclass_neural_network_html_a694d0573409c601046f97ef5692de8c5"><div class="ttname"><a href="#a694d0573409c601046f97ef5692de8c5">NeuralNetwork::layers_</a></div><div class="ttdeci">std::vector&lt; Layer &gt; layers_</div><div class="ttdoc">Container for layers (encapsulation).</div><div class="ttdef"><b>Definition</b> <a href="_neural_network_8h_source.html#l00090">NeuralNetwork.h:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -209,7 +202,7 @@ Private Attributes</h2></td></tr>
 <p>Perform backward propagation through all layers and update weights. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expected</td><td>Expected output (target vector) </td></tr>
+    <tr><td class="paramname">expected</td><td>Target output vector </td></tr>
     <tr><td class="paramname">learningRate</td><td>Learning rate for weight updates </td></tr>
   </table>
   </dd>
@@ -253,11 +246,11 @@ Here is the caller graph for this function:</div>
 <p>Perform a forward pass through all layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>Input vector (<a class="el" href="class_matrix.html">Matrix&lt;double&gt;</a> with inputSize x 1 dimensions) </td></tr>
+    <tr><td class="paramname">input</td><td>Input vector (<a class="el" href="class_matrix.html">Matrix&lt;double&gt;</a>, inputSize × 1) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Output of the final layer (activations) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Output activations from the final layer </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_neural_network_8cpp_source.html#l00021">21</a> of file <a class="el" href="_neural_network_8cpp_source.html">NeuralNetwork.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                 {</div>
@@ -290,10 +283,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Load all layer weights and biases from a binary file. </p>
+<p>Load all layer parameters from a binary file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Path to file </td></tr>
+    <tr><td class="paramname">filename</td><td>File path </td></tr>
   </table>
   </dd>
 </dl>
@@ -325,7 +318,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Predict output from a given input without performing weight updates. </p>
+<p>Predict output from a given input without weight updates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>Input vector </td></tr>
@@ -362,10 +355,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Save all layer weights and biases to a binary file. </p>
+<p>Save all layer parameters (weights and biases) to a binary file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Path to file </td></tr>
+    <tr><td class="paramname">filename</td><td>File path </td></tr>
   </table>
   </dd>
 </dl>
@@ -451,9 +444,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Private container for layers (encapsulation). </p>
+<p>Container for layers (encapsulation). </p>
 
-<p class="definition">Definition at line <a class="el" href="_neural_network_8h_source.html#l00082">82</a> of file <a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_neural_network_8h_source.html#l00090">90</a> of file <a class="el" href="_neural_network_8h_source.html">NeuralNetwork.h</a>.</p>
 
 </div>
 </div>

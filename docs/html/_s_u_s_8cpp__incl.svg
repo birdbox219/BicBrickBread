@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$_s_u_s_8h.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_s_u_s_8h.html" target="_top" xlink:title="SUS game classes.">
 <polygon fill="white" stroke="#666666" points="168.75,-200 123.5,-200 123.5,-180 168.75,-180 168.75,-200"/>
 <text xml:space="preserve" text-anchor="middle" x="146.12" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS.h</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$_board_game___classes_8h.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="_board_game___classes_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="184.12,-88 66.12,-88 66.12,-56 184.12,-56 184.12,-88"/>
 <text xml:space="preserve" text-anchor="start" x="74.12" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/BoardGame</text>
 <text xml:space="preserve" text-anchor="middle" x="125.12" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Classes.h</text>
@@ -75,7 +75,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$_a_i_8h.html" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="_a_i_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="188.25,-144 104,-144 104,-124 188.25,-124 188.25,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="146.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/AI.h</text>
 </a>
@@ -93,7 +93,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$_custom___u_i_8h.html" xlink:title="Defines a customizable user interface for board games.">
+<g id="a_Node000009"><a xlink:href="_custom___u_i_8h.html" target="_top" xlink:title="Defines a customizable user interface for board games.">
 <polygon fill="white" stroke="#666666" points="331.5,-144 206.75,-144 206.75,-124 331.5,-124 331.5,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="269.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/Custom_UI.h</text>
 </a>

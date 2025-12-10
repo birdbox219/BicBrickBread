@@ -1,5 +1,5 @@
 <map id="Large_XO_Board::updateCell" name="Large_XO_Board::updateCell">
 <area shape="rect" id="Node000001" title="Update a cell using the bitboard representation." alt="" coords="221,13,411,40"/>
-<area shape="rect" id="Node000002" href="$class_large___x_o___board.html#ab7c22478765191720a9068b68f492891" title="Update board using a Move object (overrides base class)." alt="" coords="5,5,173,48"/>
+<area shape="rect" id="Node000002" href="$class_large___x_o___board.html#ab7c22478765191720a9068b68f492891" title="Update board using a Move object." alt="" coords="5,5,173,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,29,173,29,173,24,205,24"/>
 </map>

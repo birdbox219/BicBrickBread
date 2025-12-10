@@ -11,5 +11,6 @@ var searchData=
   ['nn_8',['NN',['../class_large___x_o___a_i.html#a0ca91387d33bb3a357ac8a73a2edc0f1',1,'Large_XO_AI']]],
   ['nno_9',['NNO',['../class_large___x_o___a_i.html#a2ffcd83182387167ed7dee7f7f489b82',1,'Large_XO_AI']]],
   ['nnx_10',['NNX',['../class_large___x_o___a_i.html#aacb5919345c9a19a4f65bd690fdd2f0e',1,'Large_XO_AI']]],
-  ['num_11',['num',['../class_x_o___n_u_m___u_i.html#a669b7d18ac1936cd1bfd4f5e293425cb',1,'XO_NUM_UI']]]
+  ['num_11',['num',['../class_x_o___n_u_m___u_i.html#a669b7d18ac1936cd1bfd4f5e293425cb',1,'XO_NUM_UI']]],
+  ['numerical_12',['XO Numerical',['../group___x_o__num.html',1,'']]]
 ];

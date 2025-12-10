@@ -1,5 +1,5 @@
 <map id="dia_XO_UI::dia_XO_UI" name="dia_XO_UI::dia_XO_UI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="Node000001" title="Constructs the UI handler." alt="" coords="5,5,163,32"/>
 <area shape="rect" id="Node000002" href="$class_u_i.html#afb59b53f3c2ed750b1a9a0c7d6dc4a7a" title=" " alt="" coords="211,5,317,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,195,16,195,21,163,21"/>
 </map>

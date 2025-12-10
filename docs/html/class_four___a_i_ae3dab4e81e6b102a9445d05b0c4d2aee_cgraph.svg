@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_board.html#a93558c58e60ca4291c6044828afd260b" xlink:title="Return content of cell x, y in current board.">
+<g id="a_Node000002"><a xlink:href="class_board.html#a93558c58e60ca4291c6044828afd260b" target="_top" xlink:title="Return content of cell x, y in current board.">
 <polygon fill="white" stroke="#666666" points="227,-20 145.75,-20 145.75,0 227,0 227,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="186.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board::get_cell</text>
 </a>

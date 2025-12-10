@@ -10,7 +10,7 @@
 <title>Games/Ultimate_Tic_Tac_Toe</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_41c1ba1c5109b2e194aac80925c9ef0b</title>
-<g id="a_clust1"><a xlink:href="dir_41c1ba1c5109b2e194aac80925c9ef0b.html" xlink:title="Games">
+<g id="a_clust1"><a xlink:href="dir_41c1ba1c5109b2e194aac80925c9ef0b.html" target="_top" xlink:title="Games">
 <polygon fill="#edf0f7" stroke="#404040" stroke-dasharray="5,2" points="8,-48 8,-104 138,-104 138,-48 8,-48"/>
 <text xml:space="preserve" text-anchor="middle" x="73" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games</text>
 </a>
@@ -19,7 +19,7 @@
 <!-- dir_eadadc9a68e328892d948f53896e43cd -->
 <g id="node1" class="node">
 <title>dir_eadadc9a68e328892d948f53896e43cd</title>
-<g id="a_node1"><a xlink:href="dir_eadadc9a68e328892d948f53896e43cd.html" xlink:title="Ultimate_Tic_Tac_Toe">
+<g id="a_node1"><a xlink:href="dir_eadadc9a68e328892d948f53896e43cd.html" target="_top" xlink:title="Ultimate_Tic_Tac_Toe">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="129.75,-76 16.25,-76 16.25,-56 129.75,-56 129.75,-76"/>
 <text xml:space="preserve" text-anchor="middle" x="73" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Tic_Tac_Toe</text>
 </a>
@@ -28,7 +28,7 @@
 <!-- dir_1ec98ce50fa6ec55b40b8ffb1df38c3c -->
 <g id="node2" class="node">
 <title>dir_1ec98ce50fa6ec55b40b8ffb1df38c3c</title>
-<g id="a_node2"><a xlink:href="dir_1ec98ce50fa6ec55b40b8ffb1df38c3c.html" xlink:title="header">
+<g id="a_node2"><a xlink:href="dir_1ec98ce50fa6ec55b40b8ffb1df38c3c.html" target="_top" xlink:title="header">
 <polygon fill="#edf0f7" stroke="#404040" points="95.62,-20 50.38,-20 50.38,0 95.62,0 95.62,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="73" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">header</text>
 </a>
@@ -37,12 +37,12 @@
 <!-- dir_eadadc9a68e328892d948f53896e43cd&#45;&gt;dir_1ec98ce50fa6ec55b40b8ffb1df38c3c -->
 <g id="edge1" class="edge">
 <title>dir_eadadc9a68e328892d948f53896e43cd&#45;&gt;dir_1ec98ce50fa6ec55b40b8ffb1df38c3c</title>
-<g id="a_edge1"><a xlink:href="dir_000014_000005.html">
+<g id="a_edge1"><a xlink:href="dir_000014_000005.html" target="_top">
 <path fill="none" stroke="#63b8ff" d="M73,-55.59C73,-49.01 73,-39.96 73,-31.73"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="76.5,-31.81 73,-21.81 69.5,-31.81 76.5,-31.81"/>
 </a>
 </g>
-<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000014_000005.html" xlink:title="2">
+<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000014_000005.html" target="_top" xlink:title="2">
 <text xml:space="preserve" text-anchor="middle" x="79.34" y="-30.39" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#63b8ff">2</text>
 </a>
 </g>

@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class__4by4_x_o___board.html#a9de9274fa6d3d65ec2e6899fb465b693" xlink:title="Applies a move to the board.">
+<g id="a_Node000002"><a xlink:href="class__4by4_x_o___board.html#a9de9274fa6d3d65ec2e6899fb465b693" target="_top" xlink:title="Applies a sliding move.">
 <polygon fill="white" stroke="#666666" points="265.62,-620 143.12,-620 143.12,-588 265.62,-588 265.62,-620"/>
 <text xml:space="preserve" text-anchor="start" x="151.12" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_anti___x_o___board.html#a6357022946ed7c926c80a780006abec3" xlink:title="Places a symbol on the board if the position is valid and empty.">
+<g id="a_Node000003"><a xlink:href="class_anti___x_o___board.html#a6357022946ed7c926c80a780006abec3" target="_top" xlink:title="Places a symbol on the board if the position is valid and empty.">
 <polygon fill="white" stroke="#666666" points="263.75,-570 145,-570 145,-538 263.75,-538 263.75,-570"/>
 <text xml:space="preserve" text-anchor="start" x="153" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$classdia___x_o___board.html#ac08c083372516dd786e53e4a87bac34f" xlink:title="Update the board with a new move.">
+<g id="a_Node000004"><a xlink:href="classdia___x_o___board.html#ac08c083372516dd786e53e4a87bac34f" target="_top" xlink:title="Attempts to place a symbol on the board.">
 <polygon fill="white" stroke="#666666" points="261.5,-520 147.25,-520 147.25,-488 261.5,-488 261.5,-520"/>
 <text xml:space="preserve" text-anchor="start" x="155.25" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -77,7 +77,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_f_o_u_r___board.html#ae90ac8610d88429264d3f467ad5a6919" xlink:title="Updates the board with the given move.">
+<g id="a_Node000005"><a xlink:href="class_f_o_u_r___board.html#ae90ac8610d88429264d3f467ad5a6919" target="_top" xlink:title="Applies a move to the board.">
 <polygon fill="white" stroke="#666666" points="259.62,-470 149.12,-470 149.12,-438 259.62,-438 259.62,-470"/>
 <text xml:space="preserve" text-anchor="start" x="157.12" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -96,7 +96,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_large___x_o___board.html#ab7c22478765191720a9068b68f492891" xlink:title="Update board using a Move object (overrides base class).">
+<g id="a_Node000006"><a xlink:href="class_large___x_o___board.html#ab7c22478765191720a9068b68f492891" target="_top" xlink:title="Update board using a Move object.">
 <polygon fill="white" stroke="#666666" points="267.12,-420 141.62,-420 141.62,-388 267.12,-388 267.12,-420"/>
 <text xml:space="preserve" text-anchor="start" x="149.62" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -115,7 +115,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_memory___board.html#ab21d9e1025f3a8ae29dd17a5fb368462" xlink:title="Update the board with a new move.">
+<g id="a_Node000007"><a xlink:href="class_memory___board.html#ab21d9e1025f3a8ae29dd17a5fb368462" target="_top" xlink:title="Applies a move to the board.">
 <polygon fill="white" stroke="#666666" points="263,-370 145.75,-370 145.75,-338 263,-338 263,-370"/>
 <text xml:space="preserve" text-anchor="start" x="153.75" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">Memory_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-344.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -134,7 +134,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$class_obstacles___board.html#a51f3c83c61219c03b6c66231448b93b8" xlink:title="Applies a Move&lt;char&gt; object to the board.">
+<g id="a_Node000008"><a xlink:href="class_obstacles___board.html#a51f3c83c61219c03b6c66231448b93b8" target="_top" xlink:title="Applies a Move&lt;char&gt; to the board.">
 <polygon fill="white" stroke="#666666" points="267.5,-320 141.25,-320 141.25,-288 267.5,-288 267.5,-320"/>
 <text xml:space="preserve" text-anchor="start" x="149.25" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -153,7 +153,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$class_pyramid_x_o___board.html#a42ef6d7d850224be477c2a0a40508dd3" xlink:title="Attempts to place a symbol on the board.">
+<g id="a_Node000009"><a xlink:href="class_pyramid_x_o___board.html#a42ef6d7d850224be477c2a0a40508dd3" target="_top" xlink:title="Attempts to place a symbol on the board.">
 <polygon fill="white" stroke="#666666" points="270.5,-270 138.25,-270 138.25,-238 270.5,-238 270.5,-270"/>
 <text xml:space="preserve" text-anchor="start" x="146.25" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -172,7 +172,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="$class_s_u_s___board.html#a5cf8d1ad2da90ed50b77a7f5d91342f4" xlink:title="Applies or undoes a move on the board.">
+<g id="a_Node000010"><a xlink:href="class_s_u_s___board.html#a22679cdc9a91a17fea898c66ad821e45" target="_top" xlink:title="Applies or undoes a move on the board.">
 <polygon fill="white" stroke="#666666" points="270.5,-220 138.25,-220 138.25,-200 270.5,-200 270.5,-220"/>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_Board::update_board</text>
 </a>
@@ -190,7 +190,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="$class_ultimate___board.html#a9339ec67859e01c726adf55a8a77db72" xlink:title="Applies or undoes a move.">
+<g id="a_Node000011"><a xlink:href="class_ultimate___board.html#a9339ec67859e01c726adf55a8a77db72" target="_top" xlink:title="Apply or undo a move on the board.">
 <polygon fill="white" stroke="#666666" points="263.75,-182 145,-182 145,-150 263.75,-150 263.75,-182"/>
 <text xml:space="preserve" text-anchor="start" x="153" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -209,7 +209,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="$class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d" xlink:title="Validates and applies a move to the board.">
+<g id="a_Node000012"><a xlink:href="class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d" target="_top" xlink:title="Apply a move to the board.">
 <polygon fill="white" stroke="#666666" points="266.38,-132 142.38,-132 142.38,-100 266.38,-100 266.38,-132"/>
 <text xml:space="preserve" text-anchor="start" x="150.38" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -228,7 +228,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="$class_x_o__inf___board.html#ad8c2e867524a221c9e51c5b71806e509" xlink:title="Apply or undo a move on the board.">
+<g id="a_Node000014"><a xlink:href="class_x_o__inf___board.html#ad8c2e867524a221c9e51c5b71806e509" target="_top" xlink:title="Apply a move to the board.">
 <polygon fill="white" stroke="#666666" points="260.38,-82 148.38,-82 148.38,-50 260.38,-50 260.38,-82"/>
 <text xml:space="preserve" text-anchor="start" x="156.38" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -247,7 +247,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="$class_x_o___n_u_m___board.html#af7ec62268666ef6dd7bd90219172522e" xlink:title="Applies or undoes a move.">
+<g id="a_Node000015"><a xlink:href="class_x_o___n_u_m___board.html#af7ec62268666ef6dd7bd90219172522e" target="_top" xlink:title="Apply or undo a move on the board.">
 <polygon fill="white" stroke="#666666" points="266.75,-32 142,-32 142,0 266.75,0 266.75,-32"/>
 <text xml:space="preserve" text-anchor="start" x="150" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -266,7 +266,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="$class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" xlink:title="Computes and returns the optimal move.">
+<g id="a_Node000013"><a xlink:href="class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" target="_top" xlink:title="Compute the best move for a player.">
 <polygon fill="white" stroke="#666666" points="102.25,-126 0,-126 0,-106 102.25,-106 102.25,-126"/>
 <text xml:space="preserve" text-anchor="middle" x="51.12" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_AI::bestMove</text>
 </a>

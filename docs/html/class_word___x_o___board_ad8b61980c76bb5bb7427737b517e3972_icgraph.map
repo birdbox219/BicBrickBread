@@ -1,8 +1,8 @@
 <map id="Word_XO_Board::is_lose" name="Word_XO_Board::is_lose">
-<area shape="rect" id="Node000001" title="Checks if the specified player has lost." alt="" coords="431,13,598,40"/>
-<area shape="rect" id="Node000002" href="$class_word___x_o___board.html#a9ce0369f486035a8216b9b2063efe7fd" title="Determines whether the game has reached a terminal state." alt="" coords="5,5,164,48"/>
+<area shape="rect" id="Node000001" title="Check if a player has lost." alt="" coords="431,13,598,40"/>
+<area shape="rect" id="Node000002" href="$class_word___x_o___board.html#a9ce0369f486035a8216b9b2063efe7fd" title="Check if the game is over." alt="" coords="5,5,164,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,29,164,29,164,24,415,24"/>
-<area shape="rect" id="Node000003" href="$class_word___x_o___board.html#af33032e635ec76b4f8b13b0658b772a0" title="Determines whether the game ended in a draw." alt="" coords="212,39,383,65"/>
+<area shape="rect" id="Node000003" href="$class_word___x_o___board.html#af33032e635ec76b4f8b13b0658b772a0" title="Check if the game ended in a draw." alt="" coords="212,39,383,65"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,41,384,45,383,39,415,36"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="196,43,164,39,165,33,196,37"/>
 </map>

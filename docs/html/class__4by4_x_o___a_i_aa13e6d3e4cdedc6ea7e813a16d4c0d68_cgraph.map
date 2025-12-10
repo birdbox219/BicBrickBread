@@ -1,5 +1,5 @@
 <map id="_4by4XO_AI::bestMove" name="_4by4XO_AI::bestMove">
-<area shape="rect" id="Node000001" title="Generates the best move for the AI." alt="" coords="5,56,166,83"/>
+<area shape="rect" id="Node000001" title="Computes the best move for AI." alt="" coords="5,56,166,83"/>
 <area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="214,5,359,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,53,215,34,216,39,142,58"/>
 <area shape="rect" id="Node000003" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="232,56,340,83"/>

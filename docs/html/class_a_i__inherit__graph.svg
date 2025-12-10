@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_anti___a_i.html" xlink:title="Simple AI for Anti&#45;XO that tries to avoid dangerous positions.">
+<g id="a_Node000002"><a xlink:href="class_anti___a_i.html" target="_top" xlink:title="Simple AI for Anti&#45;XO that avoids dangerous positions.">
 <polygon fill="white" stroke="none" points="66.75,-140 0,-140 0,-24 66.75,-24 66.75,-140"/>
 <text xml:space="preserve" text-anchor="start" x="17.25" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_AI</text>
 <text xml:space="preserve" text-anchor="start" x="31.88" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -64,7 +64,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_four___a_i.html" xlink:title="Implements a minimax&#45;based AI for Connect&#45;Four.">
+<g id="a_Node000003"><a xlink:href="class_four___a_i.html" target="_top" xlink:title="Implements a minimax&#45;based AI for Connect&#45;Four.">
 <polygon fill="white" stroke="none" points="183.88,-154 84.88,-154 84.88,-10 183.88,-10 183.88,-154"/>
 <text xml:space="preserve" text-anchor="start" x="117.12" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI</text>
 <text xml:space="preserve" text-anchor="start" x="132.88" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -99,7 +99,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_large___x_o___a_i.html" xlink:title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic.">
+<g id="a_Node000004"><a xlink:href="class_large___x_o___a_i.html" target="_top" xlink:title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic.">
 <polygon fill="white" stroke="none" points="284.62,-164 202.12,-164 202.12,0 284.62,0 284.62,-164"/>
 <text xml:space="preserve" text-anchor="start" x="214.12" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_AI</text>
 <text xml:space="preserve" text-anchor="start" x="207.62" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -139,7 +139,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_memory___a_i.html" xlink:title="AI controller for Memory Tic&#45;Tac&#45;Toe implementing the AI interface.">
+<g id="a_Node000005"><a xlink:href="class_memory___a_i.html" target="_top" xlink:title="AI controller for Memory Tic&#45;Tac&#45;Toe implementing the AI interface.">
 <polygon fill="white" stroke="none" points="376.5,-132 302.25,-132 302.25,-32 376.5,-32 376.5,-132"/>
 <text xml:space="preserve" text-anchor="start" x="314.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Memory_AI</text>
 <text xml:space="preserve" text-anchor="start" x="337.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -169,7 +169,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_obstacles___a_i.html" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="class_obstacles___a_i.html" target="_top" xlink:title="AI implementation for Obstacles Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="478,-132 394.75,-132 394.75,-32 478,-32 478,-132"/>
 <text xml:space="preserve" text-anchor="start" x="406.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_AI</text>
 <text xml:space="preserve" text-anchor="start" x="434.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -199,7 +199,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_pyramid_x_o___a_i.html" xlink:title="Simple AI choosing a random valid empty pyramid cell.">
+<g id="a_Node000007"><a xlink:href="class_pyramid_x_o___a_i.html" target="_top" xlink:title="Simple AI choosing a random valid empty pyramid cell.">
 <polygon fill="white" stroke="none" points="585,-132 495.75,-132 495.75,-32 585,-32 585,-132"/>
 <text xml:space="preserve" text-anchor="start" x="507.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_AI</text>
 <text xml:space="preserve" text-anchor="start" x="538.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -229,7 +229,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$class_s_u_s___a_i.html" xlink:title="Implements AI for the SUS game using Minimax with alpha&#45;beta pruning.">
+<g id="a_Node000008"><a xlink:href="class_s_u_s___a_i.html" target="_top" xlink:title="Artificial intelligence for the SUS game using Minimax with alpha&#45;beta pruning.">
 <polygon fill="white" stroke="none" points="680,-140 602.75,-140 602.75,-24 680,-24 680,-140"/>
 <text xml:space="preserve" text-anchor="start" x="623.38" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI</text>
 <text xml:space="preserve" text-anchor="start" x="639.88" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -261,7 +261,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$class_ultimate___a_i.html" xlink:title="AI for Ultimate Tic&#45;Tac&#45;Toe. Currently chooses random empty cell.">
+<g id="a_Node000009"><a xlink:href="class_ultimate___a_i.html" target="_top" xlink:title="AI controller for Ultimate Tic&#45;Tac&#45;Toe (random move selection).">
 <polygon fill="white" stroke="none" points="774.25,-132 698.5,-132 698.5,-32 774.25,-32 774.25,-132"/>
 <text xml:space="preserve" text-anchor="start" x="710.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_AI</text>
 <text xml:space="preserve" text-anchor="start" x="734.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -291,7 +291,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="$class_word___a_i.html" xlink:title="AI engine for the Word Tic&#45;Tac&#45;Toe game.">
+<g id="a_Node000010"><a xlink:href="class_word___a_i.html" target="_top" xlink:title="AI engine for Word Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="858.75,-132 792,-132 792,-32 858.75,-32 858.75,-132"/>
 <text xml:space="preserve" text-anchor="start" x="806.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_AI</text>
 <text xml:space="preserve" text-anchor="start" x="823.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -321,7 +321,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="$class_x_o___n_u_m___a_i.html" xlink:title="Random&#45;move AI for Numerical Tic&#45;Tac&#45;Toe.">
+<g id="a_Node000011"><a xlink:href="class_x_o___n_u_m___a_i.html" target="_top" xlink:title="Random&#45;move AI for Numerical Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="958.25,-132 876.5,-132 876.5,-32 958.25,-32 958.25,-132"/>
 <text xml:space="preserve" text-anchor="start" x="888.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_AI</text>
 <text xml:space="preserve" text-anchor="start" x="915.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -351,7 +351,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="$class_x_o__inf___a_i.html" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="class_x_o__inf___a_i.html" target="_top" xlink:title="AI engine for infinite Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="1044.88,-132 975.88,-132 975.88,-32 1044.88,-32 1044.88,-132"/>
 <text xml:space="preserve" text-anchor="start" x="987.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI</text>
 <text xml:space="preserve" text-anchor="start" x="1008.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -381,7 +381,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="$class_x___o___a_i.html" xlink:title="AI controller for Tic&#45;Tac&#45;Toe.">
+<g id="a_Node000013"><a xlink:href="class_x___o___a_i.html" target="_top" xlink:title="AI controller for Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="1129.75,-132 1063,-132 1063,-32 1129.75,-32 1129.75,-132"/>
 <text xml:space="preserve" text-anchor="start" x="1079.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">X_O_AI</text>
 <text xml:space="preserve" text-anchor="start" x="1094.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -411,7 +411,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="$class__4by4_x_o___a_i.html" xlink:title="Basic AI for 4x4 sliding Tic&#45;Tac&#45;Toe.">
+<g id="a_Node000014"><a xlink:href="class__4by4_x_o___a_i.html" target="_top" xlink:title="Simple AI for sliding 4x4 Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="1227.12,-132 1147.62,-132 1147.62,-32 1227.12,-32 1227.12,-132"/>
 <text xml:space="preserve" text-anchor="start" x="1159.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_AI</text>
 <text xml:space="preserve" text-anchor="start" x="1185.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -441,7 +441,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="$classdia___x_o___a_i.html" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="classdia___x_o___a_i.html" target="_top" xlink:title="Very simple AI for diamond Tic&#45;Tac&#45;Toe.">
 <polygon fill="white" stroke="none" points="1316,-132 1244.75,-132 1244.75,-32 1316,-32 1316,-132"/>
 <text xml:space="preserve" text-anchor="start" x="1256.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_AI</text>
 <text xml:space="preserve" text-anchor="start" x="1278.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

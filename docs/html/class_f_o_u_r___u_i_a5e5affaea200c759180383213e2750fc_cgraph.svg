@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Constructs the Connect&#45;Four UI handler.">
 <polygon fill="#999999" stroke="#666666" points="110.5,-26 0,-26 0,-6 110.5,-6 110.5,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="55.25" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_UI::FOUR_UI</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="255.5,-32 146.5,-32 146.5,0 255.5,0 255.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="154.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI&lt; char &gt;::</text>
 <text xml:space="preserve" text-anchor="middle" x="201" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI</text>

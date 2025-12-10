@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Layer Class Reference</title>
+<title>BicBrickBread: Layer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,11 +89,11 @@ $(function(){initNavTree('class_layer.html','','class_layer-members'); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Layer Class Reference</div></div>
+  <div class="headertitle"><div class="title">Layer Class Reference<div class="ingroups"><a class="el" href="group___a_i.html">Artificial Intelligence Components</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Fully-connected neural network layer (refactored for SOLID &amp; encapsulation).  
+<p>Fully-connected (dense) neural network layer.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_layer_8h_source.html">Layer.h</a>&gt;</code></p>
@@ -106,18 +106,21 @@ Collaboration diagram for Layer:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a9469ca3681555b02a7b5f3177d3355" id="r_a0a9469ca3681555b02a7b5f3177d3355"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a9469ca3681555b02a7b5f3177d3355">Layer</a> (int inputSize, int <a class="el" href="#a8f669282be4cce0d0a88ff459439108d">neurons</a>, std::function&lt; double(double)&gt; act, std::function&lt; double(double)&gt; actDeriv)</td></tr>
-<tr class="memdesc:a0a9469ca3681555b02a7b5f3177d3355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a dense layer.  <br /></td></tr>
+<tr class="memdesc:a0a9469ca3681555b02a7b5f3177d3355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a fully-connected layer.  <br /></td></tr>
 <tr class="memitem:aa1c9e50a099e7fad54c5681f83988d2a" id="r_aa1c9e50a099e7fad54c5681f83988d2a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c9e50a099e7fad54c5681f83988d2a">forward</a> (const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;input)</td></tr>
-<tr class="memdesc:aa1c9e50a099e7fad54c5681f83988d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward propagation.  <br /></td></tr>
+<tr class="memdesc:aa1c9e50a099e7fad54c5681f83988d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform forward propagation through this layer.  <br /></td></tr>
 <tr class="memitem:a54679a1ee804225a3d09a0685242070a" id="r_a54679a1ee804225a3d09a0685242070a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54679a1ee804225a3d09a0685242070a">backward</a> (const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;dC_dA, double lr)</td></tr>
-<tr class="memdesc:a54679a1ee804225a3d09a0685242070a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backward propagation.  <br /></td></tr>
+<tr class="memdesc:a54679a1ee804225a3d09a0685242070a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform backward propagation through this layer.  <br /></td></tr>
 <tr class="memitem:abb6ebcb789ccfa51286e6a6b251d8a99" id="r_abb6ebcb789ccfa51286e6a6b251d8a99"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb6ebcb789ccfa51286e6a6b251d8a99">output</a> () const</td></tr>
+<tr class="memdesc:abb6ebcb789ccfa51286e6a6b251d8a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output activations of the layer.  <br /></td></tr>
 <tr class="memitem:ac9ac170926b23abc5c0e1e085407e682" id="r_ac9ac170926b23abc5c0e1e085407e682"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9ac170926b23abc5c0e1e085407e682">save</a> (std::ofstream &amp;out) const</td></tr>
-<tr class="memdesc:ac9ac170926b23abc5c0e1e085407e682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save layer parameters.  <br /></td></tr>
+<tr class="memdesc:ac9ac170926b23abc5c0e1e085407e682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the layer's weights and biases to a file.  <br /></td></tr>
 <tr class="memitem:a3cb81b9dbbee05bbbb27f1d1b0d02300" id="r_a3cb81b9dbbee05bbbb27f1d1b0d02300"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cb81b9dbbee05bbbb27f1d1b0d02300">load</a> (std::ifstream &amp;in)</td></tr>
-<tr class="memdesc:a3cb81b9dbbee05bbbb27f1d1b0d02300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load layer parameters.  <br /></td></tr>
+<tr class="memdesc:a3cb81b9dbbee05bbbb27f1d1b0d02300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the layer's weights and biases from a file.  <br /></td></tr>
 <tr class="memitem:a29af3ddb7175be5bc0b60f3ced0b93a3" id="r_a29af3ddb7175be5bc0b60f3ced0b93a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29af3ddb7175be5bc0b60f3ced0b93a3">inputs</a> () const</td></tr>
+<tr class="memdesc:a29af3ddb7175be5bc0b60f3ced0b93a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of inputs to this layer.  <br /></td></tr>
 <tr class="memitem:a8f669282be4cce0d0a88ff459439108d" id="r_a8f669282be4cce0d0a88ff459439108d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f669282be4cce0d0a88ff459439108d">neurons</a> () const</td></tr>
+<tr class="memdesc:a8f669282be4cce0d0a88ff459439108d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of neurons in this layer.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -136,25 +139,20 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7c622daa3d512019990c6513606f7f4b" id="r_a7c622daa3d512019990c6513606f7f4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c622daa3d512019990c6513606f7f4b">lastInput_</a></td></tr>
 <tr class="memdesc:a7c622daa3d512019990c6513606f7f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached input for backprop.  <br /></td></tr>
 <tr class="memitem:afa4db501f9d4e6ac5a8e2460201eba29" id="r_afa4db501f9d4e6ac5a8e2460201eba29"><td class="memItemLeft" align="right" valign="top">std::function&lt; double(double)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa4db501f9d4e6ac5a8e2460201eba29">activationFunc_</a></td></tr>
-<tr class="memdesc:afa4db501f9d4e6ac5a8e2460201eba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activation function: f(x) Stored as std::function to avoid interface inheritance.  <br /></td></tr>
+<tr class="memdesc:afa4db501f9d4e6ac5a8e2460201eba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activation function f(x).  <br /></td></tr>
 <tr class="memitem:a8697f8751e7a27eb4adeace510d8c65d" id="r_a8697f8751e7a27eb4adeace510d8c65d"><td class="memItemLeft" align="right" valign="top">std::function&lt; double(double)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8697f8751e7a27eb4adeace510d8c65d">activationDeriv_</a></td></tr>
-<tr class="memdesc:a8697f8751e7a27eb4adeace510d8c65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activation derivative: f'(x) Applied to Z during backprop.  <br /></td></tr>
+<tr class="memdesc:a8697f8751e7a27eb4adeace510d8c65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative f'(x).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fully-connected neural network layer (refactored for SOLID &amp; encapsulation). </p>
-<p>RESPONSIBILITIES (SRP):</p><ul>
-<li>Own only the data &amp; math needed for a single dense layer.</li>
-<li>Perform forward/backward propagation using injected activation functions.</li>
+<div class="textblock"><p>Fully-connected (dense) neural network layer. </p>
+<p>Provides:</p><ul>
+<li>Forward propagation</li>
+<li>Backward propagation</li>
+<li>Weight &amp; bias storage</li>
 </ul>
-<p>NOT responsible for:</p><ul>
-<li>Training loop logic</li>
-<li>Loss computation</li>
-<li>Network-wide serialization</li>
-<li>Optimizer logic</li>
-</ul>
-<p>This design preserves encapsulation, removes unnecessary dependencies, and follows DIP by accepting activation behavior as function objects. </p>
+<p>Activation functions and their derivatives are injected via std::function to follow Dependency Inversion Principle (DIP) and maintain encapsulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00023">23</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00040">40</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a9469ca3681555b02a7b5f3177d3355" name="a0a9469ca3681555b02a7b5f3177d3355"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a9469ca3681555b02a7b5f3177d3355">&#9670;&#160;</a></span>Layer()</h2>
@@ -185,13 +183,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a dense layer. </p>
+<p>Construct a fully-connected layer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inputSize</td><td>Number of inputs </td></tr>
-    <tr><td class="paramname">neurons</td><td>Number of neurons </td></tr>
-    <tr><td class="paramname">act</td><td>Activation function </td></tr>
-    <tr><td class="paramname">actDeriv</td><td>Activation derivative function </td></tr>
+    <tr><td class="paramname">inputSize</td><td>Number of input features </td></tr>
+    <tr><td class="paramname">neurons</td><td>Number of neurons in this layer </td></tr>
+    <tr><td class="paramname">act</td><td>Activation function f(x) </td></tr>
+    <tr><td class="paramname">actDeriv</td><td>Derivative of activation function f'(x) </td></tr>
   </table>
   </dd>
 </dl>
@@ -207,15 +205,15 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   16</span>      <a class="code hl_variable" href="#afa4db501f9d4e6ac5a8e2460201eba29">activationFunc_</a>(act),</div>
 <div class="line"><span class="lineno">   17</span>      <a class="code hl_variable" href="#a8697f8751e7a27eb4adeace510d8c65d">activationDeriv_</a>(actDeriv)</div>
 <div class="line"><span class="lineno">   18</span>{}</div>
-<div class="ttc" id="aclass_layer_html_a1317c4762eee5be94ff25a9526e56c7b"><div class="ttname"><a href="#a1317c4762eee5be94ff25a9526e56c7b">Layer::B_</a></div><div class="ttdeci">Matrix&lt; double &gt; B_</div><div class="ttdoc">Bias vector (neurons × 1).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00029">Layer.h:29</a></div></div>
-<div class="ttc" id="aclass_layer_html_a1650c3ac7b5d28e7bbfbc585df4d45e3"><div class="ttname"><a href="#a1650c3ac7b5d28e7bbfbc585df4d45e3">Layer::Z_</a></div><div class="ttdeci">Matrix&lt; double &gt; Z_</div><div class="ttdoc">Weighted sums (W·X + B).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00030">Layer.h:30</a></div></div>
-<div class="ttc" id="aclass_layer_html_a4240be015cbb614c8e799e0d70dc64d8"><div class="ttname"><a href="#a4240be015cbb614c8e799e0d70dc64d8">Layer::W_</a></div><div class="ttdeci">Matrix&lt; double &gt; W_</div><div class="ttdoc">Weight matrix (neurons × inputs).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00028">Layer.h:28</a></div></div>
-<div class="ttc" id="aclass_layer_html_a4ca1eddeda6a095a5fec8cebeafd6b07"><div class="ttname"><a href="#a4ca1eddeda6a095a5fec8cebeafd6b07">Layer::A_</a></div><div class="ttdeci">Matrix&lt; double &gt; A_</div><div class="ttdoc">Activations.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00031">Layer.h:31</a></div></div>
-<div class="ttc" id="aclass_layer_html_a7c622daa3d512019990c6513606f7f4b"><div class="ttname"><a href="#a7c622daa3d512019990c6513606f7f4b">Layer::lastInput_</a></div><div class="ttdeci">Matrix&lt; double &gt; lastInput_</div><div class="ttdoc">Cached input for backprop.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00032">Layer.h:32</a></div></div>
-<div class="ttc" id="aclass_layer_html_a8697f8751e7a27eb4adeace510d8c65d"><div class="ttname"><a href="#a8697f8751e7a27eb4adeace510d8c65d">Layer::activationDeriv_</a></div><div class="ttdeci">std::function&lt; double(double)&gt; activationDeriv_</div><div class="ttdoc">Activation derivative: f&#39;(x) Applied to Z during backprop.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00044">Layer.h:44</a></div></div>
-<div class="ttc" id="aclass_layer_html_ac08f71316f41cfa7e1d2d7832429cf13"><div class="ttname"><a href="#ac08f71316f41cfa7e1d2d7832429cf13">Layer::neuronCount_</a></div><div class="ttdeci">int neuronCount_</div><div class="ttdoc">Number of output neurons.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00026">Layer.h:26</a></div></div>
-<div class="ttc" id="aclass_layer_html_af68a487e63c61fb7f97a5338fe97ce64"><div class="ttname"><a href="#af68a487e63c61fb7f97a5338fe97ce64">Layer::inputSize_</a></div><div class="ttdeci">int inputSize_</div><div class="ttdoc">Number of inputs to the layer.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00025">Layer.h:25</a></div></div>
-<div class="ttc" id="aclass_layer_html_afa4db501f9d4e6ac5a8e2460201eba29"><div class="ttname"><a href="#afa4db501f9d4e6ac5a8e2460201eba29">Layer::activationFunc_</a></div><div class="ttdeci">std::function&lt; double(double)&gt; activationFunc_</div><div class="ttdoc">Activation function: f(x) Stored as std::function to avoid interface inheritance.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00038">Layer.h:38</a></div></div>
+<div class="ttc" id="aclass_layer_html_a1317c4762eee5be94ff25a9526e56c7b"><div class="ttname"><a href="#a1317c4762eee5be94ff25a9526e56c7b">Layer::B_</a></div><div class="ttdeci">Matrix&lt; double &gt; B_</div><div class="ttdoc">Bias vector (neurons × 1).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00046">Layer.h:46</a></div></div>
+<div class="ttc" id="aclass_layer_html_a1650c3ac7b5d28e7bbfbc585df4d45e3"><div class="ttname"><a href="#a1650c3ac7b5d28e7bbfbc585df4d45e3">Layer::Z_</a></div><div class="ttdeci">Matrix&lt; double &gt; Z_</div><div class="ttdoc">Weighted sums (W·X + B).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00047">Layer.h:47</a></div></div>
+<div class="ttc" id="aclass_layer_html_a4240be015cbb614c8e799e0d70dc64d8"><div class="ttname"><a href="#a4240be015cbb614c8e799e0d70dc64d8">Layer::W_</a></div><div class="ttdeci">Matrix&lt; double &gt; W_</div><div class="ttdoc">Weight matrix (neurons × inputs).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00045">Layer.h:45</a></div></div>
+<div class="ttc" id="aclass_layer_html_a4ca1eddeda6a095a5fec8cebeafd6b07"><div class="ttname"><a href="#a4ca1eddeda6a095a5fec8cebeafd6b07">Layer::A_</a></div><div class="ttdeci">Matrix&lt; double &gt; A_</div><div class="ttdoc">Activations.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00048">Layer.h:48</a></div></div>
+<div class="ttc" id="aclass_layer_html_a7c622daa3d512019990c6513606f7f4b"><div class="ttname"><a href="#a7c622daa3d512019990c6513606f7f4b">Layer::lastInput_</a></div><div class="ttdeci">Matrix&lt; double &gt; lastInput_</div><div class="ttdoc">Cached input for backprop.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00049">Layer.h:49</a></div></div>
+<div class="ttc" id="aclass_layer_html_a8697f8751e7a27eb4adeace510d8c65d"><div class="ttname"><a href="#a8697f8751e7a27eb4adeace510d8c65d">Layer::activationDeriv_</a></div><div class="ttdeci">std::function&lt; double(double)&gt; activationDeriv_</div><div class="ttdoc">Derivative f&#39;(x).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00052">Layer.h:52</a></div></div>
+<div class="ttc" id="aclass_layer_html_ac08f71316f41cfa7e1d2d7832429cf13"><div class="ttname"><a href="#ac08f71316f41cfa7e1d2d7832429cf13">Layer::neuronCount_</a></div><div class="ttdeci">int neuronCount_</div><div class="ttdoc">Number of output neurons.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00043">Layer.h:43</a></div></div>
+<div class="ttc" id="aclass_layer_html_af68a487e63c61fb7f97a5338fe97ce64"><div class="ttname"><a href="#af68a487e63c61fb7f97a5338fe97ce64">Layer::inputSize_</a></div><div class="ttdeci">int inputSize_</div><div class="ttdoc">Number of inputs to the layer.</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00042">Layer.h:42</a></div></div>
+<div class="ttc" id="aclass_layer_html_afa4db501f9d4e6ac5a8e2460201eba29"><div class="ttname"><a href="#afa4db501f9d4e6ac5a8e2460201eba29">Layer::activationFunc_</a></div><div class="ttdeci">std::function&lt; double(double)&gt; activationFunc_</div><div class="ttdoc">Activation function f(x).</div><div class="ttdef"><b>Definition</b> <a href="_layer_8h_source.html#l00051">Layer.h:51</a></div></div>
 <div class="ttc" id="aclass_matrix_html_a1bf314e696c1a7a1963aec05af5f5d13"><div class="ttname"><a href="class_matrix.html#a1bf314e696c1a7a1963aec05af5f5d13">Matrix::random</a></div><div class="ttdeci">static Matrix random(int rows, int cols, T min, T max)</div><div class="ttdoc">Create a matrix filled with uniform random values in [min, max].</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00030">Matrix.cpp:30</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -240,15 +238,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Backward propagation. </p>
+<p>Perform backward propagation through this layer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dC_dA</td><td>Gradient from next layer </td></tr>
+    <tr><td class="paramname">dC_dA</td><td>Gradient of cost w.r.t layer output </td></tr>
     <tr><td class="paramname">lr</td><td>Learning rate </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>dC/dX (gradient to send to previous layer) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Gradient of cost w.r.t input (to pass to previous layer) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_layer_8cpp_source.html#l00033">33</a> of file <a class="el" href="_layer_8cpp_source.html">Layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   33</span>                                                                     {</div>
@@ -270,11 +268,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   49</span> </div>
 <div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> dC_dX;</div>
 <div class="line"><span class="lineno">   51</span>}</div>
-<div class="ttc" id="aclass_matrix_html_a79fa5a3893939d8b399f86c6c1ff15a7"><div class="ttname"><a href="class_matrix.html#a79fa5a3893939d8b399f86c6c1ff15a7">Matrix::multiply</a></div><div class="ttdeci">static void multiply(const Matrix &amp;a, const Matrix &amp;b, Matrix &amp;result)</div><div class="ttdoc">Optimized matrix multiplication into a preallocated matrix.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00115">Matrix.cpp:115</a></div></div>
+<div class="ttc" id="aclass_matrix_html_a79fa5a3893939d8b399f86c6c1ff15a7"><div class="ttname"><a href="class_matrix.html#a79fa5a3893939d8b399f86c6c1ff15a7">Matrix::multiply</a></div><div class="ttdeci">static void multiply(const Matrix &amp;a, const Matrix &amp;b, Matrix &amp;result)</div><div class="ttdoc">Multiply preallocated matrices without allocations.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00115">Matrix.cpp:115</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_layer_a54679a1ee804225a3d09a0685242070a_cgraph.svg" width="436" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_layer_a54679a1ee804225a3d09a0685242070a_cgraph.svg" width="436" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -294,14 +292,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Forward propagation. </p>
+<p>Perform forward propagation through this layer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>Input matrix (inputSize × batchSize) </td></tr>
+    <tr><td class="paramname">input</td><td>Input matrix (size: inputSize × batchSize) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Activation matrix reference </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to activation matrix after forward pass </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_layer_8cpp_source.html#l00020">20</a> of file <a class="el" href="_layer_8cpp_source.html">Layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   20</span>                                                                {</div>
@@ -319,7 +317,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_layer_aa1c9e50a099e7fad54c5681f83988d2a_cgraph.svg" width="423" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_layer_aa1c9e50a099e7fad54c5681f83988d2a_cgraph.svg" width="423" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -347,8 +345,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00083">83</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#af68a487e63c61fb7f97a5338fe97ce64">inputSize_</a>; }</div>
+<p>Number of inputs to this layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00101">101</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#af68a487e63c61fb7f97a5338fe97ce64">inputSize_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,7 +367,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Load layer parameters. </p>
+<p>Load the layer's weights and biases from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>Input file stream </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_layer_8cpp_source.html#l00066">66</a> of file <a class="el" href="_layer_8cpp_source.html">Layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                                {</div>
@@ -415,8 +421,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00084">84</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac08f71316f41cfa7e1d2d7832429cf13">neuronCount_</a>; }</div>
+<p>Number of neurons in this layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00104">104</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac08f71316f41cfa7e1d2d7832429cf13">neuronCount_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -442,10 +450,12 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_layer.html" title="Fully-connected neural network layer (refactored for SOLID &amp; encapsulation).">Layer</a> output after <a class="el" href="#aa1c9e50a099e7fad54c5681f83988d2a" title="Forward propagation.">forward()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00075">75</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4ca1eddeda6a095a5fec8cebeafd6b07">A_</a>; }</div>
+<p>Get the output activations of the layer. </p>
+<dl class="section return"><dt>Returns</dt><dd>Constant reference to the activation matrix </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00086">86</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4ca1eddeda6a095a5fec8cebeafd6b07">A_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,7 +474,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Save layer parameters. </p>
+<p>Save the layer's weights and biases to a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>Output file stream </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_layer_8cpp_source.html#l00053">53</a> of file <a class="el" href="_layer_8cpp_source.html">Layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                       {</div>
@@ -505,7 +521,7 @@ Here is the call graph for this function:</div>
 
 <p>Activations. </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00031">31</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00048">48</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -529,9 +545,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Activation derivative: f'(x) Applied to Z during backprop. </p>
+<p>Derivative f'(x). </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00044">44</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00052">52</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -555,9 +571,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Activation function: f(x) Stored as std::function to avoid interface inheritance. </p>
+<p>Activation function f(x). </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00038">38</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00051">51</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +599,7 @@ Here is the call graph for this function:</div>
 
 <p>Bias vector (neurons × 1). </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00029">29</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00046">46</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +625,7 @@ Here is the call graph for this function:</div>
 
 <p>Number of inputs to the layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00025">25</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00042">42</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +651,7 @@ Here is the call graph for this function:</div>
 
 <p>Cached input for backprop. </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00032">32</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00049">49</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -661,7 +677,7 @@ Here is the call graph for this function:</div>
 
 <p>Number of output neurons. </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00026">26</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00043">43</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +703,7 @@ Here is the call graph for this function:</div>
 
 <p>Weight matrix (neurons × inputs). </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00028">28</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00045">45</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +729,7 @@ Here is the call graph for this function:</div>
 
 <p>Weighted sums (W·X + B). </p>
 
-<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00030">30</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_layer_8h_source.html#l00047">47</a> of file <a class="el" href="_layer_8h_source.html">Layer.h</a>.</p>
 
 </div>
 </div>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Returns true if there are empty moves left.">
+<g id="a_Node000001"><a xlink:title="Checks if any empty cells remain.">
 <polygon fill="#999999" stroke="#666666" points="516.25,-20 405,-20 405,0 516.25,0 516.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="460.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI::isMovesLeft</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" xlink:title="Minimax algorithm with alpha&#45;beta pruning.">
+<g id="a_Node000002"><a xlink:href="class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" target="_top" xlink:title="Minimax with alpha&#45;beta pruning.">
 <polygon fill="white" stroke="#666666" points="369,-20 274.25,-20 274.25,0 369,0 369,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="321.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI::minimax</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_s_u_s___a_i.html#ae27d5dea2808c253c2fe19574bb41038" xlink:title="Computes the best move for the player.">
+<g id="a_Node000003"><a xlink:href="class_s_u_s___a_i.html#ae27d5dea2808c253c2fe19574bb41038" target="_top" xlink:title="Computes the best move for the player.">
 <polygon fill="white" stroke="#666666" points="238.25,-20 137.5,-20 137.5,0 238.25,0 238.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="187.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI::bestMove</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" xlink:title="Gets the next move from a human or AI.">
+<g id="a_Node000004"><a xlink:href="class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" target="_top" xlink:title="Retrieves the next move.">
 <polygon fill="white" stroke="#666666" points="101.5,-20 0,-20 0,0 101.5,0 101.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="50.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_UI::get_move</text>
 </a>

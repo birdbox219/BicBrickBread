@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Evaluates potential characters at position (r, c).">
+<g id="a_Node000001"><a xlink:title="Evaluate potential characters for a board position.">
 <polygon fill="#999999" stroke="#666666" points="290,-20 173.5,-20 173.5,0 290,0 290,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="231.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_UI::evaluate</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_word___x_o___u_i.html#a11a449d84298f6d6889388250031fd16" xlink:title="Constructs a new UI object and precomputes AI scores.">
+<g id="a_Node000002"><a xlink:href="class_word___x_o___u_i.html#a11a449d84298f6d6889388250031fd16" target="_top" xlink:title="Construct the UI.">
 <polygon fill="white" stroke="#666666" points="137.5,-20 0,-20 0,0 137.5,0 137.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="68.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_UI::Word_XO_UI</text>
 </a>

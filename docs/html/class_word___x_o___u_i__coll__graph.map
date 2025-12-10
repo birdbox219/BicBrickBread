@@ -1,11 +1,11 @@
 <map id="Word_XO_UI" name="Word_XO_UI">
-<area shape="rect" id="Node000001" title="User Interface controller for the game." alt="" coords="122,565,231,720"/>
+<area shape="rect" id="Node000001" title="User interface for Word Tic&#45;Tac&#45;Toe." alt="" coords="122,565,231,677"/>
 <area shape="rect" id="Node000002" href="$class_custom___u_i.html" title=" " alt="" coords="5,317,174,493"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,506,151,564,146,566,124,508"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,506,157,564,152,566,128,508"/>
 <area shape="rect" id="Node000003" href="$class_u_i.html" title=" " alt="" coords="5,5,174,245"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,260,92,317,87,317,87,260"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="199,363,330,448"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,448,213,550,208,549,247,447"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,449,208,551,203,549,245,447"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="200,80,329,171"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="267,171,267,346,262,346,262,171"/>
 </map>

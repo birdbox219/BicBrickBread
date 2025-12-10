@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: XO_NUM_Board Class Reference</title>
+<title>BicBrickBread: XO_NUM_Board Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,7 +89,7 @@ $(function(){initNavTree('class_x_o___n_u_m___board.html','','class_x_o___n_u_m_
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">XO_NUM_Board Class Reference</div></div>
+  <div class="headertitle"><div class="title">XO_NUM_Board Class Reference<div class="ingroups"><a class="el" href="group___x_o__num.html">XO Numerical</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -111,16 +111,17 @@ Collaboration diagram for XO_NUM_Board:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fdb5166019f27ec4bb7b4be53241b2c" id="r_a9fdb5166019f27ec4bb7b4be53241b2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fdb5166019f27ec4bb7b4be53241b2c">XO_NUM_Board</a> ()</td></tr>
+<tr class="memdesc:a9fdb5166019f27ec4bb7b4be53241b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_x_o___n_u_m___board.html" title="Numerical Tic-Tac-Toe board.">XO_NUM_Board</a> object.  <br /></td></tr>
 <tr class="memitem:af7ec62268666ef6dd7bd90219172522e" id="r_af7ec62268666ef6dd7bd90219172522e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7ec62268666ef6dd7bd90219172522e">update_board</a> (<a class="el" href="class_move.html">Move</a>&lt; char &gt; *move) override</td></tr>
-<tr class="memdesc:af7ec62268666ef6dd7bd90219172522e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies or undoes a move.  <br /></td></tr>
+<tr class="memdesc:af7ec62268666ef6dd7bd90219172522e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply or undo a move on the board.  <br /></td></tr>
 <tr class="memitem:a3c7b05e2d036c44813f5cabf24ea3215" id="r_a3c7b05e2d036c44813f5cabf24ea3215"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c7b05e2d036c44813f5cabf24ea3215">is_win</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a3c7b05e2d036c44813f5cabf24ea3215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the board has a winning line summing to 15.  <br /></td></tr>
+<tr class="memdesc:a3c7b05e2d036c44813f5cabf24ea3215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a player has won.  <br /></td></tr>
 <tr class="memitem:a7a17c6b88bab03133cef4bba5f679ab1" id="r_a7a17c6b88bab03133cef4bba5f679ab1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a17c6b88bab03133cef4bba5f679ab1">is_lose</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player)</td></tr>
-<tr class="memdesc:a7a17c6b88bab03133cef4bba5f679ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always false, included for completeness.  <br /></td></tr>
+<tr class="memdesc:a7a17c6b88bab03133cef4bba5f679ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a player has lost (not used).  <br /></td></tr>
 <tr class="memitem:a65725a8978e903e07838140ae4bf8fd6" id="r_a65725a8978e903e07838140ae4bf8fd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65725a8978e903e07838140ae4bf8fd6">is_draw</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a65725a8978e903e07838140ae4bf8fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the board is full and no win.  <br /></td></tr>
+<tr class="memdesc:a65725a8978e903e07838140ae4bf8fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is a draw.  <br /></td></tr>
 <tr class="memitem:a53484dc93fa6480fae74f3c9bd173cc5" id="r_a53484dc93fa6480fae74f3c9bd173cc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53484dc93fa6480fae74f3c9bd173cc5">game_is_over</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a53484dc93fa6480fae74f3c9bd173cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if game is over (win or draw).  <br /></td></tr>
+<tr class="memdesc:a53484dc93fa6480fae74f3c9bd173cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is over.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_board"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_board')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_board.html">Board&lt; char &gt;</a></td></tr>
 <tr class="memitem:ae5dfded241ee3644196e2f6074d1d0b1 inherit pub_methods_class_board" id="r_ae5dfded241ee3644196e2f6074d1d0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board</a> (int <a class="el" href="class_board.html#a948d978e3b5fc460559b588f5dee9572">rows</a>, int <a class="el" href="class_board.html#afaf8842d9d52ac724e8c2f5642ecafc7">columns</a>)</td></tr>
 <tr class="memdesc:ae5dfded241ee3644196e2f6074d1d0b1 inherit pub_methods_class_board"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a board with given dimensions.  <br /></td></tr>
@@ -145,7 +146,7 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:afd4e158c32647b8a1ee9989c7043d2be" id="r_afd4e158c32647b8a1ee9989c7043d2be"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd4e158c32647b8a1ee9989c7043d2be">blank_symbol</a> = '.'</td></tr>
-<tr class="memdesc:afd4e158c32647b8a1ee9989c7043d2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Symbol for empty cell.  <br /></td></tr>
+<tr class="memdesc:afd4e158c32647b8a1ee9989c7043d2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Symbol representing empty cells.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -161,9 +162,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Numerical Tic-Tac-Toe board. </p>
-<p>Players place numbers instead of X/O. <a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 1 uses odd numbers {1,3,5,7,9}, <a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 2 uses even numbers {2,4,6,8}. The goal is to place numbers such that a row, column, or diagonal sums to 15. </p>
+<p>Players place numbers instead of X/O:</p><ul>
+<li><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 1 uses odd numbers {1,3,5,7,9}</li>
+<li><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 2 uses even numbers {2,4,6,8} The objective is to place numbers such that a row, column, or diagonal sums to 15. </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00016">16</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00027">27</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fdb5166019f27ec4bb7b4be53241b2c" name="a9fdb5166019f27ec4bb7b4be53241b2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fdb5166019f27ec4bb7b4be53241b2c">&#9670;&#160;</a></span>XO_NUM_Board()</h2>
@@ -180,6 +184,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="class_x_o___n_u_m___board.html" title="Numerical Tic-Tac-Toe board.">XO_NUM_Board</a> object. </p>
+
 <p class="definition">Definition at line <a class="el" href="xo__num_8cpp_source.html#l00012">12</a> of file <a class="el" href="xo__num_8cpp_source.html">xo_num.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>                           : <a class="code hl_function" href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board</a>(3, 3) {</div>
 <div class="line"><span class="lineno">   13</span>    <span class="comment">// Initialize all cells as blank</span></div>
@@ -189,7 +195,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   17</span>}</div>
 <div class="ttc" id="aclass_board_html_ae5dfded241ee3644196e2f6074d1d0b1"><div class="ttname"><a href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board&lt; char &gt;::Board</a></div><div class="ttdeci">Board(int rows, int columns)</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00057">BoardGame_Classes.h:57</a></div></div>
 <div class="ttc" id="aclass_board_html_af00c1fc363eb640ca276b8a572040040"><div class="ttname"><a href="class_board.html#af00c1fc363eb640ca276b8a572040040">Board&lt; char &gt;::board</a></div><div class="ttdeci">vector&lt; vector&lt; char &gt; &gt; board</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00050">BoardGame_Classes.h:50</a></div></div>
-<div class="ttc" id="aclass_x_o___n_u_m___board_html_afd4e158c32647b8a1ee9989c7043d2be"><div class="ttname"><a href="#afd4e158c32647b8a1ee9989c7043d2be">XO_NUM_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Symbol for empty cell.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8h_source.html#l00018">xo_num.h:18</a></div></div>
+<div class="ttc" id="aclass_x_o___n_u_m___board_html_afd4e158c32647b8a1ee9989c7043d2be"><div class="ttname"><a href="#afd4e158c32647b8a1ee9989c7043d2be">XO_NUM_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Symbol representing empty cells.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8h_source.html#l00029">xo_num.h:29</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -222,8 +228,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if game is over (win or draw). </p>
-<p>Returns true if game ended (win or draw). </p>
+<p>Check if the game is over. </p>
+<p>Returns true if game ended (win or draw).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player (used for interface consistency) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game ended (win or draw), false otherwise </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#ae0e4575ec3cc4b6eb9f367ffb2beed13">Board&lt; char &gt;</a>.</p>
 
@@ -231,8 +244,8 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>                                                    {</div>
 <div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a3c7b05e2d036c44813f5cabf24ea3215">is_win</a>(player) || <a class="code hl_function" href="#a65725a8978e903e07838140ae4bf8fd6">is_draw</a>(player);</div>
 <div class="line"><span class="lineno">   88</span>}</div>
-<div class="ttc" id="aclass_x_o___n_u_m___board_html_a3c7b05e2d036c44813f5cabf24ea3215"><div class="ttname"><a href="#a3c7b05e2d036c44813f5cabf24ea3215">XO_NUM_Board::is_win</a></div><div class="ttdeci">bool is_win(Player&lt; char &gt; *player) override</div><div class="ttdoc">Returns true if the board has a winning line summing to 15.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8cpp_source.html#l00059">xo_num.cpp:59</a></div></div>
-<div class="ttc" id="aclass_x_o___n_u_m___board_html_a65725a8978e903e07838140ae4bf8fd6"><div class="ttname"><a href="#a65725a8978e903e07838140ae4bf8fd6">XO_NUM_Board::is_draw</a></div><div class="ttdeci">bool is_draw(Player&lt; char &gt; *player) override</div><div class="ttdoc">Returns true if the board is full and no win.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8cpp_source.html#l00079">xo_num.cpp:79</a></div></div>
+<div class="ttc" id="aclass_x_o___n_u_m___board_html_a3c7b05e2d036c44813f5cabf24ea3215"><div class="ttname"><a href="#a3c7b05e2d036c44813f5cabf24ea3215">XO_NUM_Board::is_win</a></div><div class="ttdeci">bool is_win(Player&lt; char &gt; *player) override</div><div class="ttdoc">Check if a player has won.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8cpp_source.html#l00059">xo_num.cpp:59</a></div></div>
+<div class="ttc" id="aclass_x_o___n_u_m___board_html_a65725a8978e903e07838140ae4bf8fd6"><div class="ttname"><a href="#a65725a8978e903e07838140ae4bf8fd6">XO_NUM_Board::is_draw</a></div><div class="ttdeci">bool is_draw(Player&lt; char &gt; *player) override</div><div class="ttdoc">Check if the game is a draw.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8cpp_source.html#l00079">xo_num.cpp:79</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -264,8 +277,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the board is full and no win. </p>
-<p>Returns true if all moves used and no win. </p>
+<p>Check if the game is a draw. </p>
+<p>Returns true if all moves used and no win.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player (used for interface consistency) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the board is full and no win, false otherwise </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a8dbe2a243881986f3e53b45799d377fc">Board&lt; char &gt;</a>.</p>
 
@@ -310,12 +330,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Always false, included for completeness. </p>
+<p>Check if a player has lost (not used). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always false </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a207d5f6feb77f81c51d1462f0245890d">Board&lt; char &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00033">33</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00059">59</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -342,8 +369,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the board has a winning line summing to 15. </p>
-<p>Returns true if a row, column, or diagonal sums to 15. </p>
+<p>Check if a player has won. </p>
+<p>Returns true if a row, column, or diagonal sums to 15.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the player has a line summing to 15, false otherwise </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#ab316fe3e79677b4617fc3d90d6c48f33">Board&lt; char &gt;</a>.</p>
 
@@ -395,8 +429,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Applies or undoes a move. </p>
-<p>Applies or undoes a move on the board. </p>
+<p>Apply or undo a move on the board. </p>
+<p>Applies or undoes a move on the board.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">move</td><td>Pointer to the move being applied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the move was applied successfully, false otherwise </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a93d9dec601dda58b7e206ccb47633e57">Board&lt; char &gt;</a>.</p>
 
@@ -439,8 +480,8 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclass_move_html_a595bf740852c05a1cb425ef2640fd4ff"><div class="ttname"><a href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff">Move::get_symbol</a></div><div class="ttdeci">T get_symbol() const</div><div class="ttdoc">Get the move symbol.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00127">BoardGame_Classes.h:127</a></div></div>
 <div class="ttc" id="aclass_move_html_a96469802a55c9083a1e93c7edec8a00c"><div class="ttname"><a href="class_move.html#a96469802a55c9083a1e93c7edec8a00c">Move::get_y</a></div><div class="ttdeci">int get_y() const</div><div class="ttdoc">Get column index.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00124">BoardGame_Classes.h:124</a></div></div>
 <div class="ttc" id="aclass_move_html_a9d4f543a81e361f872d37bcfb64d5b55"><div class="ttname"><a href="class_move.html#a9d4f543a81e361f872d37bcfb64d5b55">Move::get_x</a></div><div class="ttdeci">int get_x() const</div><div class="ttdoc">Get row index.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00121">BoardGame_Classes.h:121</a></div></div>
-<div class="ttc" id="aclass_x_o___n_u_m___board_html_ac9265a3c1c3e40a1f939e65239ad8f6b"><div class="ttname"><a href="#ac9265a3c1c3e40a1f939e65239ad8f6b">XO_NUM_Board::even</a></div><div class="ttdeci">vector&lt; char &gt; even</div><div class="ttdoc">Available even numbers.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8h_source.html#l00022">xo_num.h:22</a></div></div>
-<div class="ttc" id="aclass_x_o___n_u_m___board_html_af4a30bb4b201d60c7170b687acbf7f66"><div class="ttname"><a href="#af4a30bb4b201d60c7170b687acbf7f66">XO_NUM_Board::odd</a></div><div class="ttdeci">vector&lt; char &gt; odd</div><div class="ttdoc">Available odd numbers.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8h_source.html#l00021">xo_num.h:21</a></div></div>
+<div class="ttc" id="aclass_x_o___n_u_m___board_html_ac9265a3c1c3e40a1f939e65239ad8f6b"><div class="ttname"><a href="#ac9265a3c1c3e40a1f939e65239ad8f6b">XO_NUM_Board::even</a></div><div class="ttdeci">vector&lt; char &gt; even</div><div class="ttdoc">Available even numbers.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8h_source.html#l00033">xo_num.h:33</a></div></div>
+<div class="ttc" id="aclass_x_o___n_u_m___board_html_af4a30bb4b201d60c7170b687acbf7f66"><div class="ttname"><a href="#af4a30bb4b201d60c7170b687acbf7f66">XO_NUM_Board::odd</a></div><div class="ttdeci">vector&lt; char &gt; odd</div><div class="ttdoc">Available odd numbers.</div><div class="ttdef"><b>Definition</b> <a href="xo__num_8h_source.html#l00032">xo_num.h:32</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -470,9 +511,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Symbol for empty cell. </p>
+<p>Symbol representing empty cells. </p>
 
-<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00018">18</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00029">29</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
 
 </div>
 </div>
@@ -490,8 +531,8 @@ Here is the call graph for this function:</div>
 
 <p>Available even numbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00022">22</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;8&#39;</span>};      <span class="comment">///&lt; Available even numbers</span></div>
+<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00033">33</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;8&#39;</span>};      <span class="comment">///&lt; Available even numbers</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -509,8 +550,8 @@ Here is the call graph for this function:</div>
 
 <p>Available odd numbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00021">21</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;9&#39;</span>};   <span class="comment">///&lt; Available odd numbers</span></div>
+<p class="definition">Definition at line <a class="el" href="xo__num_8h_source.html#l00032">32</a> of file <a class="el" href="xo__num_8h_source.html">xo_num.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;9&#39;</span>};   <span class="comment">///&lt; Available odd numbers</span></div>
 </div><!-- fragment -->
 </div>
 </div>

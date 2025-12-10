@@ -1,12 +1,12 @@
 <map id="Word_XO_Board::wordExist" name="Word_XO_Board::wordExist">
-<area shape="rect" id="Node000001" title="Checks if any valid word is currently formed on the board." alt="" coords="646,31,831,57"/>
-<area shape="rect" id="Node000002" href="$class_word___x_o___board.html#ad8b61980c76bb5bb7427737b517e3972" title="Checks if the specified player has lost." alt="" coords="431,5,598,32"/>
+<area shape="rect" id="Node000001" title="Check if any valid word exists on the board." alt="" coords="646,31,831,57"/>
+<area shape="rect" id="Node000002" href="$class_word___x_o___board.html#ad8b61980c76bb5bb7427737b517e3972" title="Check if a player has lost." alt="" coords="431,5,598,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="631,34,599,31,599,26,631,29"/>
-<area shape="rect" id="Node000005" href="$class_word___x_o___board.html#acd3b0a4f466b07fe90f1485b876d58fb" title="Checks if the specified player has won." alt="" coords="433,56,596,83"/>
+<area shape="rect" id="Node000005" href="$class_word___x_o___board.html#acd3b0a4f466b07fe90f1485b876d58fb" title="Check if a player has won." alt="" coords="433,56,596,83"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="631,59,597,63,596,57,631,54"/>
-<area shape="rect" id="Node000003" href="$class_word___x_o___board.html#a9ce0369f486035a8216b9b2063efe7fd" title="Determines whether the game has reached a terminal state." alt="" coords="5,23,164,65"/>
+<area shape="rect" id="Node000003" href="$class_word___x_o___board.html#a9ce0369f486035a8216b9b2063efe7fd" title="Check if the game is over." alt="" coords="5,23,164,65"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,16,317,16,212,21,164,28,164,23,211,16,317,10,416,11"/>
-<area shape="rect" id="Node000004" href="$class_word___x_o___board.html#af33032e635ec76b4f8b13b0658b772a0" title="Determines whether the game ended in a draw." alt="" coords="212,31,383,57"/>
+<area shape="rect" id="Node000004" href="$class_word___x_o___board.html#af33032e635ec76b4f8b13b0658b772a0" title="Check if the game ended in a draw." alt="" coords="212,31,383,57"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="416,33,384,37,383,31,415,28"/>
 <area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="196,47,164,47,164,41,196,41"/>
 <area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="417,77,318,78,211,72,164,65,164,60,212,67,318,72,417,72"/>

@@ -1,14 +1,14 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$class_board.html" title=" " alt="" coords="5,335,110,361"/>
-<area shape="rect" id="Node000001" href="$class_anti___x_o___board.html" title="Board implementation for Anti Tic&#45;Tac&#45;Toe (the player who completes 3&#45;in&#45;a&#45;row loses)." alt="" coords="167,5,278,32"/>
+<area shape="rect" id="Node000001" href="$class_anti___x_o___board.html" title="Board implementation for Anti Tic&#45;Tac&#45;Toe." alt="" coords="167,5,278,32"/>
 <area shape="poly" id="edge15_Node000000_Node000001" title=" " alt="" coords="58,319,64,262,80,188,93,149,109,111,130,75,156,42,171,30,175,35,160,46,135,78,114,113,98,151,85,190,70,263,63,319"/>
-<area shape="rect" id="Node000002" href="$class_f_o_u_r___board.html" title="Represents a 6x7 Connect&#45;4 board." alt="" coords="172,56,272,83"/>
+<area shape="rect" id="Node000002" href="$class_f_o_u_r___board.html" title="Represents a 6x7 Connect&#45;Four board." alt="" coords="172,56,272,83"/>
 <area shape="poly" id="edge16_Node000000_Node000002" title=" " alt="" coords="60,319,69,271,87,211,115,148,134,119,156,93,172,81,175,85,159,97,138,122,120,151,92,212,74,272,65,320"/>
 <area shape="rect" id="Node000003" href="$class_large___x_o___board.html" title="5x5 Tic&#45;Tac&#45;Toe board implementation using a bitboard for fast evaluation." alt="" coords="162,107,282,133"/>
 <area shape="poly" id="edge17_Node000000_Node000003" title=" " alt="" coords="63,319,75,280,94,233,121,186,156,143,173,132,176,136,159,147,125,189,99,236,80,282,68,320"/>
 <area shape="rect" id="Node000004" href="$class_memory___board.html" title="Specialized board class for Memory Tic&#45;Tac&#45;Toe." alt="" coords="168,157,277,184"/>
 <area shape="poly" id="edge18_Node000000_Node000004" title=" " alt="" coords="68,319,102,257,127,223,156,194,175,182,178,187,159,198,131,227,106,260,73,322"/>
-<area shape="rect" id="Node000005" href="$class_obstacles___board.html" title=" " alt="" coords="162,208,283,235"/>
+<area shape="rect" id="Node000005" href="$class_obstacles___board.html" title="Modified Tic&#45;Tac&#45;Toe board supporting traps and 64&#45;bit bitboard logic." alt="" coords="162,208,283,235"/>
 <area shape="poly" id="edge19_Node000000_Node000005" title=" " alt="" coords="77,320,112,282,156,244,178,233,180,238,159,249,115,286,81,324"/>
 <area shape="rect" id="Node000006" href="$class_pyramid_x_o___board.html" title="Represents the game board for the Pyramid XO variant." alt="" coords="158,259,287,285"/>
 <area shape="poly" id="edge20_Node000000_Node000006" title=" " alt="" coords="96,325,157,295,184,283,186,288,159,300,99,329"/>
@@ -16,16 +16,16 @@
 <area shape="poly" id="edge21_Node000000_Node000007" title=" " alt="" coords="125,335,176,327,177,332,125,340"/>
 <area shape="rect" id="Node000008" href="$class_ultimate___board.html" title="Represents a 9x9 Ultimate Tic&#45;Tac&#45;Toe board." alt="" coords="167,360,278,387"/>
 <area shape="poly" id="edge22_Node000000_Node000008" title=" " alt="" coords="126,356,167,362,166,367,125,361"/>
-<area shape="rect" id="Node000009" href="$class_word___x_o___board.html" title="Game board implementation for the Word&#45;based Tic&#45;Tac&#45;Toe variant." alt="" coords="163,411,282,437"/>
+<area shape="rect" id="Node000009" href="$class_word___x_o___board.html" title="Game board for Word Tic&#45;Tac&#45;Toe." alt="" coords="163,411,282,437"/>
 <area shape="poly" id="edge23_Node000000_Node000009" title=" " alt="" coords="99,367,159,396,186,408,184,413,157,401,96,371"/>
 <area shape="rect" id="Node000010" href="$class_x_o___n_u_m___board.html" title="Numerical Tic&#45;Tac&#45;Toe board." alt="" coords="163,461,282,488"/>
 <area shape="poly" id="edge24_Node000000_Node000010" title=" " alt="" coords="81,372,115,410,159,447,180,458,178,463,156,452,112,414,77,376"/>
-<area shape="rect" id="Node000011" href="$class_x_o__inf___board.html" title=" " alt="" coords="171,512,274,539"/>
+<area shape="rect" id="Node000011" href="$class_x_o__inf___board.html" title="Board class for infinite Tic&#45;Tac&#45;Toe." alt="" coords="171,512,274,539"/>
 <area shape="poly" id="edge25_Node000000_Node000011" title=" " alt="" coords="73,374,106,436,131,469,159,498,178,509,175,514,156,502,127,473,102,439,68,377"/>
 <area shape="rect" id="Node000012" href="$class_x___o___board.html" title="Represents a Tic&#45;Tac&#45;Toe (X&#45;O) board." alt="" coords="178,563,266,589"/>
 <area shape="poly" id="edge26_Node000000_Node000012" title=" " alt="" coords="68,376,80,414,99,460,125,507,159,549,179,561,176,566,156,553,121,510,94,463,75,416,63,377"/>
-<area shape="rect" id="Node000013" href="$class__4by4_x_o___board.html" title="4x4 game board implementation for sliding XO." alt="" coords="164,613,280,640"/>
+<area shape="rect" id="Node000013" href="$class__4by4_x_o___board.html" title="4x4 board for sliding Tic&#45;Tac&#45;Toe." alt="" coords="164,613,280,640"/>
 <area shape="poly" id="edge27_Node000000_Node000013" title=" " alt="" coords="65,376,74,424,92,484,120,545,138,574,159,599,175,611,172,615,156,603,134,577,115,548,87,485,69,425,60,377"/>
-<area shape="rect" id="Node000014" href="$classdia___x_o___board.html" title=" " alt="" coords="170,664,275,691"/>
+<area shape="rect" id="Node000014" href="$classdia___x_o___board.html" title="Represents the 7x7 diamond&#45;shaped Tic&#45;Tac&#45;Toe board." alt="" coords="170,664,275,691"/>
 <area shape="poly" id="edge28_Node000000_Node000014" title=" " alt="" coords="63,377,70,433,85,506,98,545,114,583,135,618,160,650,175,661,171,666,156,654,130,621,109,585,93,547,80,508,64,434,58,377"/>
 </map>

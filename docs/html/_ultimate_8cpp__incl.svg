@@ -75,7 +75,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$_ultimate_8h.html" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="_ultimate_8h.html" target="_top" xlink:title="Ultimate Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="white" stroke="#666666" points="173.25,-200 112.25,-200 112.25,-180 173.25,-180 173.25,-200"/>
 <text xml:space="preserve" text-anchor="middle" x="142.75" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate.h</text>
 </a>
@@ -93,7 +93,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$_board_game___classes_8h.html" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="_board_game___classes_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="181.75,-88 63.75,-88 63.75,-56 181.75,-56 181.75,-88"/>
 <text xml:space="preserve" text-anchor="start" x="71.75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/BoardGame</text>
 <text xml:space="preserve" text-anchor="middle" x="122.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Classes.h</text>
@@ -112,7 +112,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$_a_i_8h.html" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="_a_i_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="184.88,-144 100.62,-144 100.62,-124 184.88,-124 184.88,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="142.75" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/AI.h</text>
 </a>

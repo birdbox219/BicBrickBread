@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Returns true if game is over (win or draw).">
+<g id="a_Node000001"><a xlink:title="Check if the game is over.">
 <polygon fill="#999999" stroke="#666666" points="119.5,-32 0,-32 0,0 119.5,0 119.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="59.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_x_o___n_u_m___board.html#a65725a8978e903e07838140ae4bf8fd6" xlink:title="Returns true if the board is full and no win.">
+<g id="a_Node000002"><a xlink:href="class_x_o___n_u_m___board.html#a65725a8978e903e07838140ae4bf8fd6" target="_top" xlink:title="Check if the game is a draw.">
 <polygon fill="white" stroke="#666666" points="284.75,-45 155.5,-45 155.5,-25 284.75,-25 284.75,-45"/>
 <text xml:space="preserve" text-anchor="middle" x="220.12" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_Board::is_draw</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_x_o___n_u_m___board.html#a3c7b05e2d036c44813f5cabf24ea3215" xlink:title="Returns true if the board has a winning line summing to 15.">
+<g id="a_Node000003"><a xlink:href="class_x_o___n_u_m___board.html#a3c7b05e2d036c44813f5cabf24ea3215" target="_top" xlink:title="Check if a player has won.">
 <polygon fill="white" stroke="#666666" points="444,-26 320.75,-26 320.75,-6 444,-6 444,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="382.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_Board::is_win</text>
 </a>

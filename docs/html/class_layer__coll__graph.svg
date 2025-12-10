@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Fully&#45;connected neural network layer (refactored for SOLID &amp; encapsulation).">
+<g id="a_Node000001"><a xlink:title="Fully&#45;connected (dense) neural network layer.">
 <polygon fill="#999999" stroke="none" points="94.75,-212 6.25,-212 6.25,0 94.75,0 94.75,-212"/>
 <text xml:space="preserve" text-anchor="start" x="38.5" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">Layer</text>
 <text xml:space="preserve" text-anchor="start" x="11.75" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -48,7 +48,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_matrix.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_matrix.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="91.25,-574 9.75,-574 9.75,-330 91.25,-330 91.25,-574"/>
 <text xml:space="preserve" text-anchor="start" x="13.75" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix&lt; double &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="17.44" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

@@ -1,5 +1,5 @@
 <map id="Games/anti_XO/Anti_XO.h" name="Games/anti_XO/Anti_XO.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="66,5,244,32"/>
+<area shape="rect" id="Node000001" title="Anti Tic&#45;Tac&#45;Toe variant where forming 3&#45;in&#45;a&#45;row causes a loss." alt="" coords="66,5,244,32"/>
 <area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="52,155,210,197"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,33,139,140,134,139,150,32"/>
 <area shape="rect" id="Node000007" href="$_a_i_8h.html" title=" " alt="" coords="5,80,118,107"/>

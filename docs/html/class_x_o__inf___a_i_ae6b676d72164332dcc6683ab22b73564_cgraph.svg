@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Determine the best move for AI.">
+<g id="a_Node000001"><a xlink:title="Determine the best move for the AI.">
 <polygon fill="#999999" stroke="#666666" points="109.75,-58 0,-58 0,-38 109.75,-38 109.75,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="54.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI::bestMove</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000002"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="394.5,-105 285.5,-105 285.5,-85 394.5,-85 394.5,-105"/>
 <text xml:space="preserve" text-anchor="middle" x="340" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000003"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="390,-20 290,-20 290,0 390,0 390,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="340" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_x_o__inf___a_i.html#aa88a72848990b6506c7f4d544937837b" xlink:title="Minimax algorithm with alpha&#45;beta pruning.">
+<g id="a_Node000004"><a xlink:href="class_x_o__inf___a_i.html#aa88a72848990b6506c7f4d544937837b" target="_top" xlink:title="Minimax search algorithm with alpha&#45;beta pruning.">
 <polygon fill="white" stroke="#666666" points="249.5,-58 145.75,-58 145.75,-38 249.5,-38 249.5,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="197.62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI::minimax</text>
 </a>
@@ -101,7 +101,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_x_o__inf___a_i.html#aa7814af19ba079b0bf71770ffa438b4b" xlink:title="Evaluate the board from the AI perspective.">
+<g id="a_Node000005"><a xlink:href="class_x_o__inf___a_i.html#aa7814af19ba079b0bf71770ffa438b4b" target="_top" xlink:title="Evaluate the score of the board state.">
 <polygon fill="white" stroke="#666666" points="391.88,-58 288.12,-58 288.12,-38 391.88,-38 391.88,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="340" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI::evaluate</text>
 </a>

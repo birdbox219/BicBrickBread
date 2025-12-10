@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Ultimate Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="#999999" stroke="#666666" points="168.25,-100 62.25,-100 62.25,-68 168.25,-68 168.25,-100"/>
 <text xml:space="preserve" text-anchor="start" x="70.25" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/Ultimate_Tic</text>
 <text xml:space="preserve" text-anchor="middle" x="115.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Tac_Toe/Ultimate.h</text>

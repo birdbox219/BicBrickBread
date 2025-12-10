@@ -1,6 +1,6 @@
 <map id="Games/PyramidXO/PyramidXO.cpp" name="Games/PyramidXO/PyramidXO.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="65,5,295,32"/>
-<area shape="rect" id="Node000002" href="$_pyramid_x_o_8h.html" title=" " alt="" coords="130,80,230,107"/>
+<area shape="rect" id="Node000002" href="$_pyramid_x_o_8h.html" title="Pyramid XO game classes." alt="" coords="130,80,230,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,33,183,64,177,64,177,33"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,320,59,347"/>
 <area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="157,35,128,54,102,82,72,139,53,202,41,260,36,305,31,305,36,259,48,200,67,137,98,78,125,50,154,30"/>

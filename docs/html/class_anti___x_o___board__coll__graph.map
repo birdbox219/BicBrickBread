@@ -1,5 +1,5 @@
 <map id="Anti_XO_Board" name="Anti_XO_Board">
-<area shape="rect" id="Node000001" title="Board implementation for Anti Tic&#45;Tac&#45;Toe (the player who completes 3&#45;in&#45;a&#45;row loses)." alt="" coords="10,537,132,713"/>
+<area shape="rect" id="Node000001" title="Board implementation for Anti Tic&#45;Tac&#45;Toe." alt="" coords="10,537,132,713"/>
 <area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="5,163,137,488"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,503,74,538,69,538,69,503"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="11,5,132,91"/>

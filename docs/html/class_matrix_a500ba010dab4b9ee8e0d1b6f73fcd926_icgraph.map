@@ -1,24 +1,25 @@
 <map id="Matrix::Matrix" name="Matrix::Matrix">
-<area shape="rect" id="Node000001" title="Construct a matrix of size (rows x cols)." alt="" coords="347,183,448,209"/>
+<area shape="rect" id="Node000001" title="Construct a matrix of size (rows x cols)." alt="" coords="347,208,448,235"/>
 <area shape="rect" id="Node000002" href="$class_matrix.html#a3055050ff4e15b30c072bbe26842f405" title="In&#45;place Hadamard (element&#45;wise) product: this = this ⊙ other." alt="" coords="174,5,296,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="383,170,350,108,326,75,297,46,279,35,282,30,301,42,330,72,354,105,387,167"/>
-<area shape="rect" id="Node000003" href="$class_matrix.html#a79fa5a3893939d8b399f86c6c1ff15a7" title="Optimized matrix multiplication into a preallocated matrix." alt="" coords="180,56,290,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="373,173,339,138,297,104,267,85,269,81,301,99,343,135,377,170"/>
-<area shape="rect" id="Node000006" href="$class_matrix.html#a0d724ccde0d084d10f73366896c32c32" title="Right&#45;hand matrix multiplication: C = A * B." alt="" coords="5,107,123,133"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="361,177,331,161,298,148,253,137,207,130,123,123,123,118,208,124,254,132,300,143,333,156,364,172"/>
-<area shape="rect" id="Node000007" href="$class_matrix.html#ad2a786f018631a09111b0ce0b3a97dbf" title="Scalar multiplication: each element multiplied by val." alt="" coords="176,157,294,184"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="331,188,293,182,294,177,332,183"/>
-<area shape="rect" id="Node000008" href="$class_matrix.html#a94950736fd85d672147d33bbe64e5d0d" title="Matrix addition. Dimensions must match." alt="" coords="175,208,295,235"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="332,209,296,215,295,209,331,204"/>
-<area shape="rect" id="Node000009" href="$class_matrix.html#ab7dc0cc55a49ddaa88bf4a6028ad76f0" title="Matrix subtraction. Dimensions must match." alt="" coords="177,259,293,285"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="359,219,300,249,273,261,271,256,298,244,357,215"/>
-<area shape="rect" id="Node000010" href="$class_matrix.html#a95102bd4b0960b1a4c282c2e7685c84c" title="Stream output operator for debugging." alt="" coords="171,309,299,336"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="379,224,345,262,301,300,279,311,277,306,297,295,341,258,375,220"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="385,194,353,121,329,81,297,46,280,35,283,30,301,42,333,78,358,118,390,192"/>
+<area shape="rect" id="Node000003" href="$class_matrix.html#a79fa5a3893939d8b399f86c6c1ff15a7" title="Multiply preallocated matrices without allocations." alt="" coords="180,56,290,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="379,196,345,146,323,120,297,97,278,86,281,81,301,93,327,116,350,143,384,193"/>
+<area shape="rect" id="Node000006" href="$class_matrix.html#a0d724ccde0d084d10f73366896c32c32" title="Matrix multiplication: C = A * B." alt="" coords="176,107,294,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="369,200,336,173,298,148,274,136,277,131,300,143,339,169,372,196"/>
+<area shape="rect" id="Node000007" href="$class_matrix.html#ad2a786f018631a09111b0ce0b3a97dbf" title="Scalar multiplication." alt="" coords="176,157,294,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="337,205,279,187,281,182,339,200"/>
+<area shape="rect" id="Node000008" href="$class_matrix.html#a94950736fd85d672147d33bbe64e5d0d" title="Matrix addition." alt="" coords="175,208,295,235"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="331,224,295,224,295,219,331,219"/>
+<area shape="rect" id="Node000009" href="$class_matrix.html#ab7dc0cc55a49ddaa88bf4a6028ad76f0" title="Matrix subtraction." alt="" coords="177,259,293,285"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="339,242,281,261,279,256,337,237"/>
+<area shape="rect" id="Node000010" href="$class_matrix.html#a95102bd4b0960b1a4c282c2e7685c84c" title="Stream output for debugging." alt="" coords="171,309,299,336"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="372,247,339,274,300,300,277,311,274,306,298,295,336,269,369,243"/>
 <area shape="rect" id="Node000011" href="$class_matrix.html#a1bf314e696c1a7a1963aec05af5f5d13" title="Create a matrix filled with uniform random values in [min, max]." alt="" coords="181,360,289,387"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="387,225,354,287,330,320,301,350,282,362,279,357,297,346,326,317,350,284,383,222"/>
-<area shape="rect" id="Node000004" href="$class_layer.html#a54679a1ee804225a3d09a0685242070a" title="Backward propagation." alt="" coords="5,5,123,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="172,54,111,35,112,30,174,48"/>
-<area shape="rect" id="Node000005" href="$class_layer.html#aa1c9e50a099e7fad54c5681f83988d2a" title="Forward propagation." alt="" coords="12,56,116,83"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="164,72,117,72,117,67,164,67"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="174,90,112,109,111,104,172,85"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="384,250,350,300,327,327,301,350,281,362,278,357,297,346,323,323,345,297,379,247"/>
+<area shape="rect" id="Node000012" href="$class_matrix.html#a650078c4e68d8c618e56c55951997470" title="Transpose of the matrix." alt="" coords="174,411,296,437"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="390,250,358,324,333,365,301,401,283,412,280,408,297,397,329,362,353,322,385,248"/>
+<area shape="rect" id="Node000004" href="$class_layer.html#a54679a1ee804225a3d09a0685242070a" title="Perform backward propagation through this layer." alt="" coords="5,31,123,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,62,122,55,123,50,165,56"/>
+<area shape="rect" id="Node000005" href="$class_layer.html#aa1c9e50a099e7fad54c5681f83988d2a" title="Perform forward propagation through this layer." alt="" coords="12,81,116,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="165,82,117,90,116,84,164,77"/>
 </map>

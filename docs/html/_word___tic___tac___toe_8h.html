@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.h File Reference</title>
+<title>BicBrickBread: Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -93,15 +93,18 @@ $(function(){initNavTree('_word___tic___tac___toe_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for the Word-based Tic-Tac-Toe board, <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>, and <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> modules.  
+<p>Header for Word Tic-Tac-Toe board, <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>, and <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_board_game___classes_8h_source.html">../../header/BoardGame_Classes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_custom___u_i_8h_source.html">../../header/Custom_UI.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_a_i_8h_source.html">../../header/AI.h</a>&quot;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Word_Tic_Tac_Toe.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_word___tic___tac___toe_8h__incl.svg" width="419" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_word___tic___tac___toe_8h__incl.svg" width="523" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -114,19 +117,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:Word_5FXO_5FBoard" id="r_Word_5FXO_5FBoard"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word___x_o___board.html">Word_XO_Board</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game board implementation for the Word-based Tic-Tac-Toe variant.  <a href="class_word___x_o___board.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game board for Word Tic-Tac-Toe.  <a href="class_word___x_o___board.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Word_5FAI" id="r_Word_5FAI"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word___a_i.html">Word_AI</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> engine for the Word Tic-Tac-Toe game.  <a href="class_word___a_i.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> engine for Word Tic-Tac-Toe.  <a href="class_word___a_i.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Word_5FXO_5FUI" id="r_Word_5FXO_5FUI"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word___x_o___u_i.html">Word_XO_UI</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">User Interface controller for the game.  <a href="class_word___x_o___u_i.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">User interface for Word Tic-Tac-Toe.  <a href="class_word___x_o___u_i.html#details">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for the Word-based Tic-Tac-Toe board, <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>, and <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> modules. </p>
-<p>This file defines all components necessary to operate the Word Tic-Tac-Toe variant, including:</p><ul>
-<li>The game board and word-validation logic</li>
-<li>The <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> system for generating optimal moves</li>
-<li>The user interface for human, computer, and <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> interaction </li>
-</ul>
+<div class="textblock"><p>Header for Word Tic-Tac-Toe board, <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>, and <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a>. </p>
 
 <p class="definition">Definition in file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
 </div></div><!-- contents -->

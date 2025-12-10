@@ -1,13 +1,13 @@
 <map id="Word_XO_Board" name="Word_XO_Board">
-<area shape="rect" id="Node000001" title="Game board implementation for the Word&#45;based Tic&#45;Tac&#45;Toe variant." alt="" coords="157,872,286,1368"/>
+<area shape="rect" id="Node000001" title="Game board for Word Tic&#45;Tac&#45;Toe." alt="" coords="157,872,286,1155"/>
 <area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="206,163,338,488"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,503,299,512,310,680,309,754,299,848,289,906,284,905,294,848,303,754,305,680,294,512,293,503"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,502,313,583,316,671,312,761,299,849,289,885,284,883,294,847,307,760,311,671,308,584,300,503"/>
 <area shape="rect" id="Node000007" href="$class_player.html" title=" " alt="" coords="166,560,277,779"/>
 <area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="239,488,235,512,231,544,226,543,230,512,233,487"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="212,5,333,91"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,90,275,145,270,145,270,90"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,635,142,704"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="87,703,154,907,149,909,82,705"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,702,157,856,152,858,85,704"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="46,291,115,360"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="82,359,77,618,72,618,77,359"/>
 <area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="96,358,173,544,168,546,91,360"/>

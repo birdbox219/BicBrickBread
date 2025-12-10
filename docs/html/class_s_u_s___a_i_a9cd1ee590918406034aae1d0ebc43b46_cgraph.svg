@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Minimax algorithm with alpha&#45;beta pruning.">
+<g id="a_Node000001"><a xlink:title="Minimax with alpha&#45;beta pruning.">
 <polygon fill="#999999" stroke="#666666" points="94.75,-77 0,-77 0,-57 94.75,-57 94.75,-77"/>
 <text xml:space="preserve" text-anchor="middle" x="47.38" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI::minimax</text>
 </a>
@@ -29,7 +29,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_s_u_s___a_i.html#a917f6a59b1707de463bfcaad41f0d560" xlink:title="Evaluates the board state for the given player.">
+<g id="a_Node000002"><a xlink:href="class_s_u_s___a_i.html#a917f6a59b1707de463bfcaad41f0d560" target="_top" xlink:title="Evaluates the board state for the given player.">
 <polygon fill="white" stroke="#666666" points="233.75,-96 139,-96 139,-76 233.75,-76 233.75,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="186.38" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI::evaluate</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000004"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="378,-115 278,-115 278,-95 378,-95 378,-115"/>
 <text xml:space="preserve" text-anchor="middle" x="328" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000005"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="240.88,-58 131.88,-58 131.88,-38 240.88,-38 240.88,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="186.38" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>
@@ -83,7 +83,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_s_u_s___a_i.html#a223660856952277e2a8323ffb790bc53" xlink:title="Returns true if there are empty moves left.">
+<g id="a_Node000006"><a xlink:href="class_s_u_s___a_i.html#a223660856952277e2a8323ffb790bc53" target="_top" xlink:title="Checks if any empty cells remain.">
 <polygon fill="white" stroke="#666666" points="242,-20 130.75,-20 130.75,0 242,0 242,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="186.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI::isMovesLeft</text>
 </a>
@@ -101,7 +101,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_board.html#a93558c58e60ca4291c6044828afd260b" xlink:title="Return content of cell x, y in current board.">
+<g id="a_Node000003"><a xlink:href="class_board.html#a93558c58e60ca4291c6044828afd260b" target="_top" xlink:title="Return content of cell x, y in current board.">
 <polygon fill="white" stroke="#666666" points="368.62,-39 287.38,-39 287.38,-19 368.62,-19 368.62,-39"/>
 <text xml:space="preserve" text-anchor="middle" x="328" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board::get_cell</text>
 </a>

@@ -1,5 +1,5 @@
 <map id="FOUR_UI::get_move" name="FOUR_UI::get_move">
-<area shape="rect" id="Node000001" title="Gets the move from a human, computer, or AI player." alt="" coords="5,309,151,336"/>
+<area shape="rect" id="Node000001" title="Obtains the next move from a human, computer, or AI player." alt="" coords="5,309,151,336"/>
 <area shape="rect" id="Node000002" href="$class_four___a_i.html#a12661d165899365f9a5031ec04814e44" title="Computes the best possible move for the AI." alt="" coords="199,208,331,235"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,306,224,240,226,245,106,311"/>
 <area shape="rect" id="Node000006" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="811,208,944,235"/>
@@ -8,10 +8,10 @@
 <area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="131,334,199,353,198,358,129,339"/>
 <area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="584,208,730,235"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,219,569,219,569,224,331,224"/>
-<area shape="rect" id="Node000004" href="$class_four___a_i.html#a196ae82b79d74cd5e58654a16e11bf8a" title="Finds next open row in the given column." alt="" coords="551,5,763,32"/>
+<area shape="rect" id="Node000004" href="$class_four___a_i.html#a196ae82b79d74cd5e58654a16e11bf8a" title="Finds the next open row in a given column." alt="" coords="551,5,763,32"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="274,206,315,155,344,126,378,100,419,77,464,59,552,33,554,38,466,64,422,82,380,105,348,130,319,159,278,209"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="332,229,418,239,525,248,644,251,762,244,810,236,811,241,763,249,644,256,525,253,417,244,331,234"/>
-<area shape="rect" id="Node000007" href="$class_four___a_i.html#a2be9e32c580e8aa22c530ab4c9920317" title="Minimax with alpha&#45;beta pruning." alt="" coords="379,139,503,165"/>
+<area shape="rect" id="Node000007" href="$class_four___a_i.html#a2be9e32c580e8aa22c530ab4c9920317" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="379,139,503,165"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="300,205,390,169,392,174,302,210"/>
 <area shape="rect" id="Node000005" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="823,56,932,83"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="719,30,809,51,808,56,718,35"/>
@@ -19,7 +19,7 @@
 <area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="450,137,490,90,518,64,550,42,562,36,564,41,553,46,522,68,494,94,454,140"/>
 <area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="504,156,624,172,763,193,804,201,803,207,762,199,623,177,503,161"/>
 <area shape="poly" id="edge15_Node000007_Node000007" title=" " alt="" coords="411,140,406,130,409,120,421,114,441,112,462,115,474,121,471,126,461,120,441,117,423,119,413,124,411,129,415,137"/>
-<area shape="rect" id="Node000008" href="$class_four___a_i.html#a5ebc2172189dad66489d15371d6f9c2f" title="Evaluates current board state." alt="" coords="595,107,719,133"/>
+<area shape="rect" id="Node000008" href="$class_four___a_i.html#a5ebc2172189dad66489d15371d6f9c2f" title="Evaluates the current board state from AI perspective." alt="" coords="595,107,719,133"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="503,140,579,129,580,134,504,145"/>
 <area shape="rect" id="Node000009" href="$class_four___a_i.html#ae3dab4e81e6b102a9445d05b0c4d2aee" title="Checks if any moves are still available." alt="" coords="584,56,730,83"/>
 <area shape="poly" id="edge13_Node000007_Node000009" title=" " alt="" coords="463,136,503,114,550,92,572,85,574,90,552,97,505,118,466,141"/>

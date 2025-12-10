@@ -1,6 +1,6 @@
 <map id="XO_NUM_UI::get_move" name="XO_NUM_UI::get_move">
-<area shape="rect" id="Node000001" title="Gets next move from human or AI." alt="" coords="5,56,170,83"/>
-<area shape="rect" id="Node000002" href="$class_x_o___n_u_m___a_i.html#a199156c4313be371ad60e780e7f88834" title="Chooses a random available cell and number." alt="" coords="218,31,381,57"/>
+<area shape="rect" id="Node000001" title="Get the next move." alt="" coords="5,56,170,83"/>
+<area shape="rect" id="Node000002" href="$class_x_o___n_u_m___a_i.html#a199156c4313be371ad60e780e7f88834" title="Compute the best move." alt="" coords="218,31,381,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,57,202,53,202,58,171,62"/>
 <area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="429,5,574,32"/>
 <area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="115,53,161,32,217,16,268,9,319,6,414,8,414,13,319,11,268,14,218,21,163,37,117,58"/>

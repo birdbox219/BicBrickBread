@@ -42,7 +42,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_a_i.html" xlink:title="AI Interface for all implementations in games.">
+<g id="a_Node000002"><a xlink:href="class_a_i.html" target="_top" xlink:title="AI Interface for all implementations in games.">
 <polygon fill="white" stroke="none" points="74.62,-300 7.88,-300 7.88,-200 74.62,-200 74.62,-300"/>
 <text xml:space="preserve" text-anchor="start" x="36.38" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">AI</text>
 <text xml:space="preserve" text-anchor="start" x="39.75" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

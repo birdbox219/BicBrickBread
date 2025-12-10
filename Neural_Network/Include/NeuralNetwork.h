@@ -1,3 +1,17 @@
+/**
+ * @file NeuralNetwork.h
+ * @brief Fully-connected feedforward neural network class.
+ *
+ * @defgroup AI Artificial Intelligence Components
+ * @brief Core AI classes for neural networks and computations.
+ *
+ * Responsibilities:
+ *  - Maintain an ordered list of Layers
+ *  - Perform forward and backward propagation
+ *  - Update weights using gradient descent
+ *  - Save/load network parameters
+ */
+
 #ifndef NEURALNETWORK_H
 #define NEURALNETWORK_H
 
@@ -10,28 +24,22 @@
 
 /**
  * @class NeuralNetwork
- * @brief Fully connected feedforward neural network using updated Layer class.
+ * @brief Fully-connected feedforward neural network using Layer objects.
  *
- * This class manages a sequence of Layers, each containing its own weights,
- * biases, and activation functions. It provides a simple interface for
- * forward propagation, backpropagation, training on individual samples,
- * and persisting/loading network weights to/from files.
+ * @ingroup AI
  *
- * Responsibilities (SRP):
- *  - Maintain the ordered list of layers and their internal states
- *  - Perform forward pass through all layers
- *  - Perform backward pass and weight updates (gradient descent)
- *  - Provide convenience functions for training and prediction
- *  - Save/load layer parameters (weights and biases) to/from binary files
+ * Manages multiple Layer objects, each with its own weights, biases, and
+ * activation functions. Supports forward pass, backward propagation,
+ * training on single samples, and saving/loading weights.
  */
 class NeuralNetwork {
 public:
     /**
-     * @brief Construct a neural network with specified layer sizes and activations.
+     * @brief Construct a feedforward neural network.
      *
-     * @param layerSizes Vector specifying the number of neurons in each layer (including input and output).
-     * @param activations Vector of activation functions for each layer (excluding input layer).
-     * @param activationDerivatives Vector of derivatives of the activation functions for backpropagation.
+     * @param layerSizes Number of neurons in each layer (including input and output)
+     * @param activations Activation functions for each layer (excluding input layer)
+     * @param activationDerivatives Derivatives of activation functions for backpropagation
      */
     NeuralNetwork(const std::vector<int>& layerSizes,
                   const std::vector<std::function<double(double)>>& activations,
@@ -39,14 +47,14 @@ public:
 
     /**
      * @brief Perform a forward pass through all layers.
-     * @param input Input vector (Matrix<double> with inputSize x 1 dimensions)
-     * @return Output of the final layer (activations)
+     * @param input Input vector (Matrix<double>, inputSize × 1)
+     * @return Output activations from the final layer
      */
     Matrix<double> forward(const Matrix<double>& input);
 
     /**
      * @brief Perform backward propagation through all layers and update weights.
-     * @param expected Expected output (target vector)
+     * @param expected Target output vector
      * @param learningRate Learning rate for weight updates
      */
     void backward(const Matrix<double>& expected, double learningRate);
@@ -60,26 +68,26 @@ public:
     void train(const Matrix<double>& input, const Matrix<double>& expected, double learningRate);
 
     /**
-     * @brief Predict output from a given input without performing weight updates.
+     * @brief Predict output from a given input without weight updates.
      * @param input Input vector
      * @return Predicted output vector
      */
     Matrix<double> predict(const Matrix<double>& input);
 
     /**
-     * @brief Save all layer weights and biases to a binary file.
-     * @param filename Path to file
+     * @brief Save all layer parameters (weights and biases) to a binary file.
+     * @param filename File path
      */
     void save(const std::string& filename) const;
 
     /**
-     * @brief Load all layer weights and biases from a binary file.
-     * @param filename Path to file
+     * @brief Load all layer parameters from a binary file.
+     * @param filename File path
      */
     void load(const std::string& filename);
 
 private:
-    std::vector<Layer> layers_; ///< Private container for layers (encapsulation)
+    std::vector<Layer> layers_; ///< Container for layers (encapsulation)
 };
 
 #endif // NEURALNETWORK_H

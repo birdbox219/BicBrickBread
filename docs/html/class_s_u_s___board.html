@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: SUS_Board Class Reference</title>
+<title>BicBrickBread: SUS_Board Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,7 +89,7 @@ $(function(){initNavTree('class_s_u_s___board.html','','class_s_u_s___board-memb
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">SUS_Board Class Reference</div></div>
+  <div class="headertitle"><div class="title">SUS_Board Class Reference<div class="ingroups"><a class="el" href="group___s_u_s___x_o.html">SUS XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -112,8 +112,8 @@ Collaboration diagram for SUS_Board:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a653be0dfe8070a59361bd228c0b54f71" id="r_a653be0dfe8070a59361bd228c0b54f71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a653be0dfe8070a59361bd228c0b54f71">SUS_Board</a> ()</td></tr>
 <tr class="memdesc:a653be0dfe8070a59361bd228c0b54f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty 3x3 SUS board.  <br /></td></tr>
-<tr class="memitem:a5cf8d1ad2da90ed50b77a7f5d91342f4" id="r_a5cf8d1ad2da90ed50b77a7f5d91342f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cf8d1ad2da90ed50b77a7f5d91342f4">update_board</a> (<a class="el" href="class_move.html">Move</a>&lt; char &gt; *move)</td></tr>
-<tr class="memdesc:a5cf8d1ad2da90ed50b77a7f5d91342f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies or undoes a move on the board.  <br /></td></tr>
+<tr class="memitem:a22679cdc9a91a17fea898c66ad821e45" id="r_a22679cdc9a91a17fea898c66ad821e45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22679cdc9a91a17fea898c66ad821e45">update_board</a> (<a class="el" href="class_move.html">Move</a>&lt; char &gt; *move) override</td></tr>
+<tr class="memdesc:a22679cdc9a91a17fea898c66ad821e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies or undoes a move on the board.  <br /></td></tr>
 <tr class="memitem:a2230a0e70a119a14e7e7380ba9b2cb90" id="r_a2230a0e70a119a14e7e7380ba9b2cb90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2230a0e70a119a14e7e7380ba9b2cb90">is_win</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
 <tr class="memdesc:a2230a0e70a119a14e7e7380ba9b2cb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given player has won.  <br /></td></tr>
 <tr class="memitem:a3761b3ce05e2194ff95893b494a3c933" id="r_a3761b3ce05e2194ff95893b494a3c933"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3761b3ce05e2194ff95893b494a3c933">is_lose</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb2ad5ce9bdd10ecf2d3cf06be14e6ca" id="r_aeb2ad5ce9bdd10ecf2d3cf06be14e6ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb2ad5ce9bdd10ecf2d3cf06be14e6ca">is_draw</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
 <tr class="memdesc:aeb2ad5ce9bdd10ecf2d3cf06be14e6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game ended in a draw.  <br /></td></tr>
 <tr class="memitem:acd2c39612239065da3aea67ac7c27aa4" id="r_acd2c39612239065da3aea67ac7c27aa4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2c39612239065da3aea67ac7c27aa4">game_is_over</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:acd2c39612239065da3aea67ac7c27aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the game is over (win or draw).  <br /></td></tr>
+<tr class="memdesc:acd2c39612239065da3aea67ac7c27aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the game is over.  <br /></td></tr>
 <tr class="memitem:a53dee92e91f11c9f1a4ca376e2b683d7" id="r_a53dee92e91f11c9f1a4ca376e2b683d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53dee92e91f11c9f1a4ca376e2b683d7">score</a> (int x, int y, char sym)</td></tr>
-<tr class="memdesc:a53dee92e91f11c9f1a4ca376e2b683d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the scores based on the last move.  <br /></td></tr>
+<tr class="memdesc:a53dee92e91f11c9f1a4ca376e2b683d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates scoring after a move.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_board"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_board')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_board.html">Board&lt; char &gt;</a></td></tr>
 <tr class="memitem:ae5dfded241ee3644196e2f6074d1d0b1 inherit pub_methods_class_board" id="r_ae5dfded241ee3644196e2f6074d1d0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board</a> (int <a class="el" href="class_board.html#a948d978e3b5fc460559b588f5dee9572">rows</a>, int <a class="el" href="class_board.html#afaf8842d9d52ac724e8c2f5642ecafc7">columns</a>)</td></tr>
 <tr class="memdesc:ae5dfded241ee3644196e2f6074d1d0b1 inherit pub_methods_class_board"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a board with given dimensions.  <br /></td></tr>
@@ -141,11 +141,11 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8992f8d0fb8c8f2916249518e94c22b2" id="r_a8992f8d0fb8c8f2916249518e94c22b2"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8992f8d0fb8c8f2916249518e94c22b2">blank_symbol</a> = '.'</td></tr>
-<tr class="memdesc:a8992f8d0fb8c8f2916249518e94c22b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty cell symbol.  <br /></td></tr>
+<tr class="memdesc:a8992f8d0fb8c8f2916249518e94c22b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Symbol used to denote an empty cell.  <br /></td></tr>
 <tr class="memitem:ac79f274bb5231a366ca6b0db1065f237" id="r_ac79f274bb5231a366ca6b0db1065f237"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac79f274bb5231a366ca6b0db1065f237">s_score</a> {}</td></tr>
-<tr class="memdesc:ac79f274bb5231a366ca6b0db1065f237"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 'S' score.  <br /></td></tr>
+<tr class="memdesc:ac79f274bb5231a366ca6b0db1065f237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Score for player using symbol 'S'.  <br /></td></tr>
 <tr class="memitem:aba36008945809c0b048c006f40cbfe2f" id="r_aba36008945809c0b048c006f40cbfe2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba36008945809c0b048c006f40cbfe2f">u_score</a> {}</td></tr>
-<tr class="memdesc:aba36008945809c0b048c006f40cbfe2f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 'U' score.  <br /></td></tr>
+<tr class="memdesc:aba36008945809c0b048c006f40cbfe2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Score for player using symbol 'U'.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -161,9 +161,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the 3x3 SUS game board. </p>
-<p>The game counts how many "S-U-S" patterns appear in rows, columns, and diagonals. Each pattern increments the corresponding player's score. </p>
+<p>Tracks occurrences of "S-U-S" in rows, columns, and diagonals. Each detected sequence increases the score of the associated player. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00017">17</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00027">27</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a653be0dfe8070a59361bd228c0b54f71" name="a653be0dfe8070a59361bd228c0b54f71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a653be0dfe8070a59361bd228c0b54f71">&#9670;&#160;</a></span>SUS_Board()</h2>
@@ -191,7 +191,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   13</span>}</div>
 <div class="ttc" id="aclass_board_html_ae5dfded241ee3644196e2f6074d1d0b1"><div class="ttname"><a href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board&lt; char &gt;::Board</a></div><div class="ttdeci">Board(int rows, int columns)</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00057">BoardGame_Classes.h:57</a></div></div>
 <div class="ttc" id="aclass_board_html_af00c1fc363eb640ca276b8a572040040"><div class="ttname"><a href="class_board.html#af00c1fc363eb640ca276b8a572040040">Board&lt; char &gt;::board</a></div><div class="ttdeci">vector&lt; vector&lt; char &gt; &gt; board</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00050">BoardGame_Classes.h:50</a></div></div>
-<div class="ttc" id="aclass_s_u_s___board_html_a8992f8d0fb8c8f2916249518e94c22b2"><div class="ttname"><a href="#a8992f8d0fb8c8f2916249518e94c22b2">SUS_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Empty cell symbol.</div><div class="ttdef"><b>Definition</b> <a href="_s_u_s_8h_source.html#l00019">SUS.h:19</a></div></div>
+<div class="ttc" id="aclass_s_u_s___board_html_a8992f8d0fb8c8f2916249518e94c22b2"><div class="ttname"><a href="#a8992f8d0fb8c8f2916249518e94c22b2">SUS_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Symbol used to denote an empty cell.</div><div class="ttdef"><b>Definition</b> <a href="_s_u_s_8h_source.html#l00029">SUS.h:29</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -224,7 +224,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the game is over (win or draw). </p>
+<p>Determines whether the game is over. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game has ended (win or draw) </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#ae0e4575ec3cc4b6eb9f367ffb2beed13">Board&lt; char &gt;</a>.</p>
 
@@ -266,6 +273,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Checks if the game ended in a draw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game is a draw </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a8dbe2a243881986f3e53b45799d377fc">Board&lt; char &gt;</a>.</p>
 
@@ -274,8 +288,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_board.html#a5952baefabced65fecec333de638408d">n_moves</a> == 9 &amp;&amp; <a class="code hl_variable" href="#ac79f274bb5231a366ca6b0db1065f237">s_score</a> == <a class="code hl_variable" href="#aba36008945809c0b048c006f40cbfe2f">u_score</a>);</div>
 <div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="aclass_board_html_a5952baefabced65fecec333de638408d"><div class="ttname"><a href="class_board.html#a5952baefabced65fecec333de638408d">Board&lt; char &gt;::n_moves</a></div><div class="ttdeci">int n_moves</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00051">BoardGame_Classes.h:51</a></div></div>
-<div class="ttc" id="aclass_s_u_s___board_html_aba36008945809c0b048c006f40cbfe2f"><div class="ttname"><a href="#aba36008945809c0b048c006f40cbfe2f">SUS_Board::u_score</a></div><div class="ttdeci">int u_score</div><div class="ttdoc">Player &#39;U&#39; score.</div><div class="ttdef"><b>Definition</b> <a href="_s_u_s_8h_source.html#l00021">SUS.h:21</a></div></div>
-<div class="ttc" id="aclass_s_u_s___board_html_ac79f274bb5231a366ca6b0db1065f237"><div class="ttname"><a href="#ac79f274bb5231a366ca6b0db1065f237">SUS_Board::s_score</a></div><div class="ttdeci">int s_score</div><div class="ttdoc">Player &#39;S&#39; score.</div><div class="ttdef"><b>Definition</b> <a href="_s_u_s_8h_source.html#l00020">SUS.h:20</a></div></div>
+<div class="ttc" id="aclass_s_u_s___board_html_aba36008945809c0b048c006f40cbfe2f"><div class="ttname"><a href="#aba36008945809c0b048c006f40cbfe2f">SUS_Board::u_score</a></div><div class="ttdeci">int u_score</div><div class="ttdoc">Score for player using symbol &#39;U&#39;.</div><div class="ttdef"><b>Definition</b> <a href="_s_u_s_8h_source.html#l00031">SUS.h:31</a></div></div>
+<div class="ttc" id="aclass_s_u_s___board_html_ac79f274bb5231a366ca6b0db1065f237"><div class="ttname"><a href="#ac79f274bb5231a366ca6b0db1065f237">SUS_Board::s_score</a></div><div class="ttdeci">int s_score</div><div class="ttdoc">Score for player using symbol &#39;S&#39;.</div><div class="ttdef"><b>Definition</b> <a href="_s_u_s_8h_source.html#l00030">SUS.h:30</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -308,6 +322,13 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Checks if the given player has lost. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the player has lost </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a207d5f6feb77f81c51d1462f0245890d">Board&lt; char &gt;</a>.</p>
 
@@ -349,6 +370,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Checks if the given player has won. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the player has won </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#ab316fe3e79677b4617fc3d90d6c48f33">Board&lt; char &gt;</a>.</p>
 
@@ -394,12 +422,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the scores based on the last move. </p>
+<p>Updates scoring after a move. </p>
 <p>Updates player scores based on last move.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Row index of the last move </td></tr>
-    <tr><td class="paramname">y</td><td>Column index of the last move </td></tr>
+    <tr><td class="paramname">x</td><td>Row index of the move </td></tr>
+    <tr><td class="paramname">y</td><td>Column index of the move </td></tr>
     <tr><td class="paramname">sym</td><td>Symbol placed </td></tr>
   </table>
   </dd>
@@ -425,8 +453,8 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a5cf8d1ad2da90ed50b77a7f5d91342f4" name="a5cf8d1ad2da90ed50b77a7f5d91342f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cf8d1ad2da90ed50b77a7f5d91342f4">&#9670;&#160;</a></span>update_board()</h2>
+<a id="a22679cdc9a91a17fea898c66ad821e45" name="a22679cdc9a91a17fea898c66ad821e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22679cdc9a91a17fea898c66ad821e45">&#9670;&#160;</a></span>update_board()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,12 +471,19 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Applies or undoes a move on the board. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">move</td><td>Pointer to the move to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the board was successfully updated </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a93d9dec601dda58b7e206ccb47633e57">Board&lt; char &gt;</a>.</p>
 
@@ -481,7 +516,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_s_u_s___board_a5cf8d1ad2da90ed50b77a7f5d91342f4_cgraph.svg" width="364" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_s_u_s___board_a22679cdc9a91a17fea898c66ad821e45_cgraph.svg" width="364" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -507,9 +542,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Empty cell symbol. </p>
+<p>Symbol used to denote an empty cell. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00019">19</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00029">29</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
 
 </div>
 </div>
@@ -533,10 +568,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 'S' score. </p>
+<p>Score for player using symbol 'S'. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00020">20</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{};           <span class="comment">///&lt; Player &#39;S&#39; score</span></div>
+<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00030">30</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{};                <span class="comment">///&lt; Score for player using symbol &#39;S&#39;.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -560,10 +595,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> 'U' score. </p>
+<p>Score for player using symbol 'U'. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00021">21</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{};           <span class="comment">///&lt; Player &#39;U&#39; score</span></div>
+<p class="definition">Definition at line <a class="el" href="_s_u_s_8h_source.html#l00031">31</a> of file <a class="el" href="_s_u_s_8h_source.html">SUS.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{};                <span class="comment">///&lt; Score for player using symbol &#39;U&#39;.</span></div>
 </div><!-- fragment -->
 </div>
 </div>

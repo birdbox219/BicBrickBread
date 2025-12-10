@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_pyramid_x_o___u_i.html#a936b1fdabe80776e212110be108f811f" xlink:title="Reads human move or requests AI move.">
+<g id="a_Node000002"><a xlink:href="class_pyramid_x_o___u_i.html#a936b1fdabe80776e212110be108f811f" target="_top" xlink:title="Reads human move or requests AI move.">
 <polygon fill="white" stroke="#666666" points="130.75,-20 0,-20 0,0 130.75,0 130.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_UI::get_move</text>
 </a>

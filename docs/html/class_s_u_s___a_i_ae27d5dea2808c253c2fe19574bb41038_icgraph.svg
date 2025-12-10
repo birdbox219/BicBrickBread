@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" xlink:title="Gets the next move from a human or AI.">
+<g id="a_Node000002"><a xlink:href="class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" target="_top" xlink:title="Retrieves the next move.">
 <polygon fill="white" stroke="#666666" points="101.5,-20 0,-20 0,0 101.5,0 101.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="50.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_UI::get_move</text>
 </a>

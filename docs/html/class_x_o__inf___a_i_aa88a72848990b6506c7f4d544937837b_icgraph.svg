@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Minimax algorithm with alpha&#45;beta pruning.">
+<g id="a_Node000001"><a xlink:title="Minimax search algorithm with alpha&#45;beta pruning.">
 <polygon fill="#999999" stroke="#666666" points="396,-20 292.25,-20 292.25,0 396,0 396,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="344.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI::minimax</text>
 </a>
@@ -29,7 +29,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" xlink:title="Determine the best move for AI.">
+<g id="a_Node000002"><a xlink:href="class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" target="_top" xlink:title="Determine the best move for the AI.">
 <polygon fill="white" stroke="#666666" points="256.25,-20 146.5,-20 146.5,0 256.25,0 256.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="201.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_AI::bestMove</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" xlink:title="Get the next move from a player.">
+<g id="a_Node000003"><a xlink:href="class_x_o__inf___u_i.html#a58e2808d59a15ba3c05a07f3b3f25486" target="_top" xlink:title="Retrieve a player&#39;s move input.">
 <polygon fill="white" stroke="#666666" points="110.5,-20 0,-20 0,0 110.5,0 110.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="55.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_UI::get_move</text>
 </a>

@@ -1,8 +1,8 @@
 <map id="Obstacles_Board::is_lose" name="Obstacles_Board::is_lose">
-<area shape="rect" id="Node000001" title="Checks if the given player has lost (opponent has 4&#45;in&#45;a&#45;row)." alt="" coords="437,13,607,40"/>
-<area shape="rect" id="Node000002" href="$class_obstacles___board.html#aa1db0075134ef87705583442ca91ca4a" title="Determines whether the game is over for the given player." alt="" coords="5,5,167,48"/>
+<area shape="rect" id="Node000001" title="Checks if a player has lost." alt="" coords="437,13,607,40"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___board.html#aa1db0075134ef87705583442ca91ca4a" title="Checks if the game is over for a player." alt="" coords="5,5,167,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="422,29,167,29,167,24,422,24"/>
-<area shape="rect" id="Node000003" href="$class_obstacles___board.html#a727f0d88ad486a7fb74142f590f7eda0" title="Checks for draw condition (board full and no winner)." alt="" coords="215,39,389,65"/>
+<area shape="rect" id="Node000003" href="$class_obstacles___board.html#a727f0d88ad486a7fb74142f590f7eda0" title="Checks for a draw condition." alt="" coords="215,39,389,65"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="422,41,390,45,389,39,421,36"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="199,43,167,39,168,34,200,37"/>
 </map>

@@ -1,19 +1,20 @@
 <map id="Neural_Network/Source/Layer.cpp" name="Neural_Network/Source/Layer.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="220,5,380,48"/>
-<area shape="rect" id="Node000002" href="$_layer_8h.html" title=" " alt="" coords="96,96,218,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,51,194,90,192,86,262,46"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="284,245,362,272"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="305,48,323,230,317,231,299,49"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="338,96,403,123"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="320,47,352,82,348,86,316,50"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="160,5,320,48"/>
+<area shape="rect" id="Node000002" href="$_layer_8h.html" title="Defines a fully&#45;connected (dense) neural network layer." alt="" coords="80,96,202,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,51,170,88,167,84,213,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="203,171,269,197"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="242,48,239,155,234,155,237,48"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="284,245,362,272"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="250,47,316,230,311,232,245,49"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,245,83,272"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,125,113,172,65,235,60,231,109,169,146,121"/>
-<area shape="rect" id="Node000004" href="$_matrix_8h.html" title=" " alt="" coords="123,171,192,197"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="160,123,160,155,155,155,155,123"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="139,200,78,239,75,234,136,196"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="107,245,165,272"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="156,199,147,231,141,230,151,197"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="188,245,260,272"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="171,196,204,232,200,236,167,200"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="187,195,281,236,279,241,185,200"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,125,97,172,60,233,56,230,92,169,129,122"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="159,121,209,159,206,163,156,125"/>
+<area shape="rect" id="Node000005" href="$_matrix_8h.html" title="Lightweight 2D matrix class for numerical computations." alt="" coords="107,171,176,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="144,123,144,155,139,155,139,123"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="126,200,74,238,71,234,123,196"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="107,245,165,272"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="143,198,141,230,135,229,138,198"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="188,245,260,272"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="157,196,200,233,197,237,154,200"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="174,195,278,237,276,242,172,200"/>
 </map>

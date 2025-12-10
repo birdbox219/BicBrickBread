@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Validates and applies a move to the board.">
+<g id="a_Node000001"><a xlink:title="Apply a move to the board.">
 <polygon fill="#999999" stroke="#666666" points="262.25,-32 138.25,-32 138.25,0 262.25,0 262.25,-32"/>
 <text xml:space="preserve" text-anchor="start" x="146.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="200.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" xlink:title="Computes and returns the optimal move.">
+<g id="a_Node000002"><a xlink:href="class_word___a_i.html#abadf0c9ca0a9e14ba6e21f463c11a11f" target="_top" xlink:title="Compute the best move for a player.">
 <polygon fill="white" stroke="#666666" points="102.25,-26 0,-26 0,-6 102.25,-6 102.25,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="51.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_AI::bestMove</text>
 </a>

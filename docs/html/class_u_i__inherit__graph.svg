@@ -46,7 +46,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_custom___u_i.html" xlink:title="Provides a customizable UI supporting multiple player types.">
+<g id="a_Node000002"><a xlink:href="class_custom___u_i.html" target="_top" xlink:title="Provides a customizable UI supporting multiple player types.">
 <polygon fill="white" stroke="none" points="126.75,-148 0,-148 0,0 126.75,0 126.75,-148"/>
 <text xml:space="preserve" text-anchor="start" x="26.62" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI&lt; T &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="61.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

@@ -29,7 +29,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_memory___a_i.html#a6bb44a40960586c692f1224bc15dc098" xlink:title="Determines the optimal move for AI using minimax.">
+<g id="a_Node000002"><a xlink:href="class_memory___a_i.html#a6bb44a40960586c692f1224bc15dc098" target="_top" xlink:title="Determines the optimal move for AI using minimax.">
 <polygon fill="white" stroke="#666666" points="266.75,-20 151.75,-20 151.75,0 266.75,0 266.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="209.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Memory_AI::bestMove</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" xlink:title="Obtains the next move from a player.">
+<g id="a_Node000003"><a xlink:href="class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" target="_top" xlink:title="Obtains the next move from a player.">
 <polygon fill="white" stroke="#666666" points="115.75,-20 0,-20 0,0 115.75,0 115.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="57.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Memory_UI::get_move</text>
 </a>

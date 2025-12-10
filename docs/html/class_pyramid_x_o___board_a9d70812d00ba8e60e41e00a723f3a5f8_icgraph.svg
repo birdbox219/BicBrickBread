@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Checks if the game ended in a draw (all valid cells filled).">
+<g id="a_Node000001"><a xlink:title="Checks if the game ended in a draw.">
 <polygon fill="#999999" stroke="#666666" points="299.75,-26 163,-26 163,-6 299.75,-6 299.75,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="231.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::is_draw</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_pyramid_x_o___board.html#a450eb010988099eaa06a498cb0b57368" xlink:title="Checks whether the game is finished (win or draw).">
+<g id="a_Node000002"><a xlink:href="class_pyramid_x_o___board.html#a450eb010988099eaa06a498cb0b57368" target="_top" xlink:title="Checks whether the game is finished (win or draw).">
 <polygon fill="white" stroke="#666666" points="127,-32 0,-32 0,0 127,0 127,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="63.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>

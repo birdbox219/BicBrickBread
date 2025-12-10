@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="class_matrix.html" target="_top" xlink:title="Lightweight 2D matrix with contiguous row&#45;major storage.">
+<g id="a_Node000000"><a xlink:href="class_matrix.html" target="_top" xlink:title="Lightweight 2D numeric matrix.">
 <polygon fill="white" stroke="#666666" points="66.25,-20 0,-20 0,0 66.25,0 66.25,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="33.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix&lt; T &gt;</text>
 </a>

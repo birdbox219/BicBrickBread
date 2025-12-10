@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Minimax with alpha&#45;beta pruning.">
+<g id="a_Node000001"><a xlink:title="Minimax algorithm with alpha&#45;beta pruning.">
 <polygon fill="#999999" stroke="#666666" points="93.25,-96 0,-96 0,-76 93.25,-76 93.25,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="46.62" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::minimax</text>
 </a>
@@ -29,7 +29,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_four___a_i.html#a5ebc2172189dad66489d15371d6f9c2f" xlink:title="Evaluates current board state.">
+<g id="a_Node000002"><a xlink:href="class_four___a_i.html#a5ebc2172189dad66489d15371d6f9c2f" target="_top" xlink:title="Evaluates the current board state from AI perspective.">
 <polygon fill="white" stroke="#666666" points="255.12,-134 161.88,-134 161.88,-114 255.12,-114 255.12,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="208.5" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::evaluate</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000004"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="423.75,-153 323.75,-153 323.75,-133 423.75,-133 423.75,-153"/>
 <text xml:space="preserve" text-anchor="middle" x="373.75" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000005"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="263,-96 154,-96 154,-76 263,-76 263,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="208.5" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>
@@ -83,7 +83,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_four___a_i.html#a196ae82b79d74cd5e58654a16e11bf8a" xlink:title="Finds next open row in the given column.">
+<g id="a_Node000006"><a xlink:href="class_four___a_i.html#a196ae82b79d74cd5e58654a16e11bf8a" target="_top" xlink:title="Finds the next open row in a given column.">
 <polygon fill="white" stroke="#666666" points="287.75,-58 129.25,-58 129.25,-38 287.75,-38 287.75,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="208.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::get_next_available_row</text>
 </a>
@@ -101,7 +101,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_four___a_i.html#ae3dab4e81e6b102a9445d05b0c4d2aee" xlink:title="Checks if any moves are still available.">
+<g id="a_Node000007"><a xlink:href="class_four___a_i.html#ae3dab4e81e6b102a9445d05b0c4d2aee" target="_top" xlink:title="Checks if any moves are still available.">
 <polygon fill="white" stroke="#666666" points="263.38,-20 153.62,-20 153.62,0 263.38,0 263.38,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="208.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Four_AI::isMovesLeft</text>
 </a>
@@ -119,7 +119,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_board.html#a93558c58e60ca4291c6044828afd260b" xlink:title="Return content of cell x, y in current board.">
+<g id="a_Node000003"><a xlink:href="class_board.html#a93558c58e60ca4291c6044828afd260b" target="_top" xlink:title="Return content of cell x, y in current board.">
 <polygon fill="white" stroke="#666666" points="414.38,-58 333.12,-58 333.12,-38 414.38,-38 414.38,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="373.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board::get_cell</text>
 </a>

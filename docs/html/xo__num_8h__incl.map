@@ -1,5 +1,5 @@
 <map id="Games/XO_num/xo_num.h" name="Games/XO_num/xo_num.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="66,5,246,32"/>
+<area shape="rect" id="Node000001" title="Numerical Tic&#45;Tac&#45;Toe (Magic Square XO) game classes." alt="" coords="66,5,246,32"/>
 <area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="77,155,235,197"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,33,137,80,137,110,144,139,139,140,132,111,132,80,148,32"/>
 <area shape="rect" id="Node000007" href="$_a_i_8h.html" title=" " alt="" coords="146,80,259,107"/>

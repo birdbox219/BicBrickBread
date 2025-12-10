@@ -1,5 +1,5 @@
 <map id="XO_inf_Board::is_draw" name="XO_inf_Board::is_draw">
-<area shape="rect" id="Node000001" title="Checks if the game is a draw." alt="" coords="196,13,351,40"/>
-<area shape="rect" id="Node000002" href="$class_x_o__inf___board.html#a72916ca0cb69231fbb42d796b96eec3c" title="Checks if the game is over." alt="" coords="5,5,148,48"/>
+<area shape="rect" id="Node000001" title="Check if the game is a draw." alt="" coords="196,13,351,40"/>
+<area shape="rect" id="Node000002" href="$class_x_o__inf___board.html#a72916ca0cb69231fbb42d796b96eec3c" title="Determine whether the game is over." alt="" coords="5,5,148,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,29,148,29,148,24,180,24"/>
 </map>

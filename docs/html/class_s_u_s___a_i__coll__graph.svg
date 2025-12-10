@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Implements AI for the SUS game using Minimax with alpha&#45;beta pruning.">
+<g id="a_Node000001"><a xlink:title="Artificial intelligence for the SUS game using Minimax with alpha&#45;beta pruning.">
 <polygon fill="#999999" stroke="none" points="77.25,-116 0,-116 0,0 77.25,0 77.25,-116"/>
 <text xml:space="preserve" text-anchor="start" x="20.62" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_AI</text>
 <text xml:space="preserve" text-anchor="start" x="37.12" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -34,7 +34,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_a_i.html" xlink:title="AI Interface for all implementations in games.">
+<g id="a_Node000002"><a xlink:href="class_a_i.html" target="_top" xlink:title="AI Interface for all implementations in games.">
 <polygon fill="white" stroke="none" points="72,-252 5.25,-252 5.25,-152 72,-152 72,-252"/>
 <text xml:space="preserve" text-anchor="start" x="33.75" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">AI</text>
 <text xml:space="preserve" text-anchor="start" x="37.12" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

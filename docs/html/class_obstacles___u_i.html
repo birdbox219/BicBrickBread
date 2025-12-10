@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Obstacles_UI Class Reference</title>
+<title>BicBrickBread: Obstacles_UI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,9 +89,12 @@ $(function(){initNavTree('class_obstacles___u_i.html','','class_obstacles___u_i-
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Obstacles_UI Class Reference</div></div>
+  <div class="headertitle"><div class="title">Obstacles_UI Class Reference<div class="ingroups"><a class="el" href="group___obstacles___x_o.html">Obstacles XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>User interface handler for Obstacles Tic-Tac-Toe.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -108,13 +111,12 @@ Collaboration diagram for Obstacles_UI:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e526cd8d24fd30a388cd363d2ce7e4c" id="r_a0e526cd8d24fd30a388cd363d2ce7e4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e526cd8d24fd30a388cd363d2ce7e4c">Obstacles_UI</a> ()</td></tr>
-<tr class="memdesc:a0e526cd8d24fd30a388cd363d2ce7e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> handler.  <br /></td></tr>
+<tr class="memdesc:a0e526cd8d24fd30a388cd363d2ce7e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> handler for Obstacles Tic-Tac-Toe.  <br /></td></tr>
 <tr class="memitem:ae6c87d7ad7f4bc3cc2cb9a1d3ffee95c" id="r_ae6c87d7ad7f4bc3cc2cb9a1d3ffee95c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c87d7ad7f4bc3cc2cb9a1d3ffee95c">~Obstacles_UI</a> ()</td></tr>
-<tr class="memdesc:ae6c87d7ad7f4bc3cc2cb9a1d3ffee95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="memitem:aaf8a700063b544107b0ec92929b7242d" id="r_aaf8a700063b544107b0ec92929b7242d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_move.html">Move</a>&lt; char &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf8a700063b544107b0ec92929b7242d">get_move</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
 <tr class="memdesc:aaf8a700063b544107b0ec92929b7242d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a move from a human or <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> player.  <br /></td></tr>
-<tr class="memitem:af1c5364e140646137bc82ea1939b1bae" id="r_af1c5364e140646137bc82ea1939b1bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1c5364e140646137bc82ea1939b1bae">display_board_matrix</a> (const <a class="el" href="classvector.html">vector</a>&lt; <a class="el" href="classvector.html">vector</a>&lt; char &gt; &gt; &amp;matrix) const override</td></tr>
-<tr class="memdesc:af1c5364e140646137bc82ea1939b1bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the game board using a 2D matrix format.  <br /></td></tr>
+<tr class="memitem:a24d29d3155680ee1ccd2f8804d736cdb" id="r_a24d29d3155680ee1ccd2f8804d736cdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24d29d3155680ee1ccd2f8804d736cdb">display_board_matrix</a> (const std::vector&lt; std::vector&lt; char &gt; &gt; &amp;matrix) const override</td></tr>
+<tr class="memdesc:a24d29d3155680ee1ccd2f8804d736cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the game board.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_u_i"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_u_i')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_u_i.html">UI&lt; char &gt;</a></td></tr>
 <tr class="memitem:afb59b53f3c2ed750b1a9a0c7d6dc4a7a inherit pub_methods_class_u_i" id="r_afb59b53f3c2ed750b1a9a0c7d6dc4a7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i.html#afb59b53f3c2ed750b1a9a0c7d6dc4a7a">UI</a> (int cell_display_width=3)</td></tr>
 <tr class="memdesc:afb59b53f3c2ed750b1a9a0c7d6dc4a7a inherit pub_methods_class_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> and display a welcome message.  <br /></td></tr>
@@ -131,6 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae469edea43f33cb394e6eab347bca194" id="r_ae469edea43f33cb394e6eab347bca194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_obstacles___board.html">Obstacles_Board</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae469edea43f33cb394e6eab347bca194">board</a> = nullptr</td></tr>
+<tr class="memdesc:ae469edea43f33cb394e6eab347bca194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the associated <a class="el" href="class_obstacles___board.html" title="Modified Tic-Tac-Toe board supporting traps and 64-bit bitboard logic.">Obstacles_Board</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -144,8 +147,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a6c79c489ae9aa3a7860fb58e5a14ddfe inherit pro_attribs_class_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of each displayed board cell.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8h_source.html#l00166">166</a> of file <a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>.</p>
+<div class="textblock"><p>User interface handler for Obstacles Tic-Tac-Toe. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8h_source.html#l00152">152</a> of file <a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0e526cd8d24fd30a388cd363d2ce7e4c" name="a0e526cd8d24fd30a388cd363d2ce7e4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e526cd8d24fd30a388cd363d2ce7e4c">&#9670;&#160;</a></span>Obstacles_UI()</h2>
@@ -162,9 +166,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> handler. </p>
-<p>Initializes <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> component with title and cell width.</p>
-<p><a class="el" href="class_board.html" title="Base template for any board used in board games.">Board</a> pointer is assigned externally after construction. </p>
+<p>Constructs a new <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> handler for Obstacles Tic-Tac-Toe. </p>
+<p>Initializes <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> component with title and cell width. </p>
 
 <p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8cpp_source.html#l00301">301</a> of file <a class="el" href="_obstacles___tic___tac___toe_8cpp_source.html">Obstacles_Tic_Tac_Toe.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  302</span>    : <a class="code hl_function" href="class_u_i.html#afb59b53f3c2ed750b1a9a0c7d6dc4a7a">UI&lt;char&gt;</a>(<span class="stringliteral">&quot;Obstacles Tic Tac Toe&quot;</span>s, 3)</div>
@@ -201,16 +204,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Destructor. </p>
-
-<p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8h_source.html#l00179">179</a> of file <a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  179</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8h_source.html#l00160">160</a> of file <a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  160</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="af1c5364e140646137bc82ea1939b1bae" name="af1c5364e140646137bc82ea1939b1bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c5364e140646137bc82ea1939b1bae">&#9670;&#160;</a></span>display_board_matrix()</h2>
+<a id="a24d29d3155680ee1ccd2f8804d736cdb" name="a24d29d3155680ee1ccd2f8804d736cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d29d3155680ee1ccd2f8804d736cdb">&#9670;&#160;</a></span>display_board_matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +222,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void Obstacles_UI::display_board_matrix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvector.html">vector</a>&lt; <a class="el" href="classvector.html">vector</a>&lt; char &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>matrix</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; char &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>matrix</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -232,12 +233,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Renders the game board using a 2D matrix format. </p>
+<p>Renders the game board. </p>
 <p>Prints a 6×6 board using bitboard lookup.</p>
-<p>Called whenever board needs refreshing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">matrix</td><td>2D grid of characters from board-&gt;to_matrix(). </td></tr>
+    <tr><td class="paramname">matrix</td><td>2D vector representing board state </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +278,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  380</span>    <span class="comment">// Print final newline for spacing</span></div>
 <div class="line"><span class="lineno">  381</span>    cout &lt;&lt; endl;</div>
 <div class="line"><span class="lineno">  382</span>}</div>
-<div class="ttc" id="aclass_obstacles___u_i_html_ae469edea43f33cb394e6eab347bca194"><div class="ttname"><a href="#ae469edea43f33cb394e6eab347bca194">Obstacles_UI::board</a></div><div class="ttdeci">Obstacles_Board * board</div><div class="ttdef"><b>Definition</b> <a href="_obstacles___tic___tac___toe_8h_source.html#l00201">Obstacles_Tic_Tac_Toe.h:201</a></div></div>
+<div class="ttc" id="aclass_obstacles___u_i_html_ae469edea43f33cb394e6eab347bca194"><div class="ttname"><a href="#ae469edea43f33cb394e6eab347bca194">Obstacles_UI::board</a></div><div class="ttdeci">Obstacles_Board * board</div><div class="ttdoc">Pointer to the associated Obstacles_Board.</div><div class="ttdef"><b>Definition</b> <a href="_obstacles___tic___tac___toe_8h_source.html#l00176">Obstacles_Tic_Tac_Toe.h:176</a></div></div>
 <div class="ttc" id="aclass_u_i_html_a6c79c489ae9aa3a7860fb58e5a14ddfe"><div class="ttname"><a href="class_u_i.html#a6c79c489ae9aa3a7860fb58e5a14ddfe">UI&lt; char &gt;::cell_width</a></div><div class="ttdeci">int cell_width</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00178">BoardGame_Classes.h:178</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -308,14 +308,13 @@ Here is the call graph for this function:</div>
 
 <p>Obtains a move from a human or <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> player. </p>
 <p>Retrieves move for human or computer player.</p>
-<p>Converts player input into <a class="el" href="class_move.html">Move&lt;char&gt;</a> objects.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">player</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> whose turn it is. </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to the player whose turn it is </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Newly allocated <a class="el" href="class_move.html">Move&lt;char&gt;</a> describing the player's action.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a <a class="el" href="class_move.html">Move&lt;char&gt;</a> describing the action</dd></dl>
 <p>Human: Prompts for input.</p>
 <p>Computer: Selects a random available move. </p>
 
@@ -344,7 +343,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  338</span>}</div>
 <div class="ttc" id="a_board_game___classes_8h_html_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6"><div class="ttname"><a href="_board_game___classes_8h.html#abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6">PlayerType::HUMAN</a></div><div class="ttdeci">@ HUMAN</div><div class="ttdoc">A human player.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00031">BoardGame_Classes.h:31</a></div></div>
 <div class="ttc" id="a_board_game___classes_8h_html_abe590f3c9109f404f003d5d7e4f0fccfad19cbc472227d1e3d1d276c2cbc0e513"><div class="ttname"><a href="_board_game___classes_8h.html#abe590f3c9109f404f003d5d7e4f0fccfad19cbc472227d1e3d1d276c2cbc0e513">PlayerType::COMPUTER</a></div><div class="ttdeci">@ COMPUTER</div><div class="ttdoc">A computer-controlled player.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00032">BoardGame_Classes.h:32</a></div></div>
-<div class="ttc" id="aclass_obstacles___a_i_html_ac9b20f46edf15c73cdcc6fe7a79ee34d"><div class="ttname"><a href="class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d">Obstacles_AI::bestMove</a></div><div class="ttdeci">Move&lt; char &gt; * bestMove(Player&lt; char &gt; *player, char blankCell, int depth=6) override</div><div class="ttdoc">Determines the optimal move using minimax.</div><div class="ttdef"><b>Definition</b> <a href="_obstacles___tic___tac___toe_8cpp_source.html#l00384">Obstacles_Tic_Tac_Toe.cpp:384</a></div></div>
+<div class="ttc" id="aclass_obstacles___a_i_html_ac9b20f46edf15c73cdcc6fe7a79ee34d"><div class="ttname"><a href="class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d">Obstacles_AI::bestMove</a></div><div class="ttdeci">Move&lt; char &gt; * bestMove(Player&lt; char &gt; *player, char blankCell, int depth=6) override</div><div class="ttdoc">Computes the best move for the player.</div><div class="ttdef"><b>Definition</b> <a href="_obstacles___tic___tac___toe_8cpp_source.html#l00384">Obstacles_Tic_Tac_Toe.cpp:384</a></div></div>
 <div class="ttc" id="aclass_player_html_a2df3bd299bf7aecfa2275ec6902a60f8"><div class="ttname"><a href="class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8">Player::get_type</a></div><div class="ttdeci">PlayerType get_type() const</div><div class="ttdoc">Get player type (e.g., &#39;H&#39; or &#39;C&#39;).</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00157">BoardGame_Classes.h:157</a></div></div>
 <div class="ttc" id="aclass_player_html_a508617eddfae8915d098102d480fc888"><div class="ttname"><a href="class_player.html#a508617eddfae8915d098102d480fc888">Player::get_board_ptr</a></div><div class="ttdeci">Board&lt; T &gt; * get_board_ptr() const</div><div class="ttdoc">Get a pointer to the game board.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00163">BoardGame_Classes.h:163</a></div></div>
 <div class="ttc" id="aclass_player_html_aed2af19790ba73190e3ebeea589518e1"><div class="ttname"><a href="class_player.html#aed2af19790ba73190e3ebeea589518e1">Player::get_name</a></div><div class="ttdeci">string get_name() const</div><div class="ttdoc">Get the player&#39;s name.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00154">BoardGame_Classes.h:154</a></div></div>
@@ -378,7 +377,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8h_source.html#l00201">201</a> of file <a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>.</p>
+<p>Pointer to the associated <a class="el" href="class_obstacles___board.html" title="Modified Tic-Tac-Toe board supporting traps and 64-bit bitboard logic.">Obstacles_Board</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obstacles___tic___tac___toe_8h_source.html#l00176">176</a> of file <a class="el" href="_obstacles___tic___tac___toe_8h_source.html">Obstacles_Tic_Tac_Toe.h</a>.</p>
 
 </div>
 </div>

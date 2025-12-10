@@ -1,5 +1,5 @@
 <map id="Games/XO_inf/XO_inf.h" name="Games/XO_inf/XO_inf.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="74,5,236,32"/>
+<area shape="rect" id="Node000001" title="Infinite Tic&#45;Tac&#45;Toe game classes." alt="" coords="74,5,236,32"/>
 <area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="52,155,210,197"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,33,139,140,134,139,150,32"/>
 <area shape="rect" id="Node000007" href="$_a_i_8h.html" title=" " alt="" coords="5,80,118,107"/>

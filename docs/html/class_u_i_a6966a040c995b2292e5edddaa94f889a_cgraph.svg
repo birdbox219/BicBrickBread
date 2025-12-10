@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_u_i.html#a94561e0bb4bbcbe5ff71ca6d751922df" xlink:title="Create a player object based on input name, symbol, and type.">
+<g id="a_Node000002"><a xlink:href="class_u_i.html#a94561e0bb4bbcbe5ff71ca6d751922df" target="_top" xlink:title="Create a player object based on input name, symbol, and type.">
 <polygon fill="white" stroke="#666666" points="228.12,-108 137.12,-108 137.12,-88 228.12,-88 228.12,-108"/>
 <text xml:space="preserve" text-anchor="middle" x="182.62" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI::create_player</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" xlink:title="Ask the user for the player&#39;s name.">
+<g id="a_Node000003"><a xlink:href="class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" target="_top" xlink:title="Ask the user for the player&#39;s name.">
 <polygon fill="white" stroke="#666666" points="236,-70 129.25,-70 129.25,-50 236,-50 236,-70"/>
 <text xml:space="preserve" text-anchor="middle" x="182.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI::get_player_name</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_u_i.html#ac3d45fea2bbcaa0372d8e5101e116ca1" xlink:title="Ask the user to choose the player type from a list.">
+<g id="a_Node000004"><a xlink:href="class_u_i.html#ac3d45fea2bbcaa0372d8e5101e116ca1" target="_top" xlink:title="Ask the user to choose the player type from a list.">
 <polygon fill="white" stroke="#666666" points="233.38,-32 131.88,-32 131.88,0 233.38,0 233.38,-32"/>
 <text xml:space="preserve" text-anchor="start" x="139.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI::get_player_type</text>
 <text xml:space="preserve" text-anchor="middle" x="182.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_choice</text>

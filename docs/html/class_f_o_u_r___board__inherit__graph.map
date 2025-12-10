@@ -1,5 +1,5 @@
 <map id="FOUR_Board" name="FOUR_Board">
-<area shape="rect" id="Node000001" title="Represents a 6x7 Connect&#45;4 board." alt="" coords="5,400,146,661"/>
+<area shape="rect" id="Node000001" title="Represents a 6x7 Connect&#45;Four board." alt="" coords="5,400,146,661"/>
 <area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="10,5,142,352"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,367,78,400,73,400,73,367"/>
 </map>

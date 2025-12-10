@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$_anti___x_o_8h.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_anti___x_o_8h.html" target="_top" xlink:title="Anti Tic&#45;Tac&#45;Toe variant where forming 3&#45;in&#45;a&#45;row causes a loss.">
 <polygon fill="white" stroke="#666666" points="177.5,-200 116.5,-200 116.5,-180 177.5,-180 177.5,-200"/>
 <text xml:space="preserve" text-anchor="middle" x="147" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_XO.h</text>
 </a>
@@ -129,7 +129,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$_board_game___classes_8h.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="_board_game___classes_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="118,-88 0,-88 0,-56 118,-56 118,-88"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/BoardGame</text>
 <text xml:space="preserve" text-anchor="middle" x="59" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Classes.h</text>
@@ -148,7 +148,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$_a_i_8h.html" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="_a_i_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="127.12,-144 42.88,-144 42.88,-124 127.12,-124 127.12,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="85" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/AI.h</text>
 </a>
@@ -166,7 +166,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$_custom___u_i_8h.html" xlink:title="Defines a customizable user interface for board games.">
+<g id="a_Node000009"><a xlink:href="_custom___u_i_8h.html" target="_top" xlink:title="Defines a customizable user interface for board games.">
 <polygon fill="white" stroke="#666666" points="270.38,-144 145.62,-144 145.62,-124 270.38,-124 270.38,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="208" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/Custom_UI.h</text>
 </a>

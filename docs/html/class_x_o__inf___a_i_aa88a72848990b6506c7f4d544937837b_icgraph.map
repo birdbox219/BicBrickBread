@@ -1,8 +1,8 @@
 <map id="XO_inf_AI::minimax" name="XO_inf_AI::minimax">
-<area shape="rect" id="Node000001" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="395,29,533,56"/>
+<area shape="rect" id="Node000001" title="Minimax search algorithm with alpha&#45;beta pruning." alt="" coords="395,29,533,56"/>
 <area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="497,16,485,10,464,8,444,10,434,15,431,20,436,27,432,30,426,21,430,11,443,5,464,3,487,5,499,12"/>
-<area shape="rect" id="Node000002" href="$class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" title="Determine the best move for AI." alt="" coords="201,29,347,56"/>
+<area shape="rect" id="Node000002" href="$class_x_o__inf___a_i.html#ae6b676d72164332dcc6683ab22b73564" title="Determine the best move for the AI." alt="" coords="201,29,347,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="379,45,348,45,348,40,379,40"/>
-<area shape="rect" id="Node000003" href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" title="Get the next move from a player." alt="" coords="5,29,153,56"/>
+<area shape="rect" id="Node000003" href="$class_x_o__inf___u_i.html#a58e2808d59a15ba3c05a07f3b3f25486" title="Retrieve a player&#39;s move input." alt="" coords="5,29,153,56"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,45,153,45,153,40,185,40"/>
 </map>

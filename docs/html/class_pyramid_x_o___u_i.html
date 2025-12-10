@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: PyramidXO_UI Class Reference</title>
+<title>BicBrickBread: PyramidXO_UI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,7 +89,7 @@ $(function(){initNavTree('class_pyramid_x_o___u_i.html','','class_pyramid_x_o___
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">PyramidXO_UI Class Reference</div></div>
+  <div class="headertitle"><div class="title">PyramidXO_UI Class Reference<div class="ingroups"><a class="el" href="group___pyramid_x_o___x_o.html">Pyramid XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -146,7 +146,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles user interaction and drawing of the pyramid board. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00064">64</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00112">112</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c69286417eaf00fda47fb0f68def126" name="a8c69286417eaf00fda47fb0f68def126"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c69286417eaf00fda47fb0f68def126">&#9670;&#160;</a></span>PyramidXO_UI()</h2>
@@ -200,8 +200,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00069">69</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00120">120</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,6 +239,15 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Creates a player object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Reference to the player name string </td></tr>
+    <tr><td class="paramname">symbol</td><td>Symbol assigned to the player </td></tr>
+    <tr><td class="paramname">type</td><td><a class="el" href="class_player.html" title="Base template for all players (human or AI).">Player</a> type (HUMAN or <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created <a class="el" href="class_player.html">Player&lt;char&gt;</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8cpp_source.html#l00090">90</a> of file <a class="el" href="_pyramid_x_o_8cpp_source.html">PyramidXO.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>                                                                                    {</div>
@@ -273,7 +282,7 @@ Here is the call graph for this function:</div>
 <p>Draws the pyramid-shaped board with proper spacing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">matrix</td><td>The full 2D board matrix (3x5). </td></tr>
+    <tr><td class="paramname">matrix</td><td>The full 2D board matrix (3x5) </td></tr>
   </table>
   </dd>
 </dl>
@@ -365,6 +374,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Reads human move or requests <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> move. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player making the move </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_move.html">Move&lt;char&gt;</a> object chosen </dd></dl>
 
 <p>Implements <a class="el" href="class_u_i.html#a8befa259c38c57e6ae2e8ed81c476337">UI&lt; char &gt;</a>.</p>
 

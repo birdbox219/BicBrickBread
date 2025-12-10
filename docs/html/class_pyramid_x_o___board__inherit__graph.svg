@@ -36,7 +36,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_board.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_board.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="102,-428 3,-428 3,-168 102,-168 102,-428"/>
 <text xml:space="preserve" text-anchor="start" x="21.38" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="7.38" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

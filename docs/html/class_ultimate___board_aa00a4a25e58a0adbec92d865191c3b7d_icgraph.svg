@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Checks the small board containing the last move for win/draw.">
+<g id="a_Node000001"><a xlink:title="Evaluates the small board corresponding to the last move.">
 <polygon fill="#999999" stroke="#666666" points="267.5,-32 154.75,-32 154.75,0 267.5,0 267.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="162.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::small</text>
 <text xml:space="preserve" text-anchor="middle" x="211.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board_check</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_ultimate___board.html#a9339ec67859e01c726adf55a8a77db72" xlink:title="Applies or undoes a move.">
+<g id="a_Node000002"><a xlink:href="class_ultimate___board.html#a9339ec67859e01c726adf55a8a77db72" target="_top" xlink:title="Apply or undo a move on the board.">
 <polygon fill="white" stroke="#666666" points="118.75,-32 0,-32 0,0 118.75,0 118.75,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="59.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>

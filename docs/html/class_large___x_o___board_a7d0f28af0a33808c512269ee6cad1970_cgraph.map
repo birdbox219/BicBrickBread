@@ -1,7 +1,7 @@
 <map id="Large_XO_Board::encode" name="Large_XO_Board::encode">
-<area shape="rect" id="Node000001" title="Encode board state into a matrix for the neural network. AI = +1, Opponent = &#45;1, Empty = 0." alt="" coords="5,31,176,57"/>
+<area shape="rect" id="Node000001" title="Encode board state into a matrix for neural network input. AI = +1, Opponent = &#45;1,..." alt="" coords="5,31,176,57"/>
 <area shape="rect" id="Node000002" href="$class_large___x_o___board.html#aeae5940040d7676034082c34c531d6c3" title="Read the board state at a given cell." alt="" coords="224,5,393,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,31,208,28,209,33,177,37"/>
-<area shape="rect" id="Node000003" href="$class_matrix.html#afc76f95218a395ba7d12e2831d282acf" title="Resize matrix to (r x c) and reset all elements to zero." alt="" coords="258,56,358,83"/>
+<area shape="rect" id="Node000003" href="$class_matrix.html#afc76f95218a395ba7d12e2831d282acf" title="Resize matrix and set all elements to zero." alt="" coords="258,56,358,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,51,243,59,243,64,176,57"/>
 </map>

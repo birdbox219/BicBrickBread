@@ -1,5 +1,5 @@
 <map id="Anti_AI" name="Anti_AI">
-<area shape="rect" id="Node000001" title="Simple AI for Anti&#45;XO that tries to avoid dangerous positions." alt="" coords="5,187,94,341"/>
+<area shape="rect" id="Node000001" title="Simple AI for Anti&#45;XO that avoids dangerous positions." alt="" coords="5,187,94,341"/>
 <area shape="rect" id="Node000002" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="5,5,94,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,154,52,187,47,187,47,154"/>
 </map>

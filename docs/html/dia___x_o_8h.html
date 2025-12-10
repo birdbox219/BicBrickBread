@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Games/diamond_XO/dia_XO.h File Reference</title>
+<title>BicBrickBread: Games/diamond_XO/dia_XO.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -92,6 +92,9 @@ $(function(){initNavTree('dia___x_o_8h.html','',''); });
   <div class="headertitle"><div class="title">dia_XO.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Diamond-shaped 7x7 Tic-Tac-Toe variant with <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> and <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> support.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_board_game___classes_8h_source.html">../../header/BoardGame_Classes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_a_i_8h_source.html">../../header/AI.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -110,14 +113,22 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:dia_5FXO_5FBoard" id="r_dia_5FXO_5FBoard"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdia___x_o___board.html">dia_XO_Board</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the 7x7 diamond-shaped Tic-Tac-Toe board.  <a href="classdia___x_o___board.html#details">More...</a><br /></td></tr>
 <tr class="memitem:dia_5FXO_5FAI" id="r_dia_5FXO_5FAI"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdia___x_o___a_i.html">dia_XO_AI</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Very simple <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> for diamond Tic-Tac-Toe.  <a href="classdia___x_o___a_i.html#details">More...</a><br /></td></tr>
 <tr class="memitem:dia_5FXO_5FUI" id="r_dia_5FXO_5FUI"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdia___x_o___u_i.html">dia_XO_UI</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">User interface for diamond-shaped Tic-Tac-Toe.  <a href="classdia___x_o___u_i.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a37e294370fd6252b248dc5bac22b0420" id="r_a37e294370fd6252b248dc5bac22b0420"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_set&lt; std::vector&lt; std::pair&lt; int, int &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37e294370fd6252b248dc5bac22b0420">zengy</a></td></tr>
+<tr class="memdesc:a37e294370fd6252b248dc5bac22b0420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unordered set of vector of coordinate pairs (not currently used in logic).  <br /></td></tr>
 </table>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Diamond-shaped 7x7 Tic-Tac-Toe variant with <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> and <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> support. </p>
+
+<p class="definition">Definition in file <a class="el" href="dia___x_o_8h_source.html">dia_XO.h</a>.</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="a37e294370fd6252b248dc5bac22b0420" name="a37e294370fd6252b248dc5bac22b0420"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37e294370fd6252b248dc5bac22b0420">&#9670;&#160;</a></span>zengy</h2>
 
@@ -130,7 +141,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dia___x_o_8h_source.html#l00011">11</a> of file <a class="el" href="dia___x_o_8h_source.html">dia_XO.h</a>.</p>
+<p>Unordered set of vector of coordinate pairs (not currently used in logic). </p>
+
+<p class="definition">Definition at line <a class="el" href="dia___x_o_8h_source.html#l00025">25</a> of file <a class="el" href="dia___x_o_8h_source.html">dia_XO.h</a>.</p>
 
 </div>
 </div>

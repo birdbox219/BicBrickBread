@@ -1,6 +1,6 @@
 <map id="Obstacles_UI::get_move" name="Obstacles_UI::get_move">
 <area shape="rect" id="Node000001" title="Obtains a move from a human or AI player." alt="" coords="5,107,172,133"/>
-<area shape="rect" id="Node000002" href="$class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d" title="Determines the optimal move using minimax." alt="" coords="220,56,385,83"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___a_i.html#ac9b20f46edf15c73cdcc6fe7a79ee34d" title="Computes the best move for the player." alt="" coords="220,56,385,83"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,103,228,84,229,89,149,109"/>
 <area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="476,5,622,32"/>
 <area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="106,104,155,71,186,55,219,41,281,26,345,17,461,12,461,18,345,23,282,32,220,47,188,59,158,76,109,108"/>
@@ -12,6 +12,6 @@
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="112,132,160,162,221,194,237,200,235,205,219,198,158,167,109,136"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,53,465,33,466,38,372,58"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="372,81,468,101,467,106,370,86"/>
-<area shape="rect" id="Node000005" href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" title="Returns a list of all legal moves." alt="" coords="433,56,665,83"/>
+<area shape="rect" id="Node000005" href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" title="Get all available moves." alt="" coords="433,56,665,83"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="386,67,417,67,417,72,386,72"/>
 </map>

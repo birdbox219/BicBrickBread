@@ -1,22 +1,22 @@
 <map id="header/Custom_UI.h" name="header/Custom_UI.h">
 <area shape="rect" id="Node000001" title="Defines a customizable user interface for board games." alt="" coords="806,5,949,32"/>
-<area shape="rect" id="Node000002" href="$four_8h.html" title=" " alt="" coords="19,88,171,131"/>
+<area shape="rect" id="Node000002" href="$four_8h.html" title="Defines the 6x7 Connect&#45;Four game variant with AI and UI support." alt="" coords="19,88,171,131"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="791,24,671,29,519,39,352,56,185,83,155,90,154,85,184,77,351,51,519,33,670,23,791,19"/>
 <area shape="rect" id="Node000005" href="$_large___tic___tac___toe_8h.html" title=" " alt="" coords="196,88,373,131"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="791,29,604,49,495,64,386,83,354,90,353,85,385,77,494,59,603,43,790,24"/>
 <area shape="rect" id="Node000007" href="$_memory___tic___tac___toe_8h.html" title=" " alt="" coords="397,88,590,131"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="802,38,602,83,572,90,571,85,601,77,801,33"/>
-<area shape="rect" id="Node000009" href="$_obstacles___tic___tac___toe_8h.html" title=" " alt="" coords="614,80,779,139"/>
+<area shape="rect" id="Node000009" href="$_obstacles___tic___tac___toe_8h.html" title="Obstacles Tic&#45;Tac&#45;Toe game classes." alt="" coords="614,80,779,139"/>
 <area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="839,42,756,82,754,77,837,37"/>
-<area shape="rect" id="Node000011" href="$_s_u_s_8h.html" title=" " alt="" coords="976,96,1115,123"/>
+<area shape="rect" id="Node000011" href="$_s_u_s_8h.html" title="SUS game classes." alt="" coords="976,96,1115,123"/>
 <area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="916,37,1023,93,1020,98,914,42"/>
-<area shape="rect" id="Node000013" href="$_word___tic___tac___toe_8h.html" title="Header file for the Word&#45;based Tic&#45;Tac&#45;Toe board, AI, and UI modules." alt="" coords="1139,88,1314,131"/>
+<area shape="rect" id="Node000013" href="$_word___tic___tac___toe_8h.html" title="Header for Word Tic&#45;Tac&#45;Toe board, AI, and UI." alt="" coords="1139,88,1314,131"/>
 <area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="948,34,1127,77,1155,85,1154,90,1126,83,947,39"/>
-<area shape="rect" id="Node000015" href="$_x_o__inf_8h.html" title=" " alt="" coords="1339,96,1501,123"/>
+<area shape="rect" id="Node000015" href="$_x_o__inf_8h.html" title="Infinite Tic&#45;Tac&#45;Toe game classes." alt="" coords="1339,96,1501,123"/>
 <area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="965,25,1133,44,1231,59,1327,77,1384,93,1383,98,1326,83,1230,64,1133,50,964,30"/>
-<area shape="rect" id="Node000017" href="$_anti___x_o_8h.html" title=" " alt="" coords="1526,96,1704,123"/>
+<area shape="rect" id="Node000017" href="$_anti___x_o_8h.html" title="Anti Tic&#45;Tac&#45;Toe variant where forming 3&#45;in&#45;a&#45;row causes a loss." alt="" coords="1526,96,1704,123"/>
 <area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="964,21,1212,38,1363,54,1514,77,1576,93,1575,98,1513,83,1363,60,1212,43,964,26"/>
-<area shape="rect" id="Node000019" href="$_x_o___classes_8h.html" title=" " alt="" coords="803,96,952,123"/>
+<area shape="rect" id="Node000019" href="$_x_o___classes_8h.html" title="Classic Tic&#45;Tac&#45;Toe game classes." alt="" coords="803,96,952,123"/>
 <area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="880,48,880,95,875,95,875,48"/>
 <area shape="rect" id="Node000003" href="$four_8cpp.html" title=" " alt="" coords="5,195,158,237"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,147,87,195,81,194,88,146"/>

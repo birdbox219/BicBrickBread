@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Computes and returns the optimal move.">
+<g id="a_Node000001"><a xlink:title="Compute the best move for a player.">
 <polygon fill="#999999" stroke="#666666" points="102.25,-140 0,-140 0,-120 102.25,-120 102.25,-140"/>
 <text xml:space="preserve" text-anchor="middle" x="51.12" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_AI::bestMove</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000002"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="272,-216 163,-216 163,-196 272,-196 272,-216"/>
 <text xml:space="preserve" text-anchor="middle" x="217.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_board.html#a93558c58e60ca4291c6044828afd260b" xlink:title="Return content of cell x, y in current board.">
+<g id="a_Node000003"><a xlink:href="class_board.html#a93558c58e60ca4291c6044828afd260b" target="_top" xlink:title="Return content of cell x, y in current board.">
 <polygon fill="white" stroke="#666666" points="258.12,-178 176.88,-178 176.88,-158 258.12,-158 258.12,-178"/>
 <text xml:space="preserve" text-anchor="middle" x="217.5" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board::get_cell</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_word___x_o___board.html#a1fa0932270c921458e31e24ed4d473e5" xlink:title="Returns the symbol representing an unoccupied cell.">
+<g id="a_Node000004"><a xlink:href="class_word___x_o___board.html#a1fa0932270c921458e31e24ed4d473e5" target="_top" xlink:title="Get the empty cell symbol.">
 <polygon fill="white" stroke="#666666" points="294.5,-140 140.5,-140 140.5,-120 294.5,-120 294.5,-140"/>
 <text xml:space="preserve" text-anchor="middle" x="217.5" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_Board::getEmptyCell</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_word___x_o___board.html#a3bd8d50441fb2bb14988faa4baa7b98b" xlink:title="Retrieves the number of moves made so far.">
+<g id="a_Node000005"><a xlink:href="class_word___x_o___board.html#a3bd8d50441fb2bb14988faa4baa7b98b" target="_top" xlink:title="Get the number of moves played.">
 <polygon fill="white" stroke="#666666" points="296.75,-102 138.25,-102 138.25,-82 296.75,-82 296.75,-102"/>
 <text xml:space="preserve" text-anchor="middle" x="217.5" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_Board::getMoveCount</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d" xlink:title="Validates and applies a move to the board.">
+<g id="a_Node000006"><a xlink:href="class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d" target="_top" xlink:title="Apply a move to the board.">
 <polygon fill="white" stroke="#666666" points="279.5,-64 155.5,-64 155.5,-32 279.5,-32 279.5,-64"/>
 <text xml:space="preserve" text-anchor="start" x="163.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="217.5" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -111,7 +111,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" xlink:title="Get the move symbol.">
+<g id="a_Node000007"><a xlink:href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff" target="_top" xlink:title="Get the move symbol.">
 <polygon fill="white" stroke="#666666" points="429,-96 332.75,-96 332.75,-76 429,-76 429,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="380.88" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_symbol</text>
 </a>
@@ -129,7 +129,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" xlink:title="Get row index.">
+<g id="a_Node000008"><a xlink:href="class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" target="_top" xlink:title="Get row index.">
 <polygon fill="white" stroke="#666666" points="415.88,-58 345.88,-58 345.88,-38 415.88,-38 415.88,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="380.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_x</text>
 </a>
@@ -147,7 +147,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" xlink:title="Get column index.">
+<g id="a_Node000009"><a xlink:href="class_move.html#a96469802a55c9083a1e93c7edec8a00c" target="_top" xlink:title="Get column index.">
 <polygon fill="white" stroke="#666666" points="415.88,-20 345.88,-20 345.88,0 415.88,0 415.88,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="380.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_y</text>
 </a>

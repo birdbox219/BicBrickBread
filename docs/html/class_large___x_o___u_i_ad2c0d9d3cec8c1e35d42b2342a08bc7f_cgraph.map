@@ -1,5 +1,5 @@
 <map id="Large_XO_UI::get_move" name="Large_XO_UI::get_move">
-<area shape="rect" id="Node000001" title="Request a move from Human, Random, or AI player." alt="" coords="5,81,171,108"/>
+<area shape="rect" id="Node000001" title="Request a move from human or AI player." alt="" coords="5,81,171,108"/>
 <area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="219,5,364,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,78,218,42,235,35,237,40,220,46,125,83"/>
 <area shape="rect" id="Node000003" href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="230,56,353,83"/>

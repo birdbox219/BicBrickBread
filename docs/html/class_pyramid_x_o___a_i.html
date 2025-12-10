@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: PyramidXO_AI Class Reference</title>
+<title>BicBrickBread: PyramidXO_AI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,7 +89,7 @@ $(function(){initNavTree('class_pyramid_x_o___a_i.html','','class_pyramid_x_o___
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">PyramidXO_AI Class Reference</div></div>
+  <div class="headertitle"><div class="title">PyramidXO_AI Class Reference<div class="ingroups"><a class="el" href="group___a_i.html">Artificial Intelligence Components</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> choosing a random valid empty pyramid cell. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00046">46</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00073">73</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a3e116438d3a4297654e39c17cba5da" name="a8a3e116438d3a4297654e39c17cba5da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a3e116438d3a4297654e39c17cba5da">&#9670;&#160;</a></span>PyramidXO_AI()</h2>
@@ -184,6 +184,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates a random valid move within the pyramid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player making the move </td></tr>
+    <tr><td class="paramname">blankCell</td><td>Symbol representing empty cells </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of search (default 6, unused here) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the chosen <a class="el" href="class_move.html">Move&lt;char&gt;</a> </dd></dl>
 
 <p>Implements <a class="el" href="class_a_i.html#aaf1bf68e14319d295ffb34e6740a30ea">AI</a>.</p>
 
@@ -256,11 +265,19 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Evaluation function (not implemented for this game). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Pointer to the game board </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always returns 0.0f </dd></dl>
 
 <p>Implements <a class="el" href="class_a_i.html#a98d69ccc82c7fd33b4b430a99945c5f9">AI</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00051">51</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
+<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00083">83</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,11 +329,23 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Minimax search (not used, returns default value). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aiTurn</td><td>True if <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>'s turn; false otherwise </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to the player </td></tr>
+    <tr><td class="paramname">alpha</td><td>Alpha value for pruning </td></tr>
+    <tr><td class="paramname">beta</td><td>Beta value for pruning </td></tr>
+    <tr><td class="paramname">blankCell</td><td>Symbol representing empty cells </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always returns 0.0f </dd></dl>
 
 <p>Implements <a class="el" href="class_a_i.html#aec1f088cfbc66d0b133c08e4495d1473">AI</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00054">54</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
+<p class="definition">Definition at line <a class="el" href="_pyramid_x_o_8h_source.html#l00095">95</a> of file <a class="el" href="_pyramid_x_o_8h_source.html">PyramidXO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
 </div><!-- fragment -->
 </div>
 </div>

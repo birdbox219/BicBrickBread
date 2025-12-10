@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_pyramid_x_o___a_i.html#a503de221d36f762812330be2aa1c0e5f" xlink:title="Generates a random valid move within the pyramid.">
+<g id="a_Node000002"><a xlink:href="class_pyramid_x_o___a_i.html#a503de221d36f762812330be2aa1c0e5f" target="_top" xlink:title="Generates a random valid move within the pyramid.">
 <polygon fill="white" stroke="#666666" points="296.75,-134 166.75,-134 166.75,-114 296.75,-114 296.75,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="231.75" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_AI::bestMove</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000004"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="437.25,-96 337.25,-96 337.25,-76 437.25,-76 437.25,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="387.25" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" xlink:title="Get the player&#39;s name.">
+<g id="a_Node000005"><a xlink:href="class_player.html#aed2af19790ba73190e3ebeea589518e1" target="_top" xlink:title="Get the player&#39;s name.">
 <polygon fill="white" stroke="#666666" points="278,-58 185.5,-58 185.5,-38 278,-38 278,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="231.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_name</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" xlink:title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;).">
+<g id="a_Node000006"><a xlink:href="class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" target="_top" xlink:title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;).">
 <polygon fill="white" stroke="#666666" points="275.38,-20 188.12,-20 188.12,0 275.38,0 275.38,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="231.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_type</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000003"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="441.75,-134 332.75,-134 332.75,-114 441.75,-114 441.75,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="387.25" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>

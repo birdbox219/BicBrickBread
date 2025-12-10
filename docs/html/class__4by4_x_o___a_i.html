@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: _4by4XO_AI Class Reference</title>
+<title>BicBrickBread: _4by4XO_AI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,11 +89,11 @@ $(function(){initNavTree('class__4by4_x_o___a_i.html','','class__4by4_x_o___a_i-
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">_4by4XO_AI Class Reference</div></div>
+  <div class="headertitle"><div class="title">_4by4XO_AI Class Reference<div class="ingroups"><a class="el" href="group___a_i.html">Artificial Intelligence Components</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Basic <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> for 4x4 sliding Tic-Tac-Toe.  
+<p>Simple <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> for sliding 4x4 Tic-Tac-Toe.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>&gt;</code></p>
@@ -112,19 +112,22 @@ Collaboration diagram for _4by4XO_AI:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8147acde4a92cebcf508d7c652eeda7b" id="r_a8147acde4a92cebcf508d7c652eeda7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8147acde4a92cebcf508d7c652eeda7b">_4by4XO_AI</a> ()=default</td></tr>
 <tr class="memitem:a70bd128cb6bc5a5c758f25954e95d4c2" id="r_a70bd128cb6bc5a5c758f25954e95d4c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70bd128cb6bc5a5c758f25954e95d4c2">evaluate</a> (<a class="el" href="class_board.html">Board</a>&lt; char &gt; *board, <a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a70bd128cb6bc5a5c758f25954e95d4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the board for Minimax (unused currently).  <br /></td></tr>
+<tr class="memdesc:a70bd128cb6bc5a5c758f25954e95d4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates board for Minimax (unused currently).  <br /></td></tr>
 <tr class="memitem:ae042e9bad32b8f0bb3e3208e7801579d" id="r_ae042e9bad32b8f0bb3e3208e7801579d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae042e9bad32b8f0bb3e3208e7801579d">minimax</a> (bool aiTurn, <a class="el" href="class_player.html">Player</a>&lt; char &gt; *player, float alpha, float beta, char blankCell, int depth) override</td></tr>
-<tr class="memdesc:ae042e9bad32b8f0bb3e3208e7801579d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimax search algorithm (placeholder).  <br /></td></tr>
+<tr class="memdesc:ae042e9bad32b8f0bb3e3208e7801579d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder Minimax algorithm.  <br /></td></tr>
 <tr class="memitem:aa13e6d3e4cdedc6ea7e813a16d4c0d68" id="r_aa13e6d3e4cdedc6ea7e813a16d4c0d68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_move.html">Move</a>&lt; char &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa13e6d3e4cdedc6ea7e813a16d4c0d68">bestMove</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player, char blankCell, int depth=6) override</td></tr>
-<tr class="memdesc:aa13e6d3e4cdedc6ea7e813a16d4c0d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the best move for the <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>.  <br /></td></tr>
+<tr class="memdesc:aa13e6d3e4cdedc6ea7e813a16d4c0d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the best move for <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_a_i"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_a_i')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_a_i.html">AI</a></td></tr>
 <tr class="memitem:a5a33ad8c7e8298e2b135f4f680aeed58 inherit pub_methods_class_a_i" id="r_a5a33ad8c7e8298e2b135f4f680aeed58"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_i.html#a5a33ad8c7e8298e2b135f4f680aeed58">~AI</a> ()=default</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Basic <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> for 4x4 sliding Tic-Tac-Toe. </p>
-<p>Currently uses random valid moves, but structure is prepared for Minimax. </p>
+<div class="textblock"><p>Simple <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> for sliding 4x4 Tic-Tac-Toe. </p>
+<p>Responsibilities:</p><ul>
+<li>Generate valid moves</li>
+<li>Currently random; placeholder for Minimax </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00046">46</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00060">60</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8147acde4a92cebcf508d7c652eeda7b" name="a8147acde4a92cebcf508d7c652eeda7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8147acde4a92cebcf508d7c652eeda7b">&#9670;&#160;</a></span>_4by4XO_AI()</h2>
@@ -184,18 +187,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generates the best move for the <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>. </p>
+<p>Computes the best move for <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a>. </p>
 <p>Generates all possible legal adjacent moves and picks one randomly.</p>
-<p>Currently random selection among all legal moves.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">player</td><td><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> player pointer. </td></tr>
-    <tr><td class="paramname">blankCell</td><td>Character representing empty cells. </td></tr>
-    <tr><td class="paramname">depth</td><td>Search depth (unused). </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> player </td></tr>
+    <tr><td class="paramname">blankCell</td><td>Empty cell symbol </td></tr>
+    <tr><td class="paramname">depth</td><td>Maximum search depth (unused) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to selected move (caller must manage memory). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to selected <a class="el" href="class_move.html">Move&lt;char&gt;</a> (caller responsible for memory) </dd></dl>
 
 <p>Implements <a class="el" href="class_a_i.html#aaf1bf68e14319d295ffb34e6740a30ea">AI</a>.</p>
 
@@ -288,13 +290,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Evaluates the board for Minimax (unused currently). </p>
-<dl class="section return"><dt>Returns</dt><dd>Fixed value 0.0f. </dd></dl>
+<p>Evaluates board for Minimax (unused currently). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Pointer to board </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always 0.0f </dd></dl>
 
 <p>Implements <a class="el" href="class_a_i.html#a98d69ccc82c7fd33b4b430a99945c5f9">AI</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00054">54</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00070">70</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> 0.0f; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -345,13 +354,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Minimax search algorithm (placeholder). </p>
-<dl class="section return"><dt>Returns</dt><dd>Always returns 0.0f. </dd></dl>
+<p>Placeholder Minimax algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aiTurn</td><td>True if <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> turn </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> player </td></tr>
+    <tr><td class="paramname">alpha</td><td>Alpha value </td></tr>
+    <tr><td class="paramname">beta</td><td>Beta value </td></tr>
+    <tr><td class="paramname">blankCell</td><td>Empty cell symbol </td></tr>
+    <tr><td class="paramname">depth</td><td>Search depth </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always 0.0f </dd></dl>
 
 <p>Implements <a class="el" href="class_a_i.html#aec1f088cfbc66d0b133c08e4495d1473">AI</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00060">60</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>                                                      { <span class="keywordflow">return</span> 0.0f; }</div>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00082">82</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                      { <span class="keywordflow">return</span> 0.0f; }</div>
 </div><!-- fragment -->
 </div>
 </div>

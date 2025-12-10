@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Matrix&lt; T &gt; Class Template Reference</title>
+<title>BicBrickBread: Matrix&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,11 +89,11 @@ $(function(){initNavTree('class_matrix.html','','class_matrix-members'); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Matrix&lt; T &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Matrix&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___math.html">Mathematical Utilities</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Lightweight 2D matrix with contiguous row-major storage.  
+<p>Lightweight 2D numeric matrix.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_matrix_8h_source.html">Matrix.h</a>&gt;</code></p>
@@ -114,31 +114,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc3a5dd743ad3d5ee72d339c7c04efba" id="r_afc3a5dd743ad3d5ee72d339c7c04efba"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc3a5dd743ad3d5ee72d339c7c04efba">operator()</a> (int r, int c) const</td></tr>
 <tr class="memdesc:afc3a5dd743ad3d5ee72d339c7c04efba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only access to element (r, c).  <br /></td></tr>
 <tr class="memitem:a1d7916e71b6a1e351391f65ff36b22c9" id="r_a1d7916e71b6a1e351391f65ff36b22c9"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d7916e71b6a1e351391f65ff36b22c9">dataPtr</a> ()</td></tr>
-<tr class="memdesc:a1d7916e71b6a1e351391f65ff36b22c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw pointer to underlying storage. Useful for interoperability with BLAS and LibTorch custom ops.  <br /></td></tr>
+<tr class="memdesc:a1d7916e71b6a1e351391f65ff36b22c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw pointer to underlying data.  <br /></td></tr>
 <tr class="memitem:a44247aa64efff2be5dea31ca1f557c2e" id="r_a44247aa64efff2be5dea31ca1f557c2e"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44247aa64efff2be5dea31ca1f557c2e">dataPtr</a> () const</td></tr>
 <tr class="memitem:aadd32f034350b15426a9b458113661a4" id="r_aadd32f034350b15426a9b458113661a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadd32f034350b15426a9b458113661a4">apply</a> (const std::function&lt; T(T)&gt; &amp;func)</td></tr>
-<tr class="memdesc:aadd32f034350b15426a9b458113661a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a function f(x) to each element (in place).  <br /></td></tr>
+<tr class="memdesc:aadd32f034350b15426a9b458113661a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply function f(x) to each element in place.  <br /></td></tr>
 <tr class="memitem:a3055050ff4e15b30c072bbe26842f405" id="r_a3055050ff4e15b30c072bbe26842f405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3055050ff4e15b30c072bbe26842f405">hadamard</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;other)</td></tr>
 <tr class="memdesc:a3055050ff4e15b30c072bbe26842f405"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-place Hadamard (element-wise) product: this = this ⊙ other.  <br /></td></tr>
 <tr class="memitem:a94950736fd85d672147d33bbe64e5d0d" id="r_a94950736fd85d672147d33bbe64e5d0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94950736fd85d672147d33bbe64e5d0d">operator+</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;other) const</td></tr>
-<tr class="memdesc:a94950736fd85d672147d33bbe64e5d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_matrix.html" title="Lightweight 2D matrix with contiguous row-major storage.">Matrix</a> addition. Dimensions must match.  <br /></td></tr>
+<tr class="memdesc:a94950736fd85d672147d33bbe64e5d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> addition.  <br /></td></tr>
 <tr class="memitem:ab7dc0cc55a49ddaa88bf4a6028ad76f0" id="r_ab7dc0cc55a49ddaa88bf4a6028ad76f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7dc0cc55a49ddaa88bf4a6028ad76f0">operator-</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;other) const</td></tr>
-<tr class="memdesc:ab7dc0cc55a49ddaa88bf4a6028ad76f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_matrix.html" title="Lightweight 2D matrix with contiguous row-major storage.">Matrix</a> subtraction. Dimensions must match.  <br /></td></tr>
+<tr class="memdesc:ab7dc0cc55a49ddaa88bf4a6028ad76f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> subtraction.  <br /></td></tr>
 <tr class="memitem:a0d724ccde0d084d10f73366896c32c32" id="r_a0d724ccde0d084d10f73366896c32c32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d724ccde0d084d10f73366896c32c32">operator*</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;other) const</td></tr>
-<tr class="memdesc:a0d724ccde0d084d10f73366896c32c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-hand matrix multiplication: C = A * B.  <br /></td></tr>
+<tr class="memdesc:a0d724ccde0d084d10f73366896c32c32"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> multiplication: C = A * B.  <br /></td></tr>
 <tr class="memitem:ad2a786f018631a09111b0ce0b3a97dbf" id="r_ad2a786f018631a09111b0ce0b3a97dbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2a786f018631a09111b0ce0b3a97dbf">operator*</a> (int val) const</td></tr>
-<tr class="memdesc:ad2a786f018631a09111b0ce0b3a97dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar multiplication: each element multiplied by val.  <br /></td></tr>
+<tr class="memdesc:ad2a786f018631a09111b0ce0b3a97dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar multiplication.  <br /></td></tr>
 <tr class="memitem:a650078c4e68d8c618e56c55951997470" id="r_a650078c4e68d8c618e56c55951997470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a650078c4e68d8c618e56c55951997470">transpose</a> () const</td></tr>
-<tr class="memdesc:a650078c4e68d8c618e56c55951997470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the transpose of the matrix.  <br /></td></tr>
+<tr class="memdesc:a650078c4e68d8c618e56c55951997470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transpose of the matrix.  <br /></td></tr>
 <tr class="memitem:afc76f95218a395ba7d12e2831d282acf" id="r_afc76f95218a395ba7d12e2831d282acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc76f95218a395ba7d12e2831d282acf">resize</a> (int r, int c)</td></tr>
-<tr class="memdesc:afc76f95218a395ba7d12e2831d282acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize matrix to (r x c) and reset all elements to zero.  <br /></td></tr>
+<tr class="memdesc:afc76f95218a395ba7d12e2831d282acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize matrix and set all elements to zero.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bf314e696c1a7a1963aec05af5f5d13" id="r_a1bf314e696c1a7a1963aec05af5f5d13"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bf314e696c1a7a1963aec05af5f5d13">random</a> (int <a class="el" href="#acd67456c163fd2259c8aef072c9177fa">rows</a>, int <a class="el" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a>, T min, T max)</td></tr>
 <tr class="memdesc:a1bf314e696c1a7a1963aec05af5f5d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a matrix filled with uniform random values in [min, max].  <br /></td></tr>
 <tr class="memitem:a79fa5a3893939d8b399f86c6c1ff15a7" id="r_a79fa5a3893939d8b399f86c6c1ff15a7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79fa5a3893939d8b399f86c6c1ff15a7">multiply</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;a, const <a class="el" href="class_matrix.html">Matrix</a> &amp;b, <a class="el" href="class_matrix.html">Matrix</a> &amp;result)</td></tr>
-<tr class="memdesc:a79fa5a3893939d8b399f86c6c1ff15a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimized matrix multiplication into a preallocated matrix.  <br /></td></tr>
+<tr class="memdesc:a79fa5a3893939d8b399f86c6c1ff15a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply preallocated matrices without allocations.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,23 +147,23 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a28e99540a5a95cb42dfaceb8942a48bd" id="r_a28e99540a5a95cb42dfaceb8942a48bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a></td></tr>
 <tr class="memdesc:a28e99540a5a95cb42dfaceb8942a48bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of columns.  <br /></td></tr>
 <tr class="memitem:a86c2caaceac4e6b3c3234a94996c85f7" id="r_a86c2caaceac4e6b3c3234a94996c85f7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a></td></tr>
-<tr class="memdesc:a86c2caaceac4e6b3c3234a94996c85f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row-major flattened storage of size rows*cols.  <br /></td></tr>
+<tr class="memdesc:a86c2caaceac4e6b3c3234a94996c85f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row-major flattened storage (size = rows*cols).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a95102bd4b0960b1a4c282c2e7685c84c" id="r_a95102bd4b0960b1a4c282c2e7685c84c"><td class="memTemplParams" colspan="2">template&lt;typename J&gt; </td></tr>
 <tr class="memitem:a95102bd4b0960b1a4c282c2e7685c84c template"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95102bd4b0960b1a4c282c2e7685c84c">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_matrix.html">Matrix</a>&lt; J &gt; &amp;m)</td></tr>
-<tr class="memdesc:a95102bd4b0960b1a4c282c2e7685c84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream output operator for debugging.  <br /></td></tr>
+<tr class="memdesc:a95102bd4b0960b1a4c282c2e7685c84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream output for debugging.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
-class Matrix&lt; T &gt;</div><p>Lightweight 2D matrix with contiguous row-major storage. </p>
-<p>Designed primarily for neural-network operations:</p><ul>
-<li>Efficient indexing via a flattened vector</li>
-<li>Minimal dynamic allocations</li>
-<li>Element-wise ops, Hadamard ops, transpose, matrix multiply</li>
+class Matrix&lt; T &gt;</div><p>Lightweight 2D numeric matrix. </p>
+<p>Designed for neural network computations:</p><ul>
+<li>Efficient indexing via flattened row-major storage</li>
+<li>Element-wise operations and arithmetic</li>
+<li>No implicit broadcasting</li>
+<li>Shape validation for all operations</li>
 </ul>
-<p>The class DOES NOT perform implicit shape broadcasting. All operations validate dimensional consistency.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Numeric type (float, double, int, etc.) </td></tr>
@@ -171,7 +171,7 @@ class Matrix&lt; T &gt;</div><p>Lightweight 2D matrix with contiguous row-major 
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00024">24</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00039">39</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a500ba010dab4b9ee8e0d1b6f73fcd926" name="a500ba010dab4b9ee8e0d1b6f73fcd926"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a500ba010dab4b9ee8e0d1b6f73fcd926">&#9670;&#160;</a></span>Matrix() <span class="overload">[1/2]</span></h2>
@@ -204,25 +204,24 @@ template&lt;class T&gt; </div>
   <table class="params">
     <tr><td class="paramname">rows</td><td>Number of rows </td></tr>
     <tr><td class="paramname">cols</td><td>Number of columns </td></tr>
-    <tr><td class="paramname">zero</td><td>If true, initialize all elements to 0. If false, initialize elements to 1.</td></tr>
+    <tr><td class="paramname">zero</td><td>Initialize to zero if true; else initialize to one </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Elements are NOT left uninitialized. This simplifies usage in NN code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00011">11</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>    : <a class="code hl_variable" href="#acd67456c163fd2259c8aef072c9177fa">rows</a>(<a class="code hl_class" href="class_matrix.html">rows_</a>), <a class="code hl_variable" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a>(<a class="code hl_class" href="class_matrix.html">cols_</a>) </div>
 <div class="line"><span class="lineno">   13</span>{</div>
 <div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>.assign(<a class="code hl_variable" href="#acd67456c163fd2259c8aef072c9177fa">rows</a> * <a class="code hl_variable" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a>, <a class="code hl_class" href="class_matrix.html">zero</a> ? <a class="code hl_class" href="class_matrix.html">T</a>(0) : <a class="code hl_class" href="class_matrix.html">T</a>(1));</div>
 <div class="line"><span class="lineno">   15</span>}</div>
-<div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="class_matrix.html">Matrix</a></div><div class="ttdoc">Lightweight 2D matrix with contiguous row-major storage.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00024">Matrix.h:24</a></div></div>
-<div class="ttc" id="aclass_matrix_html_a28e99540a5a95cb42dfaceb8942a48bd"><div class="ttname"><a href="#a28e99540a5a95cb42dfaceb8942a48bd">Matrix::cols</a></div><div class="ttdeci">int cols</div><div class="ttdoc">Number of columns.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00027">Matrix.h:27</a></div></div>
-<div class="ttc" id="aclass_matrix_html_a86c2caaceac4e6b3c3234a94996c85f7"><div class="ttname"><a href="#a86c2caaceac4e6b3c3234a94996c85f7">Matrix::data</a></div><div class="ttdeci">std::vector&lt; T &gt; data</div><div class="ttdoc">Row-major flattened storage of size rows*cols.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00028">Matrix.h:28</a></div></div>
-<div class="ttc" id="aclass_matrix_html_acd67456c163fd2259c8aef072c9177fa"><div class="ttname"><a href="#acd67456c163fd2259c8aef072c9177fa">Matrix::rows</a></div><div class="ttdeci">int rows</div><div class="ttdoc">Number of rows.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00026">Matrix.h:26</a></div></div>
+<div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="class_matrix.html">Matrix</a></div><div class="ttdoc">Lightweight 2D numeric matrix.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00039">Matrix.h:39</a></div></div>
+<div class="ttc" id="aclass_matrix_html_a28e99540a5a95cb42dfaceb8942a48bd"><div class="ttname"><a href="#a28e99540a5a95cb42dfaceb8942a48bd">Matrix::cols</a></div><div class="ttdeci">int cols</div><div class="ttdoc">Number of columns.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00042">Matrix.h:42</a></div></div>
+<div class="ttc" id="aclass_matrix_html_a86c2caaceac4e6b3c3234a94996c85f7"><div class="ttname"><a href="#a86c2caaceac4e6b3c3234a94996c85f7">Matrix::data</a></div><div class="ttdeci">std::vector&lt; T &gt; data</div><div class="ttdoc">Row-major flattened storage (size = rows*cols).</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00043">Matrix.h:43</a></div></div>
+<div class="ttc" id="aclass_matrix_html_acd67456c163fd2259c8aef072c9177fa"><div class="ttname"><a href="#acd67456c163fd2259c8aef072c9177fa">Matrix::rows</a></div><div class="ttdeci">int rows</div><div class="ttdoc">Number of rows.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8h_source.html#l00041">Matrix.h:41</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a500ba010dab4b9ee8e0d1b6f73fcd926_icgraph.svg" width="454" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a500ba010dab4b9ee8e0d1b6f73fcd926_icgraph.svg" width="454" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -296,14 +295,13 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Apply a function f(x) to each element (in place). </p>
+<p>Apply function f(x) to each element in place. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">func</td><td>Mapping function</td></tr>
+    <tr><td class="paramname">func</td><td>Mapping function </td></tr>
   </table>
   </dd>
 </dl>
-<p>Example: m.apply([](float x){ return std::tanh(x); }); </p>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00047">47</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>                                                   {</div>
@@ -338,10 +336,10 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Raw pointer to underlying storage. Useful for interoperability with BLAS and LibTorch custom ops. </p>
+<p>Raw pointer to underlying data. </p>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00087">87</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>.data(); }</div>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00099">99</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>.data(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -370,8 +368,8 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00088">88</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>.data(); }</div>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00100">100</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>.data(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,9 +391,15 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>In-place Hadamard (element-wise) product: this = this ⊙ other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Other matrix </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td>if shapes differ </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>if dimensions mismatch </td></tr>
   </table>
   </dd>
 </dl>
@@ -450,16 +454,15 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Optimized matrix multiplication into a preallocated matrix. </p>
+<p>Multiply preallocated matrices without allocations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>Left operand </td></tr>
-    <tr><td class="paramname">b</td><td>Right operand </td></tr>
-    <tr><td class="paramname">result</td><td>Preallocated matrix with dimensions (a.rows x b.cols)</td></tr>
+    <tr><td class="paramname">a</td><td>Left matrix </td></tr>
+    <tr><td class="paramname">b</td><td>Right matrix </td></tr>
+    <tr><td class="paramname">result</td><td>Preallocated matrix (a.rows × b.cols) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Does not allocate memory. Caller ensures correct size. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00115">115</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  115</span>                                                                                  {</div>
@@ -480,16 +483,16 @@ template&lt;class T&gt; </div>
 <div class="line"><span class="lineno">  130</span>        }</div>
 <div class="line"><span class="lineno">  131</span>    }</div>
 <div class="line"><span class="lineno">  132</span>}</div>
-<div class="ttc" id="aclass_matrix_html_afc76f95218a395ba7d12e2831d282acf"><div class="ttname"><a href="#afc76f95218a395ba7d12e2831d282acf">Matrix::resize</a></div><div class="ttdeci">void resize(int r, int c)</div><div class="ttdoc">Resize matrix to (r x c) and reset all elements to zero.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00158">Matrix.cpp:158</a></div></div>
+<div class="ttc" id="aclass_matrix_html_afc76f95218a395ba7d12e2831d282acf"><div class="ttname"><a href="#afc76f95218a395ba7d12e2831d282acf">Matrix::resize</a></div><div class="ttdeci">void resize(int r, int c)</div><div class="ttdoc">Resize matrix and set all elements to zero.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00158">Matrix.cpp:158</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a79fa5a3893939d8b399f86c6c1ff15a7_cgraph.svg" width="271" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a79fa5a3893939d8b399f86c6c1ff15a7_cgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a79fa5a3893939d8b399f86c6c1ff15a7_icgraph.svg" width="287" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a79fa5a3893939d8b399f86c6c1ff15a7_icgraph.svg" width="287" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -524,10 +527,10 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Access element (r, c) by reference. </p>
-<dl class="section warning"><dt>Warning</dt><dd>No bounds check in release mode. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>No bounds check in release mode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00076">76</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>[<a class="code hl_class" href="class_matrix.html">r</a> * <a class="code hl_variable" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a> + <a class="code hl_class" href="class_matrix.html">c</a>]; }</div>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00089">89</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>[<a class="code hl_class" href="class_matrix.html">r</a> * <a class="code hl_variable" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a> + <a class="code hl_class" href="class_matrix.html">c</a>]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -562,8 +565,8 @@ template&lt;class T&gt; </div>
 
 <p>Read-only access to element (r, c). </p>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00081">81</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>[<a class="code hl_class" href="class_matrix.html">r</a> * <a class="code hl_variable" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a> + <a class="code hl_class" href="class_matrix.html">c</a>]; }</div>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00094">94</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86c2caaceac4e6b3c3234a94996c85f7">data</a>[<a class="code hl_class" href="class_matrix.html">r</a> * <a class="code hl_variable" href="#a28e99540a5a95cb42dfaceb8942a48bd">cols</a> + <a class="code hl_class" href="class_matrix.html">c</a>]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -584,10 +587,17 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Right-hand matrix multiplication: C = A * B. </p>
+<p><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> multiplication: C = A * B. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Right-hand side matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Resulting matrix </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td>if A.cols != B.rows </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>if inner dimensions mismatch </td></tr>
   </table>
   </dd>
 </dl>
@@ -599,11 +609,11 @@ template&lt;class T&gt; </div>
 <div class="line"><span class="lineno">  138</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="class_matrix.html">std::move</a>(<a class="code hl_class" href="class_matrix.html">res</a>);</div>
 <div class="line"><span class="lineno">  139</span>}</div>
 <div class="ttc" id="aclass_matrix_html_a500ba010dab4b9ee8e0d1b6f73fcd926"><div class="ttname"><a href="#a500ba010dab4b9ee8e0d1b6f73fcd926">Matrix::Matrix</a></div><div class="ttdeci">Matrix(int rows=0, int cols=0, bool zero=true)</div><div class="ttdoc">Construct a matrix of size (rows x cols).</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00011">Matrix.cpp:11</a></div></div>
-<div class="ttc" id="aclass_matrix_html_a79fa5a3893939d8b399f86c6c1ff15a7"><div class="ttname"><a href="#a79fa5a3893939d8b399f86c6c1ff15a7">Matrix::multiply</a></div><div class="ttdeci">static void multiply(const Matrix &amp;a, const Matrix &amp;b, Matrix &amp;result)</div><div class="ttdoc">Optimized matrix multiplication into a preallocated matrix.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00115">Matrix.cpp:115</a></div></div>
+<div class="ttc" id="aclass_matrix_html_a79fa5a3893939d8b399f86c6c1ff15a7"><div class="ttname"><a href="#a79fa5a3893939d8b399f86c6c1ff15a7">Matrix::multiply</a></div><div class="ttdeci">static void multiply(const Matrix &amp;a, const Matrix &amp;b, Matrix &amp;result)</div><div class="ttdoc">Multiply preallocated matrices without allocations.</div><div class="ttdef"><b>Definition</b> <a href="_matrix_8cpp_source.html#l00115">Matrix.cpp:115</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a0d724ccde0d084d10f73366896c32c32_cgraph.svg" width="436" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a0d724ccde0d084d10f73366896c32c32_cgraph.svg" width="278" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -625,7 +635,14 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Scalar multiplication: each element multiplied by val. </p>
+<p>Scalar multiplication. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Scalar value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Scaled matrix </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00146">146</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  146</span>                                                  {</div>
@@ -659,7 +676,20 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_matrix.html" title="Lightweight 2D matrix with contiguous row-major storage.">Matrix</a> addition. Dimensions must match. </p>
+<p><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> addition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Other matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sum matrix </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if dimensions mismatch </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00066">66</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                                                        {</div>
@@ -698,7 +728,20 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_matrix.html" title="Lightweight 2D matrix with contiguous row-major storage.">Matrix</a> subtraction. Dimensions must match. </p>
+<p><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> subtraction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Other matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Difference matrix </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if dimensions mismatch </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00083">83</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   83</span>                                                        {</div>
@@ -764,11 +807,12 @@ template&lt;class T&gt; </div>
   <table class="params">
     <tr><td class="paramname">rows</td><td>Number of rows </td></tr>
     <tr><td class="paramname">cols</td><td>Number of columns </td></tr>
-    <tr><td class="paramname">min</td><td>Lower bound </td></tr>
-    <tr><td class="paramname">max</td><td>Upper bound </td></tr>
+    <tr><td class="paramname">min</td><td>Minimum value </td></tr>
+    <tr><td class="paramname">max</td><td>Maximum value </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_matrix.html" title="Lightweight 2D numeric matrix.">Matrix</a> with random values </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00030">30</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>                                                            {</div>
@@ -811,7 +855,14 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Resize matrix to (r x c) and reset all elements to zero. </p>
+<p>Resize matrix and set all elements to zero. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Rows </td></tr>
+    <tr><td class="paramname">c</td><td>Columns </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00158">158</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  158</span>                                   {</div>
@@ -824,7 +875,7 @@ template&lt;class T&gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_afc76f95218a395ba7d12e2831d282acf_icgraph.svg" width="495" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_afc76f95218a395ba7d12e2831d282acf_icgraph.svg" width="330" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -846,7 +897,8 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the transpose of the matrix. </p>
+<p>Transpose of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>Transposed matrix </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_matrix_8cpp_source.html#l00100">100</a> of file <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  100</span>                                     {</div>
@@ -858,7 +910,12 @@ template&lt;class T&gt; </div>
 <div class="line"><span class="lineno">  106</span> </div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="class_matrix.html">std::move</a>(<a class="code hl_class" href="class_matrix.html">res</a>);</div>
 <div class="line"><span class="lineno">  108</span>}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_matrix_a650078c4e68d8c618e56c55951997470_cgraph.svg" width="283" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -893,7 +950,7 @@ template&lt;typename J&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Stream output operator for debugging. </p>
+<p>Stream output for debugging. </p>
 
 </div>
 </div>
@@ -914,7 +971,7 @@ template&lt;class T&gt; </div>
 
 <p>Number of columns. </p>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00027">27</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00042">42</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -932,9 +989,9 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Row-major flattened storage of size rows*cols. </p>
+<p>Row-major flattened storage (size = rows*cols). </p>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00028">28</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00043">43</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1011,7 @@ template&lt;class T&gt; </div>
 
 <p>Number of rows. </p>
 
-<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00026">26</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_matrix_8h_source.html#l00041">41</a> of file <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>

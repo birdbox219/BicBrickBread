@@ -1,5 +1,5 @@
 <map id="SUS_AI" name="SUS_AI">
-<area shape="rect" id="Node000001" title="Implements AI for the SUS game using Minimax with alpha&#45;beta pruning." alt="" coords="5,187,108,341"/>
+<area shape="rect" id="Node000001" title="Artificial intelligence for the SUS game using Minimax with alpha&#45;beta pruning." alt="" coords="5,187,108,341"/>
 <area shape="rect" id="Node000002" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="12,5,101,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,154,60,187,54,187,54,154"/>
 </map>

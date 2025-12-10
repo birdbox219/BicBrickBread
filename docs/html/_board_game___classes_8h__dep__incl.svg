@@ -57,7 +57,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="four_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="four_8h.html" target="_top" xlink:title="Defines the 6x7 Connect&#45;Four game variant with AI and UI support.">
 <polygon fill="white" stroke="#666666" points="406.62,-118 292.38,-118 292.38,-86 406.62,-86 406.62,-118"/>
 <text xml:space="preserve" text-anchor="start" x="300.38" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/Four_in_a_row</text>
 <text xml:space="preserve" text-anchor="middle" x="349.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">/four.h</text>
@@ -114,7 +114,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="_obstacles___tic___tac___toe_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="_obstacles___tic___tac___toe_8h.html" target="_top" xlink:title="Obstacles Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="white" stroke="#666666" points="274.5,-124 150.5,-124 150.5,-80 274.5,-80 274.5,-124"/>
 <text xml:space="preserve" text-anchor="start" x="158.5" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/Obstacles_Tic</text>
 <text xml:space="preserve" text-anchor="start" x="158.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Tac_Toe/Obstacles_Tic</text>
@@ -134,7 +134,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="_pyramid_x_o_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="_pyramid_x_o_8h.html" target="_top" xlink:title="Pyramid XO game classes.">
 <polygon fill="white" stroke="#666666" points="1632.62,-112 1470.38,-112 1470.38,-92 1632.62,-92 1632.62,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="1551.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/PyramidXO/PyramidXO.h</text>
 </a>
@@ -152,7 +152,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="_s_u_s_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="_s_u_s_8h.html" target="_top" xlink:title="SUS game classes.">
 <polygon fill="white" stroke="#666666" points="842.38,-112 738.62,-112 738.62,-92 842.38,-92 842.38,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="790.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/SUS/SUS.h</text>
 </a>
@@ -170,7 +170,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="_ultimate_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="_ultimate_8h.html" target="_top" xlink:title="Ultimate Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="white" stroke="#666666" points="1756.5,-118 1650.5,-118 1650.5,-86 1756.5,-86 1756.5,-118"/>
 <text xml:space="preserve" text-anchor="start" x="1658.5" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/Ultimate_Tic</text>
 <text xml:space="preserve" text-anchor="middle" x="1703.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Tac_Toe/Ultimate.h</text>
@@ -189,7 +189,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="_word___tic___tac___toe_8h.html" target="_top" xlink:title="Header file for the Word&#45;based Tic&#45;Tac&#45;Toe board, AI, and UI modules.">
+<g id="a_Node000019"><a xlink:href="_word___tic___tac___toe_8h.html" target="_top" xlink:title="Header for Word Tic&#45;Tac&#45;Toe board, AI, and UI.">
 <polygon fill="white" stroke="#666666" points="1414.25,-118 1282.75,-118 1282.75,-86 1414.25,-86 1414.25,-118"/>
 <text xml:space="preserve" text-anchor="start" x="1290.75" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/Word_Tic_Tac</text>
 <text xml:space="preserve" text-anchor="middle" x="1348.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Toe/Word_Tic_Tac_Toe.h</text>
@@ -208,7 +208,7 @@
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="_x_o__inf_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="_x_o__inf_8h.html" target="_top" xlink:title="Infinite Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="white" stroke="#666666" points="1264.38,-112 1142.62,-112 1142.62,-92 1264.38,-92 1264.38,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="1203.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/XO_inf/XO_inf.h</text>
 </a>
@@ -226,7 +226,7 @@
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="xo__num_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="xo__num_8h.html" target="_top" xlink:title="Numerical Tic&#45;Tac&#45;Toe (Magic Square XO) game classes.">
 <polygon fill="white" stroke="#666666" points="1908.75,-112 1774.25,-112 1774.25,-92 1908.75,-92 1908.75,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="1841.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/XO_num/xo_num.h</text>
 </a>
@@ -244,7 +244,7 @@
 <!-- Node25 -->
 <g id="Node000025" class="node">
 <title>Node25</title>
-<g id="a_Node000025"><a xlink:href="_anti___x_o_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000025"><a xlink:href="_anti___x_o_8h.html" target="_top" xlink:title="Anti Tic&#45;Tac&#45;Toe variant where forming 3&#45;in&#45;a&#45;row causes a loss.">
 <polygon fill="white" stroke="#666666" points="994.38,-112 860.62,-112 860.62,-92 994.38,-92 994.38,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="927.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/anti_XO/Anti_XO.h</text>
 </a>
@@ -262,7 +262,7 @@
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="dia___x_o_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="dia___x_o_8h.html" target="_top" xlink:title="Diamond&#45;shaped 7x7 Tic&#45;Tac&#45;Toe variant with AI and UI support.">
 <polygon fill="white" stroke="#666666" points="2076.62,-112 1926.38,-112 1926.38,-92 2076.62,-92 2076.62,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="2001.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/diamond_XO/dia_XO.h</text>
 </a>
@@ -298,7 +298,7 @@
 <!-- Node30 -->
 <g id="Node000030" class="node">
 <title>Node30</title>
-<g id="a_Node000030"><a xlink:href="_x_o___classes_8h.html" target="_top" xlink:title=" ">
+<g id="a_Node000030"><a xlink:href="_x_o___classes_8h.html" target="_top" xlink:title="Classic Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="white" stroke="#666666" points="1124.5,-112 1012.5,-112 1012.5,-92 1124.5,-92 1124.5,-112"/>
 <text xml:space="preserve" text-anchor="middle" x="1068.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">header/XO_Classes.h</text>
 </a>

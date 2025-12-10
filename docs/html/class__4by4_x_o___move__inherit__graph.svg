@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Represents a move in the 4x4 Tic&#45;Tac&#45;Toe game where tokens slide to adjacent cells.">
+<g id="a_Node000001"><a xlink:title="Represents a move in the 4x4 sliding Tic&#45;Tac&#45;Toe game.">
 <polygon fill="#999999" stroke="none" points="93.75,-100 0,-100 0,0 93.75,0 93.75,-100"/>
 <text xml:space="preserve" text-anchor="start" x="12" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_Move</text>
 <text xml:space="preserve" text-anchor="start" x="5.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -34,7 +34,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_move.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_move.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="84,-268 9.75,-268 9.75,-136 84,-136 84,-268"/>
 <text xml:space="preserve" text-anchor="start" x="16.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="15.25" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

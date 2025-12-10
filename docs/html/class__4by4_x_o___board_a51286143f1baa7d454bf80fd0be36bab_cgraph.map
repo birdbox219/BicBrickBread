@@ -1,5 +1,5 @@
 <map id="_4by4XO_Board::_4by4XO_Board" name="_4by4XO_Board::_4by4XO_Board">
-<area shape="rect" id="Node000001" title="Initializes the board with predefined X/O starting positions." alt="" coords="5,5,184,48"/>
+<area shape="rect" id="Node000001" title="Initializes the board with starting X/O positions." alt="" coords="5,5,184,48"/>
 <area shape="rect" id="Node000002" href="$class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" title=" " alt="" coords="232,13,378,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,24,217,24,217,29,184,29"/>
 </map>

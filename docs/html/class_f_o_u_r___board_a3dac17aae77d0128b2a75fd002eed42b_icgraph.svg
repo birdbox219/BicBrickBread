@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Checks if the given player has won.">
+<g id="a_Node000001"><a xlink:title="Checks whether the given player has won.">
 <polygon fill="#999999" stroke="#666666" points="438,-39 329,-39 329,-19 438,-19 438,-39"/>
 <text xml:space="preserve" text-anchor="middle" x="383.5" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_Board::is_win</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_f_o_u_r___board.html#abf54bfccabc104a9845e7f204285acf6" xlink:title="Checks whether the game ended (win or draw).">
+<g id="a_Node000002"><a xlink:href="class_f_o_u_r___board.html#abf54bfccabc104a9845e7f204285acf6" target="_top" xlink:title="Checks whether the game is over (win or draw).">
 <polygon fill="white" stroke="#666666" points="142,-39 0,-39 0,-19 142,-19 142,-39"/>
 <text xml:space="preserve" text-anchor="middle" x="71" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_Board::game_is_over</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_f_o_u_r___board.html#a85921de4da3bb3dba9dae1a21fc4bc5f" xlink:title="Checks if the game resulted in a draw.">
+<g id="a_Node000003"><a xlink:href="class_f_o_u_r___board.html#a85921de4da3bb3dba9dae1a21fc4bc5f" target="_top" xlink:title="Checks whether the game ended in a draw.">
 <polygon fill="white" stroke="#666666" points="293,-20 178,-20 178,0 293,0 293,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="235.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_Board::is_draw</text>
 </a>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ai_0',['Word Tic-Tac-Toe AI',['../group___word___tic_tac_toe___a_i.html',1,'']]]
+  ['4x4_20sliding_20xo_0',['4x4 Sliding XO',['../group___sliding_x_o.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 <map id="SUS_UI::get_move" name="SUS_UI::get_move">
-<area shape="rect" id="Node000001" title="Gets the next move from a human or AI." alt="" coords="5,284,141,311"/>
+<area shape="rect" id="Node000001" title="Retrieves the next move." alt="" coords="5,284,141,311"/>
 <area shape="rect" id="Node000002" href="$class_s_u_s___a_i.html#ae27d5dea2808c253c2fe19574bb41038" title="Computes the best move for the player." alt="" coords="189,183,323,209"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,281,216,215,218,219,100,286"/>
 <area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="742,157,875,184"/>
@@ -11,14 +11,14 @@
 <area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="547,157,692,184"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,189,531,174,531,179,324,194"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="324,198,492,203,593,201,693,193,741,185,742,190,694,199,593,206,492,208,324,203"/>
-<area shape="rect" id="Node000005" href="$class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="371,107,497,133"/>
+<area shape="rect" id="Node000005" href="$class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" title="Minimax with alpha&#45;beta pruning." alt="" coords="371,107,497,133"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="288,180,386,137,388,142,290,185"/>
 <area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="487,131,554,150,553,155,485,137"/>
 <area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="498,121,591,129,694,143,736,151,735,156,693,148,590,135,498,127"/>
 <area shape="poly" id="edge12_Node000005_Node000005" title=" " alt="" coords="404,108,398,98,402,88,414,82,434,80,456,83,467,89,464,94,454,88,434,85,416,87,406,92,403,97,408,105"/>
 <area shape="rect" id="Node000006" href="$class_s_u_s___a_i.html#a917f6a59b1707de463bfcaad41f0d560" title="Evaluates the board state for the given player." alt="" coords="556,56,683,83"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="485,103,553,85,554,90,487,109"/>
-<area shape="rect" id="Node000008" href="$class_s_u_s___a_i.html#a223660856952277e2a8323ffb790bc53" title="Returns true if there are empty moves left." alt="" coords="545,5,694,32"/>
+<area shape="rect" id="Node000008" href="$class_s_u_s___a_i.html#a223660856952277e2a8323ffb790bc53" title="Checks if any empty cells remain." alt="" coords="545,5,694,32"/>
 <area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="451,104,492,73,544,42,557,36,559,41,547,46,495,78,454,108"/>
 <area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="656,81,695,99,775,146,772,151,692,104,654,86"/>
 <area shape="rect" id="Node000007" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="754,31,862,57"/>

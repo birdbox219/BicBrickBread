@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Applies a Move&lt;char&gt; object to the board.">
+<g id="a_Node000001"><a xlink:title="Applies a Move&lt;char&gt; to the board.">
 <polygon fill="#999999" stroke="#666666" points="126.25,-83 0,-83 0,-51 126.25,-51 126.25,-83"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="63.12" y="-57.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" xlink:title="Get the move symbol.">
+<g id="a_Node000002"><a xlink:href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff" target="_top" xlink:title="Get the move symbol.">
 <polygon fill="white" stroke="#666666" points="282.12,-134 185.88,-134 185.88,-114 282.12,-114 282.12,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="234" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_symbol</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" xlink:title="Get row index.">
+<g id="a_Node000003"><a xlink:href="class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" target="_top" xlink:title="Get row index.">
 <polygon fill="white" stroke="#666666" points="269,-96 199,-96 199,-76 269,-76 269,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="234" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_x</text>
 </a>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" xlink:title="Get column index.">
+<g id="a_Node000004"><a xlink:href="class_move.html#a96469802a55c9083a1e93c7edec8a00c" target="_top" xlink:title="Get column index.">
 <polygon fill="white" stroke="#666666" points="269,-58 199,-58 199,-38 269,-38 269,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="234" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_y</text>
 </a>
@@ -75,7 +75,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_obstacles___board.html#a6ffa3be3e7a967293e98834c04e93955" xlink:title="Attempts to place symbol s at (r, c).">
+<g id="a_Node000005"><a xlink:href="class_obstacles___board.html#a6ffa3be3e7a967293e98834c04e93955" target="_top" xlink:title="Attempt to place a symbol at the given position.">
 <polygon fill="white" stroke="#666666" points="305.75,-20 162.25,-20 162.25,0 305.75,0 305.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="234" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::updateCell</text>
 </a>
@@ -93,7 +93,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" xlink:title="Returns a list of all legal moves.">
+<g id="a_Node000006"><a xlink:href="class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" target="_top" xlink:title="Get all available moves.">
 <polygon fill="white" stroke="#666666" points="516,-20 341.75,-20 341.75,0 516,0 516,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="428.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::getAvailableMove</text>
 </a>

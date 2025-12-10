@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" xlink:title="Gets move input from human or AI.">
+<g id="a_Node000002"><a xlink:href="class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" target="_top" xlink:title="Gets a move from human or AI.">
 <polygon fill="white" stroke="#666666" points="125.88,-476 4.88,-476 4.88,-456 125.88,-456 125.88,-476"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_UI::get_move</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_anti___x_o___u_i.html#a33e3fac8bd7d6e9e26eaa1a5df1ddd6f" xlink:title="Retrieves the player&#39;s move (human, computer random, or AI).">
+<g id="a_Node000003"><a xlink:href="class_anti___x_o___u_i.html#a33e3fac8bd7d6e9e26eaa1a5df1ddd6f" target="_top" xlink:title="Retrieves the next move from human or AI.">
 <polygon fill="white" stroke="#666666" points="124,-438 6.75,-438 6.75,-418 124,-418 124,-438"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_XO_UI::get_move</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" xlink:title="Ask the user (or AI) to make a move.">
+<g id="a_Node000004"><a xlink:href="classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" target="_top" xlink:title="Obtains the next move from human or AI.">
 <polygon fill="white" stroke="#666666" points="121.75,-400 9,-400 9,-380 121.75,-380 121.75,-400"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_UI::get_move</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" xlink:title="Gets the move from a human, computer, or AI player.">
+<g id="a_Node000005"><a xlink:href="class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" target="_top" xlink:title="Obtains the next move from a human, computer, or AI player.">
 <polygon fill="white" stroke="#666666" points="119.88,-362 10.88,-362 10.88,-342 119.88,-342 119.88,-362"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_UI::get_move</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_large___x_o___u_i.html#ad2c0d9d3cec8c1e35d42b2342a08bc7f" xlink:title="Request a move from Human, Random, or AI player.">
+<g id="a_Node000006"><a xlink:href="class_large___x_o___u_i.html#ad2c0d9d3cec8c1e35d42b2342a08bc7f" target="_top" xlink:title="Request a move from human or AI player.">
 <polygon fill="white" stroke="#666666" points="127.38,-324 3.38,-324 3.38,-304 127.38,-304 127.38,-324"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_UI::get_move</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" xlink:title="Obtains the next move from a player.">
+<g id="a_Node000007"><a xlink:href="class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" target="_top" xlink:title="Obtains the next move from a player.">
 <polygon fill="white" stroke="#666666" points="123.25,-286 7.5,-286 7.5,-266 123.25,-266 123.25,-286"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">Memory_UI::get_move</text>
 </a>
@@ -128,7 +128,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" xlink:title="Obtains a move from a human or AI player.">
+<g id="a_Node000008"><a xlink:href="class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" target="_top" xlink:title="Obtains a move from a human or AI player.">
 <polygon fill="white" stroke="#666666" points="127.75,-248 3,-248 3,-228 127.75,-228 127.75,-248"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_UI::get_move</text>
 </a>
@@ -146,7 +146,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$class_pyramid_x_o___u_i.html#a936b1fdabe80776e212110be108f811f" xlink:title="Reads human move or requests AI move.">
+<g id="a_Node000009"><a xlink:href="class_pyramid_x_o___u_i.html#a936b1fdabe80776e212110be108f811f" target="_top" xlink:title="Reads human move or requests AI move.">
 <polygon fill="white" stroke="#666666" points="130.75,-210 0,-210 0,-190 130.75,-190 130.75,-210"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_UI::get_move</text>
 </a>
@@ -164,7 +164,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" xlink:title="Gets the next move from a human or AI.">
+<g id="a_Node000010"><a xlink:href="class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" target="_top" xlink:title="Retrieves the next move.">
 <polygon fill="white" stroke="#666666" points="116.12,-172 14.62,-172 14.62,-152 116.12,-152 116.12,-172"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_UI::get_move</text>
 </a>
@@ -182,7 +182,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="$class_ultimate___u_i.html#a4c3e6b4f77e281d67a946df1620ef822" xlink:title="Reads next move from human or AI.">
+<g id="a_Node000011"><a xlink:href="class_ultimate___u_i.html#a4c3e6b4f77e281d67a946df1620ef822" target="_top" xlink:title="Retrieve the next move from a player.">
 <polygon fill="white" stroke="#666666" points="124,-134 6.75,-134 6.75,-114 124,-114 124,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_UI::get_move</text>
 </a>
@@ -200,7 +200,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="$class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" xlink:title="Retrieves the move from the current player.">
+<g id="a_Node000012"><a xlink:href="class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" target="_top" xlink:title="Get the next move from a player.">
 <polygon fill="white" stroke="#666666" points="126.62,-96 4.12,-96 4.12,-76 126.62,-76 126.62,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Word_XO_UI::get_move</text>
 </a>
@@ -218,7 +218,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="$class_x_o__inf___u_i.html#aa6e70528ef40fcae94e64bdeb2ee9300" xlink:title="Get the next move from a player.">
+<g id="a_Node000013"><a xlink:href="class_x_o__inf___u_i.html#a58e2808d59a15ba3c05a07f3b3f25486" target="_top" xlink:title="Retrieve a player&#39;s move input.">
 <polygon fill="white" stroke="#666666" points="120.62,-58 10.12,-58 10.12,-38 120.62,-38 120.62,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_UI::get_move</text>
 </a>
@@ -236,7 +236,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="$class_x_o___n_u_m___u_i.html#a6937463483d95c20fce215d4b9c6afa4" xlink:title="Gets next move from human or AI.">
+<g id="a_Node000014"><a xlink:href="class_x_o___n_u_m___u_i.html#a6937463483d95c20fce215d4b9c6afa4" target="_top" xlink:title="Get the next move.">
 <polygon fill="white" stroke="#666666" points="127,-20 3.75,-20 3.75,0 127,0 127,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="65.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_NUM_UI::get_move</text>
 </a>

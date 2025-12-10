@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Handles user interaction for the sliding XO game.">
+<g id="a_Node000001"><a xlink:title="Handles user interaction for sliding 4x4 XO.">
 <polygon fill="#999999" stroke="none" points="104.62,-84 22.12,-84 22.12,0 104.62,0 104.62,-84"/>
 <text xml:space="preserve" text-anchor="start" x="35.25" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_UI</text>
 <text xml:space="preserve" text-anchor="start" x="61.88" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_u_i.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_u_i.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="126.75,-300 0,-300 0,-120 126.75,-120 126.75,-300"/>
 <text xml:space="preserve" text-anchor="start" x="39.75" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="4.38" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Board class for infinite Tic&#45;Tac&#45;Toe.">
 <polygon fill="#999999" stroke="none" points="208.88,-148 124.12,-148 124.12,0 208.88,0 208.88,-148"/>
 <text xml:space="preserve" text-anchor="start" x="136.12" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">XO_inf_Board</text>
 <text xml:space="preserve" text-anchor="start" x="129.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -40,7 +40,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_board.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_board.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="99,-446 0,-446 0,-202 99,-202 99,-446"/>
 <text xml:space="preserve" text-anchor="start" x="18.38" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="4.38" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -141,7 +141,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$struct_vertex.html" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="struct_vertex.html" target="_top" xlink:title="Represents a single move on the board.">
 <polygon fill="white" stroke="none" points="238.25,-584 188.75,-584 188.75,-500 238.25,-500 238.25,-584"/>
 <text xml:space="preserve" text-anchor="start" x="199.62" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vertex</text>
 <text xml:space="preserve" text-anchor="start" x="192.75" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

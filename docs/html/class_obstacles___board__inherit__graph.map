@@ -1,5 +1,5 @@
 <map id="Obstacles_Board" name="Obstacles_Board">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,400,140,789"/>
+<area shape="rect" id="Node000001" title="Modified Tic&#45;Tac&#45;Toe board supporting traps and 64&#45;bit bitboard logic." alt="" coords="5,400,140,789"/>
 <area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="7,5,139,352"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,367,76,400,70,400,70,367"/>
 </map>

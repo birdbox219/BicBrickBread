@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="UI for 5x5 Tic&#45;Tac&#45;Toe (human and AI interaction).">
+<g id="a_Node000001"><a xlink:title="User interface for 5x5 Tic&#45;Tac&#45;Toe (human and AI interaction).">
 <polygon fill="#999999" stroke="none" points="304.5,-100 188.25,-100 188.25,0 304.5,0 304.5,-100"/>
 <text xml:space="preserve" text-anchor="start" x="216.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_UI</text>
 <text xml:space="preserve" text-anchor="start" x="244.88" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_custom___u_i.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_custom___u_i.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="156.75,-374 30,-374 30,-242 156.75,-242 156.75,-374"/>
 <text xml:space="preserve" text-anchor="start" x="49.88" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="91.88" y="-344.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -66,7 +66,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_u_i.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_u_i.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="126.75,-760 0,-760 0,-580 126.75,-580 126.75,-760"/>
 <text xml:space="preserve" text-anchor="start" x="39.75" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="4.38" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -108,7 +108,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_large___x_o___a_i.html" xlink:title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic.">
+<g id="a_Node000004"><a xlink:href="class_large___x_o___a_i.html" target="_top" xlink:title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic.">
 <polygon fill="white" stroke="none" points="287.62,-366 205.12,-366 205.12,-250 287.62,-250 287.62,-366"/>
 <text xml:space="preserve" text-anchor="start" x="217.12" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_AI</text>
 <text xml:space="preserve" text-anchor="start" x="210.62" y="-336.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -143,7 +143,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_a_i.html" xlink:title="AI Interface for all implementations in games.">
+<g id="a_Node000005"><a xlink:href="class_a_i.html" target="_top" xlink:title="AI Interface for all implementations in games.">
 <polygon fill="white" stroke="none" points="211.75,-720 145,-720 145,-620 211.75,-620 211.75,-720"/>
 <text xml:space="preserve" text-anchor="start" x="173.5" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00">AI</text>
 <text xml:space="preserve" text-anchor="start" x="176.88" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -200,7 +200,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_neural_network.html" xlink:title="Fully connected feedforward neural network using updated Layer class.">
+<g id="a_Node000007"><a xlink:href="class_neural_network.html" target="_top" xlink:title="Fully&#45;connected feedforward neural network using Layer objects.">
 <polygon fill="white" stroke="none" points="353,-994 263.75,-994 263.75,-846 353,-846 353,-994"/>
 <text xml:space="preserve" text-anchor="start" x="275.75" y="-980.5" font-family="Helvetica,sans-Serif" font-size="10.00">NeuralNetwork</text>
 <text xml:space="preserve" text-anchor="start" x="306.88" y="-964.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -261,7 +261,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="$class_layer.html" xlink:title="Fully&#45;connected neural network layer (refactored for SOLID &amp; encapsulation).">
+<g id="a_Node000009"><a xlink:href="class_layer.html" target="_top" xlink:title="Fully&#45;connected (dense) neural network layer.">
 <polygon fill="white" stroke="none" points="352.62,-1366 264.12,-1366 264.12,-1154 352.62,-1154 352.62,-1366"/>
 <text xml:space="preserve" text-anchor="start" x="296.38" y="-1352.5" font-family="Helvetica,sans-Serif" font-size="10.00">Layer</text>
 <text xml:space="preserve" text-anchor="start" x="269.62" y="-1336.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -308,7 +308,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="$class_matrix.html" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="class_matrix.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="349.12,-1728 267.62,-1728 267.62,-1484 349.12,-1484 349.12,-1728"/>
 <text xml:space="preserve" text-anchor="start" x="271.62" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix&lt; double &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="275.31" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -389,7 +389,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="$class_large___x_o___board.html" xlink:title="5x5 Tic&#45;Tac&#45;Toe board implementation using a bitboard for fast evaluation.">
+<g id="a_Node000012"><a xlink:href="class_large___x_o___board.html" target="_top" xlink:title="5x5 Tic&#45;Tac&#45;Toe board implementation using a bitboard for fast evaluation.">
 <polygon fill="white" stroke="none" points="418.5,-462 320.25,-462 320.25,-154 418.5,-154 418.5,-462"/>
 <text xml:space="preserve" text-anchor="start" x="332.25" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_Board</text>
 <text xml:space="preserve" text-anchor="start" x="325.75" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -448,7 +448,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="$class_board.html" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="class_board.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="503.88,-792 404.88,-792 404.88,-548 503.88,-548 503.88,-792"/>
 <text xml:space="preserve" text-anchor="start" x="423.25" y="-778.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="409.25" y="-762.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

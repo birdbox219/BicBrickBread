@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Updates the board with the given move.">
+<g id="a_Node000001"><a xlink:title="Applies a move to the board.">
 <polygon fill="#999999" stroke="#666666" points="110.5,-45 0,-45 0,-13 110.5,-13 110.5,-45"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">FOUR_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="55.25" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" xlink:title="Get the move symbol.">
+<g id="a_Node000002"><a xlink:href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff" target="_top" xlink:title="Get the move symbol.">
 <polygon fill="white" stroke="#666666" points="242.75,-58 146.5,-58 146.5,-38 242.75,-38 242.75,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="194.62" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_symbol</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" xlink:title="Get column index.">
+<g id="a_Node000003"><a xlink:href="class_move.html#a96469802a55c9083a1e93c7edec8a00c" target="_top" xlink:title="Get column index.">
 <polygon fill="white" stroke="#666666" points="229.62,-20 159.62,-20 159.62,0 229.62,0 229.62,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="194.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_y</text>
 </a>

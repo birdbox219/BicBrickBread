@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Pyramid XO game classes.">
 <polygon fill="#999999" stroke="#666666" points="194.12,-200 31.88,-200 31.88,-180 194.12,-180 194.12,-200"/>
 <text xml:space="preserve" text-anchor="middle" x="113" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/PyramidXO/PyramidXO.h</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$_board_game___classes_8h.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_board_game___classes_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="172,-88 54,-88 54,-56 172,-56 172,-88"/>
 <text xml:space="preserve" text-anchor="start" x="62" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/BoardGame</text>
 <text xml:space="preserve" text-anchor="middle" x="113" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Classes.h</text>
@@ -39,7 +39,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$_a_i_8h.html" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="_a_i_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="190.12,-144 105.88,-144 105.88,-124 190.12,-124 190.12,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="148" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/AI.h</text>
 </a>

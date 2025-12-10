@@ -4,12 +4,12 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,77,163,58,217,41,317,25,411,18,412,23,318,30,218,47,165,63,119,82"/>
 <area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="626,107,760,133"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,105,218,116,324,123,430,126,611,122,611,127,430,131,324,129,217,121,147,110"/>
-<area shape="rect" id="Node000004" href="$class_large___x_o___a_i.html#afdd4990cd58293668dc8ba9660beb31b" title="Minimax with alpha&#45;beta pruning and NN&#45;based move ordering." alt="" coords="218,80,374,107"/>
+<area shape="rect" id="Node000004" href="$class_large___x_o___a_i.html#afdd4990cd58293668dc8ba9660beb31b" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="218,80,374,107"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,91,202,91,202,96,170,96"/>
 <area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="330,77,421,41,440,35,442,40,423,47,332,82"/>
 <area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="375,96,611,112,611,117,374,101"/>
 <area shape="poly" id="edge8_Node000004_Node000004" title=" " alt="" coords="261,81,255,71,259,62,273,55,296,53,320,56,333,62,331,67,319,61,296,59,274,61,263,65,260,71,266,78"/>
-<area shape="rect" id="Node000005" href="$class_large___x_o___a_i.html#a7369a7db6ac018c0480009ed8cec6d1b" title="Evaluate a board using NN + terminal heuristics." alt="" coords="422,56,578,83"/>
+<area shape="rect" id="Node000005" href="$class_large___x_o___a_i.html#a7369a7db6ac018c0480009ed8cec6d1b" title="Evaluate a board using neural network + terminal heuristics." alt="" coords="422,56,578,83"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="374,81,407,78,407,83,375,87"/>
 <area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="555,81,625,100,624,105,553,86"/>
 </map>

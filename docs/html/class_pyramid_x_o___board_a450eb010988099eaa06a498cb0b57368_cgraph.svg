@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_pyramid_x_o___board.html#a9d70812d00ba8e60e41e00a723f3a5f8" xlink:title="Checks if the game ended in a draw (all valid cells filled).">
+<g id="a_Node000002"><a xlink:href="class_pyramid_x_o___board.html#a9d70812d00ba8e60e41e00a723f3a5f8" target="_top" xlink:title="Checks if the game ended in a draw.">
 <polygon fill="white" stroke="#666666" points="299.75,-45 163,-45 163,-25 299.75,-25 299.75,-45"/>
 <text xml:space="preserve" text-anchor="middle" x="231.38" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::is_draw</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_pyramid_x_o___board.html#a89fcf14259b6197ba9a6ba55cffd17c6" xlink:title="Checks if the player has won. Winning lines include horizontal, vertical, and diagonal triples.">
+<g id="a_Node000003"><a xlink:href="class_pyramid_x_o___board.html#a89fcf14259b6197ba9a6ba55cffd17c6" target="_top" xlink:title="Checks if the player has won.">
 <polygon fill="white" stroke="#666666" points="466.5,-26 335.75,-26 335.75,-6 466.5,-6 466.5,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="401.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::is_win</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000004"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="602.5,-26 502.5,-26 502.5,-6 602.5,-6 602.5,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="552.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>

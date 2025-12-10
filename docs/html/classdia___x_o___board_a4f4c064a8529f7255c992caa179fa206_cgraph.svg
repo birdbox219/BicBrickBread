@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Check if the game is over.">
+<g id="a_Node000001"><a xlink:title="Checks if the game is over (win or draw).">
 <polygon fill="#999999" stroke="#666666" points="109,-45 0,-45 0,-13 109,-13 109,-45"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="54.5" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$classdia___x_o___board.html#a6cfc262a76859ef721a866e5c81dcb5b" xlink:title="Check if the game ended in a draw.">
+<g id="a_Node000002"><a xlink:href="classdia___x_o___board.html#a6cfc262a76859ef721a866e5c81dcb5b" target="_top" xlink:title="Checks if the board is full and no more moves are possible.">
 <polygon fill="white" stroke="#666666" points="263.75,-58 145,-58 145,-38 263.75,-38 263.75,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::is_draw</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$classdia___x_o___board.html#ace5ad1f96f61c119b02476049d9be35d" xlink:title="Check if a player has won.">
+<g id="a_Node000003"><a xlink:href="classdia___x_o___board.html#ace5ad1f96f61c119b02476049d9be35d" target="_top" xlink:title="Checks whether a player has won based on diamond rules.">
 <polygon fill="white" stroke="#666666" points="260.75,-20 148,-20 148,0 260.75,0 260.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="204.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_Board::is_win</text>
 </a>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000004"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="399.75,-20 299.75,-20 299.75,0 399.75,0 399.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="349.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>

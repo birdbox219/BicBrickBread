@@ -3,7 +3,7 @@
 #--------------------------------------------------------------------------- 
 
 # Project Info
-PROJECT_NAME           = "X-O Game Collection & Neural Network"
+PROJECT_NAME           = "BicBrickBread"
 PROJECT_BRIEF          = "All variants of Tic-Tac-Toe games and Neural Network source"
 PROJECT_NUMBER         = "1.0"
 OUTPUT_DIRECTORY       = docs
@@ -71,6 +71,7 @@ STRIP_CODE_COMMENTS    = NO
 # Diagrams and Graphs
 #--------------------------------------------------------------------------- 
 HAVE_DOT               = YES
+DOT_PATH               = "C:/Program Files/Graphviz/bin"   # adjust to your Graphviz path
 CLASS_DIAGRAMS         = YES
 COLLABORATION_GRAPH    = YES
 INCLUDE_GRAPH          = YES
@@ -82,15 +83,13 @@ DOT_FONTNAME           = Helvetica
 DOT_FONTSIZE           = 10
 DOT_TRANSPARENT        = YES
 DOT_MULTI_TARGETS      = NO
-DOT_PATH               = /usr/bin   # adjust if dot is elsewhere
 
 #--------------------------------------------------------------------------- 
 # PlantUML
 #--------------------------------------------------------------------------- 
 UML_LOOK               = YES
-PLANTUML_JAR_PATH = C:/Users/Ali/Downloads/plantuml-jar-gplv2-1.2023.7/plantuml.jar
+PLANTUML_JAR_PATH      = "C:/Users/Ali/Downloads/plantuml-jar-gplv2-1.2023.7/plantuml.jar"
 PLANTUML_OUTPUT_FORMAT = svg
-GENERATE_UML           = YES
 
 #--------------------------------------------------------------------------- 
 # Misc

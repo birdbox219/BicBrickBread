@@ -1,5 +1,5 @@
 <map id="Neural_Network/Include/NeuralNetwork.h" name="Neural_Network/Include/NeuralNetwork.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="202,5,363,48"/>
+<area shape="rect" id="Node000001" title="Fully&#45;connected feedforward neural network class." alt="" coords="202,5,363,48"/>
 <area shape="rect" id="Node000002" href="$_large___tic___tac___toe_8h.html" title=" " alt="" coords="98,96,275,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,61,210,98,207,94,247,57"/>
 <area shape="rect" id="Node000005" href="$_neural_network_8cpp.html" title=" " alt="" coords="300,96,460,139"/>

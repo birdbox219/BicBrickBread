@@ -36,7 +36,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_a_i.html" xlink:title="AI Interface for all implementations in games.">
+<g id="a_Node000002"><a xlink:href="class_a_i.html" target="_top" xlink:title="AI Interface for all implementations in games.">
 <polygon fill="white" stroke="none" points="66.75,-302 0,-302 0,-202 66.75,-202 66.75,-302"/>
 <text xml:space="preserve" text-anchor="start" x="28.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">AI</text>
 <text xml:space="preserve" text-anchor="start" x="31.88" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -93,7 +93,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_neural_network.html" xlink:title="Fully connected feedforward neural network using updated Layer class.">
+<g id="a_Node000004"><a xlink:href="class_neural_network.html" target="_top" xlink:title="Fully&#45;connected feedforward neural network using Layer objects.">
 <polygon fill="white" stroke="none" points="208,-504 118.75,-504 118.75,-356 208,-356 208,-504"/>
 <text xml:space="preserve" text-anchor="start" x="130.75" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">NeuralNetwork</text>
 <text xml:space="preserve" text-anchor="start" x="161.88" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -154,7 +154,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_layer.html" xlink:title="Fully&#45;connected neural network layer (refactored for SOLID &amp; encapsulation).">
+<g id="a_Node000006"><a xlink:href="class_layer.html" target="_top" xlink:title="Fully&#45;connected (dense) neural network layer.">
 <polygon fill="white" stroke="none" points="207.62,-876 119.12,-876 119.12,-664 207.62,-664 207.62,-876"/>
 <text xml:space="preserve" text-anchor="start" x="151.38" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">Layer</text>
 <text xml:space="preserve" text-anchor="start" x="124.62" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -201,7 +201,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$class_matrix.html" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="class_matrix.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="204.12,-1238 122.62,-1238 122.62,-994 204.12,-994 204.12,-1238"/>
 <text xml:space="preserve" text-anchor="start" x="126.62" y="-1224.5" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix&lt; double &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="130.31" y="-1208.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

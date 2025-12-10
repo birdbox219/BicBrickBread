@@ -1,5 +1,5 @@
 <map id="_4by4XO_AI::bestMove" name="_4by4XO_AI::bestMove">
-<area shape="rect" id="Node000001" title="Generates the best move for the AI." alt="" coords="215,5,375,32"/>
-<area shape="rect" id="Node000002" href="$class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" title="Gets move input from human or AI." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000001" title="Computes the best move for AI." alt="" coords="215,5,375,32"/>
+<area shape="rect" id="Node000002" href="$class__4by4_x_o___u_i.html#adac352a59d82ec4c84219a2ee25bda3a" title="Gets a move from human or AI." alt="" coords="5,5,167,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,21,167,21,167,16,199,16"/>
 </map>

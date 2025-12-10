@@ -38,7 +38,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_u_i.html" xlink:title="Base class for handling user interface and input/output.">
+<g id="a_Node000002"><a xlink:href="class_u_i.html" target="_top" xlink:title="Base class for handling user interface and input/output.">
 <polygon fill="white" stroke="none" points="126.75,-380 0,-380 0,-184 126.75,-184 126.75,-380"/>
 <text xml:space="preserve" text-anchor="start" x="46.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI&lt; T &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="4.38" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

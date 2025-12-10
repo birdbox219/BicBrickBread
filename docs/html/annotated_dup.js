@@ -27,8 +27,6 @@ var annotated_dup =
     [ "Memory_UI", "class_memory___u_i.html", "class_memory___u_i" ],
     [ "Move", "class_move.html", "class_move" ],
     [ "NeuralNetwork", "class_neural_network.html", "class_neural_network" ],
-    [ "Obstachles_Board", "class_obstachles___board.html", null ],
-    [ "Obstachles_UI", "class_obstachles___u_i.html", null ],
     [ "Obstacles_AI", "class_obstacles___a_i.html", "class_obstacles___a_i" ],
     [ "Obstacles_Board", "class_obstacles___board.html", "class_obstacles___board" ],
     [ "Obstacles_UI", "class_obstacles___u_i.html", "class_obstacles___u_i" ],

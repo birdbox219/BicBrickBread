@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_custom___u_i.html#abf6a27d1c9d321ee62bb496615561b1a" xlink:title="Create a player based on name, symbol, and type.">
+<g id="a_Node000002"><a xlink:href="class_custom___u_i.html#abf6a27d1c9d321ee62bb496615561b1a" target="_top" xlink:title="Create a player based on name, symbol, and type.">
 <polygon fill="white" stroke="#666666" points="299.75,-108 169,-108 169,-88 299.75,-88 299.75,-108"/>
 <text xml:space="preserve" text-anchor="middle" x="234.38" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI::create_player</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" xlink:title="Ask the user for the player&#39;s name.">
+<g id="a_Node000003"><a xlink:href="class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" target="_top" xlink:title="Ask the user for the player&#39;s name.">
 <polygon fill="white" stroke="#666666" points="287.75,-70 181,-70 181,-50 287.75,-50 287.75,-70"/>
 <text xml:space="preserve" text-anchor="middle" x="234.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI::get_player_name</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_custom___u_i.html#afec2270d76585d04ce1365bd11e99c59" xlink:title="Ask the user to choose a player type and validate input.">
+<g id="a_Node000004"><a xlink:href="class_custom___u_i.html#afec2270d76585d04ce1365bd11e99c59" target="_top" xlink:title="Ask the user to choose a player type and validate input.">
 <polygon fill="white" stroke="#666666" points="293,-32 175.75,-32 175.75,0 293,0 293,-32"/>
 <text xml:space="preserve" text-anchor="start" x="183.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI::get_player</text>
 <text xml:space="preserve" text-anchor="middle" x="234.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_type_choice</text>

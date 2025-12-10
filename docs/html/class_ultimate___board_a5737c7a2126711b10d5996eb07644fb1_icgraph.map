@@ -1,5 +1,5 @@
 <map id="Ultimate_Board::is_draw" name="Ultimate_Board::is_draw">
-<area shape="rect" id="Node000001" title="Checks if the game is a draw." alt="" coords="205,13,369,40"/>
-<area shape="rect" id="Node000002" href="$class_ultimate___board.html#adb5f3ecf194dae9f85a680f384422151" title="Returns true if the game is over." alt="" coords="5,5,157,48"/>
+<area shape="rect" id="Node000001" title="Checks if the game ended in a draw." alt="" coords="205,13,369,40"/>
+<area shape="rect" id="Node000002" href="$class_ultimate___board.html#adb5f3ecf194dae9f85a680f384422151" title="Determines whether the game has ended." alt="" coords="5,5,157,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,29,157,29,157,24,189,24"/>
 </map>

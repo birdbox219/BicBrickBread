@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Ask the user (or AI) to make a move.">
+<g id="a_Node000001"><a xlink:title="Obtains the next move from human or AI.">
 <polygon fill="#999999" stroke="#666666" points="112.75,-77 0,-77 0,-57 112.75,-57 112.75,-77"/>
 <text xml:space="preserve" text-anchor="middle" x="56.38" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_UI::get_move</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$classdia___x_o___a_i.html#aac374ebe974ed55e608952762ad6d3ff" xlink:title="Determines the optimal move using minimax.">
+<g id="a_Node000002"><a xlink:href="classdia___x_o___a_i.html#aac374ebe974ed55e608952762ad6d3ff" target="_top" xlink:title="Picks a random free cell for AI.">
 <polygon fill="white" stroke="#666666" points="260.75,-134 148.75,-134 148.75,-114 260.75,-114 260.75,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="204.75" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_AI::bestMove</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000004"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="401.25,-96 301.25,-96 301.25,-76 401.25,-76 401.25,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="351.25" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" xlink:title="Get the player&#39;s name.">
+<g id="a_Node000005"><a xlink:href="class_player.html#aed2af19790ba73190e3ebeea589518e1" target="_top" xlink:title="Get the player&#39;s name.">
 <polygon fill="white" stroke="#666666" points="251,-58 158.5,-58 158.5,-38 251,-38 251,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="204.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_name</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" xlink:title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;).">
+<g id="a_Node000006"><a xlink:href="class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" target="_top" xlink:title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;).">
 <polygon fill="white" stroke="#666666" points="248.38,-20 161.12,-20 161.12,0 248.38,0 248.38,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="204.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_type</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_player.html#a508617eddfae8915d098102d480fc888" xlink:title="Get a pointer to the game board.">
+<g id="a_Node000003"><a xlink:href="class_player.html#a508617eddfae8915d098102d480fc888" target="_top" xlink:title="Get a pointer to the game board.">
 <polygon fill="white" stroke="#666666" points="405.75,-134 296.75,-134 296.75,-114 405.75,-114 405.75,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="351.25" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_board_ptr</text>
 </a>

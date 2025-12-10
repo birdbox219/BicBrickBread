@@ -1,5 +1,5 @@
 <map id="Games/Four_in_a_row/four.h" name="Games/Four_in_a_row/four.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,234,48"/>
+<area shape="rect" id="Node000001" title="Defines the 6x7 Connect&#45;Four game variant with AI and UI support." alt="" coords="81,5,234,48"/>
 <area shape="rect" id="Node000002" href="$four_8cpp.html" title=" " alt="" coords="5,96,158,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,62,101,97,97,94,128,58"/>
 <area shape="rect" id="Node000003" href="$_the_game_8cpp.html" title=" " alt="" coords="182,104,285,131"/>

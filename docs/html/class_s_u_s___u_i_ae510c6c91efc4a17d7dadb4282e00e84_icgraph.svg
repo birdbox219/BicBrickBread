@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Creates a player instance.">
+<g id="a_Node000001"><a xlink:title="Creates a new player instance.">
 <polygon fill="#999999" stroke="#666666" points="272.75,-20 155.5,-20 155.5,0 272.75,0 272.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="214.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_UI::create_player</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_s_u_s___u_i.html#a24c1d67ea76050e7bee6159e9ba39aa2" xlink:title="Sets up two players.">
+<g id="a_Node000002"><a xlink:href="class_s_u_s___u_i.html#a24c1d67ea76050e7bee6159e9ba39aa2" target="_top" xlink:title="Configures the two players.">
 <polygon fill="white" stroke="#666666" points="119.5,-20 0,-20 0,0 119.5,0 119.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="59.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SUS_UI::setup_players</text>
 </a>

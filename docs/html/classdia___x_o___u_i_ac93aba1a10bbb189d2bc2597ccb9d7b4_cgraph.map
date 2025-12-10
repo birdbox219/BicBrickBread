@@ -1,6 +1,6 @@
 <map id="dia_XO_UI::get_move" name="dia_XO_UI::get_move">
-<area shape="rect" id="Node000001" title="Ask the user (or AI) to make a move." alt="" coords="5,81,156,108"/>
-<area shape="rect" id="Node000002" href="$classdia___x_o___a_i.html#aac374ebe974ed55e608952762ad6d3ff" title="Determines the optimal move using minimax." alt="" coords="204,5,353,32"/>
+<area shape="rect" id="Node000001" title="Obtains the next move from human or AI." alt="" coords="5,81,156,108"/>
+<area shape="rect" id="Node000002" href="$classdia___x_o___a_i.html#aac374ebe974ed55e608952762ad6d3ff" title="Picks a random free cell for AI." alt="" coords="204,5,353,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,78,226,35,228,40,119,83"/>
 <area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="407,56,540,83"/>
 <area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="156,87,391,72,392,77,156,93"/>

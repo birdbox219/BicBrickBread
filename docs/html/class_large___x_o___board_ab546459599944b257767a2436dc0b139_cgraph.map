@@ -1,8 +1,8 @@
 <map id="Large_XO_Board::is_lose" name="Large_XO_Board::is_lose">
-<area shape="rect" id="Node000001" title="Determine if a player loses." alt="" coords="5,64,175,91"/>
+<area shape="rect" id="Node000001" title="Check if the player has lost." alt="" coords="5,64,175,91"/>
 <area shape="rect" id="Node000002" href="$class_large___x_o___board.html#a702183d127cd3db7920262aaf4d3106b" title="Count all 3&#45;in&#45;a&#45;row patterns for a given symbol." alt="" coords="223,5,406,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,61,245,34,247,39,145,66"/>
-<area shape="rect" id="Node000003" href="$class_large___x_o___board.html#ab0e7f4e0184eef658b5d8ebc303ffe09" title="Check if the game is over (board full in this variant)." alt="" coords="234,56,394,99"/>
+<area shape="rect" id="Node000003" href="$class_large___x_o___board.html#ab0e7f4e0184eef658b5d8ebc303ffe09" title="Check if the game is over (board full)." alt="" coords="234,56,394,99"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,75,219,75,219,80,175,80"/>
 <area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="248,123,381,149"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,89,247,116,245,121,143,94"/>

@@ -1,23 +1,27 @@
 <map id="Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.h" name="Games/Word_Tic_Tac_Toe/Word_Tic_Tac_Toe.h">
-<area shape="rect" id="Node000001" title="Header file for the Word&#45;based Tic&#45;Tac&#45;Toe board, AI, and UI modules." alt="" coords="67,5,242,48"/>
-<area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="52,171,210,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,49,139,156,133,155,149,48"/>
-<area shape="rect" id="Node000007" href="$_custom___u_i_8h.html" title="Defines a customizable user interface for board games." alt="" coords="192,96,358,123"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="187,46,245,85,242,89,184,51"/>
-<area shape="rect" id="Node000009" href="$_a_i_8h.html" title=" " alt="" coords="5,96,118,123"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="133,51,89,88,86,84,129,47"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="18,261,71,288"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,216,71,253,67,249,107,212"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="185,261,242,288"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,212,192,248,188,252,150,216"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="266,261,337,288"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="176,212,262,252,260,257,174,216"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="95,261,161,288"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="133,214,132,246,126,245,127,214"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="254,125,182,165,180,160,251,121"/>
-<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="273,124,226,248,221,246,268,122"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="279,122,300,246,294,247,274,123"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="334,179,413,205"/>
-<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="292,121,349,167,345,171,289,125"/>
-<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="74,121,105,157,101,161,70,125"/>
+<area shape="rect" id="Node000001" title="Header for Word Tic&#45;Tac&#45;Toe board, AI, and UI." alt="" coords="116,5,292,48"/>
+<area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="56,171,213,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,51,115,70,92,97,87,112,89,127,106,158,101,160,84,129,82,112,87,95,112,66,144,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,261,59,288"/>
+<area shape="poly" id="edge14_Node000001_Node000003" title=" " alt="" coords="150,51,114,71,81,98,57,133,43,173,36,212,34,246,29,246,31,212,38,171,53,130,77,94,111,67,148,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="222,261,279,288"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="214,48,228,95,242,177,251,246,245,246,237,178,223,97,209,49"/>
+<area shape="rect" id="Node000007" href="$_custom___u_i_8h.html" title="Defines a customizable user interface for board games." alt="" coords="288,96,454,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="248,46,332,87,330,91,246,51"/>
+<area shape="rect" id="Node000009" href="$_a_i_8h.html" title=" " alt="" coords="101,96,214,123"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="194,50,175,84,170,81,190,47"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="478,96,517,123"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="292,46,463,93,462,98,291,51"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,216,61,254,58,250,107,212"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="166,212,222,250,219,255,163,216"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="310,261,381,288"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="190,211,299,253,297,258,188,216"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="102,261,168,288"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="137,214,137,245,132,245,132,214"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="335,126,211,168,209,163,333,121"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="364,124,271,251,266,247,360,121"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="371,123,352,247,347,246,366,122"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="389,179,467,205"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="382,122,413,165,408,168,377,125"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="156,124,147,157,142,155,151,122"/>
 </map>

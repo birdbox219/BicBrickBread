@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Creates the Anti&#45;XO UI with game identifier and board size.">
+<g id="a_Node000001"><a xlink:title="Constructs the Anti&#45;XO UI.">
 <polygon fill="#999999" stroke="#666666" points="127,-26 0,-26 0,-6 127,-6 127,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="63.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_XO_UI::Anti_XO_UI</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="272,-32 163,-32 163,0 272,0 272,-32"/>
 <text xml:space="preserve" text-anchor="start" x="171" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI&lt; char &gt;::</text>
 <text xml:space="preserve" text-anchor="middle" x="217.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Custom_UI</text>

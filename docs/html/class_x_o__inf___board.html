@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: XO_inf_Board Class Reference</title>
+<title>BicBrickBread: XO_inf_Board Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,9 +89,12 @@ $(function(){initNavTree('class_x_o__inf___board.html','','class_x_o__inf___boar
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">XO_inf_Board Class Reference</div></div>
+  <div class="headertitle"><div class="title">XO_inf_Board Class Reference<div class="ingroups"><a class="el" href="group___x_o__inf.html">Infinite XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_board.html" title="Base template for any board used in board games.">Board</a> class for infinite Tic-Tac-Toe.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -108,17 +111,17 @@ Collaboration diagram for XO_inf_Board:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac475c42f371943a1e14d4bd975f18416" id="r_ac475c42f371943a1e14d4bd975f18416"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac475c42f371943a1e14d4bd975f18416">XO_inf_Board</a> ()</td></tr>
-<tr class="memdesc:ac475c42f371943a1e14d4bd975f18416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <a class="el" href="class_x_o__inf___board.html">XO_inf_Board</a>.  <br /></td></tr>
+<tr class="memdesc:ac475c42f371943a1e14d4bd975f18416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <a class="el" href="class_x_o__inf___board.html" title="Board class for infinite Tic-Tac-Toe.">XO_inf_Board</a>.  <br /></td></tr>
 <tr class="memitem:ad8c2e867524a221c9e51c5b71806e509" id="r_ad8c2e867524a221c9e51c5b71806e509"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8c2e867524a221c9e51c5b71806e509">update_board</a> (<a class="el" href="class_move.html">Move</a>&lt; char &gt; *move)</td></tr>
-<tr class="memdesc:ad8c2e867524a221c9e51c5b71806e509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply or undo a move on the board.  <br /></td></tr>
+<tr class="memdesc:ad8c2e867524a221c9e51c5b71806e509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a move to the board.  <br /></td></tr>
 <tr class="memitem:ac8fe1843e8cae7c832218a80421eaa13" id="r_ac8fe1843e8cae7c832218a80421eaa13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8fe1843e8cae7c832218a80421eaa13">is_win</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player)</td></tr>
-<tr class="memdesc:ac8fe1843e8cae7c832218a80421eaa13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given player has won.  <br /></td></tr>
-<tr class="memitem:a54c4ca42e434d6c8de24fc1a993e13f5" id="r_a54c4ca42e434d6c8de24fc1a993e13f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54c4ca42e434d6c8de24fc1a993e13f5">is_lose</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *)</td></tr>
-<tr class="memdesc:a54c4ca42e434d6c8de24fc1a993e13f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a player has lost.  <br /></td></tr>
+<tr class="memdesc:ac8fe1843e8cae7c832218a80421eaa13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a player has achieved a win condition.  <br /></td></tr>
+<tr class="memitem:a94cbd747b7cf23a22273c309dd535098" id="r_a94cbd747b7cf23a22273c309dd535098"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94cbd747b7cf23a22273c309dd535098">is_lose</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player)</td></tr>
+<tr class="memdesc:a94cbd747b7cf23a22273c309dd535098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder: infinite Tic-Tac-Toe does not use lose detection.  <br /></td></tr>
 <tr class="memitem:a39c1227c26b820836e8ff8bf8cbad1b0" id="r_a39c1227c26b820836e8ff8bf8cbad1b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39c1227c26b820836e8ff8bf8cbad1b0">is_draw</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player)</td></tr>
-<tr class="memdesc:a39c1227c26b820836e8ff8bf8cbad1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game is a draw.  <br /></td></tr>
+<tr class="memdesc:a39c1227c26b820836e8ff8bf8cbad1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is a draw.  <br /></td></tr>
 <tr class="memitem:a72916ca0cb69231fbb42d796b96eec3c" id="r_a72916ca0cb69231fbb42d796b96eec3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72916ca0cb69231fbb42d796b96eec3c">game_is_over</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player)</td></tr>
-<tr class="memdesc:a72916ca0cb69231fbb42d796b96eec3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game is over.  <br /></td></tr>
+<tr class="memdesc:a72916ca0cb69231fbb42d796b96eec3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the game is over.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_board"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_board')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_board.html">Board&lt; char &gt;</a></td></tr>
 <tr class="memitem:ae5dfded241ee3644196e2f6074d1d0b1 inherit pub_methods_class_board" id="r_ae5dfded241ee3644196e2f6074d1d0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board</a> (int <a class="el" href="class_board.html#a948d978e3b5fc460559b588f5dee9572">rows</a>, int <a class="el" href="class_board.html#afaf8842d9d52ac724e8c2f5642ecafc7">columns</a>)</td></tr>
 <tr class="memdesc:ae5dfded241ee3644196e2f6074d1d0b1 inherit pub_methods_class_board"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a board with given dimensions.  <br /></td></tr>
@@ -136,10 +139,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a492feac09705f2cb6921d54883f28ad5" id="r_a492feac09705f2cb6921d54883f28ad5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492feac09705f2cb6921d54883f28ad5">blank_symbol</a> = '.'</td></tr>
-<tr class="memdesc:a492feac09705f2cb6921d54883f28ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character used to represent an empty cell on the board.  <br /></td></tr>
+<tr class="memdesc:a492feac09705f2cb6921d54883f28ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character used to represent an empty cell.  <br /></td></tr>
 <tr class="memitem:a59951c23377166f1d584e488e9020f48" id="r_a59951c23377166f1d584e488e9020f48"><td class="memItemLeft" align="right" valign="top">deque&lt; <a class="el" href="struct_vertex.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59951c23377166f1d584e488e9020f48">history</a></td></tr>
+<tr class="memdesc:a59951c23377166f1d584e488e9020f48"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_move.html" title="Represents a single move in a board game.">Move</a> history for redo/undo.  <br /></td></tr>
 <tr class="memitem:a390c10033737c655295931a3ae398845" id="r_a390c10033737c655295931a3ae398845"><td class="memItemLeft" align="right" valign="top">stack&lt; <a class="el" href="struct_vertex.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390c10033737c655295931a3ae398845">undoHistory</a></td></tr>
+<tr class="memdesc:a390c10033737c655295931a3ae398845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack to support undo operations.  <br /></td></tr>
 <tr class="memitem:ac461cae748daced58d34558f2b46a1b5" id="r_ac461cae748daced58d34558f2b46a1b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac461cae748daced58d34558f2b46a1b5">cnt</a> = 0</td></tr>
+<tr class="memdesc:ac461cae748daced58d34558f2b46a1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_move.html" title="Represents a single move in a board game.">Move</a> counter.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -154,8 +160,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a5952baefabced65fecec333de638408d inherit pro_attribs_class_board"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of moves made.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00011">11</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
+<div class="textblock"><p><a class="el" href="class_board.html" title="Base template for any board used in board games.">Board</a> class for infinite Tic-Tac-Toe. </p>
+<p>Maintains the board state, move history, and provides logic for applying moves and checking game termination conditions. </p>
+
+<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00039">39</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac475c42f371943a1e14d4bd975f18416" name="ac475c42f371943a1e14d4bd975f18416"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac475c42f371943a1e14d4bd975f18416">&#9670;&#160;</a></span>XO_inf_Board()</h2>
@@ -172,7 +180,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs an empty <a class="el" href="class_x_o__inf___board.html">XO_inf_Board</a>. </p>
+<p>Constructs an empty <a class="el" href="class_x_o__inf___board.html" title="Board class for infinite Tic-Tac-Toe.">XO_inf_Board</a>. </p>
 <p>Initializes a 3x3 board with all cells set to the blank symbol. </p>
 
 <p class="definition">Definition at line <a class="el" href="_x_o__inf_8cpp_source.html#l00020">20</a> of file <a class="el" href="_x_o__inf_8cpp_source.html">XO_inf.cpp</a>.</p>
@@ -183,7 +191,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   24</span>}</div>
 <div class="ttc" id="aclass_board_html_ae5dfded241ee3644196e2f6074d1d0b1"><div class="ttname"><a href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board&lt; char &gt;::Board</a></div><div class="ttdeci">Board(int rows, int columns)</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00057">BoardGame_Classes.h:57</a></div></div>
 <div class="ttc" id="aclass_board_html_af00c1fc363eb640ca276b8a572040040"><div class="ttname"><a href="class_board.html#af00c1fc363eb640ca276b8a572040040">Board&lt; char &gt;::board</a></div><div class="ttdeci">vector&lt; vector&lt; char &gt; &gt; board</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00050">BoardGame_Classes.h:50</a></div></div>
-<div class="ttc" id="aclass_x_o__inf___board_html_a492feac09705f2cb6921d54883f28ad5"><div class="ttname"><a href="#a492feac09705f2cb6921d54883f28ad5">XO_inf_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Character used to represent an empty cell on the board.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00013">XO_inf.h:13</a></div></div>
+<div class="ttc" id="aclass_x_o__inf___board_html_a492feac09705f2cb6921d54883f28ad5"><div class="ttname"><a href="#a492feac09705f2cb6921d54883f28ad5">XO_inf_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Character used to represent an empty cell.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00041">XO_inf.h:41</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -216,7 +224,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the game is over. </p>
+<p>Determine whether the game is over. </p>
+<p>Checks if the game is over.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the active player. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game has ended.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>Pointer to the player to check for. </td></tr>
@@ -231,8 +247,8 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">  127</span>                                                    {</div>
 <div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#ac8fe1843e8cae7c832218a80421eaa13">is_win</a>(player) || <a class="code hl_function" href="#a39c1227c26b820836e8ff8bf8cbad1b0">is_draw</a>(player);</div>
 <div class="line"><span class="lineno">  129</span>}</div>
-<div class="ttc" id="aclass_x_o__inf___board_html_a39c1227c26b820836e8ff8bf8cbad1b0"><div class="ttname"><a href="#a39c1227c26b820836e8ff8bf8cbad1b0">XO_inf_Board::is_draw</a></div><div class="ttdeci">bool is_draw(Player&lt; char &gt; *player)</div><div class="ttdoc">Checks if the game is a draw.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8cpp_source.html#l00117">XO_inf.cpp:117</a></div></div>
-<div class="ttc" id="aclass_x_o__inf___board_html_ac8fe1843e8cae7c832218a80421eaa13"><div class="ttname"><a href="#ac8fe1843e8cae7c832218a80421eaa13">XO_inf_Board::is_win</a></div><div class="ttdeci">bool is_win(Player&lt; char &gt; *player)</div><div class="ttdoc">Checks if the given player has won.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8cpp_source.html#l00089">XO_inf.cpp:89</a></div></div>
+<div class="ttc" id="aclass_x_o__inf___board_html_a39c1227c26b820836e8ff8bf8cbad1b0"><div class="ttname"><a href="#a39c1227c26b820836e8ff8bf8cbad1b0">XO_inf_Board::is_draw</a></div><div class="ttdeci">bool is_draw(Player&lt; char &gt; *player)</div><div class="ttdoc">Check if the game is a draw.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8cpp_source.html#l00117">XO_inf.cpp:117</a></div></div>
+<div class="ttc" id="aclass_x_o__inf___board_html_ac8fe1843e8cae7c832218a80421eaa13"><div class="ttname"><a href="#ac8fe1843e8cae7c832218a80421eaa13">XO_inf_Board::is_win</a></div><div class="ttdeci">bool is_win(Player&lt; char &gt; *player)</div><div class="ttdoc">Check if a player has achieved a win condition.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8cpp_source.html#l00089">XO_inf.cpp:89</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -264,7 +280,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the game is a draw. </p>
+<p>Check if the game is a draw. </p>
+<p>Checks if the game is a draw.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the active player. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game is drawn.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>Pointer to the player (ignored in this context). </td></tr>
@@ -293,8 +317,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a54c4ca42e434d6c8de24fc1a993e13f5" name="a54c4ca42e434d6c8de24fc1a993e13f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c4ca42e434d6c8de24fc1a993e13f5">&#9670;&#160;</a></span>is_lose()</h2>
+<a id="a94cbd747b7cf23a22273c309dd535098" name="a94cbd747b7cf23a22273c309dd535098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94cbd747b7cf23a22273c309dd535098">&#9670;&#160;</a></span>is_lose()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +329,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool XO_inf_Board::is_lose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -316,12 +340,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Check if a player has lost. </p>
+<p>Placeholder: infinite Tic-Tac-Toe does not use lose detection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always returns false. </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a207d5f6feb77f81c51d1462f0245890d">Board&lt; char &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00022">22</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; };</div>
+<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00068">68</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -348,7 +379,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the given player has won. </p>
+<p>Check if a player has achieved a win condition. </p>
+<p>Checks if the given player has won.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player being evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the player has won.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>Pointer to the player to check. </td></tr>
@@ -419,7 +458,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Apply or undo a move on the board. </p>
+<p>Apply a move to the board. </p>
+<p>Apply or undo a move on the board.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">move</td><td>Pointer to the move object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the move was applied successfully.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">move</td><td>Pointer to the move to apply. If <span class="tt">move-&gt;get_symbol() == 0</span>, it represents an undo operation. </td></tr>
@@ -431,14 +478,14 @@ Here is the caller graph for this function:</div>
 <li>For normal moves (<span class="tt">mark != 0</span>):<ul>
 <li>Validates cell coordinates and occupancy.</li>
 <li>Updates the board and history.</li>
-<li>Increments move counter <span class="tt"><a class="el" href="#ac461cae748daced58d34558f2b46a1b5">cnt</a></span> modulo 3.</li>
-<li>Every third move, oldest move is pushed to <span class="tt"><a class="el" href="#a390c10033737c655295931a3ae398845">undoHistory</a></span>.</li>
+<li>Increments move counter <span class="tt"><a class="el" href="#ac461cae748daced58d34558f2b46a1b5" title="Move counter.">cnt</a></span> modulo 3.</li>
+<li>Every third move, oldest move is pushed to <span class="tt"><a class="el" href="#a390c10033737c655295931a3ae398845" title="Stack to support undo operations.">undoHistory</a></span>.</li>
 </ul>
 </li>
 <li>For undo moves (<span class="tt">mark == 0</span>):<ul>
 <li>Decrements move counter and resets cell.</li>
-<li>Restores move from <span class="tt"><a class="el" href="#a390c10033737c655295931a3ae398845">undoHistory</a></span> if needed.</li>
-<li>Updates <span class="tt"><a class="el" href="#ac461cae748daced58d34558f2b46a1b5">cnt</a></span> modulo 3. </li>
+<li>Restores move from <span class="tt"><a class="el" href="#a390c10033737c655295931a3ae398845" title="Stack to support undo operations.">undoHistory</a></span> if needed.</li>
+<li>Updates <span class="tt"><a class="el" href="#ac461cae748daced58d34558f2b46a1b5" title="Move counter.">cnt</a></span> modulo 3. </li>
 </ul>
 </li>
 </ul>
@@ -488,9 +535,9 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclass_move_html_a595bf740852c05a1cb425ef2640fd4ff"><div class="ttname"><a href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff">Move::get_symbol</a></div><div class="ttdeci">T get_symbol() const</div><div class="ttdoc">Get the move symbol.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00127">BoardGame_Classes.h:127</a></div></div>
 <div class="ttc" id="aclass_move_html_a96469802a55c9083a1e93c7edec8a00c"><div class="ttname"><a href="class_move.html#a96469802a55c9083a1e93c7edec8a00c">Move::get_y</a></div><div class="ttdeci">int get_y() const</div><div class="ttdoc">Get column index.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00124">BoardGame_Classes.h:124</a></div></div>
 <div class="ttc" id="aclass_move_html_a9d4f543a81e361f872d37bcfb64d5b55"><div class="ttname"><a href="class_move.html#a9d4f543a81e361f872d37bcfb64d5b55">Move::get_x</a></div><div class="ttdeci">int get_x() const</div><div class="ttdoc">Get row index.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00121">BoardGame_Classes.h:121</a></div></div>
-<div class="ttc" id="aclass_x_o__inf___board_html_a390c10033737c655295931a3ae398845"><div class="ttname"><a href="#a390c10033737c655295931a3ae398845">XO_inf_Board::undoHistory</a></div><div class="ttdeci">stack&lt; Vertex &gt; undoHistory</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00015">XO_inf.h:15</a></div></div>
-<div class="ttc" id="aclass_x_o__inf___board_html_a59951c23377166f1d584e488e9020f48"><div class="ttname"><a href="#a59951c23377166f1d584e488e9020f48">XO_inf_Board::history</a></div><div class="ttdeci">deque&lt; Vertex &gt; history</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00014">XO_inf.h:14</a></div></div>
-<div class="ttc" id="aclass_x_o__inf___board_html_ac461cae748daced58d34558f2b46a1b5"><div class="ttname"><a href="#ac461cae748daced58d34558f2b46a1b5">XO_inf_Board::cnt</a></div><div class="ttdeci">int cnt</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00016">XO_inf.h:16</a></div></div>
+<div class="ttc" id="aclass_x_o__inf___board_html_a390c10033737c655295931a3ae398845"><div class="ttname"><a href="#a390c10033737c655295931a3ae398845">XO_inf_Board::undoHistory</a></div><div class="ttdeci">stack&lt; Vertex &gt; undoHistory</div><div class="ttdoc">Stack to support undo operations.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00043">XO_inf.h:43</a></div></div>
+<div class="ttc" id="aclass_x_o__inf___board_html_a59951c23377166f1d584e488e9020f48"><div class="ttname"><a href="#a59951c23377166f1d584e488e9020f48">XO_inf_Board::history</a></div><div class="ttdeci">deque&lt; Vertex &gt; history</div><div class="ttdoc">Move history for redo/undo.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00042">XO_inf.h:42</a></div></div>
+<div class="ttc" id="aclass_x_o__inf___board_html_ac461cae748daced58d34558f2b46a1b5"><div class="ttname"><a href="#ac461cae748daced58d34558f2b46a1b5">XO_inf_Board::cnt</a></div><div class="ttdeci">int cnt</div><div class="ttdoc">Move counter.</div><div class="ttdef"><b>Definition</b> <a href="_x_o__inf_8h_source.html#l00044">XO_inf.h:44</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -520,9 +567,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Character used to represent an empty cell on the board. </p>
+<p>Character used to represent an empty cell. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00013">13</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00041">41</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
 
 </div>
 </div>
@@ -546,7 +593,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00016">16</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
+<p><a class="el" href="class_move.html" title="Represents a single move in a board game.">Move</a> counter. </p>
+
+<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00044">44</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
 
 </div>
 </div>
@@ -570,7 +619,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00014">14</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
+<p><a class="el" href="class_move.html" title="Represents a single move in a board game.">Move</a> history for redo/undo. </p>
+
+<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00042">42</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +645,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00015">15</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
+<p>Stack to support undo operations. </p>
+
+<p class="definition">Definition at line <a class="el" href="_x_o__inf_8h_source.html#l00043">43</a> of file <a class="el" href="_x_o__inf_8h_source.html">XO_inf.h</a>.</p>
 
 </div>
 </div>

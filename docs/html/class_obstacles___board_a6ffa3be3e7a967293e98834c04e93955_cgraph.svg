@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Attempts to place symbol s at (r, c).">
+<g id="a_Node000001"><a xlink:title="Attempt to place a symbol at the given position.">
 <polygon fill="#999999" stroke="#666666" points="143.5,-20 0,-20 0,0 143.5,0 143.5,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="71.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::updateCell</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" xlink:title="Returns a list of all legal moves.">
+<g id="a_Node000002"><a xlink:href="class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" target="_top" xlink:title="Get all available moves.">
 <polygon fill="white" stroke="#666666" points="353.75,-20 179.5,-20 179.5,0 353.75,0 353.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="266.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board::getAvailableMove</text>
 </a>

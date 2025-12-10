@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Determines the optimal move using minimax.">
+<g id="a_Node000001"><a xlink:title="Picks a random free cell for AI.">
 <polygon fill="#999999" stroke="#666666" points="260.75,-20 148.75,-20 148.75,0 260.75,0 260.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="204.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_AI::bestMove</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" xlink:title="Ask the user (or AI) to make a move.">
+<g id="a_Node000002"><a xlink:href="classdia___x_o___u_i.html#ac93aba1a10bbb189d2bc2597ccb9d7b4" target="_top" xlink:title="Obtains the next move from human or AI.">
 <polygon fill="white" stroke="#666666" points="112.75,-20 0,-20 0,0 112.75,0 112.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="56.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">dia_XO_UI::get_move</text>
 </a>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Infinite Tic&#45;Tac&#45;Toe game classes.">
 <polygon fill="#999999" stroke="#666666" points="188,-76 66.25,-76 66.25,-56 188,-56 188,-76"/>
 <text xml:space="preserve" text-anchor="middle" x="127.12" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/XO_inf/XO_inf.h</text>
 </a>

@@ -1,5 +1,5 @@
 <map id="dia_XO_AI" name="dia_XO_AI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,187,100,320"/>
+<area shape="rect" id="Node000001" title="Very simple AI for diamond Tic&#45;Tac&#45;Toe." alt="" coords="5,187,100,320"/>
 <area shape="rect" id="Node000002" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="8,5,97,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,153,56,187,50,187,50,153"/>
 </map>

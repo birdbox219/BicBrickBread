@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_anti___x_o___board.html#adcaa9a00867940eefbbb22447e014437" xlink:title="Checks if the game is over (lose or draw).">
+<g id="a_Node000002"><a xlink:href="class_anti___x_o___board.html#adcaa9a00867940eefbbb22447e014437" target="_top" xlink:title="Checks if the game is over (loss or draw).">
 <polygon fill="white" stroke="#666666" points="113.5,-32 0,-32 0,0 113.5,0 113.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_XO_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="56.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="User interface handler for Obstacles Tic&#45;Tac&#45;Toe.">
 <polygon fill="#999999" stroke="none" points="162.5,-100 46.25,-100 46.25,0 162.5,0 162.5,-100"/>
 <text xml:space="preserve" text-anchor="start" x="74.38" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_UI</text>
 <text xml:space="preserve" text-anchor="start" x="102.88" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_u_i.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_u_i.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="126.75,-390 0,-390 0,-210 126.75,-210 126.75,-390"/>
 <text xml:space="preserve" text-anchor="start" x="39.75" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">UI&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="4.38" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -74,7 +74,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_obstacles___board.html" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="class_obstacles___board.html" target="_top" xlink:title="Modified Tic&#45;Tac&#45;Toe board supporting traps and 64&#45;bit bitboard logic.">
 <polygon fill="white" stroke="none" points="246,-446 144.75,-446 144.75,-154 246,-154 246,-446"/>
 <text xml:space="preserve" text-anchor="start" x="157.88" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board</text>
 <text xml:space="preserve" text-anchor="start" x="150.25" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -131,7 +131,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_board.html" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="class_board.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="244.88,-727 145.88,-727 145.88,-483 244.88,-483 244.88,-727"/>
 <text xml:space="preserve" text-anchor="start" x="164.25" y="-713.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="150.25" y="-697.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

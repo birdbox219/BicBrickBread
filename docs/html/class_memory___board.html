@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Memory_Board Class Reference</title>
+<title>BicBrickBread: Memory_Board Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,7 +89,7 @@ $(function(){initNavTree('class_memory___board.html','','class_memory___board-me
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Memory_Board Class Reference</div></div>
+  <div class="headertitle"><div class="title">Memory_Board Class Reference<div class="ingroups"><a class="el" href="group___memory___x_o.html">Memory XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -111,16 +111,17 @@ Collaboration diagram for Memory_Board:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a235743f1bdf5051526c92cc59b276340" id="r_a235743f1bdf5051526c92cc59b276340"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235743f1bdf5051526c92cc59b276340">Memory_Board</a> ()</td></tr>
+<tr class="memdesc:a235743f1bdf5051526c92cc59b276340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty Memory Tic-Tac-Toe board.  <br /></td></tr>
 <tr class="memitem:ab21d9e1025f3a8ae29dd17a5fb368462" id="r_ab21d9e1025f3a8ae29dd17a5fb368462"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab21d9e1025f3a8ae29dd17a5fb368462">update_board</a> (<a class="el" href="class_move.html">Move</a>&lt; char &gt; *move) override</td></tr>
-<tr class="memdesc:ab21d9e1025f3a8ae29dd17a5fb368462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the board with a new move.  <br /></td></tr>
+<tr class="memdesc:ab21d9e1025f3a8ae29dd17a5fb368462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a move to the board.  <br /></td></tr>
 <tr class="memitem:a8ebd3f4825d7a3ac78cc77ef85738de9" id="r_a8ebd3f4825d7a3ac78cc77ef85738de9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ebd3f4825d7a3ac78cc77ef85738de9">is_win</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a8ebd3f4825d7a3ac78cc77ef85738de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a player has won.  <br /></td></tr>
+<tr class="memdesc:a8ebd3f4825d7a3ac78cc77ef85738de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given player has won.  <br /></td></tr>
 <tr class="memitem:a0c40062fe9f07b532ad893747d5d47e5" id="r_a0c40062fe9f07b532ad893747d5d47e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c40062fe9f07b532ad893747d5d47e5">is_lose</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:a0c40062fe9f07b532ad893747d5d47e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a player has lost.  <br /></td></tr>
+<tr class="memdesc:a0c40062fe9f07b532ad893747d5d47e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given player has lost.  <br /></td></tr>
 <tr class="memitem:ad80149de055f8902191f1124d23619df" id="r_ad80149de055f8902191f1124d23619df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad80149de055f8902191f1124d23619df">is_draw</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:ad80149de055f8902191f1124d23619df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game ended in a draw.  <br /></td></tr>
+<tr class="memdesc:ad80149de055f8902191f1124d23619df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the game ended in a draw.  <br /></td></tr>
 <tr class="memitem:ad806fdf49150705c3f4892e74e8dedc4" id="r_ad806fdf49150705c3f4892e74e8dedc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad806fdf49150705c3f4892e74e8dedc4">game_is_over</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:ad806fdf49150705c3f4892e74e8dedc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is over.  <br /></td></tr>
+<tr class="memdesc:ad806fdf49150705c3f4892e74e8dedc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the game is over (win, lose, or draw).  <br /></td></tr>
 <tr class="memitem:a3b0bad59d277da4830a30e547c1f57ac" id="r_a3b0bad59d277da4830a30e547c1f57ac"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b0bad59d277da4830a30e547c1f57ac">get_blank_symbol</a> () const</td></tr>
 <tr class="memdesc:a3b0bad59d277da4830a30e547c1f57ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the symbol representing blank cells.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_board"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_board')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_board.html">Board&lt; char &gt;</a></td></tr>
@@ -163,7 +164,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>Inherits from <span class="tt"><a class="el" href="class_board.html" title="Base template for any board used in board games.">Board</a>&lt;char&gt;</span> and overrides core board behaviors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8h_source.html#l00037">37</a> of file <a class="el" href="_memory___tic___tac___toe_8h_source.html">Memory_Tic_Tac_Toe.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8h_source.html#l00040">40</a> of file <a class="el" href="_memory___tic___tac___toe_8h_source.html">Memory_Tic_Tac_Toe.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a235743f1bdf5051526c92cc59b276340" name="a235743f1bdf5051526c92cc59b276340"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a235743f1bdf5051526c92cc59b276340">&#9670;&#160;</a></span>Memory_Board()</h2>
@@ -180,6 +181,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs an empty Memory Tic-Tac-Toe board. </p>
+
 <p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8cpp_source.html#l00024">24</a> of file <a class="el" href="_memory___tic___tac___toe_8cpp_source.html">Memory_Tic_Tac_Toe.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   24</span>                           : <a class="code hl_function" href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board</a>(3, 3)</div>
 <div class="line"><span class="lineno">   25</span>{</div>
@@ -189,7 +192,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   29</span>}</div>
 <div class="ttc" id="aclass_board_html_ae5dfded241ee3644196e2f6074d1d0b1"><div class="ttname"><a href="class_board.html#ae5dfded241ee3644196e2f6074d1d0b1">Board&lt; char &gt;::Board</a></div><div class="ttdeci">Board(int rows, int columns)</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00057">BoardGame_Classes.h:57</a></div></div>
 <div class="ttc" id="aclass_board_html_af00c1fc363eb640ca276b8a572040040"><div class="ttname"><a href="class_board.html#af00c1fc363eb640ca276b8a572040040">Board&lt; char &gt;::board</a></div><div class="ttdeci">vector&lt; vector&lt; char &gt; &gt; board</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00050">BoardGame_Classes.h:50</a></div></div>
-<div class="ttc" id="aclass_memory___board_html_ad39ba4c6ad3586ae9a9b1fddf32f28e8"><div class="ttname"><a href="#ad39ba4c6ad3586ae9a9b1fddf32f28e8">Memory_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Symbol representing empty cells.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8h_source.html#l00039">Memory_Tic_Tac_Toe.h:39</a></div></div>
+<div class="ttc" id="aclass_memory___board_html_ad39ba4c6ad3586ae9a9b1fddf32f28e8"><div class="ttname"><a href="#ad39ba4c6ad3586ae9a9b1fddf32f28e8">Memory_Board::blank_symbol</a></div><div class="ttdeci">char blank_symbol</div><div class="ttdoc">Symbol representing empty cells.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8h_source.html#l00042">Memory_Tic_Tac_Toe.h:42</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -211,7 +214,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool Memory_Board::game_is_over </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -222,7 +225,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Check if the game is over. </p>
+<p>Checks whether the game is over (win, lose, or draw). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game is over </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#ae0e4575ec3cc4b6eb9f367ffb2beed13">Board&lt; char &gt;</a>.</p>
 
@@ -231,9 +241,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (!player) <span class="keywordflow">throw</span> invalid_argument(<span class="stringliteral">&quot;Null player pointer&quot;</span>);</div>
 <div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="#a8ebd3f4825d7a3ac78cc77ef85738de9">is_win</a>(player) || <a class="code hl_function" href="#a0c40062fe9f07b532ad893747d5d47e5">is_lose</a>(player) || <a class="code hl_function" href="#ad80149de055f8902191f1124d23619df">is_draw</a>(player);</div>
 <div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="aclass_memory___board_html_a0c40062fe9f07b532ad893747d5d47e5"><div class="ttname"><a href="#a0c40062fe9f07b532ad893747d5d47e5">Memory_Board::is_lose</a></div><div class="ttdeci">bool is_lose(Player&lt; char &gt; *player) override</div><div class="ttdoc">Check if a player has lost.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8cpp_source.html#l00087">Memory_Tic_Tac_Toe.cpp:87</a></div></div>
-<div class="ttc" id="aclass_memory___board_html_a8ebd3f4825d7a3ac78cc77ef85738de9"><div class="ttname"><a href="#a8ebd3f4825d7a3ac78cc77ef85738de9">Memory_Board::is_win</a></div><div class="ttdeci">bool is_win(Player&lt; char &gt; *player) override</div><div class="ttdoc">Check if a player has won.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8cpp_source.html#l00064">Memory_Tic_Tac_Toe.cpp:64</a></div></div>
-<div class="ttc" id="aclass_memory___board_html_ad80149de055f8902191f1124d23619df"><div class="ttname"><a href="#ad80149de055f8902191f1124d23619df">Memory_Board::is_draw</a></div><div class="ttdeci">bool is_draw(Player&lt; char &gt; *player) override</div><div class="ttdoc">Check if the game ended in a draw.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8cpp_source.html#l00109">Memory_Tic_Tac_Toe.cpp:109</a></div></div>
+<div class="ttc" id="aclass_memory___board_html_a0c40062fe9f07b532ad893747d5d47e5"><div class="ttname"><a href="#a0c40062fe9f07b532ad893747d5d47e5">Memory_Board::is_lose</a></div><div class="ttdeci">bool is_lose(Player&lt; char &gt; *player) override</div><div class="ttdoc">Checks whether the given player has lost.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8cpp_source.html#l00087">Memory_Tic_Tac_Toe.cpp:87</a></div></div>
+<div class="ttc" id="aclass_memory___board_html_a8ebd3f4825d7a3ac78cc77ef85738de9"><div class="ttname"><a href="#a8ebd3f4825d7a3ac78cc77ef85738de9">Memory_Board::is_win</a></div><div class="ttdeci">bool is_win(Player&lt; char &gt; *player) override</div><div class="ttdoc">Checks whether the given player has won.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8cpp_source.html#l00064">Memory_Tic_Tac_Toe.cpp:64</a></div></div>
+<div class="ttc" id="aclass_memory___board_html_ad80149de055f8902191f1124d23619df"><div class="ttname"><a href="#ad80149de055f8902191f1124d23619df">Memory_Board::is_draw</a></div><div class="ttdeci">bool is_draw(Player&lt; char &gt; *player) override</div><div class="ttdoc">Checks whether the game ended in a draw.</div><div class="ttdef"><b>Definition</b> <a href="_memory___tic___tac___toe_8cpp_source.html#l00109">Memory_Tic_Tac_Toe.cpp:109</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -266,10 +276,10 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Returns the symbol representing blank cells. </p>
-<dl class="section return"><dt>Returns</dt><dd>Blank cell symbol </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Character representing blank cells </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8h_source.html#l00054">54</a> of file <a class="el" href="_memory___tic___tac___toe_8h_source.html">Memory_Tic_Tac_Toe.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad39ba4c6ad3586ae9a9b1fddf32f28e8">blank_symbol</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8h_source.html#l00089">89</a> of file <a class="el" href="_memory___tic___tac___toe_8h_source.html">Memory_Tic_Tac_Toe.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad39ba4c6ad3586ae9a9b1fddf32f28e8">blank_symbol</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,7 +295,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool Memory_Board::is_draw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -296,7 +306,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Check if the game ended in a draw. </p>
+<p>Checks whether the game ended in a draw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the game is a draw </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a8dbe2a243881986f3e53b45799d377fc">Board&lt; char &gt;</a>.</p>
 
@@ -334,7 +351,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool Memory_Board::is_lose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -345,14 +362,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Check if a player has lost. </p>
+<p>Checks whether the given player has lost. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the player has lost </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a207d5f6feb77f81c51d1462f0245890d">Board&lt; char &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8cpp_source.html#l00087">87</a> of file <a class="el" href="_memory___tic___tac___toe_8cpp_source.html">Memory_Tic_Tac_Toe.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
 <div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!player) <span class="keywordflow">throw</span> invalid_argument(<span class="stringliteral">&quot;Null player pointer&quot;</span>);</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">char</span> sym = (player-&gt;get_symbol() == <span class="charliteral">&#39;X&#39;</span> ? <span class="charliteral">&#39;O&#39;</span> : <span class="charliteral">&#39;X&#39;</span>);</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">char</span> sym = (player-&gt;<a class="code hl_function" href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4">get_symbol</a>() == <span class="charliteral">&#39;X&#39;</span> ? <span class="charliteral">&#39;O&#39;</span> : <span class="charliteral">&#39;X&#39;</span>);</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span>    <span class="keyword">auto</span> all_equal = [&amp;](<span class="keywordtype">char</span> a, <span class="keywordtype">char</span> b, <span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> a == b &amp;&amp; b == c &amp;&amp; a != <a class="code hl_variable" href="#ad39ba4c6ad3586ae9a9b1fddf32f28e8">blank_symbol</a>; };</div>
 <div class="line"><span class="lineno">   93</span> </div>
@@ -369,6 +393,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  106</span>}</div>
+<div class="ttc" id="aclass_player_html_af56f0bf98c0423a3a75b0848607d03a4"><div class="ttname"><a href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4">Player::get_symbol</a></div><div class="ttdeci">T get_symbol() const</div><div class="ttdoc">Get the player&#39;s symbol.</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00160">BoardGame_Classes.h:160</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -394,7 +419,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool Memory_Board::is_win </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&lt; char &gt; *</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -405,14 +430,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Check if a player has won. </p>
+<p>Checks whether the given player has won. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pointer to the player to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the player has a winning configuration </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#ab316fe3e79677b4617fc3d90d6c48f33">Board&lt; char &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8cpp_source.html#l00064">64</a> of file <a class="el" href="_memory___tic___tac___toe_8cpp_source.html">Memory_Tic_Tac_Toe.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (!player) <span class="keywordflow">throw</span> invalid_argument(<span class="stringliteral">&quot;Null player pointer&quot;</span>);</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">char</span> sym = player-&gt;get_symbol();</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">char</span> sym = player-&gt;<a class="code hl_function" href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4">get_symbol</a>();</div>
 <div class="line"><span class="lineno">   68</span> </div>
 <div class="line"><span class="lineno">   69</span>    <span class="comment">// Lambda to check if three cells are equal and non-blank</span></div>
 <div class="line"><span class="lineno">   70</span>    <span class="keyword">auto</span> all_equal = [&amp;](<span class="keywordtype">char</span> a, <span class="keywordtype">char</span> b, <span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> a == b &amp;&amp; b == c &amp;&amp; a != <a class="code hl_variable" href="#ad39ba4c6ad3586ae9a9b1fddf32f28e8">blank_symbol</a>; };</div>
@@ -466,14 +498,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Update the board with a new move. </p>
+<p>Applies a move to the board. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">move</td><td>The move object containing position and symbol. </td></tr>
+    <tr><td class="paramname">move</td><td>Pointer to the move object containing position and symbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the move is valid and applied, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the move was applied successfully </dd></dl>
 
 <p>Implements <a class="el" href="class_board.html#a93d9dec601dda58b7e206ccb47633e57">Board&lt; char &gt;</a>.</p>
 
@@ -541,7 +573,7 @@ Here is the call graph for this function:</div>
 
 <p>Symbol representing empty cells. </p>
 
-<p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8h_source.html#l00039">39</a> of file <a class="el" href="_memory___tic___tac___toe_8h_source.html">Memory_Tic_Tac_Toe.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_memory___tic___tac___toe_8h_source.html#l00042">42</a> of file <a class="el" href="_memory___tic___tac___toe_8h_source.html">Memory_Tic_Tac_Toe.h</a>.</p>
 
 </div>
 </div>

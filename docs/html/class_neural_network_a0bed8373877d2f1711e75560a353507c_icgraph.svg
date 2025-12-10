@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_neural_network.html#a407ef851e7e66d12054d1940c815a2bf" xlink:title="Train the network on a single input&#45;output pair.">
+<g id="a_Node000002"><a xlink:href="class_neural_network.html#a407ef851e7e66d12054d1940c815a2bf" target="_top" xlink:title="Train the network on a single input&#45;output pair.">
 <polygon fill="white" stroke="#666666" points="106,-20 0,-20 0,0 106,0 106,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="53" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NeuralNetwork::train</text>
 </a>

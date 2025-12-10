@@ -47,8 +47,6 @@ var hierarchy =
       [ "_4by4XO_Move", "class__4by4_x_o___move.html", null ]
     ] ],
     [ "NeuralNetwork", "class_neural_network.html", null ],
-    [ "Obstachles_Board", "class_obstachles___board.html", null ],
-    [ "Obstachles_UI", "class_obstachles___u_i.html", null ],
     [ "Player&lt; T &gt;", "class_player.html", null ],
     [ "string::reverse_iterator", "classstring_1_1reverse__iterator.html", null ],
     [ "vector&lt; T &gt;::reverse_iterator", "classvector_1_1reverse__iterator.html", null ],

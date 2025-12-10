@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_large___x_o___board.html#ab7c22478765191720a9068b68f492891" xlink:title="Update board using a Move object (overrides base class).">
+<g id="a_Node000002"><a xlink:href="class_large___x_o___board.html#ab7c22478765191720a9068b68f492891" target="_top" xlink:title="Update board using a Move object.">
 <polygon fill="white" stroke="#666666" points="125.5,-32 0,-32 0,0 125.5,0 125.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="62.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>

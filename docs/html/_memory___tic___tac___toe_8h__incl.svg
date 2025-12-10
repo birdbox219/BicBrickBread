@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$_board_game___classes_8h.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="_board_game___classes_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="142,-88 24,-88 24,-56 142,-56 142,-88"/>
 <text xml:space="preserve" text-anchor="start" x="32" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/BoardGame</text>
 <text xml:space="preserve" text-anchor="middle" x="83" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Classes.h</text>
@@ -58,7 +58,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="$_a_i_8h.html" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="_a_i_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="151.12,-144 66.88,-144 66.88,-124 151.12,-124 151.12,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="109" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/AI.h</text>
 </a>
@@ -76,7 +76,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="$_custom___u_i_8h.html" xlink:title="Defines a customizable user interface for board games.">
+<g id="a_Node000008"><a xlink:href="_custom___u_i_8h.html" target="_top" xlink:title="Defines a customizable user interface for board games.">
 <polygon fill="white" stroke="#666666" points="294.38,-144 169.62,-144 169.62,-124 294.38,-124 294.38,-144"/>
 <text xml:space="preserve" text-anchor="middle" x="232" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../header/Custom_UI.h</text>
 </a>

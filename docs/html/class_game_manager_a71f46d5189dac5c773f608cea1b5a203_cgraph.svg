@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" xlink:title="Get the player&#39;s name.">
+<g id="a_Node000002"><a xlink:href="class_player.html#aed2af19790ba73190e3ebeea589518e1" target="_top" xlink:title="Get the player&#39;s name.">
 <polygon fill="white" stroke="#666666" points="227.75,-20 135.25,-20 135.25,0 227.75,0 227.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="181.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_name</text>
 </a>

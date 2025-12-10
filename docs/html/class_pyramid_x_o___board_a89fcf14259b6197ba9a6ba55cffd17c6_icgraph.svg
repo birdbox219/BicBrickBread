@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Checks if the player has won. Winning lines include horizontal, vertical, and diagonal triples.">
+<g id="a_Node000001"><a xlink:title="Checks if the player has won.">
 <polygon fill="#999999" stroke="#666666" points="466.5,-39 335.75,-39 335.75,-19 466.5,-19 466.5,-39"/>
 <text xml:space="preserve" text-anchor="middle" x="401.12" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::is_win</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_pyramid_x_o___board.html#a450eb010988099eaa06a498cb0b57368" xlink:title="Checks whether the game is finished (win or draw).">
+<g id="a_Node000002"><a xlink:href="class_pyramid_x_o___board.html#a450eb010988099eaa06a498cb0b57368" target="_top" xlink:title="Checks whether the game is finished (win or draw).">
 <polygon fill="white" stroke="#666666" points="127,-45 0,-45 0,-13 127,-13 127,-45"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="63.5" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_pyramid_x_o___board.html#a9d70812d00ba8e60e41e00a723f3a5f8" xlink:title="Checks if the game ended in a draw (all valid cells filled).">
+<g id="a_Node000003"><a xlink:href="class_pyramid_x_o___board.html#a9d70812d00ba8e60e41e00a723f3a5f8" target="_top" xlink:title="Checks if the game ended in a draw.">
 <polygon fill="white" stroke="#666666" points="299.75,-20 163,-20 163,0 299.75,0 299.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="231.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PyramidXO_Board::is_draw</text>
 </a>

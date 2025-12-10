@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Applies or undoes a move.">
+<g id="a_Node000001"><a xlink:title="Apply or undo a move on the board.">
 <polygon fill="#999999" stroke="#666666" points="118.75,-95 0,-95 0,-63 118.75,-63 118.75,-95"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::update</text>
 <text xml:space="preserve" text-anchor="middle" x="59.38" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" xlink:title="Get the move symbol.">
+<g id="a_Node000002"><a xlink:href="class_move.html#a595bf740852c05a1cb425ef2640fd4ff" target="_top" xlink:title="Get the move symbol.">
 <polygon fill="white" stroke="#666666" points="259.25,-146 163,-146 163,-126 259.25,-126 259.25,-146"/>
 <text xml:space="preserve" text-anchor="middle" x="211.12" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_symbol</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" xlink:title="Get row index.">
+<g id="a_Node000003"><a xlink:href="class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" target="_top" xlink:title="Get row index.">
 <polygon fill="white" stroke="#666666" points="246.12,-108 176.12,-108 176.12,-88 246.12,-88 246.12,-108"/>
 <text xml:space="preserve" text-anchor="middle" x="211.12" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_x</text>
 </a>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" xlink:title="Get column index.">
+<g id="a_Node000004"><a xlink:href="class_move.html#a96469802a55c9083a1e93c7edec8a00c" target="_top" xlink:title="Get column index.">
 <polygon fill="white" stroke="#666666" points="246.12,-70 176.12,-70 176.12,-50 246.12,-50 246.12,-70"/>
 <text xml:space="preserve" text-anchor="middle" x="211.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Move::get_y</text>
 </a>
@@ -75,7 +75,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_ultimate___board.html#aa00a4a25e58a0adbec92d865191c3b7d" xlink:title="Checks the small board containing the last move for win/draw.">
+<g id="a_Node000005"><a xlink:href="class_ultimate___board.html#aa00a4a25e58a0adbec92d865191c3b7d" target="_top" xlink:title="Evaluates the small board corresponding to the last move.">
 <polygon fill="white" stroke="#666666" points="267.5,-32 154.75,-32 154.75,0 267.5,0 267.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="162.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::small</text>
 <text xml:space="preserve" text-anchor="middle" x="211.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_board_check</text>

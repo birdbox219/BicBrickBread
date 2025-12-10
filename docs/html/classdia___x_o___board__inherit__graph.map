@@ -1,5 +1,5 @@
 <map id="dia_XO_Board" name="dia_XO_Board">
-<area shape="rect" id="Node000001" title=" " alt="" coords="13,400,129,661"/>
+<area shape="rect" id="Node000001" title="Represents the 7x7 diamond&#45;shaped Tic&#45;Tac&#45;Toe board." alt="" coords="13,400,129,661"/>
 <area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="5,5,137,352"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,367,74,400,69,400,69,367"/>
 </map>

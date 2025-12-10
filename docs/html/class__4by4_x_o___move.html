@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: _4by4XO_Move Class Reference</title>
+<title>BicBrickBread: _4by4XO_Move Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,11 +89,11 @@ $(function(){initNavTree('class__4by4_x_o___move.html','','class__4by4_x_o___mov
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">_4by4XO_Move Class Reference</div></div>
+  <div class="headertitle"><div class="title">_4by4XO_Move Class Reference<div class="ingroups"><a class="el" href="group___sliding_x_o.html">4x4 Sliding XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a move in the 4x4 Tic-Tac-Toe game where tokens slide to adjacent cells.  
+<p>Represents a move in the 4x4 sliding Tic-Tac-Toe game.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>&gt;</code></p>
@@ -111,7 +111,7 @@ Collaboration diagram for _4by4XO_Move:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a15a7b9a61917b7c1972477fe882d393d" id="r_a15a7b9a61917b7c1972477fe882d393d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15a7b9a61917b7c1972477fe882d393d">_4by4XO_Move</a> (int fx, int fy, int tx, int ty, char s)</td></tr>
-<tr class="memdesc:a15a7b9a61917b7c1972477fe882d393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a movement-based XO move.  <br /></td></tr>
+<tr class="memdesc:a15a7b9a61917b7c1972477fe882d393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a sliding XO move.  <br /></td></tr>
 <tr class="memitem:aeb341ce279afac99213036ae2eb3221f" id="r_aeb341ce279afac99213036ae2eb3221f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb341ce279afac99213036ae2eb3221f">get_from_x</a> () const</td></tr>
 <tr class="memitem:aabffd145731c0f5f32061325c151eae6" id="r_aabffd145731c0f5f32061325c151eae6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabffd145731c0f5f32061325c151eae6">get_from_y</a> () const</td></tr>
 <tr class="inherit_header pub_methods_class_move"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_move')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_move.html">Move&lt; char &gt;</a></td></tr>
@@ -127,15 +127,15 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a93f9912da3d76768eaaa4c4ed53c9912" id="r_a93f9912da3d76768eaaa4c4ed53c9912"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93f9912da3d76768eaaa4c4ed53c9912">from_x</a></td></tr>
-<tr class="memdesc:a93f9912da3d76768eaaa4c4ed53c9912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting row of the moved token.  <br /></td></tr>
+<tr class="memdesc:a93f9912da3d76768eaaa4c4ed53c9912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting row.  <br /></td></tr>
 <tr class="memitem:aaffcdbb867be736129d850fac227df12" id="r_aaffcdbb867be736129d850fac227df12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaffcdbb867be736129d850fac227df12">from_y</a></td></tr>
-<tr class="memdesc:aaffcdbb867be736129d850fac227df12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting column of the moved token.  <br /></td></tr>
+<tr class="memdesc:aaffcdbb867be736129d850fac227df12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting column.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a move in the 4x4 Tic-Tac-Toe game where tokens slide to adjacent cells. </p>
-<p>This move type stores both the starting and ending cell for a moving token. It is used because this version of the game does not place new symbols; instead, players MOVE their existing tokens. </p>
+<div class="textblock"><p>Represents a move in the 4x4 sliding Tic-Tac-Toe game. </p>
+<p>Stores both starting and ending coordinates since players slide tokens instead of placing new symbols. </p>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00014">14</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00027">27</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15a7b9a61917b7c1972477fe882d393d" name="a15a7b9a61917b7c1972477fe882d393d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15a7b9a61917b7c1972477fe882d393d">&#9670;&#160;</a></span>_4by4XO_Move()</h2>
@@ -179,22 +179,22 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a movement-based XO move. </p>
+<p>Constructs a sliding XO move. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fx</td><td>Starting row index. </td></tr>
-    <tr><td class="paramname">fy</td><td>Starting column index. </td></tr>
-    <tr><td class="paramname">tx</td><td>Ending row index. </td></tr>
-    <tr><td class="paramname">ty</td><td>Ending column index. </td></tr>
-    <tr><td class="paramname">s</td><td>Symbol being moved (X or O). </td></tr>
+    <tr><td class="paramname">fx</td><td>Starting row </td></tr>
+    <tr><td class="paramname">fy</td><td>Starting column </td></tr>
+    <tr><td class="paramname">tx</td><td>Ending row </td></tr>
+    <tr><td class="paramname">ty</td><td>Ending column </td></tr>
+    <tr><td class="paramname">s</td><td>Symbol being moved (X or O) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00028">28</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>        : <a class="code hl_function" href="class_move.html#a100102cb072a2857304023233dac7b42">Move&lt;char&gt;</a>(tx, ty, s), <a class="code hl_variable" href="#a93f9912da3d76768eaaa4c4ed53c9912">from_x</a>(fx), <a class="code hl_variable" href="#aaffcdbb867be736129d850fac227df12">from_y</a>(fy) {}</div>
-<div class="ttc" id="aclass__4by4_x_o___move_html_a93f9912da3d76768eaaa4c4ed53c9912"><div class="ttname"><a href="#a93f9912da3d76768eaaa4c4ed53c9912">_4by4XO_Move::from_x</a></div><div class="ttdeci">int from_x</div><div class="ttdoc">Starting row of the moved token.</div><div class="ttdef"><b>Definition</b> <a href="4by4___x_o_8h_source.html#l00015">4by4_XO.h:15</a></div></div>
-<div class="ttc" id="aclass__4by4_x_o___move_html_aaffcdbb867be736129d850fac227df12"><div class="ttname"><a href="#aaffcdbb867be736129d850fac227df12">_4by4XO_Move::from_y</a></div><div class="ttdeci">int from_y</div><div class="ttdoc">Starting column of the moved token.</div><div class="ttdef"><b>Definition</b> <a href="4by4___x_o_8h_source.html#l00016">4by4_XO.h:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00040">40</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>        : <a class="code hl_function" href="class_move.html#a100102cb072a2857304023233dac7b42">Move&lt;char&gt;</a>(tx, ty, s), <a class="code hl_variable" href="#a93f9912da3d76768eaaa4c4ed53c9912">from_x</a>(fx), <a class="code hl_variable" href="#aaffcdbb867be736129d850fac227df12">from_y</a>(fy) {}</div>
+<div class="ttc" id="aclass__4by4_x_o___move_html_a93f9912da3d76768eaaa4c4ed53c9912"><div class="ttname"><a href="#a93f9912da3d76768eaaa4c4ed53c9912">_4by4XO_Move::from_x</a></div><div class="ttdeci">int from_x</div><div class="ttdoc">Starting row.</div><div class="ttdef"><b>Definition</b> <a href="4by4___x_o_8h_source.html#l00028">4by4_XO.h:28</a></div></div>
+<div class="ttc" id="aclass__4by4_x_o___move_html_aaffcdbb867be736129d850fac227df12"><div class="ttname"><a href="#aaffcdbb867be736129d850fac227df12">_4by4XO_Move::from_y</a></div><div class="ttdeci">int from_y</div><div class="ttdoc">Starting column.</div><div class="ttdef"><b>Definition</b> <a href="4by4___x_o_8h_source.html#l00029">4by4_XO.h:29</a></div></div>
 <div class="ttc" id="aclass_move_html_a100102cb072a2857304023233dac7b42"><div class="ttname"><a href="class_move.html#a100102cb072a2857304023233dac7b42">Move&lt; char &gt;::Move</a></div><div class="ttdeci">Move(int x, int y, char symbol)</div><div class="ttdef"><b>Definition</b> <a href="_board_game___classes_8h_source.html#l00118">BoardGame_Classes.h:118</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -227,10 +227,10 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Starting row of the move. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Starting row of the move </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00032">32</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a93f9912da3d76768eaaa4c4ed53c9912">from_x</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00044">44</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a93f9912da3d76768eaaa4c4ed53c9912">from_x</a>; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -261,10 +261,10 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Starting column of the move. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Starting column of the move </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00035">35</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aaffcdbb867be736129d850fac227df12">from_y</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00047">47</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aaffcdbb867be736129d850fac227df12">from_y</a>; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -294,9 +294,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Starting row of the moved token. </p>
+<p>Starting row. </p>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00015">15</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00028">28</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
 
 </div>
 </div>
@@ -320,9 +320,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Starting column of the moved token. </p>
+<p>Starting column. </p>
 
-<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00016">16</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="4by4___x_o_8h_source.html#l00029">29</a> of file <a class="el" href="4by4___x_o_8h_source.html">4by4_XO.h</a>.</p>
 
 </div>
 </div>

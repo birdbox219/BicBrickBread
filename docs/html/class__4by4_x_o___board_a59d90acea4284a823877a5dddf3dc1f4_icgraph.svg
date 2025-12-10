@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Checks if the given player has 3 consecutive symbols.">
+<g id="a_Node000001"><a xlink:title="Checks if a player has 3 consecutive symbols.">
 <polygon fill="#999999" stroke="#666666" points="274.25,-26 153.25,-26 153.25,-6 274.25,-6 274.25,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="213.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_Board::is_win</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class__4by4_x_o___board.html#ad186c1005ee1c30e0955403aee023a88" xlink:title="Checks if game is over (win or draw).">
+<g id="a_Node000002"><a xlink:href="class__4by4_x_o___board.html#ad186c1005ee1c30e0955403aee023a88" target="_top" xlink:title="Checks if the game is over (win or draw).">
 <polygon fill="white" stroke="#666666" points="117.25,-32 0,-32 0,0 117.25,0 117.25,-32"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_4by4XO_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="58.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>

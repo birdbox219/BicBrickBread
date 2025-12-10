@@ -1,5 +1,5 @@
 <map id="Four_AI::bestMove" name="Four_AI::bestMove">
 <area shape="rect" id="Node000001" title="Computes the best possible move for the AI." alt="" coords="199,5,331,32"/>
-<area shape="rect" id="Node000002" href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" title="Gets the move from a human, computer, or AI player." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" title="Obtains the next move from a human, computer, or AI player." alt="" coords="5,5,151,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,21,151,21,151,16,183,16"/>
 </map>

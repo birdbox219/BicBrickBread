@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X-O Game Collection &amp; Neural Network: Word_XO_UI Class Reference</title>
+<title>BicBrickBread: Word_XO_UI Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">X-O Game Collection &amp; Neural Network<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">BicBrickBread<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">All variants of Tic-Tac-Toe games and Neural Network source</div>
   </td>
@@ -89,33 +89,33 @@ $(function(){initNavTree('class_word___x_o___u_i.html','','class_word___x_o___u_
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Word_XO_UI Class Reference<div class="ingroups"><a class="el" href="group___word___tic_tac_toe___u_i.html">Word Tic-Tac-Toe UI</a></div></div></div>
+  <div class="headertitle"><div class="title">Word_XO_UI Class Reference<div class="ingroups"><a class="el" href="group___word___x_o.html">Word XO</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>User Interface controller for the game.  
+<p>User interface for Word Tic-Tac-Toe.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Word_XO_UI:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_word___x_o___u_i__inherit__graph.svg" width="180" height="699"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_word___x_o___u_i__inherit__graph.svg" width="180" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for Word_XO_UI:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_word___x_o___u_i__coll__graph.svg" width="339" height="726"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_word___x_o___u_i__coll__graph.svg" width="339" height="683"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Constructors</div></td></tr>
 <tr class="memitem:a11a449d84298f6d6889388250031fd16" id="r_a11a449d84298f6d6889388250031fd16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11a449d84298f6d6889388250031fd16">Word_XO_UI</a> ()</td></tr>
-<tr class="memdesc:a11a449d84298f6d6889388250031fd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> object and precomputes <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> scores.  <br /></td></tr>
-<tr id="pub-methods-1" class="groupHeader"><td colspan="2"><div class="groupHeader">Player Interaction</div></td></tr>
+<tr class="memdesc:a11a449d84298f6d6889388250031fd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a>.  <br /></td></tr>
 <tr class="memitem:aea1d068753433755a0c7eb45b06add23" id="r_aea1d068753433755a0c7eb45b06add23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_move.html">Move</a>&lt; char &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea1d068753433755a0c7eb45b06add23">get_move</a> (<a class="el" href="class_player.html">Player</a>&lt; char &gt; *player) override</td></tr>
-<tr class="memdesc:aea1d068753433755a0c7eb45b06add23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the move from the current player.  <br /></td></tr>
+<tr class="memdesc:aea1d068753433755a0c7eb45b06add23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next move from a player.  <br /></td></tr>
+<tr class="memitem:aa7b334632e44e14f71dff4a733fff232" id="r_aa7b334632e44e14f71dff4a733fff232"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7b334632e44e14f71dff4a733fff232">evaluate</a> (size_t r, size_t c)</td></tr>
+<tr class="memdesc:aa7b334632e44e14f71dff4a733fff232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate potential characters for a board position.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_custom___u_i"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_custom___u_i')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_custom___u_i.html">Custom_UI&lt; char &gt;</a></td></tr>
 <tr class="memitem:a2c29c8de3af071eef76c43e972eca565 inherit pub_methods_class_custom___u_i" id="r_a2c29c8de3af071eef76c43e972eca565"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565">Custom_UI</a> (int cell_display_width=3)</td></tr>
 <tr class="memitem:a0cd9191466b38babf6e1626c5393a626 inherit pub_methods_class_custom___u_i" id="r_a0cd9191466b38babf6e1626c5393a626"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_custom___u_i.html#a0cd9191466b38babf6e1626c5393a626">display_message</a> (<a class="el" href="classstring.html">string</a> message) override</td></tr>
@@ -133,12 +133,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94561e0bb4bbcbe5ff71ca6d751922df inherit pub_methods_class_u_i" id="r_a94561e0bb4bbcbe5ff71ca6d751922df"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_player.html">Player</a>&lt; char &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i.html#a94561e0bb4bbcbe5ff71ca6d751922df">create_player</a> (<a class="el" href="classstring.html">string</a> &amp;name, char symbol, <a class="el" href="_board_game___classes_8h.html#abe590f3c9109f404f003d5d7e4f0fccf">PlayerType</a> type)</td></tr>
 <tr class="memdesc:a94561e0bb4bbcbe5ff71ca6d751922df inherit pub_methods_class_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a player object based on input name, symbol, and type.  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
-AI Helper Tools</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
 <tr class="memitem:a82b1a4f4e345d57ba1f9f743bcf28762" id="r_a82b1a4f4e345d57ba1f9f743bcf28762"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::pair&lt; int, char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b1a4f4e345d57ba1f9f743bcf28762">score</a> [3][3]</td></tr>
 <tr class="memdesc:a82b1a4f4e345d57ba1f9f743bcf28762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputed scoring tables for <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> heuristics.  <br /></td></tr>
-<tr class="memitem:aa7b334632e44e14f71dff4a733fff232" id="r_aa7b334632e44e14f71dff4a733fff232"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7b334632e44e14f71dff4a733fff232">evaluate</a> (size_t r, size_t c)</td></tr>
-<tr class="memdesc:aa7b334632e44e14f71dff4a733fff232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates potential characters at position (r, c).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -153,14 +151,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a6c79c489ae9aa3a7860fb58e5a14ddfe inherit pro_attribs_class_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of each displayed board cell.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>User Interface controller for the game. </p>
-<p>Supports:</p><ul>
-<li>Human move entry</li>
-<li>Random computer moves</li>
-<li>AI-driven move generation </li>
-</ul>
+<div class="textblock"><p>User interface for Word Tic-Tac-Toe. </p>
+<p>Handles human input, random computer moves, and <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> moves. </p>
 
-<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00273">273</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00166">166</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a11a449d84298f6d6889388250031fd16" name="a11a449d84298f6d6889388250031fd16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11a449d84298f6d6889388250031fd16">&#9670;&#160;</a></span>Word_XO_UI()</h2>
@@ -177,6 +171,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct the <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a>. </p>
 <p>Constructs a new <a class="el" href="class_u_i.html" title="Base class for handling user interface and input/output.">UI</a> object and precomputes <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> scores. </p>
 
 <p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8cpp_source.html#l00206">206</a> of file <a class="el" href="_word___tic___tac___toe_8cpp_source.html">Word_Tic_Tac_Toe.cpp</a>.</p>
@@ -191,8 +186,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  214</span>    }</div>
 <div class="line"><span class="lineno">  215</span>}</div>
 <div class="ttc" id="aclass_custom___u_i_html_a2c29c8de3af071eef76c43e972eca565"><div class="ttname"><a href="class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565">Custom_UI&lt; char &gt;::Custom_UI</a></div><div class="ttdeci">Custom_UI(int cell_display_width=3)</div><div class="ttdef"><b>Definition</b> <a href="_custom___u_i_8h_source.html#l00063">Custom_UI.h:63</a></div></div>
-<div class="ttc" id="aclass_word___x_o___u_i_html_a82b1a4f4e345d57ba1f9f743bcf28762"><div class="ttname"><a href="#a82b1a4f4e345d57ba1f9f743bcf28762">Word_XO_UI::score</a></div><div class="ttdeci">static std::vector&lt; std::pair&lt; int, char &gt; &gt; score[3][3]</div><div class="ttdoc">Precomputed scoring tables for AI heuristics.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00314">Word_Tic_Tac_Toe.h:314</a></div></div>
-<div class="ttc" id="aclass_word___x_o___u_i_html_aa7b334632e44e14f71dff4a733fff232"><div class="ttname"><a href="#aa7b334632e44e14f71dff4a733fff232">Word_XO_UI::evaluate</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, char &gt; &gt; evaluate(size_t r, size_t c)</div><div class="ttdoc">Evaluates potential characters at position (r, c).</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00287">Word_Tic_Tac_Toe.cpp:287</a></div></div>
+<div class="ttc" id="aclass_word___x_o___u_i_html_a82b1a4f4e345d57ba1f9f743bcf28762"><div class="ttname"><a href="#a82b1a4f4e345d57ba1f9f743bcf28762">Word_XO_UI::score</a></div><div class="ttdeci">static std::vector&lt; std::pair&lt; int, char &gt; &gt; score[3][3]</div><div class="ttdoc">Precomputed scoring tables for AI heuristics.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00190">Word_Tic_Tac_Toe.h:190</a></div></div>
+<div class="ttc" id="aclass_word___x_o___u_i_html_aa7b334632e44e14f71dff4a733fff232"><div class="ttname"><a href="#aa7b334632e44e14f71dff4a733fff232">Word_XO_UI::evaluate</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, char &gt; &gt; evaluate(size_t r, size_t c)</div><div class="ttdoc">Evaluate potential characters for a board position.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8cpp_source.html#l00287">Word_Tic_Tac_Toe.cpp:287</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -221,7 +216,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluates potential characters at position (r, c). </p>
+<p>Evaluate potential characters for a board position. </p>
 <p>Evaluates the potential score of each character for a given cell.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -230,7 +225,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Vector of (score, character) pairs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector of (score, character) pairs for <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> evaluation.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Row index of cell. </td></tr>
@@ -262,7 +257,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  306</span>    std::sort(ret.rbegin(), ret.rend());</div>
 <div class="line"><span class="lineno">  307</span>    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><span class="lineno">  308</span>}</div>
-<div class="ttc" id="aclass_word___x_o___board_html_a051c9109d0ed6eb113b08c0bef7480e0"><div class="ttname"><a href="class_word___x_o___board.html#a051c9109d0ed6eb113b08c0bef7480e0">Word_XO_Board::dict</a></div><div class="ttdeci">static std::set&lt; std::string &gt; dict</div><div class="ttdoc">Dictionary of valid forward words.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00157">Word_Tic_Tac_Toe.h:157</a></div></div>
+<div class="ttc" id="aclass_word___x_o___board_html_a051c9109d0ed6eb113b08c0bef7480e0"><div class="ttname"><a href="class_word___x_o___board.html#a051c9109d0ed6eb113b08c0bef7480e0">Word_XO_Board::dict</a></div><div class="ttdeci">static std::set&lt; std::string &gt; dict</div><div class="ttdoc">Forward dictionary of valid words.</div><div class="ttdef"><b>Definition</b> <a href="_word___tic___tac___toe_8h_source.html#l00097">Word_Tic_Tac_Toe.h:97</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -294,20 +289,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the move from the current player. </p>
+<p>Get the next move from a player. </p>
 <p>Get the next move from a player in Word Tic-Tac-Toe.</p>
-<p>Behavior depends on player type:</p><ul>
-<li>Human → Read input</li>
-<li>Random bot → Generate random valid move</li>
-<li><a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> → Call <a class="el" href="class_a_i.html#aaf1bf68e14319d295ffb34e6740a30ea" title="Determines the optimal move using minimax.">AI::bestMove()</a></li>
-</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">player</td><td>Active player. </td></tr>
+    <tr><td class="paramname">player</td><td>Pointer to the active player. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the generated move.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the generated <a class="el" href="class_move.html">Move&lt;char&gt;</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>Pointer to the active player. </td></tr>
@@ -318,7 +308,7 @@ Here is the caller graph for this function:</div>
 <ul>
 <li>For HUMAN players, repeatedly prompts for row, column, and character input until valid values are provided.</li>
 <li>For COMPUTER players, generates random row, column, and character.</li>
-<li>For <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> players, uses <a class="el" href="class_word___a_i.html" title="AI engine for the Word Tic-Tac-Toe game.">Word_AI</a> to compute the optimal move. </li>
+<li>For <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> players, uses <a class="el" href="class_word___a_i.html" title="AI engine for Word Tic-Tac-Toe.">Word_AI</a> to compute the optimal move. </li>
 </ul>
 
 <p>Implements <a class="el" href="class_u_i.html#a8befa259c38c57e6ae2e8ed81c476337">UI&lt; char &gt;</a>.</p>
@@ -412,7 +402,7 @@ Here is the call graph for this function:</div>
 <p>Precomputed scoring tables for <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> heuristics. </p>
 <p>Precomputed scoring table for <a class="el" href="class_a_i.html" title="AI Interface for all implementations in games.">AI</a> heuristics on each board position. </p>
 
-<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00314">314</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_word___tic___tac___toe_8h_source.html#l00190">190</a> of file <a class="el" href="_word___tic___tac___toe_8h_source.html">Word_Tic_Tac_Toe.h</a>.</p>
 
 </div>
 </div>

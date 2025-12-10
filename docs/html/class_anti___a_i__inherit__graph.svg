@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Simple AI for Anti&#45;XO that tries to avoid dangerous positions.">
+<g id="a_Node000001"><a xlink:title="Simple AI for Anti&#45;XO that avoids dangerous positions.">
 <polygon fill="#999999" stroke="none" points="66.75,-116 0,-116 0,0 66.75,0 66.75,-116"/>
 <text xml:space="preserve" text-anchor="start" x="17.25" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">Anti_AI</text>
 <text xml:space="preserve" text-anchor="start" x="31.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -34,7 +34,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_a_i.html" xlink:title="AI Interface for all implementations in games.">
+<g id="a_Node000002"><a xlink:href="class_a_i.html" target="_top" xlink:title="AI Interface for all implementations in games.">
 <polygon fill="white" stroke="none" points="66.75,-252 0,-252 0,-152 66.75,-152 66.75,-252"/>
 <text xml:space="preserve" text-anchor="start" x="28.5" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">AI</text>
 <text xml:space="preserve" text-anchor="start" x="31.88" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

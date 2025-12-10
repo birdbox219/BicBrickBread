@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Pyramid XO game classes.">
 <polygon fill="#999999" stroke="#666666" points="238.5,-76 76.25,-76 76.25,-56 238.5,-56 238.5,-76"/>
 <text xml:space="preserve" text-anchor="middle" x="157.38" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Games/PyramidXO/PyramidXO.h</text>
 </a>

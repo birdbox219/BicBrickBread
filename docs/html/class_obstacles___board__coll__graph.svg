@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Modified Tic&#45;Tac&#45;Toe board supporting traps and 64&#45;bit bitboard logic.">
 <polygon fill="#999999" stroke="none" points="101.25,-292 0,-292 0,0 101.25,0 101.25,-292"/>
 <text xml:space="preserve" text-anchor="start" x="13.12" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">Obstacles_Board</text>
 <text xml:space="preserve" text-anchor="start" x="5.5" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -58,7 +58,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_board.html" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="class_board.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="100.12,-573 1.12,-573 1.12,-329 100.12,-329 100.12,-573"/>
 <text xml:space="preserve" text-anchor="start" x="19.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">Board&lt; char &gt;</text>
 <text xml:space="preserve" text-anchor="start" x="5.5" y="-543.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

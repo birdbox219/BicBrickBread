@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Returns true if the game is over.">
+<g id="a_Node000001"><a xlink:title="Determines whether the game has ended.">
 <polygon fill="#999999" stroke="#666666" points="113.5,-45 0,-45 0,-13 113.5,-13 113.5,-45"/>
 <text xml:space="preserve" text-anchor="start" x="8" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::game</text>
 <text xml:space="preserve" text-anchor="middle" x="56.75" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">_is_over</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_ultimate___board.html#a5737c7a2126711b10d5996eb07644fb1" xlink:title="Checks if the game is a draw.">
+<g id="a_Node000002"><a xlink:href="class_ultimate___board.html#a5737c7a2126711b10d5996eb07644fb1" target="_top" xlink:title="Checks if the game ended in a draw.">
 <polygon fill="white" stroke="#666666" points="272.75,-58 149.5,-58 149.5,-38 272.75,-38 272.75,-58"/>
 <text xml:space="preserve" text-anchor="middle" x="211.12" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::is_draw</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="$class_ultimate___board.html#a34b9605914ffff40dde2acb0be08f857" xlink:title="Checks if the player has won the game.">
+<g id="a_Node000004"><a xlink:href="class_ultimate___board.html#a34b9605914ffff40dde2acb0be08f857" target="_top" xlink:title="Checks if the player has won the game.">
 <polygon fill="white" stroke="#666666" points="426,-20 308.75,-20 308.75,0 426,0 426,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="367.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::is_win</text>
 </a>
@@ -57,7 +57,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="$class_ultimate___board.html#a891824859cdfd590dafb52250a27148c" xlink:title="Returns true if all small boards are done (win or draw).">
+<g id="a_Node000003"><a xlink:href="class_ultimate___board.html#a891824859cdfd590dafb52250a27148c" target="_top" xlink:title="Checks if all small boards are completed.">
 <polygon fill="white" stroke="#666666" points="420,-70 314.75,-70 314.75,-38 420,-38 420,-70"/>
 <text xml:space="preserve" text-anchor="start" x="322.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Ultimate_Board::all</text>
 <text xml:space="preserve" text-anchor="middle" x="367.38" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">_small_boards_done</text>
@@ -85,7 +85,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" xlink:title="Get the player&#39;s symbol.">
+<g id="a_Node000005"><a xlink:href="class_player.html#af56f0bf98c0423a3a75b0848607d03a4" target="_top" xlink:title="Get the player&#39;s symbol.">
 <polygon fill="white" stroke="#666666" points="562,-20 462,-20 462,0 562,0 562,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="512" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::get_symbol</text>
 </a>

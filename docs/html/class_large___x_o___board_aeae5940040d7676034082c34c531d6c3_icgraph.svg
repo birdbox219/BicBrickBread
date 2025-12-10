@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="$class_large___x_o___board.html#a7d0f28af0a33808c512269ee6cad1970" xlink:title="Encode board state into a matrix for the neural network. AI = +1, Opponent = &#45;1, Empty = 0.">
+<g id="a_Node000002"><a xlink:href="class_large___x_o___board.html#a7d0f28af0a33808c512269ee6cad1970" target="_top" xlink:title="Encode board state into a matrix for neural network input. AI = +1, Opponent = &#45;1,...">
 <polygon fill="white" stroke="#666666" points="127.75,-20 0,-20 0,0 127.75,0 127.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="63.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Large_XO_Board::encode</text>
 </a>
