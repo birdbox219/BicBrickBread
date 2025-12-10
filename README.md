@@ -101,6 +101,14 @@ The codebase is organized by game module:
 
 **Team CodeArt** - FCAI-CU
 
+**Members:**
+Mahmoud Elsayed musa
+Amr Atif Abd El-Kareem
+Ali Wael Abdalla Fawzy
+Alaa Mamdouh Hamed 
+
+
+
 *   Development & Implementation of various game modules.
 *   Design of the unified `BoardGame_Classes` framework.
 
