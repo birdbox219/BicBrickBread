@@ -192,6 +192,7 @@ bool Obstacles_Board::updateCell(size_t r, size_t c, char s)
         boardO     &= mask;
         boardTraps &= mask;
 
+        board[r][c] = emptyCell; // Update vector
         --nMoves;
         return true;
     }
@@ -199,6 +200,8 @@ bool Obstacles_Board::updateCell(size_t r, size_t c, char s)
     // Placing X or O
     if (s == 'X') boardX |= (1ULL << idx);
     else          boardO |= (1ULL << idx);
+    
+    board[r][c] = s; // Update vector
 
     ++nMoves;
 
@@ -208,11 +211,13 @@ bool Obstacles_Board::updateCell(size_t r, size_t c, char s)
     {
         size_t i1 = avail[rand() % avail.size()];
         boardTraps |= (1ULL << i1);
+        board[i1 / 6][i1 % 6] = '#'; // Update vector for trap
 
         avail.erase(std::find(avail.begin(), avail.end(), i1));
 
         size_t i2 = avail[rand() % avail.size()];
         boardTraps |= (1ULL << i2);
+        board[i2 / 6][i2 % 6] = '#'; // Update vector for trap
     }
 
     return true;

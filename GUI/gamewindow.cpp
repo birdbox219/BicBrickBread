@@ -20,7 +20,7 @@
 #include "../Games/4x4_Tic_Tac_Toe/4by4_XO.h"
 
 GameWindow::GameWindow(Board<char>* b, Player<char>** p, int id, QWidget *parent)
-    : QWidget(parent), board(b), gameId(id), currentPlayerIndex(0) {
+    : QWidget(parent), board(b), gameId(id), currentPlayerIndex(0), selectedCell(-1, -1) {
     
     players[0] = p[0];
     players[1] = p[1];
@@ -64,10 +64,6 @@ GameWindow::~GameWindow() {
 }
 
 void GameWindow::updateUI() {
-    // Clear existing layout items if size changed (dynamic content) or just update text
-    // For simplicity, we can recreate buttons if row/col is small, or just update text.
-    // Since board size is static per game, we create buttons once.
-    
     vector<vector<char>> matrix = board->get_board_matrix();
     int rows = matrix.size();
     int cols = (rows > 0) ? matrix[0].size() : 0;
@@ -81,13 +77,35 @@ void GameWindow::updateUI() {
                 btn->setProperty("row", r);
                 btn->setProperty("col", c);
                 
-                // Styling
-                btn->setStyleSheet("font-size: 20px; font-weight: bold; background-color: #f0f0f0; border: 1px solid #ccc;");
-                btn->setMinimumSize(50, 50);
+                // Base Styling
+                QString style = "font-size: 20px; font-weight: bold; background-color: #f0f0f0; border: 1px solid #999;";
+                
+                // Special Handling for Ultimate (ID 7): Thicker borders between 3x3 grids
+                if (gameId == 7) {
+                    if (c % 3 == 0 && c > 0) style += "border-left: 2px solid #000;";
+                    if (r % 3 == 0 && r > 0) style += "border-top: 2px solid #000;";
+                }
+                
+                btn->setProperty("baseStyle", style);
+                btn->setStyleSheet(style);
+                btn->setMinimumSize(40, 40);
 
                 connect(btn, &QPushButton::clicked, this, &GameWindow::onCellClicked);
                 boardLayout->addWidget(btn, r, c);
                 cells.append(btn);
+
+                // Special Handling for Pyramid (ID 8): Hide invalid cells
+                if (gameId == 8) {
+                    bool valid = false;
+                    if (r == 0 && c == 2) valid = true;
+                    else if (r == 1 && (c >= 1 && c <= 3)) valid = true;
+                    else if (r == 2 && (c >= 0 && c <= 4)) valid = true;
+                    
+                    if (!valid) {
+                        btn->setVisible(false);
+                        btn->setEnabled(false);
+                    }
+                }
             }
         }
     }
@@ -98,15 +116,27 @@ void GameWindow::updateUI() {
             int index = r * cols + c;
             if(index < cells.size()) {
                 char symbol = matrix[r][c];
-                // For obstacles, maybe map symbols or standard char
                 QString text = (symbol == '.') ? QString() : QString(QChar(symbol));
-                if (symbol == 0) text = ""; // Null check if used
+                if (symbol == 0) text = ""; 
                 
                 cells[index]->setText(text);
                 
-                // Disable if occupied (unless special game rules allow overwrite?)
-                // Usually safe to disable occupied cells for standard XO, 
-                // but some games might have complex rules. leaving enabled but checking update_board return is safer.
+                // Restore base style
+                QString style = cells[index]->property("baseStyle").toString();
+                
+                // Colorize symbols
+                if (text == "X") style += "color: blue;";
+                else if (text == "O") style += "color: red;";
+                else if (text == "S") style += "color: blue;";
+                else if (text == "U") style += "color: red;";
+                if (text.length() == 1 && text[0].isDigit()) style += "color: darkgreen;";
+                
+                // Highlight selected cell for 4x4
+                if (gameId == 12 && selectedCell.x() == r && selectedCell.y() == c) {
+                     style += "border: 3px solid green;";
+                }
+                
+                cells[index]->setStyleSheet(style);
             }
         }
     }
@@ -127,6 +157,46 @@ void GameWindow::onCellClicked() {
 void GameWindow::handleTurn(int r, int c) {
     Player<char>* p = players[currentPlayerIndex];
     char symbol = p->get_symbol();
+
+    // Special Handling for 4x4 Tic-Tac-Toe (Game ID 12)
+    if (gameId == 12) {
+        // Phase 1: Selection
+        if (selectedCell.x() == -1) {
+             // Try to select if own piece
+             if (board->get_cell(r, c) == symbol) {
+                 selectedCell = QPoint(r, c);
+                 updateUI();
+             }
+             return; 
+        }
+
+        // Phase 2: Move or Reselect
+        if (selectedCell.x() == r && selectedCell.y() == c) {
+            // Deselect if clicked same cell
+            selectedCell = QPoint(-1, -1);
+            updateUI();
+            return;
+        }
+
+        if (board->get_cell(r, c) == symbol) {
+            // Change selection to new piece
+            selectedCell = QPoint(r, c);
+            updateUI();
+            return;
+        }
+
+        // Attempt Move
+        _4by4XO_Move move(selectedCell.x(), selectedCell.y(), r, c, symbol);
+        if (board->update_board(&move)) {
+             selectedCell = QPoint(-1, -1);
+             updateUI();
+             if (checkGameEnd()) return;
+             switchTurn();
+        } else {
+             QMessageBox::warning(this, "Invalid Move", "You can only move your token to an adjacent empty cell.");
+        }
+        return;
+    }
 
     // Special Handling for Games needing Input
     if (gameId == 6) { // XO_NUM

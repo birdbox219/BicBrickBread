@@ -121,11 +121,21 @@ void MainWindow::onStartGameClicked() {
         
         string name1 = player1Name->text().toStdString();
         PlayerType type1 = player1Type->currentData().value<PlayerType>();
-        players[0] = new Player<char>(name1, 'X', type1); // Assuming X/O for most. 
 
         string name2 = player2Name->text().toStdString();
         PlayerType type2 = player2Type->currentData().value<PlayerType>();
-        players[1] = new Player<char>(name2, 'O', type2);
+
+        // Default Symbols
+        char p1Sym = 'X';
+        char p2Sym = 'O';
+
+        if (gameId == 13) { // SUS
+            p1Sym = 'S';
+            p2Sym = 'U';
+        }
+
+        players[0] = new Player<char>(name1, p1Sym, type1);
+        players[1] = new Player<char>(name2, p2Sym, type2);
 
         // Assign board to players
         players[0]->set_board_ptr(board);

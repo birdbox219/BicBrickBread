@@ -134,6 +134,7 @@ bool Large_XO_Board::updateCell(size_t r, size_t c, char s) {
         boardX &= mask;
         boardO &= mask;
         boardXO &= mask;
+        board[r][c] = emptyCell; // Update display vector
         --nMoves;
         return true;
     }
@@ -143,6 +144,7 @@ bool Large_XO_Board::updateCell(size_t r, size_t c, char s) {
     else          boardO |= (1u << idx);
 
     boardXO |= (1u << idx);
+    board[r][c] = s; // Update display vector
     ++nMoves;
     return true;
 }
@@ -329,23 +331,27 @@ Large_XO_AI::Large_XO_AI() {
 
     // NN structure: 25 → 512 → 512 → 512 → 25
     vector<int> layers = {25, 512, 512, 512, 25};
-    vector<function<double(double)>> acts =
-        {relu, relu, relu, linear};
-    vector<function<double(double)>> derivs =
-        {relu_derivative, relu_derivative, relu_derivative, linear_derivative};
+    vector<function<double(double)>> acts = {relu, relu, relu, linear};
+    vector<function<double(double)>> derivs = {relu_derivative, relu_derivative, relu_derivative, linear_derivative};
 
-    try {
-        // X network
-        NNX = make_shared<NeuralNetwork>(layers, acts, derivs);
-        NNX->load("netX.bin");
+    auto loadNetwork = [&](shared_ptr<NeuralNetwork>& net, string filename) {
+        net = make_shared<NeuralNetwork>(layers, acts, derivs);
+        // Try absolute path first
+        string absPath = "d:/FCAI_SecondLevel/OOP/A-3/" + filename;
+        try {
+            net->load(absPath);
+        } catch (...) {
+            // Fallback to local if absolute fails (e.g. if moved)
+            try {
+                 net->load(filename);
+            } catch(...) {
+                cerr << "Warning: Could not load " << filename << " from " << absPath << " or local. Using random weights.\n";
+            }
+        }
+    };
 
-        // O network
-        NNO = make_shared<NeuralNetwork>(layers, acts, derivs);
-        NNO->load("netO.bin");
-    }
-    catch (const exception& e) {
-        cerr << "Error initializing AI networks: " << e.what() << "\n";
-    }
+    loadNetwork(NNX, "netX.bin");
+    loadNetwork(NNO, "netO.bin");
 }
 
 // ----------------------------- Evaluate Board -----------------------------
@@ -401,7 +407,7 @@ float Large_XO_AI::minimax(
     char turn = aiTurn ? ai : opp;
 
     // Terminal node
-    if (depth == 0 || board->game_is_over(nullptr))
+    if (depth <= 0 || board->game_is_over(nullptr))
         return evaluate(board, player);
 
     vector<pair<double,int>> moves;
@@ -462,6 +468,9 @@ float Large_XO_AI::minimax(
  * @brief Compute the best possible move using minimax search.
  */
 Move<char>* Large_XO_AI::bestMove(Player<char>* player, char blankCell, int depth) {
+    // Prevent infinite recursion if depth is default/zero
+    if (depth <= 0) depth = 3;
+
     auto* board = dynamic_cast<Large_XO_Board*>(player->get_board_ptr());
     char ai = player->get_symbol();
 

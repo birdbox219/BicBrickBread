@@ -41,7 +41,7 @@ std::vector<std::pair<int, char>> Word_XO_UI::score[3][3];
 Word_XO_Board::Word_XO_Board() : Board(3, 3), emptyCell('.')
 { 
     if(dict.empty()) {
-        std::ifstream in("dic.txt");
+        std::ifstream in("d:/FCAI_SecondLevel/OOP/A-3/dic.txt");
         if (in.fail()) throw std::runtime_error("Can't Find \"dic.txt\"");
         std::string word;
         while(in >> word) {

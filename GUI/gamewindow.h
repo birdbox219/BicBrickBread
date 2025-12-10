@@ -7,6 +7,7 @@
 #include <QLabel>
 #include <QTimer>
 #include <QMessageBox>
+#include <QPoint>
 #include "../header/BoardGame_Classes.h"
 #include "../header/XO_Classes.h"
 // Include other headers as necessary for factory
@@ -34,6 +35,7 @@ private:
     QLabel *statusLabel;
     QVector<QPushButton*> cells; // Flat list mapping to board cells
     QTimer *computerTimer;
+    QPoint selectedCell; // For 4x4 Sliding XO
 
     void updateUI();
     void handleTurn(int r, int c);
