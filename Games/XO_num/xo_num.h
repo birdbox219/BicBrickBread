@@ -2,6 +2,7 @@
 #define XO_num_H
 
 #include "../../header/BoardGame_Classes.h"
+#include "../../header/AI.h"
 #include <vector>
 using namespace std;
 

@@ -21,7 +21,7 @@ bool _4by4XO_Board::update_board(Move<char>* move) {
 
     int fx = m->get_from_x();
     int fy = m->get_from_y();
-    int tx = m->get_x();
+    int tx = m->get_x();    
     int ty = m->get_y();
     char s = m->get_symbol();
 

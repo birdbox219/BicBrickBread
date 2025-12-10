@@ -3,6 +3,7 @@
 #include <cctype>
 #include <vector>
 #include <cstdlib>
+#include <algorithm>
 #include "xo_num.h"
 
 using namespace std;
