@@ -55,3 +55,7 @@ HEADERS += header/AI.h \
            Games/XO_num/xo_num.h \
            Games/anti_XO/Anti_XO.h \
            Games/diamond_XO/dia_XO.h
+
+DISTFILES += netX.bin \
+             netO.bin \
+             dic.txt

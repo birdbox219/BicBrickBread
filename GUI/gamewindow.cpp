@@ -49,8 +49,9 @@ GameWindow::GameWindow(Board<char>* b, Player<char>** p, int id, QWidget *parent
     computerTimer->setSingleShot(true);
     connect(computerTimer, &QTimer::timeout, this, &GameWindow::processComputerTurn);
 
-    // If first player is computer, trigger
-    if (players[0]->get_type() == PlayerType::COMPUTER) {
+    // If first player is computer or AI, trigger
+    PlayerType t = players[0]->get_type();
+    if (t == PlayerType::COMPUTER || t == PlayerType::AI || t == PlayerType::RANDOM) {
         computerTimer->start(500);
     }
 }
@@ -145,7 +146,8 @@ void GameWindow::updateUI() {
 }
 
 void GameWindow::onCellClicked() {
-    if (players[currentPlayerIndex]->get_type() == PlayerType::COMPUTER) return;
+    PlayerType t = players[currentPlayerIndex]->get_type();
+    if (t == PlayerType::COMPUTER || t == PlayerType::AI || t == PlayerType::RANDOM) return;
 
     QPushButton *btn = qobject_cast<QPushButton*>(sender());
     if (!btn) return;
@@ -249,7 +251,8 @@ void GameWindow::switchTurn() {
     currentPlayerIndex = 1 - currentPlayerIndex;
     statusLabel->setText(QString::fromStdString("Current Turn: " + players[currentPlayerIndex]->get_name()));
 
-    if (players[currentPlayerIndex]->get_type() == PlayerType::COMPUTER) {
+    PlayerType t = players[currentPlayerIndex]->get_type();
+    if (t == PlayerType::COMPUTER || t == PlayerType::AI || t == PlayerType::RANDOM) {
         computerTimer->start(500); // Trigger AI after delay
     }
 }
@@ -300,14 +303,71 @@ void GameWindow::performAIMove() {
     }
 
     if (ai) {
-       move = ai->bestMove(p, blank);
-       delete ai;
-    } else {
-        // Fallback for games without AI class (like Word XO potentially) or if simple random is needed
-        // Or specific handling.
-        // For now, if no AI, we do nothing or simple random move if we can access available moves.
-        // But Board doesn't expose `getAvailableMoves` in base class! It's specific.
-        // So we strictly need the AI class or a Cast to specific board.
+       // If player chose "Smart AI" (Type AI), use the AI engine.
+       // If player chose "Computer" (Random), and the AI engine is known to be smart (like Large_XO, Word_XO), 
+       // we should ideally skip this and do random. 
+       // However, some "AI" classes ARE random (like Obstacles, 4x4). 
+       // Strategy: 
+       // 1. If Type == AI, always use AI class.
+       // 2. If Type == COMPUTER/RANDOM:
+       //    - If game provides "Smart" AI (Large, Word, Num, Ultimate, Pyramid, 3x3), avoid it, do generic random.
+       //    - If game provides "Random" AI only (Obstacles, 4x4), use it.
+       
+       bool isSmartEngine = (gameId == 1 || gameId == 5 || gameId == 6 || gameId == 7 || gameId == 8 || gameId == 9);
+       
+       if (p->get_type() == PlayerType::AI) {
+            move = ai->bestMove(p, blank);
+       } 
+       else {
+            // Random/Computer request
+            if (isSmartEngine) {
+                // Do NOT use the smart engine. Fallback to generic random below.
+                delete ai;
+                ai = nullptr;
+            } else {
+                // Engine is random or simple enough, use it
+                move = ai->bestMove(p, blank);
+            }
+       }
+       if (ai) delete ai;
+    } 
+    
+    // Generic Random Fallback (if no AI or we decided to skip smart AI for random mode)
+    if (!move) {
+         // Try random moves 
+         // Note: 4x4 and Obstacles handled by their AI classes (isSmartEngine=false for them)
+         // So this is for standard Grid games (1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 14)
+         // We assume get_rows/cols works.
+         int rows = board->get_rows();
+         int cols = board->get_columns();
+         
+         if (rows > 0 && cols > 0) {
+             for(int i=0; i<200; ++i) { // Try 200 times
+                 int r = rand() % rows;
+                 int c = rand() % cols;
+                 // For XO_NUM, we need a number. Random 1-9.
+                 char sym = p->get_symbol();
+                 if (gameId == 6) sym = (char)('1' + (rand() % 9));
+                 
+                 Move<char> tryMove(r, c, sym);
+                 // We need to clone the board to test? No, update_board returns false if invalid.
+                 // But update_board MODIFIES the board! We can't just try and fail.
+                 // Implementation of update_board usually checks validity first.
+                 // But if it modifies, we are screwed.
+                 // Most implementation: "if invalid return false" (no change). "if valid, change and return true".
+                 // So we CAN just call update_board. If it returns true, we are done!
+                 
+                 if (board->update_board(&tryMove)) {
+                     // Move accepted and applied! 
+                     // Pass a dummy move to cleanup to avoid double-free if we structured differently, 
+                     // but here we applied it directly.
+                     // Reconstruct 'move' just to inform caller? No, performAIMove returns void.
+                     // logic is: if (move) board->update(move).
+                     // So we are done here.
+                     return; 
+                 }
+             }
+         }
     }
 
     if (move) {

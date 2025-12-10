@@ -64,7 +64,8 @@ void MainWindow::setupUi() {
     player1Name = new QLineEdit("Player 1");
     player1Type = new QComboBox;
     player1Type->addItem("Human", QVariant::fromValue(PlayerType::HUMAN));
-    player1Type->addItem("Computer", QVariant::fromValue(PlayerType::COMPUTER));
+    player1Type->addItem("Computer (Random)", QVariant::fromValue(PlayerType::COMPUTER));
+    player1Type->addItem("Smart AI", QVariant::fromValue(PlayerType::AI));
     p1Layout->addRow("Name:", player1Name);
     p1Layout->addRow("Type:", player1Type);
     p1Group->setLayout(p1Layout);
@@ -76,7 +77,8 @@ void MainWindow::setupUi() {
     player2Name = new QLineEdit("Player 2");
     player2Type = new QComboBox;
     player2Type->addItem("Human", QVariant::fromValue(PlayerType::HUMAN));
-    player2Type->addItem("Computer", QVariant::fromValue(PlayerType::COMPUTER));
+    player2Type->addItem("Computer (Random)", QVariant::fromValue(PlayerType::COMPUTER));
+    player2Type->addItem("Smart AI", QVariant::fromValue(PlayerType::AI));
     p2Layout->addRow("Name:", player2Name);
     p2Layout->addRow("Type:", player2Type);
     p2Group->setLayout(p2Layout);
