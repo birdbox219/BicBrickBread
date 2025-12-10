@@ -1,0 +1,23 @@
+<map id="Games/XO_inf/XO_inf.h" name="Games/XO_inf/XO_inf.h">
+<area shape="rect" id="Node000001" title="Infinite Tic&#45;Tac&#45;Toe game classes." alt="" coords="74,5,236,32"/>
+<area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="52,155,210,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,33,139,140,134,139,150,32"/>
+<area shape="rect" id="Node000007" href="$_a_i_8h.html" title=" " alt="" coords="5,80,118,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="140,35,91,73,88,68,137,30"/>
+<area shape="rect" id="Node000008" href="$_custom___u_i_8h.html" title="Defines a customizable user interface for board games." alt="" coords="192,80,358,107"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="177,30,242,69,240,74,174,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="18,245,71,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,200,71,237,67,233,107,196"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="185,245,242,272"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,196,192,232,188,236,150,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="266,245,337,272"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="176,196,262,236,260,241,174,200"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="95,245,161,272"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="133,198,132,230,126,229,127,198"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="74,105,105,141,101,145,70,109"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="254,109,182,149,180,144,251,105"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="273,108,226,232,221,230,268,106"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="279,106,300,230,294,231,274,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="334,163,413,189"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="292,105,349,151,345,155,289,109"/>
+</map>

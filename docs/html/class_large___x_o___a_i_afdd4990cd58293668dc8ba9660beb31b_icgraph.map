@@ -1,0 +1,6 @@
+<map id="Large_XO_AI::minimax" name="Large_XO_AI::minimax">
+<area shape="rect" id="Node000001" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="218,29,374,56"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="331,16,319,10,296,8,274,10,262,15,260,20,265,27,261,30,254,21,259,11,273,5,296,3,321,5,334,12"/>
+<area shape="rect" id="Node000002" href="$class_large___x_o___a_i.html#a73ab0db41718aa760a8caa11dbfcf0c8" title="Compute the best move for the player." alt="" coords="5,29,170,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,45,170,45,170,40,202,40"/>
+</map>

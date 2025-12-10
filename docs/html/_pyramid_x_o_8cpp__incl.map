@@ -1,0 +1,22 @@
+<map id="Games/PyramidXO/PyramidXO.cpp" name="Games/PyramidXO/PyramidXO.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="65,5,295,32"/>
+<area shape="rect" id="Node000002" href="$_pyramid_x_o_8h.html" title="Pyramid XO game classes." alt="" coords="130,80,230,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,33,183,64,177,64,177,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,320,59,347"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="157,35,128,54,102,82,72,139,53,202,41,260,36,305,31,305,36,259,48,200,67,137,98,78,125,50,154,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="85,320,142,347"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="164,35,141,55,121,81,98,131,89,173,89,217,96,271,105,304,100,306,91,273,83,217,83,172,93,129,116,79,137,51,160,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="167,320,238,347"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="197,31,220,52,243,78,267,114,280,154,287,210,286,243,277,273,261,296,241,313,237,309,257,292,272,271,280,242,282,210,275,155,262,116,239,82,217,55,194,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="299,320,365,347"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="208,30,241,50,271,78,290,105,304,135,323,198,332,257,335,304,330,304,327,258,318,199,299,137,285,108,267,82,238,54,206,35"/>
+<area shape="rect" id="Node000003" href="$_board_game___classes_8h.html" title=" " alt="" coords="105,229,263,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,108,156,130,144,155,142,168,144,181,161,215,156,217,139,182,136,168,139,154,151,127,167,105"/>
+<area shape="rect" id="Node000008" href="$_a_i_8h.html" title=" " alt="" coords="153,155,266,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="188,106,201,139,196,141,183,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,275,70,315,68,310,144,270"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="168,274,136,310,132,306,164,271"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="191,272,199,304,194,305,186,273"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="223,270,297,310,295,315,221,275"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="208,183,198,215,192,214,203,181"/>
+</map>

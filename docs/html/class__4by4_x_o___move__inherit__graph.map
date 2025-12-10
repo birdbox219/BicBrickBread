@@ -1,0 +1,5 @@
+<map id="_4by4XO_Move" name="_4by4XO_Move">
+<area shape="rect" id="Node000001" title="Represents a move in the 4x4 sliding Tic&#45;Tac&#45;Toe game." alt="" coords="5,229,130,363"/>
+<area shape="rect" id="Node000002" href="$class_move.html" title=" " alt="" coords="18,5,117,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,197,70,230,65,230,65,197"/>
+</map>

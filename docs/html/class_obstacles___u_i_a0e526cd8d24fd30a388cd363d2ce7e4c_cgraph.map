@@ -1,0 +1,5 @@
+<map id="Obstacles_UI::Obstacles_UI" name="Obstacles_UI::Obstacles_UI">
+<area shape="rect" id="Node000001" title="Constructs a new UI handler for Obstacles Tic&#45;Tac&#45;Toe." alt="" coords="5,5,195,32"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html#afb59b53f3c2ed750b1a9a0c7d6dc4a7a" title=" " alt="" coords="243,5,349,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,16,227,16,227,21,195,21"/>
+</map>

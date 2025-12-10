@@ -1,0 +1,5 @@
+<map id="Custom_UI::display_board_matrix" name="Custom_UI::display_board_matrix">
+<area shape="rect" id="Node000001" title="Displays a 2D board matrix in a formatted grid." alt="" coords="5,5,143,48"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html#aa3775124efaeac59935ae0afb354708d" title="Display the current board matrix in formatted form." alt="" coords="191,13,357,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,24,175,24,175,29,143,29"/>
+</map>

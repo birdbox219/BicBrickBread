@@ -1,0 +1,5 @@
+<map id="Matrix::random" name="Matrix::random">
+<area shape="rect" id="Node000001" title="Create a matrix filled with uniform random values in [min, max]." alt="" coords="5,5,114,32"/>
+<area shape="rect" id="Node000002" href="$class_matrix.html#a500ba010dab4b9ee8e0d1b6f73fcd926" title="Construct a matrix of size (rows x cols)." alt="" coords="162,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,16,146,16,146,21,114,21"/>
+</map>

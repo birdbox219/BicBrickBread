@@ -1,0 +1,5 @@
+<map id="X_O_Board" name="X_O_Board">
+<area shape="rect" id="Node000001" title="Represents a Tic&#45;Tac&#45;Toe (X&#45;O) board." alt="" coords="5,400,142,597"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="8,5,140,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,367,76,400,71,400,71,367"/>
+</map>

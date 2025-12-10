@@ -1,0 +1,7 @@
+<map id="Ultimate_Board::all_small_boards_done" name="Ultimate_Board::all_small_boards_done">
+<area shape="rect" id="Node000001" title="Checks if all small boards are completed." alt="" coords="417,5,557,48"/>
+<area shape="rect" id="Node000002" href="$class_ultimate___board.html#a5737c7a2126711b10d5996eb07644fb1" title="Checks if the game ended in a draw." alt="" coords="205,13,369,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,29,369,29,369,24,401,24"/>
+<area shape="rect" id="Node000003" href="$class_ultimate___board.html#adb5f3ecf194dae9f85a680f384422151" title="Determines whether the game has ended." alt="" coords="5,5,157,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,29,157,29,157,24,189,24"/>
+</map>

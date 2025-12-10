@@ -1,0 +1,13 @@
+<map id="Obstacles_Board::update_board" name="Obstacles_Board::update_board">
+<area shape="rect" id="Node000001" title="Applies a Move&lt;char&gt; to the board." alt="" coords="5,73,174,116"/>
+<area shape="rect" id="Node000002" href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" title="Get the move symbol." alt="" coords="253,5,382,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,70,221,41,245,34,247,39,223,47,144,75"/>
+<area shape="rect" id="Node000003" href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" title="Get row index." alt="" coords="271,56,364,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,83,255,74,256,79,174,88"/>
+<area shape="rect" id="Node000004" href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" title="Get column index." alt="" coords="271,107,364,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,101,256,111,255,116,174,107"/>
+<area shape="rect" id="Node000005" href="$class_obstacles___board.html#a6ffa3be3e7a967293e98834c04e93955" title="Attempt to place a symbol at the given position." alt="" coords="222,157,413,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,114,223,143,247,150,245,155,221,148,142,119"/>
+<area shape="rect" id="Node000006" href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" title="Get all available moves." alt="" coords="461,157,693,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="413,168,445,168,445,173,413,173"/>
+</map>

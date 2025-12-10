@@ -1,0 +1,5 @@
+<map id="PyramidXO_AI" name="PyramidXO_AI">
+<area shape="rect" id="Node000001" title="Simple AI choosing a random valid empty pyramid cell." alt="" coords="5,187,124,320"/>
+<area shape="rect" id="Node000002" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="20,5,109,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,153,68,187,62,187,62,153"/>
+</map>

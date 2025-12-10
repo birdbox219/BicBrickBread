@@ -1,0 +1,9 @@
+<map id="UI::setup_players" name="UI::setup_players">
+<area shape="rect" id="Node000001" title="Set up players for the game." alt="" coords="5,56,130,83"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html#a94561e0bb4bbcbe5ff71ca6d751922df" title="Create a player object based on input name, symbol, and type." alt="" coords="188,5,310,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,53,183,34,185,39,119,58"/>
+<area shape="rect" id="Node000003" href="$class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" title="Ask the user for the player&#39;s name." alt="" coords="178,56,320,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,67,162,67,162,72,130,72"/>
+<area shape="rect" id="Node000004" href="$class_u_i.html#ac3d45fea2bbcaa0372d8e5101e116ca1" title="Ask the user to choose the player type from a list." alt="" coords="181,107,316,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="112,81,167,99,165,104,110,86"/>
+</map>

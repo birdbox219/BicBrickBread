@@ -1,0 +1,11 @@
+<map id="header/BoardGame_Classes.h" name="header/BoardGame_Classes.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="56,5,256,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,59,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,35,68,74,65,70,133,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,80,141,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,34,130,68,125,65,146,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="164,80,236,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,31,187,65,182,68,161,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="260,80,326,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="181,30,257,70,255,75,179,35"/>
+</map>

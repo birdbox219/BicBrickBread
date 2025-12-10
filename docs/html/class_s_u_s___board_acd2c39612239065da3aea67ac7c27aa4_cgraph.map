@@ -1,0 +1,9 @@
+<map id="SUS_Board::game_is_over" name="SUS_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Determines whether the game is over." alt="" coords="5,31,185,57"/>
+<area shape="rect" id="Node000002" href="$class_s_u_s___board.html#aeb2ad5ce9bdd10ecf2d3cf06be14e6ca" title="Checks if the game ended in a draw." alt="" coords="233,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,30,217,27,217,32,186,36"/>
+<area shape="rect" id="Node000003" href="$class_s_u_s___board.html#a2230a0e70a119a14e7e7380ba9b2cb90" title="Checks if the given player has won." alt="" coords="237,56,372,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,52,221,57,221,62,185,58"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="424,56,557,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="372,67,408,67,408,72,372,72"/>
+</map>

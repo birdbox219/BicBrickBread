@@ -1,0 +1,31 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="5,335,44,361"/>
+<area shape="rect" id="Node000001" href="$class_anti___a_i.html" title="Simple AI for Anti&#45;XO that avoids dangerous positions." alt="" coords="114,5,178,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="26,319,48,172,66,95,77,64,90,42,112,26,115,30,94,46,82,66,71,96,53,173,32,320"/>
+<area shape="rect" id="Node000002" href="$class_four___a_i.html" title="Implements a minimax&#45;based AI for Connect&#45;Four." alt="" coords="112,56,180,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="23,319,26,272,36,212,56,150,71,120,90,93,110,77,113,82,94,97,76,123,61,152,41,213,32,272,28,319"/>
+<area shape="rect" id="Node000003" href="$class_large___x_o___a_i.html" title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic." alt="" coords="96,107,196,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="25,319,31,281,43,235,61,187,90,144,104,132,108,136,94,147,66,189,48,236,36,282,31,320"/>
+<area shape="rect" id="Node000004" href="$class_memory___a_i.html" title="AI controller for Memory Tic&#45;Tac&#45;Toe implementing the AI interface." alt="" coords="102,157,190,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="29,318,50,257,67,224,90,194,105,182,109,187,94,198,72,227,55,259,34,320"/>
+<area shape="rect" id="Node000005" href="$class_obstacles___a_i.html" title="AI implementation for Obstacles Tic&#45;Tac&#45;Toe." alt="" coords="96,208,196,235"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="36,319,58,281,90,245,107,233,110,237,94,249,63,284,41,322"/>
+<area shape="rect" id="Node000006" href="$class_pyramid_x_o___a_i.html" title="Simple AI choosing a random valid empty pyramid cell." alt="" coords="92,259,200,285"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="52,322,90,295,111,284,114,288,93,300,55,327"/>
+<area shape="rect" id="Node000007" href="$class_s_u_s___a_i.html" title="Artificial intelligence for the SUS game using Minimax with alpha&#45;beta pruning." alt="" coords="111,309,181,336"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="58,338,110,327,111,333,59,344"/>
+<area shape="rect" id="Node000008" href="$class_ultimate___a_i.html" title="AI controller for Ultimate Tic&#45;Tac&#45;Toe (random move selection)." alt="" coords="101,360,191,387"/>
+<area shape="poly" id="edge8_Node000000_Node000008" title=" " alt="" coords="59,352,101,361,100,366,58,358"/>
+<area shape="rect" id="Node000009" href="$class_word___a_i.html" title="AI engine for Word Tic&#45;Tac&#45;Toe." alt="" coords="110,411,182,437"/>
+<area shape="poly" id="edge9_Node000000_Node000009" title=" " alt="" coords="55,369,93,396,114,408,111,412,90,401,52,374"/>
+<area shape="rect" id="Node000010" href="$class_x_o___n_u_m___a_i.html" title="Random&#45;move AI for Numerical Tic&#45;Tac&#45;Toe." alt="" coords="97,461,195,488"/>
+<area shape="poly" id="edge10_Node000000_Node000010" title=" " alt="" coords="41,374,63,412,94,447,110,459,107,463,90,451,58,415,36,377"/>
+<area shape="rect" id="Node000011" href="$class_x_o__inf___a_i.html" title="AI engine for infinite Tic&#45;Tac&#45;Toe." alt="" coords="105,512,187,539"/>
+<area shape="poly" id="edge11_Node000000_Node000011" title=" " alt="" coords="34,376,55,437,72,469,94,498,109,509,105,514,90,502,67,472,50,439,29,378"/>
+<area shape="rect" id="Node000012" href="$class_x___o___a_i.html" title="AI controller for Tic&#45;Tac&#45;Toe." alt="" coords="112,563,180,589"/>
+<area shape="poly" id="edge12_Node000000_Node000012" title=" " alt="" coords="31,376,36,414,48,460,66,507,94,549,113,563,110,567,90,553,61,509,43,461,31,415,25,377"/>
+<area shape="rect" id="Node000013" href="$class__4by4_x_o___a_i.html" title="Simple AI for sliding 4x4 Tic&#45;Tac&#45;Toe." alt="" coords="98,613,194,640"/>
+<area shape="poly" id="edge13_Node000000_Node000013" title=" " alt="" coords="28,377,32,424,41,483,61,544,76,573,94,600,107,611,104,615,90,603,71,576,56,546,36,484,26,424,23,377"/>
+<area shape="rect" id="Node000014" href="$classdia___x_o___a_i.html" title="Very simple AI for diamond Tic&#45;Tac&#45;Toe." alt="" coords="104,664,188,691"/>
+<area shape="poly" id="edge14_Node000000_Node000014" title=" " alt="" coords="32,376,53,523,71,600,82,630,94,650,107,662,103,666,90,654,77,632,66,601,48,524,26,377"/>
+</map>

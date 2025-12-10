@@ -1,0 +1,5 @@
+<map id="SUS_AI::isMovesLeft" name="SUS_AI::isMovesLeft">
+<area shape="rect" id="Node000001" title="Checks if any empty cells remain." alt="" coords="5,5,154,32"/>
+<area shape="rect" id="Node000002" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="202,5,310,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,16,186,16,186,21,154,21"/>
+</map>

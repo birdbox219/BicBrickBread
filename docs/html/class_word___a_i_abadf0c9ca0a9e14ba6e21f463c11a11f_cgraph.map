@@ -1,0 +1,19 @@
+<map id="Word_AI::bestMove" name="Word_AI::bestMove">
+<area shape="rect" id="Node000001" title="Compute the best move for a player." alt="" coords="5,107,142,133"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="223,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,104,133,73,189,42,207,35,209,40,191,46,136,77,93,108"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="241,56,350,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,103,226,82,227,88,136,109"/>
+<area shape="rect" id="Node000004" href="$class_word___x_o___board.html#a1fa0932270c921458e31e24ed4d473e5" title="Get the empty cell symbol." alt="" coords="193,107,398,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,117,177,117,177,123,142,123"/>
+<area shape="rect" id="Node000005" href="$class_word___x_o___board.html#a3bd8d50441fb2bb14988faa4baa7b98b" title="Get the number of moves played." alt="" coords="190,157,401,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="136,131,220,151,218,156,135,137"/>
+<area shape="rect" id="Node000006" href="$class_word___x_o___board.html#a6eba0fb4c22b625af2000afd4fb4400d" title="Apply a move to the board." alt="" coords="213,208,378,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="94,132,137,162,191,194,204,200,202,204,188,198,134,167,91,136"/>
+<area shape="rect" id="Node000007" href="$class_move.html#a595bf740852c05a1cb425ef2640fd4ff" title="Get the move symbol." alt="" coords="449,165,577,192"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="378,207,437,193,439,199,379,213"/>
+<area shape="rect" id="Node000008" href="$class_move.html#a9d4f543a81e361f872d37bcfb64d5b55" title="Get row index." alt="" coords="466,216,560,243"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="379,227,451,227,451,232,379,232"/>
+<area shape="rect" id="Node000009" href="$class_move.html#a96469802a55c9083a1e93c7edec8a00c" title="Get column index." alt="" coords="466,267,560,293"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="379,246,452,263,451,268,378,251"/>
+</map>

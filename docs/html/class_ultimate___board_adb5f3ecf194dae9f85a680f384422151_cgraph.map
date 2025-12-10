@@ -1,0 +1,12 @@
+<map id="Ultimate_Board::game_is_over" name="Ultimate_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Determines whether the game has ended." alt="" coords="5,39,157,81"/>
+<area shape="rect" id="Node000002" href="$class_ultimate___board.html#a5737c7a2126711b10d5996eb07644fb1" title="Checks if the game ended in a draw." alt="" coords="205,21,369,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,48,189,44,189,49,157,53"/>
+<area shape="rect" id="Node000004" href="$class_ultimate___board.html#a34b9605914ffff40dde2acb0be08f857" title="Checks if the player has won the game." alt="" coords="417,72,573,99"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="157,62,401,77,401,82,157,67"/>
+<area shape="rect" id="Node000003" href="$class_ultimate___board.html#a891824859cdfd590dafb52250a27148c" title="Checks if all small boards are completed." alt="" coords="425,5,565,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,29,409,27,409,33,370,34"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="346,46,423,65,422,70,344,51"/>
+<area shape="rect" id="Node000005" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="621,72,755,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="574,83,606,83,606,88,574,88"/>
+</map>

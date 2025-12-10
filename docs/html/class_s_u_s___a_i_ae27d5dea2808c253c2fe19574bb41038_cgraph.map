@@ -1,0 +1,20 @@
+<map id="SUS_AI::bestMove" name="SUS_AI::bestMove">
+<area shape="rect" id="Node000001" title="Computes the best move for the player." alt="" coords="5,37,140,64"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="364,37,509,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,48,348,48,348,53,140,53"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="558,88,692,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,34,200,18,297,5,351,3,405,4,459,11,511,23,560,46,600,76,596,80,557,51,509,28,458,16,404,10,351,8,298,11,201,23,124,39"/>
+<area shape="rect" id="Node000004" href="$class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" title="Minimax with alpha&#45;beta pruning." alt="" coords="188,112,314,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,62,204,103,202,108,105,67"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="285,109,386,68,388,73,287,114"/>
+<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="314,119,543,104,543,109,315,124"/>
+<area shape="poly" id="edge11_Node000004_Node000004" title=" " alt="" coords="220,113,215,103,219,94,231,88,251,85,272,88,284,95,281,99,271,93,251,91,232,93,222,97,220,103,225,110"/>
+<area shape="rect" id="Node000005" href="$class_s_u_s___a_i.html#a917f6a59b1707de463bfcaad41f0d560" title="Evaluates the board state for the given player." alt="" coords="373,139,499,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="315,132,358,138,358,143,314,137"/>
+<area shape="rect" id="Node000007" href="$class_s_u_s___a_i.html#a223660856952277e2a8323ffb790bc53" title="Checks if any empty cells remain." alt="" coords="362,189,510,216"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="280,137,363,175,379,181,377,186,361,180,278,142"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="488,136,557,117,559,122,490,141"/>
+<area shape="rect" id="Node000006" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="571,164,679,191"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="500,158,556,166,555,171,499,163"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="510,190,555,184,556,189,511,195"/>
+</map>

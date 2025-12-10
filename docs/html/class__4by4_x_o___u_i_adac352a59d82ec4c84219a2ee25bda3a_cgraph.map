@@ -1,0 +1,16 @@
+<map id="_4by4XO_UI::get_move" name="_4by4XO_UI::get_move">
+<area shape="rect" id="Node000001" title="Gets a move from human or AI." alt="" coords="5,132,167,159"/>
+<area shape="rect" id="Node000002" href="$class__4by4_x_o___a_i.html#aa13e6d3e4cdedc6ea7e813a16d4c0d68" title="Computes the best move for AI." alt="" coords="215,56,375,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,129,240,86,242,91,126,134"/>
+<area shape="rect" id="Node000005" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="429,107,562,133"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="167,138,413,122,414,128,167,143"/>
+<area shape="rect" id="Node000006" href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="233,157,356,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,152,218,159,217,164,167,158"/>
+<area shape="rect" id="Node000007" href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="237,208,353,235"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="122,157,216,193,235,200,233,205,214,199,120,162"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="423,5,568,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,53,424,34,426,39,352,58"/>
+<area shape="rect" id="Node000004" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="442,56,550,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="376,67,426,67,426,72,376,72"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="352,81,426,100,424,105,350,86"/>
+</map>

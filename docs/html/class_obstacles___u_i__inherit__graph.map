@@ -1,0 +1,5 @@
+<map id="Obstacles_UI" name="Obstacles_UI">
+<area shape="rect" id="Node000001" title="User interface handler for Obstacles Tic&#45;Tac&#45;Toe." alt="" coords="12,293,167,427"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="5,5,174,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,260,92,294,87,294,87,260"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Player&lt; T &gt;" name="Player&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Base template for all players (human or AI)." alt="" coords="46,281,157,500"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="28,140,97,209"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,209,66,257,67,264,62,265,61,258,58,209"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,120,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,106,65,140,60,140,60,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="131,140,149,209"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,210,127,265,121,264,131,209"/>
+</map>

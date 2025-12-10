@@ -1,0 +1,5 @@
+<map id="Obstacles_Board::is_draw" name="Obstacles_Board::is_draw">
+<area shape="rect" id="Node000001" title="Checks for a draw condition." alt="" coords="215,13,389,40"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___board.html#aa1db0075134ef87705583442ca91ca4a" title="Checks if the game is over for a player." alt="" coords="5,5,167,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,29,167,29,167,24,199,24"/>
+</map>

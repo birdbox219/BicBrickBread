@@ -1,0 +1,10 @@
+<map id="FOUR_Board::game_is_over" name="FOUR_Board::game_is_over">
+<area shape="rect" id="Node000001" title="Checks whether the game is over (win or draw)." alt="" coords="5,31,195,57"/>
+<area shape="rect" id="Node000002" href="$class_f_o_u_r___board.html#a85921de4da3bb3dba9dae1a21fc4bc5f" title="Checks whether the game ended in a draw." alt="" coords="243,5,396,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,30,227,27,228,32,195,36"/>
+<area shape="rect" id="Node000003" href="$class_f_o_u_r___board.html#a3dac17aae77d0128b2a75fd002eed42b" title="Checks whether the given player has won." alt="" coords="444,31,589,57"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="195,41,429,41,429,47,195,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,26,429,30,428,35,396,31"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="637,31,771,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="590,41,622,41,622,47,590,47"/>
+</map>

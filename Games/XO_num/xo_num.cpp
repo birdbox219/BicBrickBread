@@ -10,33 +10,39 @@ using namespace std;
 // ======================= XO_NUM_Board =======================
 
 XO_NUM_Board::XO_NUM_Board() : Board(3, 3) {
+    // Initialize all cells as blank
     for (auto &row : board)
         for (auto &cell : row)
             cell = blank_symbol;
 }
 
-bool XO_NUM_Board::update_board(Move<char> *move) {
+/**
+ * @brief Applies or undoes a move on the board
+ */
+bool XO_NUM_Board::update_board(Move<char>* move) {
     int x = move->get_x();
     int y = move->get_y();
     char mark = move->get_symbol();
 
+    // Validate move coordinates
     if (x < 0 || x >= rows || y < 0 || y >= columns)
         return false;
 
+    // Cannot overwrite unless undo
     if (board[x][y] != blank_symbol && mark != 0)
         return false;
 
-    if (mark == 0) { // undo
+    if (mark == 0) { // Undo move
         board[x][y] = blank_symbol;
         n_moves++;
         // Restore the number to the vector
-        if (move->get_symbol() % 2 == 0) even.push_back(mark);
+        if ((move->get_symbol() - '0') % 2 == 0) even.push_back(mark);
         else odd.push_back(mark);
-    } else { // apply
+    } else { // Apply move
         board[x][y] = mark;
         n_moves++;
-        // Remove number from odd/even vector
-        if (mark % 2 == 0) {
+        // Remove number from available pool
+        if ((mark - '0') % 2 == 0) {
             auto it = find(even.begin(), even.end(), mark);
             if (it != even.end()) even.erase(it);
         } else {
@@ -47,7 +53,10 @@ bool XO_NUM_Board::update_board(Move<char> *move) {
     return true;
 }
 
-bool XO_NUM_Board::is_win(Player<char> *player) {
+/**
+ * @brief Returns true if a row, column, or diagonal sums to 15
+ */
+bool XO_NUM_Board::is_win(Player<char>* player) {
     auto sum = [](char a, char b, char c) { return (a - '0') + (b - '0') + (c - '0'); };
 
     // Rows & columns
@@ -64,11 +73,17 @@ bool XO_NUM_Board::is_win(Player<char> *player) {
     return false;
 }
 
-bool XO_NUM_Board::is_draw(Player<char> *player) {
+/**
+ * @brief Returns true if all moves used and no win
+ */
+bool XO_NUM_Board::is_draw(Player<char>* player) {
     return n_moves == 9 && !is_win(player);
 }
 
-bool XO_NUM_Board::game_is_over(Player<char> *player) {
+/**
+ * @brief Returns true if game ended (win or draw)
+ */
+bool XO_NUM_Board::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
 
@@ -76,6 +91,9 @@ bool XO_NUM_Board::game_is_over(Player<char> *player) {
 
 XO_NUM_UI::XO_NUM_UI() : UI<char>("Numerical Tic-Tac-Toe", 3) {}
 
+/**
+ * @brief Sets up two players
+ */
 Player<char>** XO_NUM_UI::setup_players() {
     Player<char>** players = new Player<char>*[2];
     vector<string> type_options = { "Human", "Computer" };
@@ -91,10 +109,16 @@ Player<char>** XO_NUM_UI::setup_players() {
     return players;
 }
 
+/**
+ * @brief Creates a player instance
+ */
 Player<char>* XO_NUM_UI::create_player(string &name, char symbol, PlayerType type) {
     return new Player<char>(name, symbol, type);
 }
 
+/**
+ * @brief Gets next move from human or AI
+ */
 Move<char>* XO_NUM_UI::get_move(Player<char>* player) {
     auto* board = dynamic_cast<XO_NUM_Board*>(player->get_board_ptr());
     int x, y;
@@ -113,7 +137,7 @@ Move<char>* XO_NUM_UI::get_move(Player<char>* player) {
         cin >> num;
 
         auto exist = [](vector<char>& v, char n) -> bool {
-            return find(v.begin(), v.end(), n) != v.end(); // just check existence here
+            return find(v.begin(), v.end(), n) != v.end();
         };
 
         while (!exist(choices, num)) {
@@ -132,29 +156,28 @@ Move<char>* XO_NUM_UI::get_move(Player<char>* player) {
 
 // ======================= XO_NUM_AI =======================
 
+/**
+ * @brief Picks a random empty cell and number
+ */
 Move<char>* XO_NUM_AI::bestMove(Player<char>* player, char blankCell, int depth) {
     auto* board = dynamic_cast<XO_NUM_Board*>(player->get_board_ptr());
     vector<pair<int,int>> emptyCells;
 
-    // Collect all empty cells
-    for (int i = 0; i < board->get_rows(); i++) {
-        for (int j = 0; j < board->get_columns(); j++) {
-            if (board->get_cell(i,j) == blankCell) {
+    // Collect empty cells
+    for (int i = 0; i < board->get_rows(); i++)
+        for (int j = 0; j < board->get_columns(); j++)
+            if (board->get_cell(i,j) == blankCell)
                 emptyCells.push_back({i,j});
-            }
-        }
-    }
 
-    if (emptyCells.empty()) return nullptr; // no moves left
+    if (emptyCells.empty()) return nullptr;
 
-    // Pick a random empty cell
     int cellIndex = rand() % emptyCells.size();
     int x = emptyCells[cellIndex].first;
     int y = emptyCells[cellIndex].second;
 
     // Pick a number from remaining odd/even choices
     vector<char>& choices = (player->get_symbol() == '1') ? board->odd : board->even;
-    if (choices.empty()) return nullptr; // no numbers left
+    if (choices.empty()) return nullptr;
 
     int numIndex = rand() % choices.size();
     char num = choices[numIndex];

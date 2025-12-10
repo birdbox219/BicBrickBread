@@ -1,6 +1,12 @@
 #include "Word_Tic_Tac_Toe.h"
 #include <iostream>
 #include <random>
+#include <cstdint>
+#include <set>
+#include <fstream>
+#include <tuple>
+#include <algorithm>
+#include <random>
 
 // ============================================================================
 // Static Member Initialization

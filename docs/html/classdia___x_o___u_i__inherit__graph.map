@@ -1,0 +1,5 @@
+<map id="dia_XO_UI" name="dia_XO_UI">
+<area shape="rect" id="Node000001" title="User interface for diamond&#45;shaped Tic&#45;Tac&#45;Toe." alt="" coords="35,293,145,427"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="5,5,174,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,260,92,294,87,294,87,260"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Memory_AI::minimax" name="Memory_AI::minimax">
+<area shape="rect" id="Node000001" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="409,29,554,56"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="515,16,504,10,482,8,461,10,450,15,447,20,453,27,448,30,442,21,446,11,460,5,482,3,505,5,518,12"/>
+<area shape="rect" id="Node000002" href="$class_memory___a_i.html#a6bb44a40960586c692f1224bc15dc098" title="Determines the optimal move for AI using minimax." alt="" coords="208,29,361,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,45,361,45,361,40,393,40"/>
+<area shape="rect" id="Node000003" href="$class_memory___u_i.html#ac381faa654aeb92bdba8c7356289dea2" title="Obtains the next move from a player." alt="" coords="5,29,160,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,45,160,45,160,40,192,40"/>
+</map>

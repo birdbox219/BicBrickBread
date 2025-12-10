@@ -4,323 +4,190 @@
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
 #include "../../header/AI.h"
-#include <cstdint>
-#include <set>
-#include <fstream>
-#include <tuple>
-#include <algorithm>
-#include <random>
 
 /**
  * @file Word_Tic_Tac_Toe.h
- * @brief Header file for the Word-based Tic-Tac-Toe board, AI, and UI modules.
+ * @brief Header for Word Tic-Tac-Toe board, AI, and UI.
  *
- * @details
- * This file defines all components necessary to operate the Word Tic-Tac-Toe variant,
- * including:
- * - The game board and word-validation logic
- * - The AI system for generating optimal moves
- * - The user interface for human, computer, and AI interaction
+ * @defgroup Word_XO Word XO
+ * @brief Classes for the Word-based Tic-Tac-Toe variant.
  */
 
-// ============================================================================
-// MODULE: Word Tic-Tac-Toe Board
-// ============================================================================
-
-/**
- * @defgroup Word_TicTacToe_Board Word Tic-Tac-Toe Board
- * @brief Core board and game-logic functionality.
- *
- * @details
- * Contains the implementation of the game board, including:
- * - Move validation
- * - Word detection
- * - Win/lose/draw evaluation
- * - Dictionary management
- * @{
- */
+#include <set>
+#include <string>
+#include <vector>
 
 /**
  * @class Word_XO_Board
- * @ingroup Word_TicTacToe_Board
+ * @ingroup Word_XO
+ * @brief Game board for Word Tic-Tac-Toe.
  *
- * @brief Game board implementation for the Word-based Tic-Tac-Toe variant.
- *
- * @details
- * This class specializes the generic `Board<char>` template to support:
- * - Word formation and dictionary lookup
- * - Forward and backward word detection
- * - Last-player tracking
- * - Terminal-state evaluation
+ * @details Tracks moves and validates word formation. Supports checking
+ * wins, losses, draws, and keeping track of the last player.
  */
 class Word_XO_Board : public Board<char> {
 public:
-
-    /** @name Constructors */
-    ///@{
-
     /**
-     * @brief Constructs and initializes the Word Tic-Tac-Toe board.
-     *
-     * @details
-     * Initializes:
-     * - Board dimensions
-     * - Empty cell marker
-     * - Move counter
-     * - Word dictionary needed for validation
+     * @brief Construct a new Word Tic-Tac-Toe board.
+     * @details Initializes the empty board, move counter, and dictionaries.
      */
     Word_XO_Board();
-    ///@}
-
-    /** @name Board State Queries */
-    ///@{
 
     /**
-     * @brief Returns the symbol representing an unoccupied cell.
-     * @return Character used for empty slots.
+     * @brief Get the empty cell symbol.
+     * @return Character representing empty cells.
      */
     char getEmptyCell();
 
     /**
-     * @brief Retrieves the number of moves made so far.
-     * @return Integer in the range [0, 9].
+     * @brief Get the number of moves played.
+     * @return Number of moves made so far.
      */
     int getMoveCount();
 
     /**
-     * @brief Checks if any valid word is currently formed on the board.
-     * @return `true` if a word exists; otherwise `false`.
+     * @brief Check if any valid word exists on the board.
+     * @return True if a word is present; false otherwise.
      */
     bool wordExist();
-    ///@}
-
-    /** @name Board Modification */
-    ///@{
 
     /**
-     * @brief Validates and applies a move to the board.
-     *
-     * @details
-     * Validates:
-     * - Board boundaries
-     * - Empty-cell availability
-     * - Word-based placement rules
-     *
-     * If valid, the board is updated and internal state adjusted.
-     *
-     * @param move Pointer to the move to apply.
-     * @return `true` if applied, `false` otherwise.
+     * @brief Apply a move to the board.
+     * @details Validates and updates the board according to Word XO rules.
+     * @param move Pointer to the Move<char> object.
+     * @return True if move was successfully applied; false otherwise.
      */
     bool update_board(Move<char>* move) override;
 
     /**
-     * @brief Records the player who performed the last action.
-     *
-     * @param player Pointer to the last player to move.
+     * @brief Set the last player who moved.
+     * @param player Pointer to the player who last moved.
      */
     void setLastPlayer(Player<char>* player);
-    ///@}
-
-    /** @name Game State Evaluation */
-    ///@{
 
     /**
-     * @brief Determines whether the game has reached a terminal state.
-     *
-     * @param player Player requesting evaluation.
-     * @return `true` if game ended; otherwise `false`.
+     * @brief Check if the game is over.
+     * @param player Player to check.
+     * @return True if the game ended; false otherwise.
      */
     bool game_is_over(Player<char>* player) override;
 
     /**
-     * @brief Checks if the specified player has won.
-     * @param player Player to evaluate.
-     * @return `true` if the player has won.
+     * @brief Check if a player has won.
+     * @param player Player to check.
+     * @return True if the player won; false otherwise.
      */
     bool is_win(Player<char>* player) override;
 
     /**
-     * @brief Checks if the specified player has lost.
-     * @param player Player to evaluate.
-     * @return `true` if the player lost.
+     * @brief Check if a player has lost.
+     * @param player Player to check.
+     * @return True if the player lost; false otherwise.
      */
     bool is_lose(Player<char>* player) override;
 
     /**
-     * @brief Determines whether the game ended in a draw.
-     * @param player Player to evaluate.
-     * @return `true` if the game is a draw.
+     * @brief Check if the game ended in a draw.
+     * @param player Player to check.
+     * @return True if the game is a draw; false otherwise.
      */
     bool is_draw(Player<char>* player) override;
-    ///@}
 
-    /** @name Static Dictionaries */
-    ///@{
-
-    /**
-     * @brief Dictionary of valid forward words.
-     */
+    /// @brief Forward dictionary of valid words.
     static std::set<std::string> dict;
 
-    /**
-     * @brief Dictionary of reversed valid words.
-     */
+    /// @brief Reversed dictionary of valid words.
     static std::set<std::string> revDict;
-    ///@}
 
 private:
     int nMoves = 0;                ///< Number of moves made.
-    char emptyCell;                ///< Character representing an empty cell.
-    Player<char>* lastPlayer;      ///< Pointer to last player who acted.
+    char emptyCell;                ///< Symbol for empty cell.
+    Player<char>* lastPlayer;      ///< Pointer to last player.
 };
 
-///@}  // End of Word_TicTacToe_Board group
-
-
-
 // ============================================================================
-// MODULE: Word Tic-Tac-Toe AI
+// Word XO AI
 // ============================================================================
-
-/**
- * @defgroup Word_TicTacToe_AI Word Tic-Tac-Toe AI
- * @brief AI logic for move evaluation and minimax strategy.
- *
- * @details
- * Contains:
- * - Heuristic evaluation
- * - Minimax with alpha-beta pruning
- * - Best-move computation
- * @{
- */
 
 /**
  * @class Word_AI
- * @ingroup Word_TicTacToe_AI
+ * @ingroup AI
+ * @brief AI engine for Word Tic-Tac-Toe.
  *
- * @brief AI engine for the Word Tic-Tac-Toe game.
- *
- * @details
- * Provides:
- * - Heuristic scoring based on potential word creation
- * - Minimax search tree evaluation
- * - Best move selection given a board state
+ * @details Provides evaluation, minimax search with alpha-beta pruning,
+ * and best-move computation.
  */
 class Word_AI : public AI {
 public:
     Word_AI() = default;
 
     /**
-     * @brief Evaluates the board from the player's perspective.
-     *
-     * @param board Pointer to the board.
-     * @param player Player to evaluate for.
+     * @brief Evaluate the board for a player.
+     * @param board Pointer to the game board.
+     * @param player Player being evaluated.
      * @return Heuristic score.
      */
     float evaluate(Board<char>* board, Player<char>* player) override { return 0.0f; }
 
     /**
-     * @brief Performs minimax search with alpha-beta pruning.
-     *
-     * @param aiTurn True if it's the AI's turn.
+     * @brief Minimax search with alpha-beta pruning.
+     * @param aiTurn True if AI's turn.
      * @param player Player being evaluated.
-     * @param alpha Alpha bound.
-     * @param beta Beta bound.
-     * @param blankCell Character representing an empty cell.
-     * @param depth Remaining search depth.
+     * @param alpha Alpha value for pruning.
+     * @param beta Beta value for pruning.
+     * @param blankCell Symbol representing empty cell.
+     * @param depth Depth of search.
      * @return Evaluation score.
      */
     float minimax(bool aiTurn, Player<char>* player,
                   float alpha, float beta, char blankCell, int depth) override { return 0.0f; }
 
     /**
-     * @brief Computes and returns the optimal move.
-     *
-     * @param player Player requesting the move.
+     * @brief Compute the best move for a player.
+     * @param player Player requesting move.
      * @param blankCell Symbol representing empty cells.
-     * @param depth Search depth (default = 6).
-     * @return Pointer to the best move.
+     * @param depth Depth of search (default 6).
+     * @return Pointer to the optimal Move<char>.
      */
     Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
 };
 
-///@} // End of Word_TicTacToe_AI group
-
-
-
 // ============================================================================
-// MODULE: Word Tic-Tac-Toe UI
+// Word XO UI
 // ============================================================================
-
-/**
- * @defgroup Word_TicTacToe_UI Word Tic-Tac-Toe UI
- * @brief User interface for human, random, and AI players.
- *
- * @details
- * Handles:
- * - Player input
- * - Display logic
- * - AI move generation
- * @{
- */
 
 /**
  * @class Word_XO_UI
- * @ingroup Word_TicTacToe_UI
+ * @ingroup Word_XO
+ * @brief User interface for Word Tic-Tac-Toe.
  *
- * @brief User Interface controller for the game.
- *
- * @details
- * Supports:
- * - Human move entry
- * - Random computer moves
- * - AI-driven move generation
+ * @details Handles human input, random computer moves, and AI moves.
  */
 class Word_XO_UI : public Custom_UI<char>
 {
 public:
-    /** @name Constructors */
-    ///@{
+    /**
+     * @brief Construct the UI.
+     */
     Word_XO_UI();
-    ///@}
-
-    /** @name Player Interaction */
-    ///@{
 
     /**
-     * @brief Retrieves the move from the current player.
-     *
-     * @details
-     * Behavior depends on player type:
-     * - Human → Read input
-     * - Random bot → Generate random valid move
-     * - AI → Call AI::bestMove()
-     *
-     * @param player Active player.
-     * @return Pointer to the generated move.
+     * @brief Get the next move from a player.
+     * @param player Pointer to the active player.
+     * @return Pointer to the generated Move<char>.
      */
     Move<char>* get_move(Player<char>* player) override;
-    ///@}
-
-    /** @name AI Helper Tools */
-    ///@{
 
     /**
-     * @brief Evaluates potential characters at position (r, c).
-     *
+     * @brief Evaluate potential characters for a board position.
      * @param r Row index.
      * @param c Column index.
-     * @return Vector of (score, character) pairs.
+     * @return Vector of (score, character) pairs for AI evaluation.
      */
     std::vector<std::pair<int, char>> evaluate(size_t r, size_t c);
 
-    /**
-     * @brief Precomputed scoring tables for AI heuristics.
-     */
+    /// @brief Precomputed scoring tables for AI heuristics.
     static std::vector<std::pair<int, char>> score[3][3];
-    ///@}
 };
-
-///@} // End of Word_TicTacToe_UI group
 
 #endif // WORD_TIC_TAC_TOE_H

@@ -292,7 +292,7 @@ void Memory_UI::display_board_matrix(const vector<vector<char>>& matrix) const
         cout << setw(2) << i << " |";
         for (int j = 0; j < cols; ++j)
             cout << setw(cell_width)
-                 << (matrix[i][j] != '.' ? '#' : matrix[i][j]) << " |";
+                 << (matrix[i][j] != '.' ? '?' : matrix[i][j]) << " |";
         cout << "\n   " << string((cell_width + 2) * cols, '-') << "\n";
     }
     cout << endl;

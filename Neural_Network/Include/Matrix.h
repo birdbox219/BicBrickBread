@@ -1,3 +1,18 @@
+/**
+ * @file Matrix.h
+ * @brief Lightweight 2D matrix class for numerical computations.
+ *
+ * @defgroup Math Mathematical Utilities
+ * @brief Core math classes and helpers for neural networks and game AI.
+ *
+ * Features:
+ *  - Row-major contiguous storage
+ *  - Element-wise and Hadamard operations
+ *  - Transpose and matrix multiplication
+ *  - Random initialization
+ *  - Interoperability with neural networks
+ */
+
 #ifndef MATRIX_H
 #define MATRIX_H
 
@@ -8,24 +23,24 @@
 
 /**
  * @class Matrix
- * @brief Lightweight 2D matrix with contiguous row-major storage.
+ * @brief Lightweight 2D numeric matrix.
  *
- * Designed primarily for neural-network operations:
- *  - Efficient indexing via a flattened vector
- *  - Minimal dynamic allocations
- *  - Element-wise ops, Hadamard ops, transpose, matrix multiply
+ * @ingroup Math
  *
- * The class DOES NOT perform implicit shape broadcasting.
- * All operations validate dimensional consistency.
+ * Designed for neural network computations:
+ *  - Efficient indexing via flattened row-major storage
+ *  - Element-wise operations and arithmetic
+ *  - No implicit broadcasting
+ *  - Shape validation for all operations
  *
- * @tparam T  Numeric type (float, double, int, etc.)
+ * @tparam T Numeric type (float, double, int, etc.)
  */
 template <class T>
 class Matrix {
 public:
     int rows;                ///< Number of rows
     int cols;                ///< Number of columns
-    std::vector<T> data;     ///< Row-major flattened storage of size rows*cols
+    std::vector<T> data;     ///< Row-major flattened storage (size = rows*cols)
 
     // ---------------------------------------------------------------------
     // Constructors
@@ -35,10 +50,7 @@ public:
      * @brief Construct a matrix of size (rows x cols).
      * @param rows Number of rows
      * @param cols Number of columns
-     * @param zero If true, initialize all elements to 0.
-     *             If false, initialize elements to 1.
-     *
-     * @note Elements are NOT left uninitialized. This simplifies usage in NN code.
+     * @param zero Initialize to zero if true; else initialize to one
      */
     Matrix(int rows = 0, int cols = 0, bool zero = true);
 
@@ -60,8 +72,9 @@ public:
      * @brief Create a matrix filled with uniform random values in [min, max].
      * @param rows Number of rows
      * @param cols Number of columns
-     * @param min Lower bound
-     * @param max Upper bound
+     * @param min Minimum value
+     * @param max Maximum value
+     * @return Matrix with random values
      */
     static Matrix random(int rows, int cols, T min, T max);
 
@@ -71,18 +84,17 @@ public:
 
     /**
      * @brief Access element (r, c) by reference.
-     * @warning No bounds check in release mode.
+     * @warning No bounds check in release mode
      */
     inline T& operator()(int r, int c) { return data[r * cols + c]; }
 
     /**
-     * @brief Read-only access to element (r, c).
+     * @brief Read-only access to element (r, c)
      */
     inline const T& operator()(int r, int c) const { return data[r * cols + c]; }
 
     /**
-     * @brief Raw pointer to underlying storage.
-     * Useful for interoperability with BLAS and LibTorch custom ops.
+     * @brief Raw pointer to underlying data
      */
     T* dataPtr() { return data.data(); }
     const T* dataPtr() const { return data.data(); }
@@ -92,16 +104,15 @@ public:
     // ---------------------------------------------------------------------
 
     /**
-     * @brief Apply a function f(x) to each element (in place).
+     * @brief Apply function f(x) to each element in place.
      * @param func Mapping function
-     *
-     * Example: m.apply([](float x){ return std::tanh(x); });
      */
     void apply(const std::function<T(T)>& func);
 
     /**
-     * @brief In-place Hadamard (element-wise) product: this = this ⊙ other.
-     * @throws std::runtime_error if shapes differ
+     * @brief In-place Hadamard (element-wise) product: this = this ⊙ other
+     * @param other Other matrix
+     * @throws std::runtime_error if dimensions mismatch
      */
     void hadamard(const Matrix& other);
 
@@ -110,23 +121,33 @@ public:
     // ---------------------------------------------------------------------
 
     /**
-     * @brief Matrix addition. Dimensions must match.
+     * @brief Matrix addition
+     * @param other Other matrix
+     * @return Sum matrix
+     * @throws std::runtime_error if dimensions mismatch
      */
     Matrix operator+(const Matrix& other) const;
 
     /**
-     * @brief Matrix subtraction. Dimensions must match.
+     * @brief Matrix subtraction
+     * @param other Other matrix
+     * @return Difference matrix
+     * @throws std::runtime_error if dimensions mismatch
      */
     Matrix operator-(const Matrix& other) const;
 
     /**
-     * @brief Right-hand matrix multiplication: C = A * B.
-     * @throws std::runtime_error if A.cols != B.rows
+     * @brief Matrix multiplication: C = A * B
+     * @param other Right-hand side matrix
+     * @return Resulting matrix
+     * @throws std::runtime_error if inner dimensions mismatch
      */
     Matrix operator*(const Matrix& other) const;
 
     /**
-     * @brief Scalar multiplication: each element multiplied by val.
+     * @brief Scalar multiplication
+     * @param val Scalar value
+     * @return Scaled matrix
      */
     Matrix operator*(int val) const;
 
@@ -135,23 +156,23 @@ public:
     // ---------------------------------------------------------------------
 
     /**
-     * @brief Returns the transpose of the matrix.
+     * @brief Transpose of the matrix
+     * @return Transposed matrix
      */
     Matrix transpose() const;
 
     /**
-     * @brief Resize matrix to (r x c) and reset all elements to zero.
+     * @brief Resize matrix and set all elements to zero
+     * @param r Rows
+     * @param c Columns
      */
     void resize(int r, int c);
 
     /**
-     * @brief Optimized matrix multiplication into a preallocated matrix.
-     *
-     * @param a Left operand
-     * @param b Right operand
-     * @param result Preallocated matrix with dimensions (a.rows x b.cols)
-     *
-     * @note Does not allocate memory. Caller ensures correct size.
+     * @brief Multiply preallocated matrices without allocations
+     * @param a Left matrix
+     * @param b Right matrix
+     * @param result Preallocated matrix (a.rows × b.cols)
      */
     static void multiply(const Matrix& a, const Matrix& b, Matrix& result);
 
@@ -160,10 +181,10 @@ public:
     // ---------------------------------------------------------------------
 
     /**
-     * @brief Stream output operator for debugging.
+     * @brief Stream output for debugging
      */
     template <typename J>
     friend std::ostream& operator<<(std::ostream& os, const Matrix<J>& m);
 };
 
-#endif
+#endif // MATRIX_H

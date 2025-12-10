@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['x_0',['x',['../struct_vertex.html#ae8e06f567763ea3569726c4505036486',1,'Vertex::x'],['../class_move.html#a5f399fb722305d3061e0f6f2438e5390',1,'Move::x']]],
+  ['x_5fo_5fai_1',['X_O_AI',['../class_x___o___a_i.html',1,'X_O_AI'],['../class_x___o___a_i.html#ac767a90ec19cabc396186c11df134cfb',1,'X_O_AI::X_O_AI()']]],
+  ['x_5fo_5fboard_2',['X_O_Board',['../class_x___o___board.html',1,'X_O_Board'],['../class_x___o___board.html#aff75cefd426f1e8db38555ed9b59fee8',1,'X_O_Board::X_O_Board()']]],
+  ['xo_3',['XO',['../group___sliding_x_o.html',1,'4x4 Sliding XO'],['../group___x_o.html',1,'Classic XO'],['../group___x_o__inf.html',1,'Infinite XO'],['../group___large___x_o.html',1,'Large XO'],['../group___memory___x_o.html',1,'Memory XO'],['../group___obstacles___x_o.html',1,'Obstacles XO'],['../group___pyramid_x_o___x_o.html',1,'Pyramid XO'],['../group___s_u_s___x_o.html',1,'SUS XO'],['../group___ultimate___x_o.html',1,'Ultimate XO'],['../group___word___x_o.html',1,'Word XO']]],
+  ['xo_20numerical_4',['XO Numerical',['../group___x_o__num.html',1,'']]],
+  ['xo_5fclasses_2eh_5',['XO_Classes.h',['../_x_o___classes_8h.html',1,'']]],
+  ['xo_5finf_2ecpp_6',['XO_inf.cpp',['../_x_o__inf_8cpp.html',1,'']]],
+  ['xo_5finf_2eh_7',['XO_inf.h',['../_x_o__inf_8h.html',1,'']]],
+  ['xo_5finf_5fai_8',['XO_inf_AI',['../class_x_o__inf___a_i.html',1,'XO_inf_AI'],['../class_x_o__inf___a_i.html#aa4ce07e2259913de9f8a21af3d63aeea',1,'XO_inf_AI::XO_inf_AI()']]],
+  ['xo_5finf_5fboard_9',['XO_inf_Board',['../class_x_o__inf___board.html',1,'XO_inf_Board'],['../class_x_o__inf___board.html#ac475c42f371943a1e14d4bd975f18416',1,'XO_inf_Board::XO_inf_Board()']]],
+  ['xo_5finf_5fui_10',['XO_inf_UI',['../class_x_o__inf___u_i.html',1,'XO_inf_UI'],['../class_x_o__inf___u_i.html#a1005972befb9f118876fa4e1d701c7d5',1,'XO_inf_UI::XO_inf_UI()']]],
+  ['xo_5fnum_2ecpp_11',['xo_num.cpp',['../xo__num_8cpp.html',1,'']]],
+  ['xo_5fnum_2eh_12',['xo_num.h',['../xo__num_8h.html',1,'']]],
+  ['xo_5fnum_5fai_13',['XO_NUM_AI',['../class_x_o___n_u_m___a_i.html',1,'XO_NUM_AI'],['../class_x_o___n_u_m___a_i.html#a43c6875369088318ff9eb0f7084db630',1,'XO_NUM_AI::XO_NUM_AI()']]],
+  ['xo_5fnum_5fboard_14',['XO_NUM_Board',['../class_x_o___n_u_m___board.html',1,'XO_NUM_Board'],['../class_x_o___n_u_m___board.html#a9fdb5166019f27ec4bb7b4be53241b2c',1,'XO_NUM_Board::XO_NUM_Board()']]],
+  ['xo_5fnum_5fui_15',['XO_NUM_UI',['../class_x_o___n_u_m___u_i.html',1,'XO_NUM_UI'],['../class_x_o___n_u_m___u_i.html#a0e880ad45db7ac8997a26b618c1c0a99',1,'XO_NUM_UI::XO_NUM_UI()']]],
+  ['xo_5fui_16',['XO_UI',['../class_x_o___u_i.html',1,'XO_UI'],['../class_x_o___u_i.html#a3777235b2b66dc912258a4ee20501ebb',1,'XO_UI::XO_UI()']]]
+];

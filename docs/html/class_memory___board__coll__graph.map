@@ -1,0 +1,7 @@
+<map id="Memory_Board" name="Memory_Board">
+<area shape="rect" id="Node000001" title="Specialized board class for Memory Tic&#45;Tac&#45;Toe." alt="" coords="5,537,142,735"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="8,163,140,488"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,503,76,537,71,537,71,503"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="14,5,134,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,90,76,145,71,145,71,90"/>
+</map>

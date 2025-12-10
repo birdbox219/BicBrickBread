@@ -1,0 +1,5 @@
+<map id="Ultimate_Board" name="Ultimate_Board">
+<area shape="rect" id="Node000001" title="Represents a 9x9 Ultimate Tic&#45;Tac&#45;Toe board." alt="" coords="5,400,169,704"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="21,5,153,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,367,90,401,85,401,85,367"/>
+</map>

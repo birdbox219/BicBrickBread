@@ -1,0 +1,37 @@
+<map id="Games/XO_inf/XO_inf.cpp" name="Games/XO_inf/XO_inf.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="441,5,618,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="6,320,77,347"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="442,33,328,50,202,77,143,93,92,112,51,133,25,156,16,174,10,192,10,233,19,272,31,305,26,307,14,274,5,234,5,192,11,172,21,153,48,129,90,107,142,88,201,71,327,45,441,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="376,320,443,347"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="506,35,477,54,453,82,439,109,428,139,415,201,410,259,410,304,405,305,405,259,410,201,423,138,434,107,449,78,474,50,503,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="463,80,516,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="525,34,506,68,502,65,520,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="539,80,600,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="539,31,558,65,553,68,534,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="624,80,680,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="552,30,619,69,616,74,550,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="704,80,760,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="566,30,691,74,689,79,564,35"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="784,80,838,107"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="585,30,770,77,769,82,584,35"/>
+<area shape="rect" id="Node000009" href="$_x_o__inf_8h.html" title="Infinite Tic&#45;Tac&#45;Toe game classes." alt="" coords="280,80,352,107"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="493,35,368,77,366,72,492,30"/>
+<area shape="rect" id="Node000010" href="$_board_game___classes_8h.html" title=" " alt="" coords="231,229,388,272"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="329,106,348,139,354,160,352,182,336,218,331,216,347,181,348,161,343,141,324,109"/>
+<area shape="rect" id="Node000013" href="$_a_i_8h.html" title=" " alt="" coords="225,155,338,181"/>
+<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="313,108,297,142,292,139,308,106"/>
+<area shape="rect" id="Node000014" href="$_custom___u_i_8h.html" title="Defines a customizable user interface for board games." alt="" coords="34,155,201,181"/>
+<area shape="poly" id="edge16_Node000009_Node000014" title=" " alt="" coords="283,110,167,151,166,146,281,105"/>
+<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="241,275,93,319,92,314,240,270"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="337,271,384,308,380,312,334,275"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="283,320,336,347"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="312,273,312,304,307,304,307,273"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="182,320,240,347"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="286,275,240,312,236,308,283,271"/>
+<area shape="poly" id="edge15_Node000013_Node000010" title=" " alt="" coords="289,181,300,214,295,216,284,183"/>
+<area shape="poly" id="edge18_Node000014_Node000002" title=" " alt="" coords="106,184,87,205,69,231,55,268,48,305,42,304,50,267,65,228,83,201,102,180"/>
+<area shape="poly" id="edge17_Node000014_Node000010" title=" " alt="" coords="149,179,247,220,245,225,147,184"/>
+<area shape="poly" id="edge19_Node000014_Node000012" title=" " alt="" coords="132,180,151,201,171,228,191,267,205,304,200,306,186,269,166,231,147,205,128,184"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="78,237,157,264"/>
+<area shape="poly" id="edge20_Node000014_Node000015" title=" " alt="" coords="120,182,120,222,115,222,115,182"/>
+</map>

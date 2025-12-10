@@ -1,0 +1,14 @@
+<map id="XO_inf_AI::bestMove" name="XO_inf_AI::bestMove">
+<area shape="rect" id="Node000001" title="Determine the best move for the AI." alt="" coords="5,68,152,95"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="386,5,531,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,65,148,46,199,29,287,17,370,13,370,19,287,22,200,35,150,51,107,70"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="392,119,525,145"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,93,200,104,376,124,376,129,199,109,139,98"/>
+<area shape="rect" id="Node000004" href="$class_x_o__inf___a_i.html#aa88a72848990b6506c7f4d544937837b" title="Minimax search algorithm with alpha&#45;beta pruning." alt="" coords="200,68,338,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,79,184,79,184,84,152,84"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="311,65,401,35,402,40,313,70"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="323,93,392,112,391,117,321,98"/>
+<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="236,69,231,59,235,50,248,43,269,41,292,44,304,50,301,55,290,49,269,47,249,49,238,53,236,59,241,66"/>
+<area shape="rect" id="Node000005" href="$class_x_o__inf___a_i.html#aa7814af19ba079b0bf71770ffa438b4b" title="Evaluate the score of the board state." alt="" coords="390,68,528,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="338,79,374,79,374,84,338,84"/>
+</map>
