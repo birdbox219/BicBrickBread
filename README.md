@@ -102,10 +102,10 @@ The codebase is organized by game module:
 **Team CodeArt** - FCAI-CU
 
 **Members:**
-Mahmoud Elsayed musa
-Amr Atif Abd El-Kareem
-Ali Wael Abdalla Fawzy
-Alaa Mamdouh Hamed 
+* Mahmoud Elsayed musa
+* Amr Atif Abd El-Kareem
+* Ali Wael Abdalla Fawzy
+* Alaa Mamdouh Hamed 
 
 
 
