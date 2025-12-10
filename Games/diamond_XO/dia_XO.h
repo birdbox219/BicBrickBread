@@ -17,6 +17,9 @@
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
+#include <unordered_set>
+#include <vector>
+#include <utility>
 
 /**
  * @typedef zengy

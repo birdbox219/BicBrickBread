@@ -4,6 +4,8 @@
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/AI.h"
 #include "../../header/Custom_UI.h"
+#include <deque>
+#include <stack>
 
 /**
  * @file XO_inf.h

@@ -12,6 +12,8 @@
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
 #include "../../header/AI.h"
+#include <cstdint>
+#include <vector>
 
 /**
  * @class Obstacles_Board
