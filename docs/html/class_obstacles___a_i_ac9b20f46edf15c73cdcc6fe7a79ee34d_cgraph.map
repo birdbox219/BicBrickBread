@@ -1,0 +1,9 @@
+<map id="Obstacles_AI::bestMove" name="Obstacles_AI::bestMove">
+<area shape="rect" id="Node000001" title="Computes the best move for the player." alt="" coords="5,56,171,83"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="262,5,408,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,53,251,33,252,38,157,58"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="268,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,67,253,67,253,72,171,72"/>
+<area shape="rect" id="Node000004" href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" title="Get all available moves." alt="" coords="219,107,451,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,81,252,100,251,106,156,86"/>
+</map>

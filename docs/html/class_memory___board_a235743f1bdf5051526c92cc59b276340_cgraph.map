@@ -1,0 +1,5 @@
+<map id="Memory_Board::Memory_Board" name="Memory_Board::Memory_Board">
+<area shape="rect" id="Node000001" title="Constructs an empty Memory Tic&#45;Tac&#45;Toe board." alt="" coords="5,5,170,48"/>
+<area shape="rect" id="Node000002" href="$class_board.html#ae5dfded241ee3644196e2f6074d1d0b1" title=" " alt="" coords="218,13,364,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
+</map>

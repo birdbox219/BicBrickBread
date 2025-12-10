@@ -1,0 +1,10 @@
+<map id="SUS_AI::evaluate" name="SUS_AI::evaluate">
+<area shape="rect" id="Node000001" title="Evaluates the board state for the given player." alt="" coords="545,29,672,56"/>
+<area shape="rect" id="Node000002" href="$class_s_u_s___a_i.html#a9cd1ee590918406034aae1d0ebc43b46" title="Minimax with alpha&#45;beta pruning." alt="" coords="371,29,497,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="530,45,498,45,498,40,530,40"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="464,16,453,10,434,8,416,10,406,15,404,20,409,28,404,30,399,21,403,11,415,5,434,3,455,5,466,12"/>
+<area shape="rect" id="Node000003" href="$class_s_u_s___a_i.html#ae27d5dea2808c253c2fe19574bb41038" title="Computes the best move for the player." alt="" coords="189,29,323,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,45,324,45,324,40,355,40"/>
+<area shape="rect" id="Node000004" href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" title="Retrieves the next move." alt="" coords="5,29,141,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="173,45,141,45,141,40,173,40"/>
+</map>

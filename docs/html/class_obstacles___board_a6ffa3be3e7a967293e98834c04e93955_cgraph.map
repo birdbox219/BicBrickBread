@@ -1,0 +1,5 @@
+<map id="Obstacles_Board::updateCell" name="Obstacles_Board::updateCell">
+<area shape="rect" id="Node000001" title="Attempt to place a symbol at the given position." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___board.html#adb1a8948e269860fabdae535c6418972" title="Get all available moves." alt="" coords="245,5,477,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,16,229,16,229,21,197,21"/>
+</map>

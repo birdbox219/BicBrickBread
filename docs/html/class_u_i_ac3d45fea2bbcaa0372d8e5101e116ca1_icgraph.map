@@ -1,0 +1,7 @@
+<map id="UI::get_player_type_choice" name="UI::get_player_type_choice">
+<area shape="rect" id="Node000001" title="Ask the user to choose the player type from a list." alt="" coords="275,5,410,48"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html#a6966a040c995b2292e5edddaa94f889a" title="Set up players for the game." alt="" coords="103,13,227,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,29,228,29,228,24,260,24"/>
+<area shape="rect" id="Node000003" href="$_the_game_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to run the X&#45;O game." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

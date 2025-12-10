@@ -1,0 +1,5 @@
+<map id="PyramidXO_UI::PyramidXO_UI" name="PyramidXO_UI::PyramidXO_UI">
+<area shape="rect" id="Node000001" title="Constructs UI with game title." alt="" coords="5,5,211,32"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html#afb59b53f3c2ed750b1a9a0c7d6dc4a7a" title=" " alt="" coords="259,5,365,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,16,243,16,243,21,211,21"/>
+</map>

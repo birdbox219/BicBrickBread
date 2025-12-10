@@ -1,0 +1,5 @@
+<map id="Anti_XO_Board::is_lose" name="Anti_XO_Board::is_lose">
+<area shape="rect" id="Node000001" title="Checks if the player loses by forming a 3&#45;in&#45;a&#45;row line." alt="" coords="5,5,166,32"/>
+<area shape="rect" id="Node000002" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="214,5,347,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,198,16,198,21,166,21"/>
+</map>

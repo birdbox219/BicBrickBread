@@ -1,0 +1,5 @@
+<map id="Obstacles_AI::bestMove" name="Obstacles_AI::bestMove">
+<area shape="rect" id="Node000001" title="Computes the best move for the player." alt="" coords="220,5,385,32"/>
+<area shape="rect" id="Node000002" href="$class_obstacles___u_i.html#aaf8a700063b544107b0ec92929b7242d" title="Obtains a move from a human or AI player." alt="" coords="5,5,172,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,21,172,21,172,16,204,16"/>
+</map>

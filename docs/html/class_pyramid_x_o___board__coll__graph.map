@@ -1,0 +1,7 @@
+<map id="PyramidXO_Board" name="PyramidXO_Board">
+<area shape="rect" id="Node000001" title="Represents the game board for the Pyramid XO variant." alt="" coords="5,537,145,713"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="9,163,141,488"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,503,78,538,73,538,73,503"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="15,5,136,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,90,78,145,73,145,73,90"/>
+</map>

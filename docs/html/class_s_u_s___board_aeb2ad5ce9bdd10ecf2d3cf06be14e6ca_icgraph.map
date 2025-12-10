@@ -1,0 +1,5 @@
+<map id="SUS_Board::is_draw" name="SUS_Board::is_draw">
+<area shape="rect" id="Node000001" title="Checks if the game ended in a draw." alt="" coords="233,5,376,32"/>
+<area shape="rect" id="Node000002" href="$class_s_u_s___board.html#acd2c39612239065da3aea67ac7c27aa4" title="Determines whether the game is over." alt="" coords="5,5,185,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,21,185,21,185,16,217,16"/>
+</map>

@@ -1,4 +1,7 @@
 #include "Obstacles_Tic_Tac_Toe.h"
+#include <cstdint>
+#include <algorithm>
+#include <random>
 
 /// Initialize static array of winning 4-in-a-row masks.
 uint64_t Obstacles_Board::win4Masks[54] {};

@@ -1,0 +1,7 @@
+<map id="Four_AI::evaluate" name="Four_AI::evaluate">
+<area shape="rect" id="Node000001" title="Evaluates the current board state from AI perspective." alt="" coords="5,31,130,57"/>
+<area shape="rect" id="Node000002" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="190,5,298,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,32,174,26,175,31,131,38"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="178,56,311,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,50,163,55,162,60,130,56"/>
+</map>

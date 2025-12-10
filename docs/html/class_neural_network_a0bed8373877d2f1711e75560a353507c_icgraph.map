@@ -1,0 +1,5 @@
+<map id="NeuralNetwork::backward" name="NeuralNetwork::backward">
+<area shape="rect" id="Node000001" title="Perform backward propagation through all layers and update weights." alt="" coords="195,5,367,32"/>
+<area shape="rect" id="Node000002" href="$class_neural_network.html#a407ef851e7e66d12054d1940c815a2bf" title="Train the network on a single input&#45;output pair." alt="" coords="5,5,147,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,21,147,21,147,16,179,16"/>
+</map>

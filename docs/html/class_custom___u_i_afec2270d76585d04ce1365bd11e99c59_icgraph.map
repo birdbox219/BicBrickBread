@@ -1,0 +1,5 @@
+<map id="Custom_UI::get_player_type_choice" name="Custom_UI::get_player_type_choice">
+<area shape="rect" id="Node000001" title="Ask the user to choose a player type and validate input." alt="" coords="231,5,387,48"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html#ab2ade5587921f466e8839a1d9055bbb6" title="Setup X and O players." alt="" coords="5,13,183,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,29,183,29,183,24,215,24"/>
+</map>

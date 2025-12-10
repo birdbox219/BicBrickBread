@@ -1,0 +1,11 @@
+<map id="Four_AI::get_next_available_row" name="Four_AI::get_next_available_row">
+<area shape="rect" id="Node000001" title="Finds the next open row in a given column." alt="" coords="551,6,763,33"/>
+<area shape="rect" id="Node000002" href="$class_four___a_i.html#a12661d165899365f9a5031ec04814e44" title="Computes the best possible move for the AI." alt="" coords="199,6,331,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="536,12,503,10,441,8,379,10,331,14,331,9,379,5,441,3,503,5,536,6"/>
+<area shape="rect" id="Node000004" href="$class_four___a_i.html#a2be9e32c580e8aa22c530ab4c9920317" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="379,43,503,70"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="562,38,504,49,503,43,561,33"/>
+<area shape="rect" id="Node000003" href="$class_f_o_u_r___u_i.html#a5b8d7e6afd5b983620fd00bf954564d7" title="Obtains the next move from a human, computer, or AI player." alt="" coords="5,6,151,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="183,22,151,22,151,17,183,17"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="363,43,330,36,332,31,364,38"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="471,30,461,24,441,22,423,24,413,29,411,34,415,42,411,44,406,35,409,25,421,19,441,17,462,19,474,26"/>
+</map>

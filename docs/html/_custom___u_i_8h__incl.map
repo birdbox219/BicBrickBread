@@ -1,0 +1,17 @@
+<map id="header/Custom_UI.h" name="header/Custom_UI.h">
+<area shape="rect" id="Node000001" title="Defines a customizable user interface for board games." alt="" coords="155,5,297,32"/>
+<area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="90,80,247,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,34,190,69,186,66,214,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,63,181"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="170,35,123,53,100,66,80,82,58,110,44,141,39,139,54,108,76,78,97,62,121,49,168,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="256,155,327,181"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="236,31,262,79,285,139,280,141,257,81,231,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="322,80,400,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="251,30,325,70,322,75,248,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,155,141,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,109,135,144,131,140,157,106"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,110,72,149,70,144,144,105"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="191,105,258,144,255,149,189,110"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="165,155,231,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="176,106,190,139,185,141,171,108"/>
+</map>

@@ -1,6 +1,10 @@
 #include "Anti_XO.h"
+#include <utility>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <random>
 using namespace std;
-
 
 Anti_XO_Board::Anti_XO_Board():Board(3,3)
 {
@@ -62,7 +66,6 @@ bool Anti_XO_Board::game_is_over(Player<char>* player)
     return is_lose(player) || is_draw(player);
 }
 
-
 Anti_XO_UI::Anti_XO_UI() 
     : Custom_UI<char>("anti_XO",3) {}
 
@@ -79,10 +82,12 @@ Move<char>* Anti_XO_UI::get_move(Player<char>* player)
         cout << player->get_name() << " (" << player->get_symbol()
              << ") enter your move (row col): ";
         cin >> r >> c;
-    } else if (player->get_type() == PlayerType::COMPUTER) {
+    } 
+    else if (player->get_type() == PlayerType::COMPUTER) {
         r = rand()%3;
         c = rand()%3;
-    } else if (player->get_type() == PlayerType::AI) {
+    } 
+    else if (player->get_type() == PlayerType::AI) {
         Anti_AI ai;
         return ai.bestMove(player, '.');
     }
@@ -94,6 +99,7 @@ bool Anti_AI::bounded(int x, int y)
 {
     return (x>0 && x<3 && y>0 && y<3);
 }
+
 
 Move<char> *Anti_AI::bestMove(Player<char> *player, char blankCell, int depth)
 {
@@ -131,12 +137,8 @@ Move<char> *Anti_AI::bestMove(Player<char> *player, char blankCell, int depth)
     sort(scores.begin(), scores.end(),
          [](auto &a, auto &b){ return a.first < b.first; });
 
- 
-    //to have random behaviar kinda  ya3ny :) .    
     const int K = 2;  
     int maxChoices = min(K, (int)scores.size());
-
-    
     int idx = rand() % maxChoices;
 
     auto &choice = scores[idx];

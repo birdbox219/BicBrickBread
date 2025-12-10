@@ -1,0 +1,5 @@
+<map id="Ultimate_Board::small_board_check" name="Ultimate_Board::small_board_check">
+<area shape="rect" id="Node000001" title="Evaluates the small board corresponding to the last move." alt="" coords="212,5,362,48"/>
+<area shape="rect" id="Node000002" href="$class_ultimate___board.html#a9339ec67859e01c726adf55a8a77db72" title="Apply or undo a move on the board." alt="" coords="5,5,164,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,29,164,29,164,24,196,24"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="Large_XO_UI" name="Large_XO_UI">
+<area shape="rect" id="Node000001" title="User interface for 5x5 Tic&#45;Tac&#45;Toe (human and AI interaction)." alt="" coords="256,2317,411,2451"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html" title=" " alt="" coords="45,1952,214,2128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,2140,297,2316,293,2319,187,2142"/>
+<area shape="rect" id="Node000003" href="$class_u_i.html" title=" " alt="" coords="5,1437,174,1677"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,1692,125,1952,120,1952,98,1693"/>
+<area shape="rect" id="Node000004" href="$class_large___x_o___a_i.html" title="AI for 5x5 Tic&#45;Tac&#45;Toe using Minimax + Neural Network heuristic." alt="" coords="279,1963,389,2117"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,2117,336,2300,331,2300,331,2117"/>
+<area shape="rect" id="Node000005" href="$class_a_i.html" title="AI Interface for all implementations in games." alt="" coords="199,1491,288,1624"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="261,1638,322,1962,317,1963,256,1639"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="312,1523,521,1592"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="413,1592,352,1946,347,1945,408,1591"/>
+<area shape="rect" id="Node000007" href="$class_neural_network.html" title="Fully&#45;connected feedforward neural network using Layer objects." alt="" coords="357,1125,476,1323"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="419,1322,419,1506,414,1506,414,1322"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="352,984,481,1053"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="419,1053,419,1109,414,1109,414,1053"/>
+<area shape="rect" id="Node000009" href="$class_layer.html" title="Fully&#45;connected (dense) neural network layer." alt="" coords="358,629,476,912"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="419,912,419,967,414,967,414,912"/>
+<area shape="rect" id="Node000010" href="$class_matrix.html" title=" " alt="" coords="362,147,471,472"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="419,472,419,612,414,612,414,472"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="349,5,484,75"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="419,75,419,130,414,130,414,75"/>
+<area shape="rect" id="Node000012" href="$class_large___x_o___board.html" title="5x5 Tic&#45;Tac&#45;Toe board implementation using a bitboard for fast evaluation." alt="" coords="432,1835,563,2245"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="435,2180,403,2246,375,2303,371,2301,398,2244,430,2177"/>
+<area shape="rect" id="Node000013" href="$class_board.html" title=" " alt="" coords="545,1395,677,1720"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="572,1735,549,1835,543,1834,567,1734"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="551,1181,672,1267"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="614,1267,614,1378,608,1378,608,1267"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="UI::UI" name="UI::UI">
+<area shape="rect" id="Node000001" title="Construct the UI and display a welcome message." alt="" coords="217,31,274,57"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565" title=" " alt="" coords="5,5,169,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,40,168,34,169,29,202,34"/>
+<area shape="rect" id="Node000003" href="$class_custom___u_i.html#a6a7b3c7599c074000069912ed6166b1c" title=" " alt="" coords="5,56,169,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,54,169,59,168,54,201,48"/>
+</map>

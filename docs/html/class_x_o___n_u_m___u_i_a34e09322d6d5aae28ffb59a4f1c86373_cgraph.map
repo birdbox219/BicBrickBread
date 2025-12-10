@@ -1,0 +1,9 @@
+<map id="XO_NUM_UI::setup_players" name="XO_NUM_UI::setup_players">
+<area shape="rect" id="Node000001" title="Set up two players." alt="" coords="5,56,194,83"/>
+<area shape="rect" id="Node000002" href="$class_x_o___n_u_m___u_i.html#a9d58ffe5cb29093d31b20f47e22dad1c" title="Create a player instance." alt="" coords="245,5,430,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,53,256,33,257,38,166,58"/>
+<area shape="rect" id="Node000003" href="$class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" title=" " alt="" coords="242,56,433,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,67,226,67,226,72,194,72"/>
+<area shape="rect" id="Node000004" href="$class_u_i.html#ac3d45fea2bbcaa0372d8e5101e116ca1" title=" " alt="" coords="261,107,414,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,81,247,103,245,108,156,86"/>
+</map>

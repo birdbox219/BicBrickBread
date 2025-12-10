@@ -8,6 +8,16 @@
 using namespace std;
 
 /**
+ * @file XO_Classes.h
+ * @brief Classic Tic-Tac-Toe game classes
+ *
+ * @defgroup XO Classic XO
+ * @brief Classes and interfaces for the classic Tic-Tac-Toe game.
+ */
+
+/**
+ * @class X_O_Board
+ * @ingroup XO
  * @brief Represents a Tic-Tac-Toe (X-O) board.
  *
  * This class inherits from the generic Board<char> and implements
@@ -66,6 +76,8 @@ public:
 };
 
 /**
+ * @class X_O_AI
+ * @ingroup AI
  * @brief AI controller for Tic-Tac-Toe.
  *
  * Implements the AI interface using minimax with alpha-beta pruning.
@@ -106,6 +118,8 @@ public:
 };
 
 /**
+ * @class XO_UI
+ * @ingroup XO
  * @brief User interface for Tic-Tac-Toe.
  *
  * Handles human input and computer/random moves.

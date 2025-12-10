@@ -1,0 +1,14 @@
+<map id="PyramidXO_UI::get_move" name="PyramidXO_UI::get_move">
+<area shape="rect" id="Node000001" title="Reads human move or requests AI move." alt="" coords="5,81,180,108"/>
+<area shape="rect" id="Node000002" href="$class_pyramid_x_o___a_i.html#a503de221d36f762812330be2aa1c0e5f" title="Generates a random valid move within the pyramid." alt="" coords="228,5,401,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,78,258,35,259,40,135,83"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="455,56,588,83"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="180,87,439,71,439,77,180,92"/>
+<area shape="rect" id="Node000005" href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="253,107,376,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="180,102,237,109,237,114,180,107"/>
+<area shape="rect" id="Node000006" href="$class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="256,157,372,184"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="129,106,229,143,250,150,248,155,227,148,127,111"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="449,5,594,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,16,433,16,433,21,401,21"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="373,30,450,49,449,54,371,35"/>
+</map>

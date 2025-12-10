@@ -1,0 +1,5 @@
+<map id="SUS_AI::bestMove" name="SUS_AI::bestMove">
+<area shape="rect" id="Node000001" title="Computes the best move for the player." alt="" coords="189,5,323,32"/>
+<area shape="rect" id="Node000002" href="$class_s_u_s___u_i.html#a9c7a3c09a5e18a3d89f448ea93b6dea6" title="Retrieves the next move." alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,21,141,21,141,16,173,16"/>
+</map>

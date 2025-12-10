@@ -1,0 +1,9 @@
+<map id="UI::get_player_name" name="UI::get_player_name">
+<area shape="rect" id="Node000001" title="Ask the user for the player&#39;s name." alt="" coords="328,31,470,57"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html#ab2ade5587921f466e8839a1d9055bbb6" title="Setup X and O players." alt="" coords="103,5,280,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,36,280,32,281,27,313,31"/>
+<area shape="rect" id="Node000003" href="$class_u_i.html#a6966a040c995b2292e5edddaa94f889a" title="Set up players for the game." alt="" coords="129,56,254,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="313,57,254,64,254,59,313,52"/>
+<area shape="rect" id="Node000004" href="$_the_game_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to run the X&#45;O game." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,72,55,72,55,67,113,67"/>
+</map>

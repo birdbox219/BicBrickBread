@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function to run the X&#45;O game." alt="" coords="5,56,55,83"/>
+<area shape="rect" id="Node000002" href="$class_game_manager.html#a71f46d5189dac5c773f608cea1b5a203" title="Run the main game loop until someone wins or the game ends." alt="" coords="103,19,235,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,60,102,47,103,52,56,65"/>
+<area shape="rect" id="Node000004" href="$class_u_i.html#a6966a040c995b2292e5edddaa94f889a" title="Set up players for the game." alt="" coords="107,81,231,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,71,92,78,91,83,55,76"/>
+<area shape="rect" id="Node000003" href="$class_player.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="292,5,416,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,25,277,22,277,27,236,30"/>
+<area shape="rect" id="Node000005" href="$class_u_i.html#a94561e0bb4bbcbe5ff71ca6d751922df" title="Create a player object based on input name, symbol, and type." alt="" coords="294,56,415,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="231,84,278,77,278,82,232,89"/>
+<area shape="rect" id="Node000006" href="$class_u_i.html#a7b1603de1f73fbb4006e4f00a27c44da" title="Ask the user for the player&#39;s name." alt="" coords="283,107,425,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="232,101,268,106,267,111,231,106"/>
+<area shape="rect" id="Node000007" href="$class_u_i.html#ac3d45fea2bbcaa0372d8e5101e116ca1" title="Ask the user to choose the player type from a list." alt="" coords="286,157,422,200"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="201,106,293,148,290,153,199,111"/>
+</map>

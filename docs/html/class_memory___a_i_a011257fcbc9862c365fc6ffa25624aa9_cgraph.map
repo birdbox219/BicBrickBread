@@ -1,0 +1,10 @@
+<map id="Memory_AI::minimax" name="Memory_AI::minimax">
+<area shape="rect" id="Node000001" title="Minimax algorithm with alpha&#45;beta pruning." alt="" coords="5,56,151,83"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="45,57,39,47,43,38,56,31,78,29,101,32,113,38,111,43,100,37,78,35,58,37,47,41,44,47,50,54"/>
+<area shape="rect" id="Node000002" href="$class_memory___a_i.html#a7ccc7a57734bc0259a07602a67bd9465" title="Evaluates the board state from AI perspective." alt="" coords="199,5,344,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,53,203,34,204,39,133,58"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="199,56,344,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,67,183,67,183,72,151,72"/>
+<area shape="rect" id="Node000004" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="205,107,338,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,81,204,100,203,105,131,86"/>
+</map>

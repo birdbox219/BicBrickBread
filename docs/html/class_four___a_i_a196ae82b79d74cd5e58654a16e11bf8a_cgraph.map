@@ -1,0 +1,5 @@
+<map id="Four_AI::get_next_available_row" name="Four_AI::get_next_available_row">
+<area shape="rect" id="Node000001" title="Finds the next open row in a given column." alt="" coords="5,5,217,32"/>
+<area shape="rect" id="Node000002" href="$class_board.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="265,5,373,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,16,249,16,249,21,217,21"/>
+</map>

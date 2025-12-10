@@ -1,0 +1,5 @@
+<map id="Word_XO_Board::setLastPlayer" name="Word_XO_Board::setLastPlayer">
+<area shape="rect" id="Node000001" title="Set the last player who moved." alt="" coords="217,5,423,32"/>
+<area shape="rect" id="Node000002" href="$class_word___x_o___u_i.html#aea1d068753433755a0c7eb45b06add23" title="Get the next move from a player." alt="" coords="5,5,169,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,21,169,21,169,16,201,16"/>
+</map>

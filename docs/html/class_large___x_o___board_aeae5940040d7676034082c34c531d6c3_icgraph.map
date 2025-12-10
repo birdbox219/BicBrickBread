@@ -1,0 +1,5 @@
+<map id="Large_XO_Board::getCell" name="Large_XO_Board::getCell">
+<area shape="rect" id="Node000001" title="Read the board state at a given cell." alt="" coords="224,5,393,32"/>
+<area shape="rect" id="Node000002" href="$class_large___x_o___board.html#a7d0f28af0a33808c512269ee6cad1970" title="Encode board state into a matrix for neural network input. AI = +1, Opponent = &#45;1,..." alt="" coords="5,5,176,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,21,176,21,176,16,208,16"/>
+</map>

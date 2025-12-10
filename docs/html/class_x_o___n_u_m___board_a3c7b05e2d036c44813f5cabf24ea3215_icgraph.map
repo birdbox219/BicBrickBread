@@ -1,0 +1,8 @@
+<map id="XO_NUM_Board::is_win" name="XO_NUM_Board::is_win">
+<area shape="rect" id="Node000001" title="Check if a player has won." alt="" coords="433,13,597,40"/>
+<area shape="rect" id="Node000002" href="$class_x_o___n_u_m___board.html#a53484dc93fa6480fae74f3c9bd173cc5" title="Check if the game is over." alt="" coords="5,5,165,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="417,29,165,29,165,24,417,24"/>
+<area shape="rect" id="Node000003" href="$class_x_o___n_u_m___board.html#a65725a8978e903e07838140ae4bf8fd6" title="Check if the game is a draw." alt="" coords="213,39,385,65"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="418,41,386,45,385,39,417,35"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="197,43,165,39,165,33,197,37"/>
+</map>

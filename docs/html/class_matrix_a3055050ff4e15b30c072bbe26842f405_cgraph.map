@@ -1,0 +1,5 @@
+<map id="Matrix::hadamard" name="Matrix::hadamard">
+<area shape="rect" id="Node000001" title="In&#45;place Hadamard (element&#45;wise) product: this = this ⊙ other." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="Node000002" href="$class_matrix.html#a500ba010dab4b9ee8e0d1b6f73fcd926" title="Construct a matrix of size (rows x cols)." alt="" coords="176,5,277,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
+</map>

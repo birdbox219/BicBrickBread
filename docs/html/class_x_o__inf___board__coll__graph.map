@@ -1,0 +1,14 @@
+<map id="XO_inf_Board" name="XO_inf_Board">
+<area shape="rect" id="Node000001" title="Board class for infinite Tic&#45;Tac&#45;Toe." alt="" coords="171,587,284,784"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="5,189,137,515"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,506,184,586,179,588,141,508"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="11,19,132,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,104,74,172,69,172,69,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,317,294,387"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,386,230,570,225,570,225,386"/>
+<area shape="rect" id="Node000005" href="$struct_vertex.html" title="Represents a single move on the board." alt="" coords="257,5,323,117"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="278,118,272,142,239,301,234,300,266,141,272,117"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="317,317,447,387"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="325,110,340,140,365,223,379,300,374,301,360,225,336,142,321,112"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="369,387,282,572,278,570,364,385"/>
+</map>

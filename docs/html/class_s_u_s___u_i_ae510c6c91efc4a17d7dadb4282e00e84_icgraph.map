@@ -1,0 +1,5 @@
+<map id="SUS_UI::create_player" name="SUS_UI::create_player">
+<area shape="rect" id="Node000001" title="Creates a new player instance." alt="" coords="213,5,369,32"/>
+<area shape="rect" id="Node000002" href="$class_s_u_s___u_i.html#a24c1d67ea76050e7bee6159e9ba39aa2" title="Configures the two players." alt="" coords="5,5,165,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,21,165,21,165,16,197,16"/>
+</map>

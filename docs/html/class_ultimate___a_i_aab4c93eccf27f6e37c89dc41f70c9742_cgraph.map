@@ -1,0 +1,7 @@
+<map id="Ultimate_AI::bestMove" name="Ultimate_AI::bestMove">
+<area shape="rect" id="Node000001" title="Selects a random valid move for the AI." alt="" coords="5,31,161,57"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="209,5,354,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,31,193,27,194,33,161,37"/>
+<area shape="rect" id="Node000003" href="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="215,56,348,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,51,199,56,199,62,161,57"/>
+</map>

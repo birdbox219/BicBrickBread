@@ -1,6 +1,10 @@
 // dia_XO.cpp
 #include "dia_XO.h"
 #include <algorithm>
+#include <vector>
+#include <utility>
+#include <unordered_set>
+#include <random>
 
 bool dia_XO_Board::bounded(int x, int y)
 {
@@ -37,9 +41,11 @@ bool dia_XO_Board::update_board(Move<char> *move)
     if (x < 0 || x >= 7 || y < 0 || y >= 7) {
         return false;
     }
+
     if (board[x][y] != free) {
         return false;
     }
+
     board[x][y] = s;
     return true;
 }
@@ -48,11 +54,11 @@ bool dia_XO_Board::is_win(Player<char> *player)
 {
     char s = player->get_symbol();
 
-
     int best_len[4] = {0, 0, 0, 0};
 
     for (int i = 0; i < 7; ++i) {
         for (int j = 0; j < 7; ++j) {
+
             if (board[i][j] != s) continue;
             if (board[i][j] == invalid) continue;
 
@@ -77,13 +83,15 @@ bool dia_XO_Board::is_win(Player<char> *player)
                     cy += ddy;
                 }
 
-                if (len > best_len[d]) best_len[d] = len;
+                if (len > best_len[d])
+                    best_len[d] = len;
             }
         }
     }
 
     for (int d3 = 0; d3 < 4; ++d3) {
         if (best_len[d3] < 3) continue;
+
         for (int d4 = 0; d4 < 4; ++d4) {
             if (d3 == d4) continue;
             if (best_len[d4] >= 4) return true;
@@ -93,10 +101,12 @@ bool dia_XO_Board::is_win(Player<char> *player)
     return false;
 }
 
+
 bool dia_XO_Board::is_lose(Player<char> *player)
 {
     return false;
 }
+
 
 bool dia_XO_Board::is_draw(Player<char> *player)
 {
@@ -114,7 +124,7 @@ bool dia_XO_Board::game_is_over(Player<char> *player)
     if (is_draw(player)) return true;
     return false;
 }
-//----------------------------------------------UI IS HERE------------------------------------------------------
+
 dia_XO_UI::dia_XO_UI()
     : UI<char>("dia_XO", 3) {}
 
@@ -146,13 +156,13 @@ Move<char> *dia_XO_AI::bestMove(Player<char> *player, char blankCell, int depth)
 
     auto* board = player->get_board_ptr();
 
-    for (int r = 0; r < 6; ++r) {
-        for (int c = 0; c < 6; ++c) {
-            if(board->get_cell(r,c) == blankCell) emptyCells.push_back({r,c});
+    for (int r = 0; r < 7; ++r) {
+        for (int c = 0; c < 7; ++c) {
+            if(board->get_cell(r,c) == blankCell)
+                emptyCells.push_back({r,c});
         }
     }
 
     int idx = rand() % emptyCells.size();
-
     return new Move<char>(emptyCells[idx].first, emptyCells[idx].second, player->get_symbol());
 }

@@ -1,207 +1,179 @@
+/**
+ * @file Obstacles_Tic_Tac_Toe.h
+ * @brief Obstacles Tic-Tac-Toe game classes
+ *
+ * @defgroup Obstacles_XO Obstacles XO
+ * @brief Classes and interfaces for Tic-Tac-Toe variant with traps and bitboard logic.
+ */
+
 #ifndef OBSTACLES_TIC_TAC_TOE_H
 #define OBSTACLES_TIC_TAC_TOE_H
 
 #include "../../header/BoardGame_Classes.h"
 #include "../../header/Custom_UI.h"
 #include "../../header/AI.h"
-#include <cstdint>
-#include <algorithm>
-#include <random>
 
 /**
- * @class Obstachles_Board
- * @brief A modified Tic-Tac-Toe board supporting traps and 64-bit bitboard logic.
- *
- * This board implementation extends the base Board<char> class and
- * stores game state using three 64-bit bitboards (X positions, O positions,
- * and trap positions). Bitboards allow extremely fast win-checking through
- * precomputed win masks.
- *
- * Features:
- * - Supports traps/blocked cells that neither player can occupy.
- * - Tracks occupied positions via bitboards rather than 2D arrays.
- * - Provides win/lose/draw logic based on 4-in-a-row masks.
- * - Provides list of legal moves as indices in range [0..63].
+ * @class Obstacles_Board
+ * @brief Modified Tic-Tac-Toe board supporting traps and 64-bit bitboard logic.
+ * @ingroup Obstacles_XO
  */
 class Obstacles_Board : public Board<char>
 {
 public:
     /**
-     * @brief Constructs an empty board with no moves made.
-     *
-     * Initializes bitboards, empty cell character,
-     * and loads the static win masks if needed.
+     * @brief Constructs an empty Obstacles Tic-Tac-Toe board.
      */
     Obstacles_Board();
 
     /**
-     * @brief Returns the symbol at position (r, c).
-     *
-     * @param r Row index.
-     * @param c Column index.
-     * @return Character stored at the requested cell ('X', 'O', trap symbol, or empty).
+     * @brief Get the symbol at a given cell.
+     * @param r Row index (0-based)
+     * @param c Column index (0-based)
+     * @return Character at the requested cell ('X', 'O', trap, or empty)
      */
     char getCell(size_t r, size_t c);
 
     /**
-     * @brief Returns the character used to denote an empty cell.
-     *
-     * @return The empty cell symbol (usually '.').
+     * @brief Get the character used for empty cells.
+     * @return Character representing empty cells
      */
     char getEmptyCell();
 
     /**
-     * @brief Returns a list of all legal moves.
-     *
-     * A move is considered legal if:
-     * - Cell is not occupied by X.
-     * - Cell is not occupied by O.
-     * - Cell is not a trap.
-     *
-     * @return Vector of valid cell indices (0–63).
+     * @brief Get all available moves.
+     * @return Vector of valid cell indices (0–63)
      */
     std::vector<size_t> getAvailableMove();
 
     /**
-     * @brief Returns the total number of moves made so far.
-     *
-     * @return Number of moves played since start.
+     * @brief Get the total number of moves played.
+     * @return Number of moves played
      */
     int getMoveCount();
 
     /**
-     * @brief Attempts to place symbol `s` at (r, c).
-     *
-     * This updates the correct bitboard (X or O), but only if:
-     * - Position is empty.
-     * - Position is not blocked by a trap.
-     *
-     * @param r Row index.
-     * @param c Column index.
-     * @param s Symbol ('X' or 'O').
-     * @return True if update was successful; false otherwise.
+     * @brief Attempt to place a symbol at the given position.
+     * @param r Row index (0-based)
+     * @param c Column index (0-based)
+     * @param s Symbol to place ('X' or 'O')
+     * @return True if the move was applied successfully, false otherwise
      */
     bool updateCell(size_t r, size_t c, char s);
 
     /**
-     * @brief Applies a Move<char> object to the board.
-     *
-     * @param move Pointer to a Move<char> containing position + symbol.
-     * @return True if move was applied successfully.
+     * @brief Applies a Move<char> to the board.
+     * @param move Pointer to the move object
+     * @return True if move was applied successfully, false otherwise
      */
     bool update_board(Move<char>* move) override;
 
     /**
-     * @brief Determines whether the game is over for the given player.
-     *
-     * Game ends if:
-     * - Player wins.
-     * - Player loses.
-     * - Board is full → draw.
-     *
-     * @param player Player to evaluate.
-     * @return True if game ended; false otherwise.
+     * @brief Checks if the game is over for a player.
+     * @param player Pointer to the player
+     * @return True if the game ended (win, lose, or draw), false otherwise
      */
     bool game_is_over(Player<char>* player) override;
 
     /**
-     * @brief Checks if the given player has a winning configuration.
-     *
-     * Uses bitwise AND to compare player's bitboard against each 4-in-a-row mask.
-     *
-     * @param player Pointer to player object.
-     * @return True if player has a winning mask.
+     * @brief Checks if a player has won.
+     * @param player Pointer to the player
+     * @return True if the player has a winning configuration, false otherwise
      */
     bool is_win(Player<char>* player) override;
 
     /**
-     * @brief Checks if the given player has lost (opponent has 4-in-a-row).
-     *
-     * @param player Pointer to player.
-     * @return True if opponent has a winning mask.
+     * @brief Checks if a player has lost.
+     * @param player Pointer to the player
+     * @return True if the player has lost (opponent has 4-in-a-row), false otherwise
      */
     bool is_lose(Player<char>* player) override;
 
     /**
-     * @brief Checks for draw condition (board full and no winner).
-     *
-     * @param player Player to evaluate.
-     * @return True if draw.
+     * @brief Checks for a draw condition.
+     * @param player Pointer to the player
+     * @return True if the game is a draw, false otherwise
      */
     bool is_draw(Player<char>* player) override;
 
 private:
-    
-    uint64_t boardX = 0;                  ///> 64-bit bitboard representing all X positions. */
-
-    uint64_t boardO = 0;                  ///> 64-bit bitboard representing all O positions. */
-
-    uint64_t boardTraps = 0;              ///> Bitboard representing traps/obstacles.
-
-    static uint64_t win4Masks[54];        ///> Precomputed list of all 4-in-a-row winning masks.
-
-    char emptyCell;                       ///> Symbol used for empty cells.
-
-    int nMoves = 0;                       ///> Counter of how many moves have been played.
+    uint64_t boardX = 0;                 ///< Bitboard representing X positions
+    uint64_t boardO = 0;                 ///< Bitboard representing O positions
+    uint64_t boardTraps = 0;             ///< Bitboard representing traps/obstacles
+    static uint64_t win4Masks[54];       ///< Precomputed 4-in-a-row winning masks
+    char emptyCell;                      ///< Symbol used for empty cells
+    int nMoves = 0;                      ///< Number of moves played
 };
 
+/**
+ * @class Obstacles_AI
+ * @brief AI implementation for Obstacles Tic-Tac-Toe.
+ * @ingroup AI
+ */
 class Obstacles_AI : public AI {
 public:
     Obstacles_AI() = default;
 
+    /**
+     * @brief Evaluation function (not implemented, placeholder).
+     * @param board Pointer to the board
+     * @param player Pointer to the AI player
+     * @return Always returns 0.0f
+     */
     float evaluate(Board<char>* board, Player<char>* player) override { return 0.0f; }
 
+    /**
+     * @brief Minimax search (not implemented, placeholder).
+     * @param aiTurn True if it is the AI's turn
+     * @param player Pointer to the AI player
+     * @param alpha Alpha pruning value
+     * @param beta Beta pruning value
+     * @param blankCell Symbol representing empty cells
+     * @param depth Search depth
+     * @return Always returns 0.0f
+     */
     float minimax(bool aiTurn, Player<char>* player, float alpha, float beta, char blankCell, int depth) override { return 0.0f; }
 
+    /**
+     * @brief Computes the best move for the player.
+     * @param player Pointer to the player
+     * @param blankCell Symbol representing empty cells
+     * @param depth Search depth (default 6)
+     * @return Pointer to the selected Move<char>
+     */
     Move<char>* bestMove(Player<char>* player, char blankCell, int depth = 6) override;
 };
 
-
 /**
- * @class Obstachles_UI
+ * @class Obstacles_UI
  * @brief User interface handler for Obstacles Tic-Tac-Toe.
- *
- * Handles:
- * - Rendering the board.
- * - Asking user for a move.
- * - Connecting UI logic with Obstachles_Board.
+ * @ingroup Obstacles_XO
  */
 class Obstacles_UI : public UI<char>
 {
 public:
     /**
-     * @brief Creates a new UI handler.
-     *
-     * Board pointer is assigned externally after construction.
+     * @brief Constructs a new UI handler for Obstacles Tic-Tac-Toe.
      */
     Obstacles_UI();
 
-    /**
-     * @brief Destructor.
-     */
     ~Obstacles_UI() {}
 
     /**
      * @brief Obtains a move from a human or AI player.
-     *
-     * Converts player input into Move<char> objects.
-     *
-     * @param player Player whose turn it is.
-     * @return Newly allocated Move<char> describing the player's action.
+     * @param player Pointer to the player whose turn it is
+     * @return Pointer to a Move<char> describing the action
      */
     Move<char>* get_move(Player<char>* player) override;
 
     /**
-     * @brief Renders the game board using a 2D matrix format.
-     *
-     * Called whenever board needs refreshing.
-     *
-     * @param matrix 2D grid of characters from board->to_matrix().
+     * @brief Renders the game board.
+     * @param matrix 2D vector representing board state
      */
-    void display_board_matrix(const vector<vector<char>>& matrix) const override;
+    void display_board_matrix(const std::vector<std::vector<char>>& matrix) const override;
 
 private:
-    Obstacles_Board* board = nullptr;    ///> Pointer to the associated Obstachles_Board.
+    Obstacles_Board* board = nullptr;    ///< Pointer to the associated Obstacles_Board
 };
 
 #endif // OBSTACLES_TIC_TAC_TOE_H

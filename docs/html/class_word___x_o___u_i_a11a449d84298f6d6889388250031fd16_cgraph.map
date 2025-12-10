@@ -1,0 +1,7 @@
+<map id="Word_XO_UI::Word_XO_UI" name="Word_XO_UI::Word_XO_UI">
+<area shape="rect" id="Node000001" title="Construct the UI." alt="" coords="5,43,189,69"/>
+<area shape="rect" id="Node000002" href="$class_custom___u_i.html#a2c29c8de3af071eef76c43e972eca565" title=" " alt="" coords="242,5,387,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,41,226,36,227,41,189,46"/>
+<area shape="rect" id="Node000003" href="$class_word___x_o___u_i.html#aa7b334632e44e14f71dff4a733fff232" title="Evaluate potential characters for a board position." alt="" coords="237,72,392,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,66,222,70,221,75,188,71"/>
+</map>

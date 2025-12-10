@@ -1,0 +1,5 @@
+<map id="PyramidXO_Board::is_draw" name="PyramidXO_Board::is_draw">
+<area shape="rect" id="Node000001" title="Checks if the game ended in a draw." alt="" coords="223,13,405,40"/>
+<area shape="rect" id="Node000002" href="$class_pyramid_x_o___board.html#a450eb010988099eaa06a498cb0b57368" title="Checks whether the game is finished (win or draw)." alt="" coords="5,5,175,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,29,175,29,175,24,207,24"/>
+</map>
