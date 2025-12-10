@@ -24,6 +24,8 @@ GameWindow::GameWindow(Board<char>* b, Player<char>** p, int id, QWidget *parent
     
     players[0] = p[0];
     players[1] = p[1];
+    players[0]->set_board_ptr(board);
+    players[1]->set_board_ptr(board);
 
     setWindowTitle(QString::fromStdString("Game: " + players[0]->get_name() + " vs " + players[1]->get_name()));
     resize(600, 600);
@@ -287,8 +289,7 @@ void GameWindow::performAIMove() {
         case 6: ai = new XO_NUM_AI(); break;
         case 7: ai = new Ultimate_AI(); break;
         case 8: ai = new PyramidXO_AI(); break;
-        // case 9: Word XO AI? 'Word_Tic_Tac_Toe.h' -> Word_XO_Random_Player (extends Player, not AI?)
-        // Let's check Word_XO. If it doesn't have AI class, we might need random fallback.
+        case 9: ai = new Word_AI(); break;
         // case 10: Obstacles
         case 10: ai = new Obstacles_AI(); break; 
         case 11: ai = new Memory_AI(); break;
